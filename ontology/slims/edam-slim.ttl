@@ -1,0 +1,591 @@
+@prefix : <http://edamontology.org#> .
+@prefix edamontology: <http://edamontology.org/> .
+@prefix metadata: <http://data.bioontology.org/metadata/> .
+@prefix oboInOwl: <http://www.geneontology.org/formats/oboInOwl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+### Classes
+
+edamontology:topic_0593 a owl:Class ;
+    rdfs:label "NMR" ;
+    rdfs:subClassOf edamontology:topic_1317,
+        edamontology:topic_3382 ;
+    edamontology:created_in "beta12orEarlier" ;
+    metadata:prefixIRI "topic_0593"^^xsd:string ;
+    oboInOwl:hasBroadSynonym "Spectroscopy" ;
+    oboInOwl:hasDefinition "An analytical technique that exploits the magenetic properties of certain atomic nuclei to provide information on the structure, dynamics, reaction state and chemical environment of molecules." ;
+    oboInOwl:hasExactSynonym "NMR spectroscopy",
+        "Nuclear magnetic resonance spectroscopy" ;
+    oboInOwl:hasHumanReadableId "NMR" ;
+    oboInOwl:hasNarrowSynonym "Heteronuclear Overhauser Effect Spectroscopy",
+        "HOESY",
+        "NOESY",
+        "Nuclear Overhauser Effect Spectroscopy",
+        "ROESY",
+        "Rotational Frame Nuclear Overhauser Effect Spectroscopy" ;
+    oboInOwl:inSubset edamontology:bio,
+        edamontology:events,
+        edamontology:topics ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Nuclear_magnetic_resonance_spectroscopy> .
+
+edamontology:topic_0611 a owl:Class ;
+    rdfs:label "Electron microscopy" ;
+    rdfs:subClassOf edamontology:topic_1317,
+        edamontology:topic_3382 ;
+    edamontology:created_in "beta12orEarlier" ;
+    metadata:prefixIRI "topic_0611"^^xsd:string ;
+    oboInOwl:hasBroadSynonym "Electron diffraction experiment" ;
+    oboInOwl:hasDefinition "The study of matter by studying the interference pattern from firing electrons at a sample, to analyse structures at resolutions higher than can be achieved using light." ;
+    oboInOwl:hasHumanReadableId "Electron_microscopy" ;
+    oboInOwl:hasNarrowSynonym "Electron crystallography",
+        "Scanning electron microscopy",
+        "SEM",
+        "Single particle electron microscopy",
+        "TEM",
+        "Transmission electron microscopy" ;
+    oboInOwl:inSubset edamontology:bio,
+        edamontology:events,
+        edamontology:topics ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Electron_microscope> .
+
+edamontology:topic_2828 a owl:Class ;
+    rdfs:label "X-ray diffraction" ;
+    rdfs:subClassOf edamontology:topic_1317,
+        edamontology:topic_3382 ;
+    edamontology:created_in "beta12orEarlier" ;
+    metadata:prefixIRI "topic_2828"^^xsd:string ;
+    oboInOwl:hasDefinition "The study of matter and their structure by means of the diffraction of X-rays, typically the diffraction pattern caused by the regularly spaced atoms of a crystalline sample." ;
+    oboInOwl:hasExactSynonym "Crystallography" ;
+    oboInOwl:hasHumanReadableId "X-ray_diffraction" ;
+    oboInOwl:hasNarrowSynonym "X-ray crystallography",
+        "X-ray microscopy" ;
+    oboInOwl:inSubset edamontology:bio,
+        edamontology:events,
+        edamontology:topics ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/X-ray_diffraction> .
+
+edamontology:topic_3168 a owl:Class ;
+    rdfs:label "Sequencing" ;
+    rdfs:subClassOf edamontology:topic_3361 ;
+    edamontology:created_in "1.1" ;
+    edamontology:isdebtag true ;
+    metadata:prefixIRI "topic_3168"^^xsd:string ;
+    oboInOwl:hasDefinition "The determination of complete (typically nucleotide) sequences, including those of genomes (full genome sequencing, de novo sequencing and resequencing), amplicons and transcriptomes." ;
+    oboInOwl:hasExactSynonym "DNA-Seq" ;
+    oboInOwl:hasHumanReadableId "Sequencing" ;
+    oboInOwl:hasNarrowSynonym "Chromosome walking",
+        "Clone verification",
+        "DNase-Seq",
+        "High throughput sequencing",
+        "High-throughput sequencing",
+        "Next gen sequencing",
+        "Next generation sequencing",
+        "NGS",
+        "NGS data analysis",
+        "Panels",
+        "Primer walking",
+        "Sanger sequencing",
+        "Targeted next-generation sequencing panels" ;
+    oboInOwl:inSubset edamontology:bio,
+        edamontology:events,
+        edamontology:topics ;
+    rdfs:seeAlso "http://purl.bioontology.org/ontology/MSH/D059014",
+        <https://en.wikipedia.org/wiki/Sequencing> .
+
+edamontology:topic_3169 a owl:Class ;
+    rdfs:label "ChIP-seq" ;
+    rdfs:subClassOf edamontology:topic_3168,
+        edamontology:topic_3656 ;
+    edamontology:created_in "1.1" ;
+    metadata:prefixIRI "topic_3169"^^xsd:string ;
+    oboInOwl:hasDefinition "The analysis of protein-DNA interactions where chromatin immunoprecipitation (ChIP) is used in combination with massively parallel DNA sequencing to identify the binding sites of DNA-associated proteins." ;
+    oboInOwl:hasExactSynonym "Chip Seq",
+        "Chip sequencing",
+        "ChIP-sequencing",
+        "Chip-sequencing" ;
+    oboInOwl:hasHumanReadableId "ChIP-seq" ;
+    oboInOwl:hasNarrowSynonym "ChIP-exo" ;
+    oboInOwl:inSubset edamontology:bio,
+        edamontology:topics ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/ChIP-sequencing> .
+
+edamontology:topic_3170 a owl:Class ;
+    rdfs:label "RNA-Seq" ;
+    rdfs:subClassOf edamontology:topic_3168 ;
+    rdfs:comment "This includes small RNA profiling (small RNA-Seq), for example to find novel small RNAs, characterize mutations and analyze expression of small RNAs." ;
+    edamontology:created_in "1.1" ;
+    metadata:prefixIRI "topic_3170"^^xsd:string ;
+    oboInOwl:hasDefinition "A topic concerning high-throughput sequencing of cDNA to measure the RNA content (transcriptome) of a sample, for example, to investigate how different alleles of a gene are expressed, detect post-transcriptional mutations or identify gene fusions." ;
+    oboInOwl:hasExactSynonym "RNA sequencing",
+        "RNA-Seq analysis",
+        "Small RNA sequencing",
+        "Small RNA-Seq",
+        "Small-Seq",
+        "Transcriptome profiling",
+        "Whole transcriptome shotgun sequencing",
+        "WTSS" ;
+    oboInOwl:hasHumanReadableId "RNA-Seq" ;
+    oboInOwl:hasNarrowSynonym "MicroRNA sequencing",
+        "miRNA-seq" ;
+    oboInOwl:inSubset edamontology:bio,
+        edamontology:topics ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/RNA-Seq>,
+        <https://en.wikipedia.org/wiki/Small_RNA_sequencing> .
+
+edamontology:topic_3179 a owl:Class ;
+    rdfs:label "ChIP-on-chip" ;
+    rdfs:subClassOf edamontology:topic_3656 ;
+    edamontology:created_in "1.1" ;
+    metadata:prefixIRI "topic_3179"^^xsd:string ;
+    oboInOwl:hasDefinition "Experimental techniques that combine chromatin immunoprecipitation ('ChIP') with microarray ('chip'). ChIP-on-chip is used for high-throughput study protein-DNA interactions." ;
+    oboInOwl:hasExactSynonym "ChIP-chip" ;
+    oboInOwl:hasHumanReadableId "ChIP-on-chip" ;
+    oboInOwl:hasNarrowSynonym "ChiP" ;
+    oboInOwl:inSubset edamontology:bio,
+        edamontology:topics ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/ChIP-on-chip> .
+
+edamontology:topic_3361 a owl:Class ;
+    rdfs:label "Laboratory techniques" ;
+    rdfs:subClassOf edamontology:topic_0003 ;
+    edamontology:created_in "1.4" ;
+    metadata:prefixIRI "topic_3361"^^xsd:string ;
+    oboInOwl:hasDefinition "The procedures used to conduct an experiment." ;
+    oboInOwl:hasExactSynonym "Experimental techniques",
+        "Lab method",
+        "Lab techniques",
+        "Laboratory method" ;
+    oboInOwl:hasHumanReadableId "Laboratory_techniques" ;
+    oboInOwl:hasNarrowSynonym "Experiments",
+        "Laboratory experiments" ;
+    oboInOwl:inSubset edamontology:bio,
+        edamontology:events,
+        edamontology:topics ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Laboratory> .
+
+edamontology:topic_3382 a owl:Class ;
+    rdfs:label "Imaging" ;
+    rdfs:subClassOf edamontology:topic_3361 ;
+    rdfs:comment "This includes diffraction experiments that are based upon the interference of waves, typically electromagnetic waves such as X-rays or visible light, by some object being studied, typical in order to produce an image of the object or determine its structure." ;
+    edamontology:created_in "1.4" ;
+    edamontology:isdebtag true ;
+    metadata:prefixIRI "topic_3382"^^xsd:string ;
+    oboInOwl:hasDefinition "The visual representation of an object." ;
+    oboInOwl:hasHumanReadableId "Imaging" ;
+    oboInOwl:hasNarrowSynonym "Diffraction experiment",
+        "Microscopy",
+        "Microscopy imaging",
+        "Optical super resolution microscopy",
+        "Photonic force microscopy",
+        "Photonic microscopy" ;
+    oboInOwl:inSubset edamontology:bio,
+        edamontology:events,
+        edamontology:topics ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Imaging> .
+
+edamontology:topic_3383 a owl:Class ;
+    rdfs:label "Bioimaging" ;
+    rdfs:subClassOf edamontology:topic_3382 ;
+    edamontology:created_in "1.4" ;
+    metadata:prefixIRI "topic_3383"^^xsd:string ;
+    oboInOwl:hasDefinition "The use of imaging techniques to understand biology." ;
+    oboInOwl:hasExactSynonym "Biological imaging" ;
+    oboInOwl:hasHumanReadableId "Biological_imaging" ;
+    oboInOwl:inSubset edamontology:bio,
+        edamontology:events,
+        edamontology:topics ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Biological_imaging> .
+
+edamontology:topic_3384 a owl:Class ;
+    oboInOwl:hasDbXref "VT 3.2.13 Medical imaging",
+        "VT 3.2.14 Nuclear medicine",
+        "VT 3.2.24 Radiology" ;
+    rdfs:label "Medical imaging" ;
+    rdfs:subClassOf edamontology:topic_3382 ;
+    edamontology:created_in "1.4" ;
+    metadata:prefixIRI "topic_3384"^^xsd:string ;
+    oboInOwl:hasDefinition "The use of imaging techniques for clinical purposes for medical research." ;
+    oboInOwl:hasHumanReadableId "Medical_imaging" ;
+    oboInOwl:hasNarrowSynonym "Neuroimaging",
+        "Nuclear medicine",
+        "Radiology" ;
+    oboInOwl:inSubset edamontology:bio,
+        edamontology:events,
+        edamontology:topics ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Medical_imaging> .
+
+edamontology:topic_3385 a owl:Class ;
+    rdfs:label "Light microscopy" ;
+    rdfs:subClassOf edamontology:topic_3382 ;
+    edamontology:created_in "1.4" ;
+    metadata:prefixIRI "topic_3385"^^xsd:string ;
+    oboInOwl:hasDefinition "The use of optical instruments to magnify the image of an object." ;
+    oboInOwl:hasHumanReadableId "Light_microscopy" ;
+    oboInOwl:inSubset edamontology:bio,
+        edamontology:events,
+        edamontology:topics ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Microscopy#Optical_microscopy> .
+
+edamontology:topic_3444 a owl:Class ;
+    rdfs:label "MRI" ;
+    rdfs:subClassOf edamontology:topic_3382 ;
+    edamontology:created_in "1.7" ;
+    metadata:prefixIRI "topic_3444"^^xsd:string ;
+    oboInOwl:hasDefinition "Techniques that uses magnetic fields and radiowaves to form images, typically to investigate the anatomy and physiology of the human body." ;
+    oboInOwl:hasExactSynonym "Magnetic resonance imaging",
+        "Magnetic resonance tomography",
+        "MRT",
+        "NMRI",
+        "Nuclear magnetic resonance imaging" ;
+    oboInOwl:hasHumanReadableId "MRI" ;
+    oboInOwl:inSubset edamontology:bio,
+        edamontology:topics ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Magnetic_resonance_imaging> .
+
+edamontology:topic_3448 a owl:Class ;
+    rdfs:label "Neutron diffraction" ;
+    rdfs:subClassOf edamontology:topic_1317,
+        edamontology:topic_3382 ;
+    edamontology:created_in "1.7" ;
+    metadata:prefixIRI "topic_3448"^^xsd:string ;
+    oboInOwl:hasDefinition "The study of matter by studying the diffraction pattern from firing neutrons at a sample, typically to determine atomic and/or magnetic structure." ;
+    oboInOwl:hasExactSynonym "Neutron diffraction experiment" ;
+    oboInOwl:hasHumanReadableId "Neutron_diffraction" ;
+    oboInOwl:hasNarrowSynonym "Elastic neutron scattering",
+        "Neutron microscopy" ;
+    oboInOwl:inSubset edamontology:bio,
+        edamontology:topics ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Neutron_diffraction> .
+
+edamontology:topic_3452 a owl:Class ;
+    rdfs:label "Tomography" ;
+    rdfs:subClassOf edamontology:topic_3382 ;
+    edamontology:created_in "1.7" ;
+    metadata:prefixIRI "topic_3452"^^xsd:string ;
+    oboInOwl:hasDefinition "Imaging in sections (sectioning), through the use of a wave-generating device (tomograph) that generates an image (a tomogram)." ;
+    oboInOwl:hasExactSynonym "Computed tomography",
+        "CT",
+        "TDM" ;
+    oboInOwl:hasHumanReadableId "Tomography" ;
+    oboInOwl:hasNarrowSynonym "Electron tomography",
+        "PET",
+        "Positron emission tomography",
+        "X-ray tomography" ;
+    oboInOwl:inSubset edamontology:bio,
+        edamontology:topics ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Tomography> .
+
+edamontology:topic_3516 a owl:Class ;
+    rdfs:label "Genotyping experiment" ;
+    rdfs:subClassOf edamontology:topic_3361 ;
+    edamontology:created_in "1.8" ;
+    metadata:prefixIRI "topic_3516"^^xsd:string ;
+    oboInOwl:hasDefinition "Genotype experiment including case control, population, and family studies. These might use array based methods and re-sequencing methods." ;
+    oboInOwl:hasHumanReadableId "Genotyping_experiment" ;
+    oboInOwl:inSubset edamontology:bio,
+        edamontology:topics ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Genotyping> .
+
+edamontology:topic_3518 a owl:Class ;
+    rdfs:label "Microarray experiment" ;
+    rdfs:subClassOf edamontology:topic_3361 ;
+    rdfs:comment "This might specify which raw data file relates to which sample and information on hybridisations, e.g. which are technical and which are biological replicates." ;
+    edamontology:created_in "1.8" ;
+    metadata:prefixIRI "topic_3518"^^xsd:string ;
+    oboInOwl:hasDefinition "Microarray experiments including conditions, protocol, sample:data relationships etc." ;
+    oboInOwl:hasExactSynonym "Microarrays" ;
+    oboInOwl:hasHumanReadableId "Microarray_experiment" ;
+    oboInOwl:hasNarrowSynonym "aCGH microarray",
+        "Gene expression microarray",
+        "Genotyping array",
+        "Methylation array",
+        "MicroRNA array",
+        "miRNA array",
+        "mRNA microarray",
+        "Multichannel microarray",
+        "One channel microarray",
+        "Proprietary platform micoarray",
+        "Reverse phase protein array",
+        "RNA chips",
+        "RNA microarrays",
+        "SNP array",
+        "Tiling arrays",
+        "Tissue microarray",
+        "Two channel microarray" ;
+    oboInOwl:inSubset edamontology:bio,
+        edamontology:topics ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Microarray> .
+
+edamontology:topic_3519 a owl:Class ;
+    rdfs:label "PCR experiment" ;
+    rdfs:subClassOf edamontology:topic_3361 ;
+    edamontology:created_in "1.8" ;
+    metadata:prefixIRI "topic_3519"^^xsd:string ;
+    oboInOwl:hasDefinition "PCR experiments, e.g. quantitative real-time PCR." ;
+    oboInOwl:hasExactSynonym "Polymerase chain reaction" ;
+    oboInOwl:hasHumanReadableId "PCR_experiment" ;
+    oboInOwl:hasNarrowSynonym "Quantitative PCR",
+        "Real Time Quantitative PCR",
+        "RT-qPCR" ;
+    oboInOwl:inSubset edamontology:bio,
+        edamontology:topics ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Polymerase_chain_reaction> .
+
+edamontology:topic_3520 a owl:Class ;
+    rdfs:label "Proteomics experiment" ;
+    rdfs:subClassOf edamontology:topic_3361 ;
+    rdfs:comment "This includes two-dimensional gel electrophoresis (2D PAGE) experiments, gels or spots in a gel. Also mass spectrometry - an analytical chemistry technique that measures the mass-to-charge ratio and abundance of ions in the gas phase. Also Northern blot experiments." ;
+    edamontology:created_in "1.8" ;
+    metadata:prefixIRI "topic_3520"^^xsd:string ;
+    oboInOwl:hasDefinition "Proteomics experiments." ;
+    oboInOwl:hasHumanReadableId "Proteomics_experiment" ;
+    oboInOwl:hasNarrowSynonym "2D PAGE experiment",
+        "Data-independent acquisition",
+        "DIA",
+        "Mass spectrometry",
+        "Mass spectrometry experiments",
+        "MS",
+        "MS experiments",
+        "Northern blot experiment",
+        "Spectrum demultiplexing" ;
+    oboInOwl:inSubset edamontology:bio,
+        edamontology:topics ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Proteomics>,
+        <https://en.wikipedia.org/wiki/Proteomics_Standards_Initiative> .
+
+edamontology:topic_3523 a owl:Class ;
+    rdfs:label "RNAi experiment" ;
+    rdfs:subClassOf edamontology:topic_3361 ;
+    edamontology:created_in "1.8" ;
+    metadata:prefixIRI "topic_3523"^^xsd:string ;
+    oboInOwl:hasDefinition "RNAi experiments." ;
+    oboInOwl:hasHumanReadableId "RNAi_experiment" ;
+    oboInOwl:inSubset edamontology:bio,
+        edamontology:topics ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/RNA_interference> .
+
+edamontology:topic_3524 a owl:Class ;
+    rdfs:label "Simulation experiment" ;
+    rdfs:subClassOf edamontology:topic_3361 ;
+    edamontology:created_in "1.8" ;
+    metadata:prefixIRI "topic_3524"^^xsd:string ;
+    oboInOwl:hasDefinition "Biological computational model experiments (simulation), for example the minimum information required in order to permit its correct interpretation and reproduction." ;
+    oboInOwl:hasHumanReadableId "Simulation_experiment" ;
+    oboInOwl:inSubset edamontology:bio,
+        edamontology:topics .
+
+edamontology:topic_3656 a owl:Class ;
+    rdfs:label "Immunoprecipitation experiment" ;
+    rdfs:subClassOf edamontology:topic_3361 ;
+    edamontology:created_in "1.12" ;
+    metadata:prefixIRI "topic_3656"^^xsd:string ;
+    oboInOwl:hasDefinition "Experimental techniques to purify a protein-DNA crosslinked complex. Usually sequencing follows e.g. in the techniques ChIP-chip, ChIP-seq and MeDIP-seq." ;
+    oboInOwl:hasExactSynonym "Chromatin immunoprecipitation" ;
+    oboInOwl:hasHumanReadableId "Immunoprecipitation_experiment" ;
+    oboInOwl:inSubset edamontology:bio,
+        edamontology:topics ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Immunoprecipitation> .
+
+edamontology:topic_3673 a owl:Class ;
+    rdfs:label "Whole genome sequencing" ;
+    rdfs:subClassOf edamontology:topic_3168 ;
+    edamontology:created_in "1.12" ;
+    metadata:prefixIRI "topic_3673"^^xsd:string ;
+    oboInOwl:hasDefinition "Laboratory technique to sequence the complete DNA sequence of an organism's genome at a single time." ;
+    oboInOwl:hasExactSynonym "Genome sequencing",
+        "WGS" ;
+    oboInOwl:hasHumanReadableId "Whole_genome_sequencing" ;
+    oboInOwl:hasNarrowSynonym "De novo genome sequencing",
+        "Whole genome resequencing" ;
+    oboInOwl:inSubset edamontology:bio,
+        edamontology:topics ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Whole_genome_sequencing> .
+
+edamontology:topic_3674 a owl:Class ;
+    rdfs:label "Methylated DNA immunoprecipitation" ;
+    rdfs:subClassOf edamontology:topic_3656 ;
+    edamontology:created_in "1.12" ;
+    edamontology:documentation <https://en.wikipedia.org/wiki/Whole_genome_sequencing> ;
+    metadata:prefixIRI "topic_3674"^^xsd:string ;
+    oboInOwl:hasDefinition "Laboratory technique to sequence the methylated regions in DNA." ;
+    oboInOwl:hasExactSynonym "mDIP",
+        "MeDIP-chip",
+        "MeDIP-seq" ;
+    oboInOwl:hasHumanReadableId "Methylated_DNA_immunoprecipitation" ;
+    oboInOwl:hasNarrowSynonym "Bisulfite sequencing",
+        "BS-Seq",
+        "MeDIP",
+        "methy-seq",
+        "methyl-seq",
+        "Methylated DNA immunoprecipitation (MeDIP)",
+        "Methylation sequencing",
+        "WGBS",
+        "Whole-genome bisulfite sequencing" ;
+    oboInOwl:inSubset edamontology:bio,
+        edamontology:topics ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Methylated_DNA_immunoprecipitation> .
+
+edamontology:topic_3676 a owl:Class ;
+    rdfs:label "Exome sequencing" ;
+    rdfs:subClassOf edamontology:topic_3168 ;
+    rdfs:comment "Exome sequencing is considered a cheap alternative to whole genome sequencing." ;
+    edamontology:created_in "1.12" ;
+    metadata:prefixIRI "topic_3676"^^xsd:string ;
+    oboInOwl:hasDefinition "Laboratory technique to sequence all the protein-coding regions in a genome, i.e., the exome." ;
+    oboInOwl:hasExactSynonym "Exome",
+        "Exome analysis",
+        "Exome capture",
+        "Targeted exome capture",
+        "WES",
+        "Whole exome sequencing" ;
+    oboInOwl:hasHumanReadableId "Exome_sequencing" ;
+    oboInOwl:inSubset edamontology:bio,
+        edamontology:topics ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Exome_sequencing> .
+
+edamontology:topic_3794 a owl:Class ;
+    rdfs:label "RNA immunoprecipitation" ;
+    rdfs:subClassOf edamontology:topic_3656 ;
+    edamontology:created_in "1.17" ;
+    metadata:prefixIRI "topic_3794"^^xsd:string ;
+    oboInOwl:hasDefinition "An antibody-based technique used to map in vivo RNA-protein interactions." ;
+    oboInOwl:hasExactSynonym "RIP" ;
+    oboInOwl:hasHumanReadableId "RNA_immunoprecipitation" ;
+    oboInOwl:hasNarrowSynonym "CLIP",
+        "CLIP-seq",
+        "HITS-CLIP",
+        "iCLIP",
+        "PAR-CLIP" ;
+    oboInOwl:inSubset edamontology:bio,
+        edamontology:topics ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Immunoprecipitation#RNA_immunoprecipitation_(RIP)> .
+
+edamontology:topic_3837 a owl:Class ;
+    rdfs:label "Metagenomic sequencing" ;
+    rdfs:subClassOf edamontology:topic_3168 ;
+    edamontology:created_in "1.20" ;
+    metadata:prefixIRI "topic_3837"^^xsd:string ;
+    oboInOwl:hasDefinition "Approach which samples, in parallel, all genes in all organisms present in a given sample, e.g. to provide insight into biodiversity and function." ;
+    oboInOwl:hasExactSynonym "Shotgun metagenomic sequencing" ;
+    oboInOwl:hasHumanReadableId "Metagenomic_sequencing" ;
+    oboInOwl:inSubset edamontology:bio,
+        edamontology:topics ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Metagenomics> .
+
+edamontology:topic_3923 a owl:Class ;
+    rdfs:label "Genome resequencing" ;
+    rdfs:subClassOf edamontology:topic_3168 ;
+    rdfs:comment "Amplicon sequencing is the ultra-deep sequencing of PCR products (amplicons), usually for the purpose of efficient genetic variant identification and characterisation in specific genomic regions." ;
+    edamontology:created_in "1.24" ;
+    edamontology:related_term "Amplicon panels" ;
+    metadata:prefixIRI "topic_3923"^^xsd:string ;
+    oboInOwl:hasBroadSynonym "Resequencing" ;
+    oboInOwl:hasDefinition "Laboratory experiment to identify the differences between a specific genome (of an individual) and a reference genome (developed typically from many thousands of individuals). WGS re-sequencing is used as golden standard to detect variations compared to a given reference genome, including small variants (SNP and InDels) as well as larger genome re-organisations (CNVs, translocations, etc.)." ;
+    oboInOwl:hasNarrowSynonym "Highly targeted resequencing",
+        "Whole genome resequencing (WGR)",
+        "Whole-genome re-sequencing (WGSR)" ;
+    oboInOwl:hasRelatedSynonym "Amplicon sequencing",
+        "Amplicon-based sequencing",
+        "Ultra-deep sequencing" .
+
+edamontology:topic_3934 a owl:Class ;
+    rdfs:label "Cytometry" ;
+    rdfs:subClassOf edamontology:topic_3361 ;
+    edamontology:created_in "1.24" ;
+    metadata:prefixIRI "topic_3934"^^xsd:string ;
+    oboInOwl:hasDefinition "Cytometry is the measurement of the characteristics of cells." ;
+    oboInOwl:hasHumanReadableId "Cytometry" ;
+    oboInOwl:hasNarrowSynonym "Flow cytometry",
+        "Image cytometry",
+        "Mass cytometry" ;
+    oboInOwl:inSubset edamontology:bio,
+        edamontology:topics ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Cytometry> .
+
+edamontology:topic_3940 a owl:Class ;
+    rdfs:label "Chromosome conformation capture" ;
+    rdfs:subClassOf edamontology:topic_3361 ;
+    edamontology:created_in "1.24" ;
+    metadata:prefixIRI "topic_3940"^^xsd:string ;
+    oboInOwl:hasDefinition "Molecular biology methods used to analyze the spatial organization of chromatin in a cell." ;
+    oboInOwl:hasExactSynonym "3C technologies",
+        "3C-based methods",
+        "Chromosome conformation analysis" ;
+    oboInOwl:hasHumanReadableId "Chromosome_conformation_capture" ;
+    oboInOwl:hasNarrowSynonym "Chromatin accessibility",
+        "Chromatin accessibility assay" ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Chromosome_conformation_capture> .
+
+edamontology:topic_3954 a owl:Class ;
+    rdfs:label "Echography" ;
+    rdfs:subClassOf edamontology:topic_3382 ;
+    edamontology:created_in "1.24" ;
+    metadata:prefixIRI "topic_3954"^^xsd:string ;
+    oboInOwl:hasDefinition "A diagnostic imaging technique based on the application of ultrasound." ;
+    oboInOwl:hasExactSynonym "Standardized echography",
+        "Ultrasound imaging" ;
+    oboInOwl:hasHumanReadableId "Echography" ;
+    oboInOwl:hasNarrowSynonym "Diagnostic sonography",
+        "Medical ultrasound",
+        "Standard echography",
+        "Ultrasonography" ;
+    oboInOwl:inSubset edamontology:bio,
+        edamontology:topics ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Medical_ultrasound> .
+
+edamontology:topic_3957 a owl:Class ;
+    rdfs:label "Protein interaction experiment" ;
+    rdfs:subClassOf edamontology:topic_3361 ;
+    rdfs:comment "This used to have the ID http://edamontology.org/topic_3557 but the numerical part (owing to an error) duplicated http://edamontology.org/operation_3557 ('Imputation'). ID of this concept set to http://edamontology.org/topic_3957 in EDAM 1.24." ;
+    edamontology:created_in "1.12" ;
+    metadata:prefixIRI "topic_3957"^^xsd:string ;
+    oboInOwl:hasDefinition "An experiment for studying protein-protein interactions." ;
+    oboInOwl:hasHumanReadableId "Protein_interaction_experiment" ;
+    oboInOwl:hasNarrowSynonym "Co-immunoprecipitation",
+        "Phage display",
+        "Yeast one-hybrid",
+        "Yeast two-hybrid" ;
+    oboInOwl:inSubset edamontology:bio,
+        edamontology:topics ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Protein%E2%80%93protein_interaction> .
+
+edamontology:topic_4014 a owl:Class ;
+    rdfs:label "Electroencephalography" ;
+    rdfs:subClassOf edamontology:topic_3300,
+        edamontology:topic_3382 ;
+    edamontology:created_in "1.26" ;
+    metadata:prefixIRI "topic_4014"^^xsd:string ;
+    oboInOwl:hasDefinition "The monitoring method for measuring electrical activity in the brain." ;
+    oboInOwl:hasExactSynonym "EEG" ;
+    oboInOwl:inSubset edamontology:bio,
+        edamontology:topics ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Electroencephalography> .
+
+edamontology:topic_4016 a owl:Class ;
+    rdfs:label "Electrocardiography" ;
+    rdfs:subClassOf edamontology:topic_3300,
+        edamontology:topic_3382 ;
+    edamontology:created_in "1.26" ;
+    metadata:prefixIRI "topic_4016"^^xsd:string ;
+    oboInOwl:hasDefinition "The monitoring method for measuring electrical activity in the heart." ;
+    oboInOwl:hasExactSynonym "ECG",
+        "EKG" ;
+    oboInOwl:inSubset edamontology:bio,
+        edamontology:topics ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Electrocardiography> .
+
+edamontology:topic_4028 a owl:Class ;
+    rdfs:label "Single-Cell Sequencing" ;
+    rdfs:subClassOf edamontology:topic_3168 ;
+    edamontology:created_in "1.26" ;
+    metadata:prefixIRI "topic_4028"^^xsd:string ;
+    oboInOwl:hasDefinition "Combined with NGS (Next Generation Sequencing) technologies, single-cell sequencing allows the study of genetic information (DNA, RNA, epigenome...) at a single cell level. It is often used for differential analysis and gene expression profiling." ;
+    oboInOwl:hasNarrowSynonym "Single Cell Genomics" ;
+    oboInOwl:inSubset edamontology:bio,
+        edamontology:topics ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Single-cell_analysis>,
+        <https://en.wikipedia.org/wiki/Single_cell_sequencing> .
+
+### Serialized using the ttlser deterministic serializer v1.2.0

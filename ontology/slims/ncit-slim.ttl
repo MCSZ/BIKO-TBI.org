@@ -1,0 +1,3167 @@
+@prefix metadata: <http://data.bioontology.org/metadata/> .
+@prefix NCIT: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+### Classes
+
+NCIT:C14181 a owl:Class ;
+    rdfs:label "Animal Virus" ;
+    rdfs:subClassOf NCIT:C14349 ;
+    metadata:prefixIRI "Thesaurus:C14181"^^xsd:string ;
+    NCIT:NHC0 "C14181" ;
+    NCIT:P90 "Animal Virus",
+        "Viruses, Animal" ;
+    NCIT:P97 "An animal pathogen that is a virus." ;
+    NCIT:P106 "Virus" ;
+    NCIT:P108 "Animal Virus" ;
+    NCIT:P207 "C0003060" ;
+    NCIT:P366 "Animal_Virus" .
+
+NCIT:C14182 a owl:Class ;
+    rdfs:label "Animal" ;
+    rdfs:subClassOf NCIT:C25796 ;
+    metadata:prefixIRI "Thesaurus:C14182"^^xsd:string ;
+    NCIT:A8 NCIT:C54447,
+        NCIT:C94849,
+        NCIT:C133805,
+        NCIT:C133862,
+        NCIT:C159501,
+        NCIT:C159503 ;
+    NCIT:NHC0 "C14182" ;
+    NCIT:P90 "ANIMAL",
+        "Animal",
+        "Animalia",
+        "Animals",
+        "Metazoa",
+        "Metazoa Kingdom" ;
+    NCIT:P97 "A living organism that has membranous cell walls, requires oxygen and organic foods, and is capable of voluntary movement, as distinguished from a plant or mineral." ;
+    NCIT:P106 "Animal" ;
+    NCIT:P108 "Animal" ;
+    NCIT:P207 "C0003062" ;
+    NCIT:P322 "BRIDG",
+        "FDA" ;
+    NCIT:P325 "A living organism that has membranous cell walls, requires oxygen and organic foods, and is capable of voluntary movement, as distinguished from a plant or mineral.",
+        "A non-human living organism that has membranous cell walls, requires oxygen and organic foods, and is capable of voluntary movement, as distinguished from a plant or mineral.   EXAMPLE(S): dog, cat, mouse, microorganism  OTHER NAME(S):  NOTE(S):",
+        "A non-human living organism that has membranous cell walls, requires oxygen and organic foods, and is capable of voluntary movement, as distinguished from a plant or mineral. EXAMPLE(S): dog, cat, mouse, microorganism." ;
+    NCIT:P366 "Animal" .
+
+NCIT:C14183 a owl:Class ;
+    rdfs:label "Laboratory Animal" ;
+    rdfs:subClassOf NCIT:C14354 ;
+    metadata:prefixIRI "Thesaurus:C14183"^^xsd:string ;
+    NCIT:NHC0 "C14183" ;
+    NCIT:P90 "Laboratory Animal" ;
+    NCIT:P97 "A grouping of those animals that are commonly used as subjects in laboratory research." ;
+    NCIT:P106 "Animal" ;
+    NCIT:P108 "Laboratory Animal" ;
+    NCIT:P207 "C0003064" ;
+    NCIT:P366 "Laboratory_Animal" .
+
+NCIT:C14187 a owl:Class ;
+    rdfs:label "Bacteria" ;
+    rdfs:subClassOf NCIT:C14250 ;
+    metadata:prefixIRI "Thesaurus:C14187"^^xsd:string ;
+    NCIT:A8 NCIT:C61410,
+        NCIT:C66830,
+        NCIT:C77526,
+        NCIT:C85491,
+        NCIT:C90259,
+        NCIT:C128453,
+        NCIT:C158119,
+        NCIT:C173217,
+        NCIT:C174019,
+        NCIT:C178115,
+        NCIT:C178127,
+        NCIT:C186334,
+        NCIT:C186341 ;
+    NCIT:A24 NCIT:C185665 ;
+    NCIT:A35 NCIT:C185665 ;
+    NCIT:NHC0 "C14187" ;
+    NCIT:P90 "BACTERIA",
+        "Bacteria",
+        "bacteria",
+        "Bacteria, Eubacteria",
+        "Bacterium",
+        "Eubacteria" ;
+    NCIT:P97 "Unicellular, prokaryotic organisms that reproduce by cell division and usually have cell walls; can be shaped like spheres, rods or spirals and can be found in virtually any environment." ;
+    NCIT:P106 "Bacterium" ;
+    NCIT:P108 "Bacteria" ;
+    NCIT:P207 "C0004611" ;
+    NCIT:P322 "CDISC",
+        "NICHD",
+        "PCDC" ;
+    NCIT:P325 "A large group of single-cell microorganisms.  Some cause infections and disease in animals and humans.  The singular of bacteria is bacterium.",
+        "A unicellular, prokaryotic organism that reproduces by cell division and usually has cell walls; can be shaped like spheres, rods, or spirals; and can be found in virtually any environment.",
+        "Any organism assigned to the kingdom Bacteria." ;
+    NCIT:P331 "2" ;
+    NCIT:P366 "Bacteria" .
+
+NCIT:C14188 a owl:Class ;
+    rdfs:label "Bacteriophage" ;
+    rdfs:subClassOf NCIT:C14349 ;
+    metadata:prefixIRI "Thesaurus:C14188"^^xsd:string ;
+    NCIT:NHC0 "C14188" ;
+    NCIT:P90 "Bacteriophage",
+        "Phage",
+        "Viruses, Bacterial" ;
+    NCIT:P97 "A non-taxonomic grouping of viruses that infect and lyse certain bacteria and archaea." ;
+    NCIT:P106 "Virus" ;
+    NCIT:P108 "Bacteriophage" ;
+    NCIT:P207 "C0004651" ;
+    NCIT:P366 "Bacteriophage" .
+
+NCIT:C14194 a owl:Class ;
+    rdfs:label "Chimera" ;
+    rdfs:subClassOf NCIT:C14376 ;
+    metadata:prefixIRI "Thesaurus:C14194"^^xsd:string ;
+    NCIT:NHC0 "C14194" ;
+    NCIT:P90 "Chimera",
+        "Chimeric",
+        "chimeric" ;
+    NCIT:P97 "An organism with tissues derived from two or more genotypes; composed of parts that are of different origin." ;
+    NCIT:P98 "A chimera may develop naturally by somatic cell mutation or be created artificially." ;
+    NCIT:P106 "Organism" ;
+    NCIT:P108 "Chimera" ;
+    NCIT:P207 "C0008109" ;
+    NCIT:P325 "Having parts of different origins. In medicine, refers to a person, organ, or tissue that contains cells with different genes than the rest of the person, organ, or tissue. This may happen because of a mutation (genetic change) that occurs during development, or as a result of a transplant of cells, organs, or tissues from another person or from a different species. In the laboratory, a chimeric protein can be made by combining two different genes. For example, a chimeric antibody is made by joining antibody genes from two different species, such as human and mouse." ;
+    NCIT:P366 "Chimera" .
+
+NCIT:C14198 a owl:Class ;
+    rdfs:label "Disease Vector" ;
+    rdfs:subClassOf NCIT:C14316 ;
+    metadata:prefixIRI "Thesaurus:C14198"^^xsd:string ;
+    NCIT:A8 NCIT:C90259,
+        NCIT:C128453 ;
+    NCIT:NHC0 "C14198" ;
+    NCIT:P90 "Disease Vector",
+        "Disease Vectors",
+        "Vector",
+        "Vector (Infectious Agent)" ;
+    NCIT:P97 "An invertebrate animal (e.g., tick, mite, mosquito, bloodsucking fly) capable of transmitting an infectious agent among vertebrates." ;
+    NCIT:P106 "Eukaryote" ;
+    NCIT:P108 "Disease Vector" ;
+    NCIT:P207 "C0012656" ;
+    NCIT:P322 "NICHD" ;
+    NCIT:P325 "An organism that can carry and transmit a pathogen to another organism." ;
+    NCIT:P366 "Disease_Vector" .
+
+NCIT:C14200 a owl:Class ;
+    rdfs:label "DNA Virus" ;
+    rdfs:subClassOf NCIT:C14283 ;
+    metadata:prefixIRI "Thesaurus:C14200"^^xsd:string ;
+    NCIT:NHC0 "C14200" ;
+    NCIT:P90 "DNA Virus",
+        "Virus, DNA",
+        "Virus-DNA",
+        "Viruses, DNA" ;
+    NCIT:P97 "A virus that has DNA as its genetic material and does not use an RNA intermediate during replication." ;
+    NCIT:P106 "Virus" ;
+    NCIT:P108 "DNA Virus" ;
+    NCIT:P207 "C0012923" ;
+    NCIT:P366 "DNA_Virus" .
+
+NCIT:C14209 a owl:Class ;
+    rdfs:label "Fungus" ;
+    rdfs:subClassOf NCIT:C25796 ;
+    metadata:prefixIRI "Thesaurus:C14209"^^xsd:string ;
+    NCIT:A8 NCIT:C61410,
+        NCIT:C66830,
+        NCIT:C77526,
+        NCIT:C85491,
+        NCIT:C90259,
+        NCIT:C128453,
+        NCIT:C158119,
+        NCIT:C173217,
+        NCIT:C174019,
+        NCIT:C178115,
+        NCIT:C178127,
+        NCIT:C186334,
+        NCIT:C186341 ;
+    NCIT:A24 NCIT:C185665 ;
+    NCIT:A35 NCIT:C185665 ;
+    NCIT:NHC0 "C14209" ;
+    NCIT:P90 "FUNGI",
+        "Fungi",
+        "FUNGUS",
+        "Fungus",
+        "fungus" ;
+    NCIT:P97 "A kingdom of eukaryotic, heterotrophic organisms that live as saprobes or parasites, including mushrooms, yeasts, smuts, molds, etc. They reproduce either sexually or asexually, and have life cycles that range from simple to complex. Filamentous fungi refer to those that grow as multicellular colonies (mushrooms and molds)." ;
+    NCIT:P106 "Fungus" ;
+    NCIT:P108 "Fungus" ;
+    NCIT:P207 "C0016832" ;
+    NCIT:P317 "Patient Code (Appendix B)" ;
+    NCIT:P322 "CDISC",
+        "FDA",
+        "NICHD",
+        "PCDC" ;
+    NCIT:P325 "A eukaryotic, heterotrophic organism that lives as a saprobe or parasite, and includes yeasts and molds. It reproduces either sexually or asexually, and has a life cycle that ranges from simple to complex.",
+        "A plant-like organism that does not make chlorophyll.  Mushrooms, yeasts, and molds are examples.  The plural is fungi.",
+        "Any organism assigned to the kingdom Fungi." ;
+    NCIT:P331 "4751" ;
+    NCIT:P366 "Fungi" .
+
+NCIT:C14214 a owl:Class ;
+    rdfs:label "Hepadnavirus" ;
+    rdfs:subClassOf NCIT:C14348,
+        NCIT:C54085 ;
+    metadata:prefixIRI "Thesaurus:C14214"^^xsd:string ;
+    NCIT:NHC0 "C14214" ;
+    NCIT:P90 "Hepadnavirus" ;
+    NCIT:P97 "A family of hepatotropic DNA viruses which contains double-stranded DNA genomes and causes hepatitis in humans and animals. Contains two genera: avihepadnavirus and orthohepadnavirus." ;
+    NCIT:P98 "The Hepadnavirus Family derives its name from its hepatotropic nature and double-stranded DNA genome. The hepadnaviral genome is unique in that the plus strand is incomplete, leaving 15-50% of the molecule single-stranded and the minus strand while being complete, possesses a discontinuity at a unique site. The hepatitis B virus (HBV) is the only causative agent for a human disease within the family. (http://www.stanford.edu/group/virus/hepadna/2000/hepadnavirus.html)" ;
+    NCIT:P106 "Virus" ;
+    NCIT:P108 "Hepadnavirus" ;
+    NCIT:P207 "C0019132" ;
+    NCIT:P331 "10404" ;
+    NCIT:P366 "Hepadnavirus" .
+
+NCIT:C14216 a owl:Class ;
+    rdfs:label "Hepatitis Virus" ;
+    rdfs:subClassOf NCIT:C14349 ;
+    metadata:prefixIRI "Thesaurus:C14216"^^xsd:string ;
+    NCIT:NHC0 "C14216" ;
+    NCIT:P90 "Hepatitis Virus" ;
+    NCIT:P97 "A non-taxonomic classification of unrelated viruses that cause liver inflammation and dysfunction." ;
+    NCIT:P106 "Virus" ;
+    NCIT:P108 "Hepatitis Virus" ;
+    NCIT:P207 "C0019186" ;
+    NCIT:P366 "Hepatitis_Virus" .
+
+NCIT:C14228 a owl:Class ;
+    rdfs:label "Invertebrate" ;
+    rdfs:subClassOf NCIT:C14376 ;
+    metadata:prefixIRI "Thesaurus:C14228"^^xsd:string ;
+    NCIT:NHC0 "C14228" ;
+    NCIT:P90 "Invertebrata",
+        "Invertebrate",
+        "Invertebrates",
+        "Invertebrates, General" ;
+    NCIT:P97 "An animal lacking a vertebral column. This group consists of 98% of all animal species." ;
+    NCIT:P106 "Eukaryote" ;
+    NCIT:P108 "Invertebrate" ;
+    NCIT:P207 "C0021948" ;
+    NCIT:P366 "Invertebrate" .
+
+NCIT:C14248 a owl:Class ;
+    rdfs:label "Nematoda" ;
+    rdfs:subClassOf NCIT:C14182 ;
+    metadata:prefixIRI "Thesaurus:C14248"^^xsd:string ;
+    NCIT:A8 NCIT:C61410,
+        NCIT:C66830,
+        NCIT:C85491 ;
+    NCIT:NHC0 "C14248" ;
+    NCIT:P90 "NEMATODA",
+        "Nematoda",
+        "Nematode",
+        "Roundworm",
+        "Roundworms" ;
+    NCIT:P97 "The taxonomic class whose members are unsegmented worms with an elongated rounded body pointed at both ends." ;
+    NCIT:P106 "Animal" ;
+    NCIT:P108 "Nematoda" ;
+    NCIT:P207 "C0027581" ;
+    NCIT:P322 "CDISC" ;
+    NCIT:P325 "Any parasitic roundworm that is not assigned to the species level but can be assigned to the Nematoda phylum level." ;
+    NCIT:P331 "6231" ;
+    NCIT:P366 "Nematodes" .
+
+NCIT:C14249 a owl:Class ;
+    rdfs:label "Tumor Virus" ;
+    rdfs:subClassOf NCIT:C14349 ;
+    metadata:prefixIRI "Thesaurus:C14249"^^xsd:string ;
+    NCIT:NHC0 "C14249" ;
+    NCIT:P90 "Oncogenic Virus",
+        "Tumor Virus",
+        "Tumor Viruses" ;
+    NCIT:P97 "A virus capable of transforming a cell to a malignant phenotype. (BioTech Life Science Dictionary)" ;
+    NCIT:P106 "Virus" ;
+    NCIT:P108 "Tumor Virus" ;
+    NCIT:P207 "C0029017" ;
+    NCIT:P366 "Tumor_Virus" .
+
+NCIT:C14250 a owl:Class ;
+    rdfs:label "Organism" ;
+    rdfs:subClassOf owl:Thing ;
+    owl:disjointWith NCIT:C1908,
+        NCIT:C3910,
+        NCIT:C7057,
+        NCIT:C16612,
+        NCIT:C17828,
+        NCIT:C20047,
+        NCIT:C20181,
+        NCIT:C20189,
+        NCIT:C20633,
+        NCIT:C22187,
+        NCIT:C22188,
+        NCIT:C26548,
+        NCIT:C28428,
+        NCIT:C43431,
+        NCIT:C97325 ;
+    metadata:prefixIRI "Thesaurus:C14250"^^xsd:string ;
+    NCIT:A8 NCIT:C90259,
+        NCIT:C159501,
+        NCIT:C159503 ;
+    NCIT:NHC0 "C14250" ;
+    NCIT:P90 "BiologicEntity",
+        "Organism",
+        "organism",
+        "Organismal",
+        "Organisms",
+        "Taxon" ;
+    NCIT:P97 "A living entity." ;
+    NCIT:P106 "Organism" ;
+    NCIT:P108 "Organism" ;
+    NCIT:P207 "C0029235" ;
+    NCIT:P322 "BRIDG",
+        "NICHD" ;
+    NCIT:P325 "A living thing, such as an animal, a plant, a bacterium, or a fungus.",
+        "Any individual living (or previously living) being. EXAMPLE(S): animal, human being" ;
+    NCIT:P366 "Organisms" .
+
+NCIT:C14257 a owl:Class ;
+    rdfs:label "Plant Virus" ;
+    rdfs:subClassOf NCIT:C14349 ;
+    metadata:prefixIRI "Thesaurus:C14257"^^xsd:string ;
+    NCIT:NHC0 "C14257" ;
+    NCIT:P90 "Plant Virus",
+        "Viruses, Plant" ;
+    NCIT:P97 "Viruses that replicate in and may produce diseases of higher plants." ;
+    NCIT:P106 "Virus" ;
+    NCIT:P108 "Plant Virus" ;
+    NCIT:P207 "C0032092" ;
+    NCIT:P366 "Plant_Virus" .
+
+NCIT:C14258 a owl:Class ;
+    rdfs:label "Plant" ;
+    rdfs:subClassOf NCIT:C25796 ;
+    metadata:prefixIRI "Thesaurus:C14258"^^xsd:string ;
+    NCIT:A8 NCIT:C133805,
+        NCIT:C133862 ;
+    NCIT:NHC0 "C14258" ;
+    NCIT:P90 "Plant",
+        "Plants",
+        "Plants, General",
+        "Viridiplantae" ;
+    NCIT:P97 "Any living organism that typically synthesizes its food from inorganic substances, possesses cellulose cell walls, responds slowly and often permanently to a stimulus, lacks specialized sense organs and nervous system, and has no powers of locomotion. (EPA Terminology Reference System)" ;
+    NCIT:P106 "Plant" ;
+    NCIT:P108 "Plant" ;
+    NCIT:P207 "C0032098" ;
+    NCIT:P322 "FDA" ;
+    NCIT:P325 "Any living organism that typically synthesizes its food from inorganic substances, possesses cellulose cell walls, responds slowly and often permanently to a stimulus, lacks specialized sense organs and nervous system, and has no powers of locomotion. (EPA Terminology Reference System)" ;
+    NCIT:P331 "33090" ;
+    NCIT:P366 "Plant" .
+
+NCIT:C14263 a owl:Class ;
+    rdfs:label "Prokaryote" ;
+    rdfs:subClassOf NCIT:C14376 ;
+    metadata:prefixIRI "Thesaurus:C14263"^^xsd:string ;
+    NCIT:NHC0 "C14263" ;
+    NCIT:P90 "Prokaryote",
+        "Prokaryotes",
+        "Prokaryotic Cells" ;
+    NCIT:P97 "Organisms without a cell nucleus or any other membrane-bound organelles. Most prokaryotes are bacteria but the group includes both the Bacteria and the Archaea. Eukaryota, Bacteria, and Archaea are now considered the top nodes of a three-domain taxonomy system." ;
+    NCIT:P106 "Organism" ;
+    NCIT:P108 "Prokaryote" ;
+    NCIT:P207 "C0686817" ;
+    NCIT:P366 "Prokaryote" .
+
+NCIT:C14268 a owl:Class ;
+    rdfs:label "Retroviridae" ;
+    rdfs:subClassOf NCIT:C14351,
+        NCIT:C54085 ;
+    metadata:prefixIRI "Thesaurus:C14268"^^xsd:string ;
+    NCIT:NHC0 "C14268" ;
+    NCIT:P90 "Retroviridae",
+        "Retrovirus",
+        "retrovirus",
+        "Retroviruses",
+        "Virus-Retrovirus" ;
+    NCIT:P97 "A family of viruses that possess RNA-dependent DNA polymerases (reverse transcriptases) and contain two identical molecules of positive sense, single-stranded RNA of high molecular weight.  This RNA serves as a template for the synthesis of a complementary DNA, which may be integrated into the host DNA. Virions are enveloped." ;
+    NCIT:P98 "This family of viruses resembles the orthomyxoviruses in size and shape, but are structurally more complex." ;
+    NCIT:P106 "Virus" ;
+    NCIT:P108 "Retroviridae" ;
+    NCIT:P207 "C0035366" ;
+    NCIT:P325 "A type of virus that has RNA instead of DNA as its genetic material. It uses an enzyme called reverse transcriptase to become part of the host cells' DNA. This allows many copies of the virus to be made in the host cells. The virus that causes AIDS, the human immunodeficiency virus (HIV), is a type of retrovirus." ;
+    NCIT:P331 "11632" ;
+    NCIT:P366 "Retroviridae" .
+
+NCIT:C14269 a owl:Class ;
+    rdfs:label "RNA Virus" ;
+    rdfs:subClassOf NCIT:C14283 ;
+    metadata:prefixIRI "Thesaurus:C14269"^^xsd:string ;
+    NCIT:NHC0 "C14269" ;
+    NCIT:P90 "RNA Virus",
+        "Virus-RNA",
+        "Viruses, RNA" ;
+    NCIT:P97 "A virus whose genome consists of RNA." ;
+    NCIT:P106 "Virus" ;
+    NCIT:P108 "RNA Virus" ;
+    NCIT:P207 "C0035691" ;
+    NCIT:P366 "RNA_Virus" .
+
+NCIT:C14275 a owl:Class ;
+    rdfs:label "Specific Pathogen Free Organism" ;
+    rdfs:subClassOf NCIT:C14354 ;
+    metadata:prefixIRI "Thesaurus:C14275"^^xsd:string ;
+    NCIT:NHC0 "C14275" ;
+    NCIT:P90 "Specific Pathogen Free Organism",
+        "Specific-Pathogen-Free Organism",
+        "SPF Organism" ;
+    NCIT:P97 "An organism that is born and reared in an environment that is lacking a select individual disease-causing organism or a whole class of pathogens." ;
+    NCIT:P106 "Organism" ;
+    NCIT:P108 "Specific Pathogen Free Organism" ;
+    NCIT:P207 "C0037788" ;
+    NCIT:P366 "Specific_Pathogen_Free_Organism" .
+
+NCIT:C14282 a owl:Class ;
+    rdfs:label "Vertebrata" ;
+    rdfs:subClassOf NCIT:C14182 ;
+    metadata:prefixIRI "Thesaurus:C14282"^^xsd:string ;
+    NCIT:NHC0 "C14282" ;
+    NCIT:P90 "Vertebrata",
+        "Vertebrate",
+        "Vertebrate Animals",
+        "Vertebrates" ;
+    NCIT:P97 "A subphylum of animals consisting of those having a bony or cartilaginous vertebral column." ;
+    NCIT:P106 "Vertebrate" ;
+    NCIT:P108 "Vertebrata" ;
+    NCIT:P207 "C0042567" ;
+    NCIT:P331 "7742" ;
+    NCIT:P366 "Vertebrate" .
+
+NCIT:C14283 a owl:Class ;
+    rdfs:label "Virus" ;
+    rdfs:subClassOf NCIT:C14250 ;
+    metadata:prefixIRI "Thesaurus:C14283"^^xsd:string ;
+    NCIT:A8 NCIT:C61410,
+        NCIT:C77526,
+        NCIT:C90259,
+        NCIT:C128453,
+        NCIT:C158119,
+        NCIT:C173217,
+        NCIT:C174019,
+        NCIT:C178115,
+        NCIT:C178127,
+        NCIT:C186334,
+        NCIT:C186341 ;
+    NCIT:A24 NCIT:C185665 ;
+    NCIT:A35 NCIT:C185665 ;
+    NCIT:NHC0 "C14283" ;
+    NCIT:P90 "VIRUS",
+        "Virus",
+        "virus",
+        "Viruses",
+        "Viruses, General" ;
+    NCIT:P97 "An infectious agent which consists of two parts, genetic material and a protein coat. These organisms lack independent metabolism, and they must infect the cells of other types of organisms to reproduce. Most viruses are capable of passing through fine filters that retain bacteria, and are not visible through a light microscope." ;
+    NCIT:P98 "Some viruses have a third component, a lipid envelope that surrounds the protein coat which can protect the virus particle from environmental exposure.",
+        "The complete particle usually contains only DNA or RNA, not both, and is usually covered by a protein shell or capsid that protects the nucleic acid. They range in size from 15 um up to several hundred um. Classification of viruses depends upon characteristics of virions as well as upon mode of transmission, host range, symptomatology, and other factors." ;
+    NCIT:P106 "Virus" ;
+    NCIT:P108 "Virus" ;
+    NCIT:P207 "C0042776" ;
+    NCIT:P317 "Patient Code (Appendix B)" ;
+    NCIT:P322 "CDISC",
+        "FDA",
+        "NICHD",
+        "PCDC" ;
+    NCIT:P325 "An infectious agent that comprises two parts: genetic material and a protein coat. These organisms lack independent metabolism, and they must infect the cells of other types of organisms to reproduce.",
+        "Any infectious agent assigned to the superkingdom Virus.",
+        "In medicine, a very simple microorganism that infects cells and may cause disease. Because viruses can multiply only inside infected cells, they are not considered to be alive." ;
+    NCIT:P331 "10239" ;
+    NCIT:P366 "Virus" .
+
+NCIT:C14286 a owl:Class ;
+    rdfs:label "Yeast" ;
+    rdfs:subClassOf NCIT:C14209 ;
+    metadata:prefixIRI "Thesaurus:C14286"^^xsd:string ;
+    NCIT:A8 NCIT:C61410,
+        NCIT:C66830,
+        NCIT:C85491,
+        NCIT:C90259,
+        NCIT:C128453 ;
+    NCIT:NHC0 "C14286" ;
+    NCIT:P90 "YEAST",
+        "Yeast" ;
+    NCIT:P97 "Various single-celled members of the fungal families, ascomycetes, basidiomycetes and imperfect fungi that tend to be unicellular for the greater part of their life cycle." ;
+    NCIT:P106 "Fungus" ;
+    NCIT:P108 "Yeast" ;
+    NCIT:P207 "C0043393" ;
+    NCIT:P322 "CDISC",
+        "NICHD" ;
+    NCIT:P325 "A unicellular fungus that reproduces by mitosis or budding.",
+        "Any of various single-celled ascomycetes, basidiomycetes and imperfect fungi with little or no mycelium development that asexually reproduce by budding. They ferment sugars to produce alcohol and carbon dioxide." ;
+    NCIT:P366 "Yeast" .
+
+NCIT:C14316 a owl:Class ;
+    rdfs:label "Infectious Agent" ;
+    rdfs:subClassOf NCIT:C14376 ;
+    metadata:prefixIRI "Thesaurus:C14316"^^xsd:string ;
+    NCIT:A8 NCIT:C159501,
+        NCIT:C159502 ;
+    NCIT:NHC0 "C14316" ;
+    NCIT:P90 "Infectious Agent",
+        "Infectious Agents",
+        "infectiousAgent",
+        "Infective Agent" ;
+    NCIT:P97 "Any organism, such as a virus, parasite, or bacterium, that is capable of invading body tissues and multiplying." ;
+    NCIT:P106 "Organism" ;
+    NCIT:P108 "Infectious Agent" ;
+    NCIT:P207 "C0314732" ;
+    NCIT:P322 "BRIDG" ;
+    NCIT:P366 "Infectious_Agent" .
+
+NCIT:C14317 a owl:Class ;
+    rdfs:label "Human Virus" ;
+    rdfs:subClassOf NCIT:C14349 ;
+    metadata:prefixIRI "Thesaurus:C14317"^^xsd:string ;
+    NCIT:NHC0 "C14317" ;
+    NCIT:P90 "Human Virus",
+        "Viruses, Human" ;
+    NCIT:P97 "Viruses which routinely infect humans" ;
+    NCIT:P106 "Virus" ;
+    NCIT:P108 "Human Virus" ;
+    NCIT:P207 "C0318356" ;
+    NCIT:P366 "Human_Virus" .
+
+NCIT:C14320 a owl:Class ;
+    rdfs:label "Poikilotherms" ;
+    rdfs:subClassOf NCIT:C14376 ;
+    metadata:prefixIRI "Thesaurus:C14320"^^xsd:string ;
+    NCIT:NHC0 "C14320" ;
+    NCIT:P90 "Poikilotherms" ;
+    NCIT:P97 "Animals which have a body temperature which is largely controlled by external factors of the environment." ;
+    NCIT:P106 "Animal" ;
+    NCIT:P108 "Poikilotherms" ;
+    NCIT:P207 "C0324044" ;
+    NCIT:P366 "Poikilotherms" .
+
+NCIT:C14329 a owl:Class ;
+    rdfs:label "Microorganism" ;
+    rdfs:subClassOf NCIT:C14376 ;
+    metadata:prefixIRI "Thesaurus:C14329"^^xsd:string ;
+    NCIT:A8 NCIT:C90259,
+        NCIT:C116977,
+        NCIT:C128453,
+        NCIT:C133805,
+        NCIT:C133862,
+        NCIT:C142799 ;
+    NCIT:NHC0 "C14329" ;
+    NCIT:P90 "Micro-organism",
+        "Microbe",
+        "Microbial",
+        "Microorganism",
+        "microorganism",
+        "Microorganisms",
+        "Microorganisms, General",
+        "Single-Celled Organism" ;
+    NCIT:P97 "A microscopic organism. The term microorganism may refer to a prokaryote or eukaryote, and may be a unicellular or multicellular organism. All taxonomic kingdoms contain microorganisms." ;
+    NCIT:P106 "Organism" ;
+    NCIT:P107 "Microorganism" ;
+    NCIT:P108 "Microorganism" ;
+    NCIT:P207 "C0445623" ;
+    NCIT:P322 "CTRP",
+        "FDA",
+        "NICHD" ;
+    NCIT:P325 "A microscopic organism capable of causing disease in humans, plants, or animals. Most microbes are classified into one of four major groups: bacteria, viruses, fungi, or protozoa.",
+        "A microscopic organism. The term microorganism may refer to a prokaryote or eukaryote, and may be a unicellular or multicellular organism. All taxonomic kingdoms contain microorganisms.",
+        "An organism that can be seen only through a microscope. Microorganisms include bacteria, protozoa, algae, and fungi. Although viruses are not considered living organisms, they are sometimes classified as microorganisms." ;
+    NCIT:P366 "Microorganism" .
+
+NCIT:C14333 a owl:Class ;
+    rdfs:label "Marine Organism" ;
+    rdfs:subClassOf NCIT:C14376 ;
+    metadata:prefixIRI "Thesaurus:C14333"^^xsd:string ;
+    NCIT:NHC0 "C14333" ;
+    NCIT:P90 "Marine Organism" ;
+    NCIT:P97 "Any organism that lives in the sea" ;
+    NCIT:P106 "Organism" ;
+    NCIT:P108 "Marine Organism" ;
+    NCIT:P207 "C0599383" ;
+    NCIT:P366 "Marine_Organism" .
+
+NCIT:C14334 a owl:Class ;
+    rdfs:label "Endogenous Retrovirus" ;
+    rdfs:subClassOf NCIT:C14349 ;
+    metadata:prefixIRI "Thesaurus:C14334"^^xsd:string ;
+    NCIT:A8 NCIT:C61410,
+        NCIT:C66830,
+        NCIT:C181176 ;
+    NCIT:NHC0 "C14334" ;
+    NCIT:P90 "ENDOGENOUS RETROVIRUS",
+        "Endogenous Retrovirus",
+        "ERV" ;
+    NCIT:P97 "Genetic elements propagated primarily through the germline, with a proviral structure, i.e. the chromosomally-integrated form of retroviruses and regulated by cellular processes.  Could be involved in development and serve as progenitors to pathogenic retroviruses.  Classified as ecotropic or xenotropic.  Ecotropic viruses can be transmitted to cells of the same species and can produce malignancies. Xenotropic viruses cannot infect cells from their host species but are infectious in heterologous species.  Cycles of transcription and reverse transcription make the elements mobile and mutagenic." ;
+    NCIT:P106 "Virus" ;
+    NCIT:P108 "Endogenous Retrovirus" ;
+    NCIT:P207 "C0600466" ;
+    NCIT:P322 "CDISC" ;
+    NCIT:P325 "Integrated retroviral elements that are transmitted through the germline. (HGNC)" ;
+    NCIT:P366 "Endogenous_Retrovirus" .
+
+NCIT:C14336 a owl:Class ;
+    rdfs:label "Vascular Plant" ;
+    rdfs:subClassOf NCIT:C14258 ;
+    metadata:prefixIRI "Thesaurus:C14336"^^xsd:string ;
+    NCIT:NHC0 "C14336" ;
+    NCIT:P90 "Higher Plant",
+        "Plants, Vascular",
+        "Tracheobionta",
+        "Tracheophytes",
+        "Vascular Plant" ;
+    NCIT:P97 "The flowering herbs, shrubs, trees and ferns.  These plants have vascular tissue, consisting of xylem, which carries water and nutrients from the roots up the stem to the leaves, and the phloem, which carries sugar produced in the leaves to other parts of the plant." ;
+    NCIT:P106 "Plant" ;
+    NCIT:P108 "Vascular Plant" ;
+    NCIT:P207 "C0682475" ;
+    NCIT:P331 "58023" ;
+    NCIT:P366 "Vascular_Plant" .
+
+NCIT:C14340 a owl:Class ;
+    rdfs:label "Non-Vascular Plant" ;
+    rdfs:subClassOf NCIT:C14258 ;
+    metadata:prefixIRI "Thesaurus:C14340"^^xsd:string ;
+    NCIT:NHC0 "C14340" ;
+    NCIT:P90 "Bryophyte",
+        "Non-tracheophytes",
+        "Non-Vascular Plant",
+        "Plants, Non-Vascular" ;
+    NCIT:P97 "A plant that does not have vascular tubes/tissues to transport food and water.  It belongs to the division Bryophyta, which includes liverwort, and moss." ;
+    NCIT:P106 "Plant" ;
+    NCIT:P108 "Non-Vascular Plant" ;
+    NCIT:P207 "C0331705" ;
+    NCIT:P366 "Non-Vascular_Plant" .
+
+NCIT:C14341 a owl:Class ;
+    rdfs:label "Primate Retrovirus" ;
+    rdfs:subClassOf NCIT:C14349 ;
+    metadata:prefixIRI "Thesaurus:C14341"^^xsd:string ;
+    NCIT:NHC0 "C14341" ;
+    NCIT:P90 "Primate Retrovirus" ;
+    NCIT:P97 "An RNA containing virus infecting primates (SIV, STLV, SFV)." ;
+    NCIT:P106 "Virus" ;
+    NCIT:P108 "Primate Retrovirus" ;
+    NCIT:P207 "C1514432" ;
+    NCIT:P366 "Primate_Retrovirus" .
+
+NCIT:C14346 a owl:Class ;
+    rdfs:label "Negative Sense ssRNA Virus" ;
+    rdfs:subClassOf NCIT:C14269 ;
+    metadata:prefixIRI "Thesaurus:C14346"^^xsd:string ;
+    NCIT:NHC0 "C14346" ;
+    NCIT:P90 "(-) Strand ssRNA Virus",
+        "Negative Sense ssRNA Virus",
+        "Negative Strand ssRNA Virus",
+        "ssRNA Virus, (-) Strand" ;
+    NCIT:P97 "A single stranded RNA virus where the RNA strand is the complement of a mRNA." ;
+    NCIT:P106 "Virus" ;
+    NCIT:P108 "Negative Sense ssRNA Virus" ;
+    NCIT:P207 "C1093214" ;
+    NCIT:P331 "35301" ;
+    NCIT:P366 "ssRNA_Virus_Strand" .
+
+NCIT:C14348 a owl:Class ;
+    rdfs:label "Double Stranded DNA Virus" ;
+    rdfs:subClassOf NCIT:C14200 ;
+    metadata:prefixIRI "Thesaurus:C14348"^^xsd:string ;
+    NCIT:NHC0 "C14348" ;
+    NCIT:P90 "Double Stranded DNA Virus",
+        "dsDNA Virus" ;
+    NCIT:P97 "A virus that has double stranded DNA as its genetic material." ;
+    NCIT:P106 "Virus" ;
+    NCIT:P108 "Double Stranded DNA Virus" ;
+    NCIT:P207 "C1512048" ;
+    NCIT:P331 "35237" ;
+    NCIT:P366 "Double_Stranded_DNA_Virus" .
+
+NCIT:C14349 a owl:Class ;
+    rdfs:label "Other Virus Grouping" ;
+    rdfs:subClassOf NCIT:C14283 ;
+    metadata:prefixIRI "Thesaurus:C14349"^^xsd:string ;
+    NCIT:NHC0 "C14349" ;
+    NCIT:P90 "Other Virus Grouping" ;
+    NCIT:P97 "A non-taxonomic grouping of viruses based on a shared characteristic." ;
+    NCIT:P106 "Virus" ;
+    NCIT:P108 "Other Virus Grouping" ;
+    NCIT:P207 "C1518674" ;
+    NCIT:P366 "Other_Virus_Grouping" .
+
+NCIT:C14350 a owl:Class ;
+    rdfs:label "Single Stranded DNA Virus" ;
+    rdfs:subClassOf NCIT:C14200 ;
+    metadata:prefixIRI "Thesaurus:C14350"^^xsd:string ;
+    NCIT:NHC0 "C14350" ;
+    NCIT:P90 "Single Stranded DNA Virus",
+        "ssDNA Virus" ;
+    NCIT:P97 "A virus that has single stranded DNA as its genetic material." ;
+    NCIT:P106 "Virus" ;
+    NCIT:P108 "Single Stranded DNA Virus" ;
+    NCIT:P207 "C1002566" ;
+    NCIT:P331 "29258" ;
+    NCIT:P366 "Single_Stranded_DNA_Virus" .
+
+NCIT:C14351 a owl:Class ;
+    rdfs:label "Positive Sense ssRNA Virus" ;
+    rdfs:subClassOf NCIT:C14269 ;
+    metadata:prefixIRI "Thesaurus:C14351"^^xsd:string ;
+    NCIT:NHC0 "C14351" ;
+    NCIT:P90 "+ Strand ssRNA Virus",
+        "Positive Sense ssRNA Virus",
+        "Positive Strand ssRNA Virus",
+        "ssRNA Virus, (+) Strand" ;
+    NCIT:P97 "A single stranded RNA virus where the RNA strand has the same polarity as a mRNA." ;
+    NCIT:P106 "Virus" ;
+    NCIT:P108 "Positive Sense ssRNA Virus" ;
+    NCIT:P207 "C1005564" ;
+    NCIT:P331 "35278" ;
+    NCIT:P366 "ssRNA_Virus_plus_Strand" .
+
+NCIT:C14353 a owl:Class ;
+    rdfs:label "Recombinants" ;
+    rdfs:subClassOf NCIT:C14354 ;
+    metadata:prefixIRI "Thesaurus:C14353"^^xsd:string ;
+    NCIT:NHC0 "C14353" ;
+    NCIT:P90 "recombinant",
+        "Recombinants" ;
+    NCIT:P97 "An individual cell or organisms which carries recombinant DNA" ;
+    NCIT:P106 "Organism" ;
+    NCIT:P108 "Recombinants" ;
+    NCIT:P207 "C1514798" ;
+    NCIT:P325 "In genetics, describes DNA, proteins, cells, or organisms that are made by combining genetic material from two different sources. Recombinant substances are made in the laboratory and are being studied in the treatment of cancer and for many other uses." ;
+    NCIT:P366 "Recombinants" .
+
+NCIT:C14354 a owl:Class ;
+    rdfs:label "Laboratory Organism" ;
+    rdfs:subClassOf NCIT:C14376 ;
+    metadata:prefixIRI "Thesaurus:C14354"^^xsd:string ;
+    NCIT:NHC0 "C14354" ;
+    NCIT:P90 "Experimental Organism",
+        "Laboratory Organism" ;
+    NCIT:P97 "A grouping of those organisms that are commonly used in laboratory research." ;
+    NCIT:P106 "Organism" ;
+    NCIT:P108 "Laboratory Organism" ;
+    NCIT:P207 "C1517710" ;
+    NCIT:P366 "Laboratory_Organism" .
+
+NCIT:C14355 a owl:Class ;
+    rdfs:label "Agents of Opportunistic Infection" ;
+    rdfs:subClassOf NCIT:C14316 ;
+    metadata:prefixIRI "Thesaurus:C14355"^^xsd:string ;
+    NCIT:NHC0 "C14355" ;
+    NCIT:P90 "Agents of Opportunistic Infection" ;
+    NCIT:P97 "Infectious agents, which while normally present but remaining benign under the control of the immune system, become virulent and pathogenic in immune-compromised hosts (i.e when they get the opportunity to become infectious)." ;
+    NCIT:P106 "Organism" ;
+    NCIT:P108 "Agents of Opportunistic Infection" ;
+    NCIT:P207 "C1510832" ;
+    NCIT:P366 "Agents_of_Opportunistic_Infection" .
+
+NCIT:C14356 a owl:Class ;
+    rdfs:label "Infectious Agent, Bacteria" ;
+    rdfs:subClassOf NCIT:C14316 ;
+    metadata:prefixIRI "Thesaurus:C14356"^^xsd:string ;
+    NCIT:NHC0 "C14356" ;
+    NCIT:P90 "Bacterial Infectious Agent",
+        "Infectious Agent, Bacteria" ;
+    NCIT:P106 "Bacterium" ;
+    NCIT:P108 "Infectious Agent, Bacteria" ;
+    NCIT:P207 "C1512715" ;
+    NCIT:P366 "Infectious_Agent_Bacteria" .
+
+NCIT:C14357 a owl:Class ;
+    rdfs:label "Infectious Agent, Virus" ;
+    rdfs:subClassOf NCIT:C14316 ;
+    metadata:prefixIRI "Thesaurus:C14357"^^xsd:string ;
+    NCIT:NHC0 "C14357" ;
+    NCIT:P90 "Infectious Agent, Virus",
+        "Viral Infectious Agent" ;
+    NCIT:P106 "Virus" ;
+    NCIT:P108 "Infectious Agent, Virus" ;
+    NCIT:P207 "C1512716" ;
+    NCIT:P366 "Infectious_Agent_Virus" .
+
+NCIT:C14359 a owl:Class ;
+    rdfs:label "Invertebrates, Land" ;
+    rdfs:subClassOf NCIT:C14228 ;
+    metadata:prefixIRI "Thesaurus:C14359"^^xsd:string ;
+    NCIT:NHC0 "C14359" ;
+    NCIT:P90 "Invertebrates, Land" ;
+    NCIT:P97 "Terrestrial animals without back bones" ;
+    NCIT:P106 "Eukaryote" ;
+    NCIT:P108 "Invertebrates, Land" ;
+    NCIT:P207 "C1517583" ;
+    NCIT:P366 "Invertebrates_Land" .
+
+NCIT:C14360 a owl:Class ;
+    rdfs:label "Invertebrates, Marine" ;
+    rdfs:subClassOf NCIT:C14228,
+        NCIT:C14333 ;
+    metadata:prefixIRI "Thesaurus:C14360"^^xsd:string ;
+    NCIT:NHC0 "C14360" ;
+    NCIT:P90 "Invertebrates, Marine" ;
+    NCIT:P97 "Animals without a backbone that live in the ocean" ;
+    NCIT:P106 "Eukaryote" ;
+    NCIT:P108 "Invertebrates, Marine" ;
+    NCIT:P207 "C1517584" ;
+    NCIT:P366 "Invertebrates_Marine" .
+
+NCIT:C14367 a owl:Class ;
+    rdfs:label "Latent Virus" ;
+    rdfs:subClassOf NCIT:C14349 ;
+    metadata:prefixIRI "Thesaurus:C14367"^^xsd:string ;
+    NCIT:NHC0 "C14367" ;
+    NCIT:P90 "Latent Virus" ;
+    NCIT:P97 "Virus integrated within host genome but inactive; may be reactivated by stress such as ultraviolet irradiation." ;
+    NCIT:P106 "Virus" ;
+    NCIT:P108 "Latent Virus" ;
+    NCIT:P207 "C1517745" ;
+    NCIT:P366 "Latent_Virus" .
+
+NCIT:C14368 a owl:Class ;
+    rdfs:label "Lytic Virus" ;
+    rdfs:subClassOf NCIT:C14349 ;
+    metadata:prefixIRI "Thesaurus:C14368"^^xsd:string ;
+    NCIT:NHC0 "C14368" ;
+    NCIT:P90 "Lytic Virus" ;
+    NCIT:P97 "A virus which, as part of its life cycle, causes its host cells plasma membrane to rupture (to lyse)." ;
+    NCIT:P106 "Virus" ;
+    NCIT:P108 "Lytic Virus" ;
+    NCIT:P207 "C1518095" ;
+    NCIT:P366 "Lytic_Virus" .
+
+NCIT:C14369 a owl:Class ;
+    rdfs:label "Lower Organism" ;
+    rdfs:subClassOf NCIT:C14376 ;
+    metadata:prefixIRI "Thesaurus:C14369"^^xsd:string ;
+    NCIT:NHC0 "C14369" ;
+    NCIT:P90 "Lower Organism",
+        "Lower Organisms" ;
+    NCIT:P97 "A subjective term that might be applied to any non-human organism." ;
+    NCIT:P106 "Organism" ;
+    NCIT:P108 "Lower Organism" ;
+    NCIT:P207 "C1518032" ;
+    NCIT:P366 "Lower_Organism" .
+
+NCIT:C14370 a owl:Class ;
+    rdfs:label "Sexually Transmitted Agents" ;
+    rdfs:subClassOf NCIT:C14316 ;
+    metadata:prefixIRI "Thesaurus:C14370"^^xsd:string ;
+    NCIT:NHC0 "C14370" ;
+    NCIT:P90 "Sexually Transmitted Agents" ;
+    NCIT:P106 "Organism" ;
+    NCIT:P108 "Sexually Transmitted Agents" ;
+    NCIT:P207 "C1519280" ;
+    NCIT:P366 "Sexually_Transmitted_Agents" .
+
+NCIT:C14375 a owl:Class ;
+    rdfs:label "Escape Mutant" ;
+    rdfs:subClassOf NCIT:C14349 ;
+    metadata:prefixIRI "Thesaurus:C14375"^^xsd:string ;
+    NCIT:NHC0 "C14375" ;
+    NCIT:P90 "Escape Mutant" ;
+    NCIT:P97 "HIV mutants which have overcome drug inhibition." ;
+    NCIT:P106 "Virus" ;
+    NCIT:P108 "Escape Mutant" ;
+    NCIT:P207 "C1516962" ;
+    NCIT:P366 "Escape_Mutant" .
+
+NCIT:C14376 a owl:Class ;
+    rdfs:label "Other Organism Groupings" ;
+    rdfs:subClassOf NCIT:C14250 ;
+    metadata:prefixIRI "Thesaurus:C14376"^^xsd:string ;
+    NCIT:NHC0 "C14376" ;
+    NCIT:P90 "Other Organism Groupings" ;
+    NCIT:P97 "A non-taxonomic grouping of organisms based on a shared characteristic." ;
+    NCIT:P106 "Classification" ;
+    NCIT:P108 "Other Organism Groupings" ;
+    NCIT:P207 "C1518665" ;
+    NCIT:P366 "Other_Organism_Groupings" .
+
+NCIT:C14419 a owl:Class ;
+    rdfs:label "Organism Strain" ;
+    rdfs:subClassOf NCIT:C14376 ;
+    metadata:prefixIRI "Thesaurus:C14419"^^xsd:string ;
+    NCIT:A8 NCIT:C61410,
+        NCIT:C66830,
+        NCIT:C83187,
+        NCIT:C159501,
+        NCIT:C159502,
+        NCIT:C179590,
+        NCIT:C179591 ;
+    NCIT:NHC0 "C14419" ;
+    NCIT:P90 "Organism Strain",
+        "STRAIN",
+        "Strain",
+        "strain",
+        "Strain Number" ;
+    NCIT:P97 "A population or type of organisms that is genetically different from others of the same species and possessing a set of defined characteristics." ;
+    NCIT:P106 "Organism" ;
+    NCIT:P107 "Organism Strains" ;
+    NCIT:P108 "Organism Strain" ;
+    NCIT:P207 "C1518614" ;
+    NCIT:P322 "BRIDG",
+        "CDISC" ;
+    NCIT:P325 "A non-taxonomic parameter that can specify the strain of the organism." ;
+    NCIT:P366 "Organism_Strains" .
+
+NCIT:C25796 a owl:Class ;
+    rdfs:label "Eukaryota" ;
+    rdfs:subClassOf NCIT:C14250 ;
+    metadata:prefixIRI "Thesaurus:C25796"^^xsd:string ;
+    NCIT:NHC0 "C25796" ;
+    NCIT:P90 "Eukaryota",
+        "Eukaryote",
+        "Eukaryotida" ;
+    NCIT:P97 "Organism or cells with a nucleus separated from the cytoplasm by a two membrance nuclear envelope and compartmentalization of function into distinct cytoplasmic organelles." ;
+    NCIT:P106 "Classification" ;
+    NCIT:P108 "Eukaryota" ;
+    NCIT:P207 "C0684063" ;
+    NCIT:P331 "2759" ;
+    NCIT:P366 "Eukaryote" .
+
+NCIT:C28176 a owl:Class ;
+    rdfs:label "Parasite" ;
+    rdfs:subClassOf NCIT:C14376 ;
+    metadata:prefixIRI "Thesaurus:C28176"^^xsd:string ;
+    NCIT:A8 NCIT:C90259,
+        NCIT:C128453 ;
+    NCIT:NHC0 "C28176" ;
+    NCIT:P90 "Parasite",
+        "parasite",
+        "Parasites",
+        "parasitic" ;
+    NCIT:P97 "Any organism that has a close, symbiotic relationship with a separate, host organism." ;
+    NCIT:P106 "Organism" ;
+    NCIT:P108 "Parasite" ;
+    NCIT:P207 "C0030498" ;
+    NCIT:P322 "NICHD" ;
+    NCIT:P325 "An animal or plant that gets nutrients by living on or in an organism of another species. A complete parasite gets all of its nutrients from the host organism, but a semi-parasite gets only some of its nutrients from the host.",
+        "An organism that lives on or in a host organism, and that draws its nourishment from that host." ;
+    NCIT:P366 "Parasite" .
+
+NCIT:C28266 a owl:Class ;
+    rdfs:label "Mold" ;
+    rdfs:subClassOf NCIT:C14209 ;
+    metadata:prefixIRI "Thesaurus:C28266"^^xsd:string ;
+    NCIT:A8 NCIT:C61410,
+        NCIT:C66830,
+        NCIT:C85491,
+        NCIT:C90259,
+        NCIT:C116977,
+        NCIT:C118168,
+        NCIT:C128453 ;
+    NCIT:NHC0 "C28266" ;
+    NCIT:P90 "Filamentous Fungus",
+        "Filamentous fungus",
+        "MOLD",
+        "Mold",
+        "mold",
+        "Mould" ;
+    NCIT:P97 "A very large group of microscopic fungi that live on plant or animal matter. Most are filamentous organisms and produce spores that can be air-, water-, or insect-borne." ;
+    NCIT:P106 "Fungus" ;
+    NCIT:P107 "Mold" ;
+    NCIT:P108 "Mold" ;
+    NCIT:P207 "C0369241" ;
+    NCIT:P322 "CDISC",
+        "CTRP",
+        "NICHD" ;
+    NCIT:P325 "A form of fungus. Some molds can cause disease in humans.",
+        "A multicellular fungus that produces filaments and hyphae.",
+        "A non-taxonomic grouping of fungi that grow in the form of mycelium of hyphae (vegetative filaments)." ;
+    NCIT:P366 "Mold" .
+
+NCIT:C28518 a owl:Class ;
+    rdfs:label "Double Stranded RNA Virus" ;
+    rdfs:subClassOf NCIT:C14269 ;
+    metadata:prefixIRI "Thesaurus:C28518"^^xsd:string ;
+    NCIT:NHC0 "C28518" ;
+    NCIT:P90 "Double Stranded RNA Virus",
+        "Double-Stranded RNA Virus",
+        "dsRNA Virus" ;
+    NCIT:P97 "A virus that has double stranded RNA as its genetic material." ;
+    NCIT:P106 "Virus" ;
+    NCIT:P108 "Double Stranded RNA Virus" ;
+    NCIT:P207 "C1005582" ;
+    NCIT:P331 "35325" ;
+    NCIT:P366 "Double_Stranded_RNA_Virus" .
+
+NCIT:C44391 a owl:Class ;
+    rdfs:label "HPV-High Risk" ;
+    rdfs:subClassOf NCIT:C14349 ;
+    metadata:prefixIRI "Thesaurus:C44391"^^xsd:string ;
+    NCIT:A8 NCIT:C116977,
+        NCIT:C118168,
+        NCIT:C142799,
+        NCIT:C156952,
+        NCIT:C156953,
+        NCIT:C157526 ;
+    NCIT:NHC0 "C44391" ;
+    NCIT:P90 "High Risk HPV",
+        "High-Risk Subtype (16, 18, 31, 33, 35, etc.)",
+        "HPV-High Risk",
+        "HR-HPV",
+        "hrHPV",
+        "Human Papillomaviruses, High Risk" ;
+    NCIT:P97 "Any of a number of strains of human papilloma virus (HPV) that have been shown to cause cancer in humans." ;
+    NCIT:P106 "Virus" ;
+    NCIT:P107 "HPV-High Risk" ;
+    NCIT:P108 "HPV-High Risk" ;
+    NCIT:P207 "C1708287" ;
+    NCIT:P322 "CPTAC",
+        "CTRP" ;
+    NCIT:P366 "HPV-High_Risk" .
+
+NCIT:C53691 a owl:Class ;
+    rdfs:label "Veterinary Patient" ;
+    rdfs:subClassOf NCIT:C14376 ;
+    metadata:prefixIRI "Thesaurus:C53691"^^xsd:string ;
+    NCIT:NHC0 "C53691" ;
+    NCIT:P90 "Patient",
+        "Veterinary Patient" ;
+    NCIT:P97 "A non-human animal that is a subject in a study." ;
+    NCIT:P106 "Organism" ;
+    NCIT:P108 "Veterinary Patient" ;
+    NCIT:P207 "C1705908" ;
+    NCIT:P366 "Veterinary_Patient" .
+
+NCIT:C53692 a owl:Class ;
+    rdfs:label "Breed" ;
+    rdfs:subClassOf NCIT:C14376 ;
+    metadata:prefixIRI "Thesaurus:C53692"^^xsd:string ;
+    NCIT:A8 NCIT:C54447,
+        NCIT:C88088 ;
+    NCIT:NHC0 "C53692" ;
+    NCIT:P90 "BREED",
+        "Breed" ;
+    NCIT:P97 "A group of animals homogeneous in appearance and other characteristics that distinguish it from other animals of the same species." ;
+    NCIT:P106 "Classification" ;
+    NCIT:P108 "Breed" ;
+    NCIT:P207 "C1704650" ;
+    NCIT:P322 "FDA" ;
+    NCIT:P366 "Breed" .
+
+NCIT:C53693 a owl:Class ;
+    rdfs:label "Dog Breed" ;
+    rdfs:subClassOf NCIT:C53692 ;
+    metadata:prefixIRI "Thesaurus:C53693"^^xsd:string ;
+    NCIT:A8 NCIT:C165451,
+        NCIT:C166373 ;
+    NCIT:NHC0 "C53693" ;
+    NCIT:P90 "breed",
+        "Dog Breed" ;
+    NCIT:P97 "A type of dog known for its special or distinctive characteristics." ;
+    NCIT:P106 "Mammal" ;
+    NCIT:P108 "Dog Breed" ;
+    NCIT:P207 "C1707805" ;
+    NCIT:P322 "ICDC" ;
+    NCIT:P366 "Dog_Breed" .
+
+NCIT:C54085 a owl:Class ;
+    rdfs:label "Retro-transcribing Virus" ;
+    rdfs:subClassOf NCIT:C14283 ;
+    metadata:prefixIRI "Thesaurus:C54085"^^xsd:string ;
+    NCIT:NHC0 "C54085" ;
+    NCIT:P90 "Retro-transcribing Virus" ;
+    NCIT:P97 "A virus that replicates by the reverse transcription of a RNA or DNA intermediate. All retro-transcribing viruses utilize the enzyme reverse transcriptase to replicate and may have a DNA- or RNA-based genome." ;
+    NCIT:P106 "Virus" ;
+    NCIT:P108 "Retro-transcribing Virus" ;
+    NCIT:P207 "C1005558" ;
+    NCIT:P331 "35268" ;
+    NCIT:P366 "Retro-transcribing_Virus" .
+
+NCIT:C61092 a owl:Class ;
+    rdfs:label "Archaea" ;
+    rdfs:subClassOf NCIT:C14250 ;
+    metadata:prefixIRI "Thesaurus:C61092"^^xsd:string ;
+    NCIT:NHC0 "C61092" ;
+    NCIT:P90 "Archaea",
+        "Archaebacteria",
+        "Mendosicutes",
+        "Metabacteria" ;
+    NCIT:P97 "Single-celled organisms lacking nuclei, similar to prokaryotes in most aspects of cell structure and metabolism. However, their genetic transcription and translation do not show the typical bacterial features, but are extremely similar to those of eukaryotes." ;
+    NCIT:P106 "Organism" ;
+    NCIT:P108 "Archaea" ;
+    NCIT:P207 "C0003732" ;
+    NCIT:P331 "2157" ;
+    NCIT:P366 "Archaea" .
+
+NCIT:C66819 a owl:Class ;
+    rdfs:label "Host" ;
+    rdfs:subClassOf NCIT:C14376 ;
+    metadata:prefixIRI "Thesaurus:C66819"^^xsd:string ;
+    NCIT:NHC0 "C66819" ;
+    NCIT:P90 "Host" ;
+    NCIT:P97 "An organism that nourishes and supports another but does not benefit by the association; recipient of transplanted tissue or organ from a donor." ;
+    NCIT:P106 "Organism" ;
+    NCIT:P108 "Host" ;
+    NCIT:P207 "C1167395" ;
+    NCIT:P366 "Host" .
+
+NCIT:C68564 a owl:Class ;
+    rdfs:label "Microbiome" ;
+    rdfs:subClassOf NCIT:C14329 ;
+    metadata:prefixIRI "Thesaurus:C68564"^^xsd:string ;
+    NCIT:A8 NCIT:C116977,
+        NCIT:C142799 ;
+    NCIT:NHC0 "C68564" ;
+    NCIT:P90 "Microbiome" ;
+    NCIT:P97 "A collection or collectivity of microorganisms. This entity is frequently examined to determine how changes to the surrounding environment affects biological processes and the resulting health status of the organism." ;
+    NCIT:P106 "Organism" ;
+    NCIT:P107 "Microbiome" ;
+    NCIT:P108 "Microbiome" ;
+    NCIT:P208 "CL449076" ;
+    NCIT:P322 "CTRP" ;
+    NCIT:P366 "Microbiome" .
+
+NCIT:C76195 a owl:Class ;
+    rdfs:label "Actinobacteria" ;
+    rdfs:subClassOf NCIT:C14187 ;
+    metadata:prefixIRI "Thesaurus:C76195"^^xsd:string ;
+    NCIT:NHC0 "C76195" ;
+    NCIT:P90 "Actinobacteria",
+        "High G+C Gram-positive Bacteria" ;
+    NCIT:P97 "A taxonomic phylum within kingdom Bacteria consisting of gram-positive soil bacteria with a high G+C ratio." ;
+    NCIT:P106 "Bacterium" ;
+    NCIT:P108 "Actinobacteria" ;
+    NCIT:P207 "C1456432" ;
+    NCIT:P331 "201174" ;
+    NCIT:P366 "Actinobacteria" .
+
+NCIT:C76196 a owl:Class ;
+    rdfs:label "Proteobacteria" ;
+    rdfs:subClassOf NCIT:C14187 ;
+    metadata:prefixIRI "Thesaurus:C76196"^^xsd:string ;
+    NCIT:NHC0 "C76196" ;
+    NCIT:P90 "Proteobacteria",
+        "Purple Bacteria",
+        "Purple Non-sulfur Bacteria" ;
+    NCIT:P97 "A taxonomic phylum within kingdom Bacteria consisting of gram-negative bacteria with an outer membrane mainly composed of lipopolysaccharides. The group is defined primarily in terms of ribosomal RNA sequences." ;
+    NCIT:P106 "Bacterium" ;
+    NCIT:P108 "Proteobacteria" ;
+    NCIT:P207 "C0751985" ;
+    NCIT:P331 "1224" ;
+    NCIT:P366 "Proteobacteria" .
+
+NCIT:C76197 a owl:Class ;
+    rdfs:label "Firmicutes" ;
+    rdfs:subClassOf NCIT:C14187 ;
+    metadata:prefixIRI "Thesaurus:C76197"^^xsd:string ;
+    NCIT:NHC0 "C76197" ;
+    NCIT:P90 "Firmicutes",
+        "Low G+C Gram-positive Bacteria" ;
+    NCIT:P97 "A taxonomic phylum within kingdom Bacteria consisting of mostly gram-positive bacteria with a low G+C ratio. The phylum is highly diverse in phenotypic characteristics." ;
+    NCIT:P106 "Bacterium" ;
+    NCIT:P108 "Firmicutes" ;
+    NCIT:P207 "C1254144" ;
+    NCIT:P331 "1239" ;
+    NCIT:P366 "Firmicutes" .
+
+NCIT:C76203 a owl:Class ;
+    rdfs:label "Bacteroidetes" ;
+    rdfs:subClassOf NCIT:C14187 ;
+    metadata:prefixIRI "Thesaurus:C76203"^^xsd:string ;
+    NCIT:NHC0 "C76203" ;
+    NCIT:P90 "Bacteroidetes" ;
+    NCIT:P97 "A phylum of bacteria composed of three large classes of bacteria that are widely distributed in the environment, including in soil, in sediments, sea water and in the guts of animals." ;
+    NCIT:P106 "Bacterium" ;
+    NCIT:P108 "Bacteroidetes" ;
+    NCIT:P207 "C0995456" ;
+    NCIT:P331 "976" ;
+    NCIT:P366 "Bacteroidetes" .
+
+NCIT:C76206 a owl:Class ;
+    rdfs:label "Spirochaetes" ;
+    rdfs:subClassOf NCIT:C14187 ;
+    metadata:prefixIRI "Thesaurus:C76206"^^xsd:string ;
+    NCIT:NHC0 "C76206" ;
+    NCIT:P90 "Spirochaetes" ;
+    NCIT:P97 "A phylum of gram-negative bacteria that are distinguished from other bacterial phyla by the location of their flagella which run lengthwise between the cell membrane and outer membrane." ;
+    NCIT:P106 "Bacterium" ;
+    NCIT:P108 "Spirochaetes" ;
+    NCIT:P207 "C1623724" ;
+    NCIT:P331 "203691" ;
+    NCIT:P366 "Spirochaetes" .
+
+NCIT:C76270 a owl:Class ;
+    rdfs:label "Chlamydiae" ;
+    rdfs:subClassOf NCIT:C14187 ;
+    metadata:prefixIRI "Thesaurus:C76270"^^xsd:string ;
+    NCIT:NHC0 "C76270" ;
+    NCIT:P90 "Chlamydiae" ;
+    NCIT:P97 "A phylum of bacteria whose members are obligate intracellular pathogens." ;
+    NCIT:P106 "Bacterium" ;
+    NCIT:P108 "Chlamydiae" ;
+    NCIT:P207 "C1532554" ;
+    NCIT:P331 "204428" ;
+    NCIT:P366 "Chlamydiae" .
+
+NCIT:C76321 a owl:Class ;
+    rdfs:label "Fusobacteria" ;
+    rdfs:subClassOf NCIT:C14187 ;
+    metadata:prefixIRI "Thesaurus:C76321"^^xsd:string ;
+    NCIT:NHC0 "C76321" ;
+    NCIT:P90 "Fusobacteria" ;
+    NCIT:P97 "A phylum of anaerobic Gram-negative bacteria that are a normal component of the gut flora." ;
+    NCIT:P106 "Bacterium" ;
+    NCIT:P108 "Fusobacteria" ;
+    NCIT:P207 "C1003893" ;
+    NCIT:P331 "32066" ;
+    NCIT:P366 "Fusobacteria" .
+
+NCIT:C77167 a owl:Class ;
+    rdfs:label "Ascomycota" ;
+    rdfs:subClassOf NCIT:C14209 ;
+    metadata:prefixIRI "Thesaurus:C77167"^^xsd:string ;
+    NCIT:NHC0 "C77167" ;
+    NCIT:P90 "Ascomycetes",
+        "Ascomycota",
+        "Sac Fungi" ;
+    NCIT:P97 "A phylum of fungi whose members are commonly known as the sac fungi." ;
+    NCIT:P106 "Fungus" ;
+    NCIT:P108 "Ascomycota" ;
+    NCIT:P207 "C0003965" ;
+    NCIT:P331 "4890" ;
+    NCIT:P366 "Ascomycota" .
+
+NCIT:C77169 a owl:Class ;
+    rdfs:label "Basidiomycota" ;
+    rdfs:subClassOf NCIT:C14209 ;
+    metadata:prefixIRI "Thesaurus:C77169"^^xsd:string ;
+    NCIT:NHC0 "C77169" ;
+    NCIT:P90 "Basidiomycetes",
+        "Basidiomycota" ;
+    NCIT:P97 "A phylum of filamentous fungi that reproduce sexually via the formation of specialized club-shaped end cells called basidia that normally bear external spores." ;
+    NCIT:P106 "Fungus" ;
+    NCIT:P108 "Basidiomycota" ;
+    NCIT:P207 "C0004810" ;
+    NCIT:P331 "4890" ;
+    NCIT:P366 "Basidiomycota" .
+
+NCIT:C77194 a owl:Class ;
+    rdfs:label "Zygomycota" ;
+    rdfs:subClassOf NCIT:C14209 ;
+    metadata:prefixIRI "Thesaurus:C77194"^^xsd:string ;
+    NCIT:NHC0 "C77194" ;
+    NCIT:P90 "Zygomycetes",
+        "Zygomycota" ;
+    NCIT:P97 "A phylum of fungi that are characterized by vegetative mycelium that lack septa and sexual reproduction that forms zygospores." ;
+    NCIT:P98 "Polyphyly of Zygomycota: Results of Liu et al. (2006) supported the monophyly of the traditional Zygomycota (Mucorales, Glomerales, Entomophthorales, and Harpellales) but James et al. (2006), which included broader sampling and additional molecular loci, found Zygomycota to be polyphyletic. Until the basal fungal lineages are more clearly resolved the traditional groups of Zygomycota have been broken up and placed into distinct subphyla (Hibbett et al. 2007)." ;
+    NCIT:P106 "Fungus" ;
+    NCIT:P108 "Zygomycota" ;
+    NCIT:P207 "C0043543" ;
+    NCIT:P331 "287987" ;
+    NCIT:P366 "Zygomycota" .
+
+NCIT:C77914 a owl:Class ;
+    rdfs:label "Protista" ;
+    rdfs:subClassOf NCIT:C25796 ;
+    metadata:prefixIRI "Thesaurus:C77914"^^xsd:string ;
+    NCIT:NHC0 "C77914" ;
+    NCIT:P90 "Protist",
+        "Protista" ;
+    NCIT:P97 "A taxonomic kingdom that includes algae, protozoa, slime molds, and water molds. Members of kingdom protista are aerobic and may be unicellular, multicellular, or colony forming. Additionally, protista require a water-based environment to survive. All protista are true eukaryotes with a nuclear membrane and mitochondria. Some protista also contain chloroplasts and can perform photosynthesis. Protists reproduce by mitosis or meiosis." ;
+    NCIT:P106 "Organism" ;
+    NCIT:P108 "Protista" ;
+    NCIT:P207 "C0597305" ;
+    NCIT:P366 "Protista" .
+
+NCIT:C77916 a owl:Class ;
+    rdfs:label "Protozoa" ;
+    rdfs:subClassOf NCIT:C77914 ;
+    metadata:prefixIRI "Thesaurus:C77916"^^xsd:string ;
+    NCIT:NHC0 "C77916" ;
+    NCIT:P90 "Protozoa",
+        "Protozoan" ;
+    NCIT:P97 "Unicellular heterotrophic eukaryote in the kingdom protista." ;
+    NCIT:P106 "Eukaryote" ;
+    NCIT:P108 "Protozoa" ;
+    NCIT:P207 "C0033739" ;
+    NCIT:P366 "Protozoa" .
+
+NCIT:C77917 a owl:Class ;
+    rdfs:label "Arthropoda" ;
+    rdfs:subClassOf NCIT:C14182 ;
+    metadata:prefixIRI "Thesaurus:C77917"^^xsd:string ;
+    NCIT:NHC0 "C77917" ;
+    NCIT:P90 "Arthropod",
+        "Arthropoda",
+        "Arthropods" ;
+    NCIT:P97 "The taxonomic phylum whose members are invertebrates with hard exoskeletons and segmented joints. Organisms in this phylum include the Arachnids, Centipedes, Crustaceans, Insects and the extinct Trilobites." ;
+    NCIT:P106 "Animal" ;
+    NCIT:P108 "Arthropoda" ;
+    NCIT:P207 "C0003903" ;
+    NCIT:P331 "6656" ;
+    NCIT:P366 "Arthropoda" .
+
+NCIT:C78713 a owl:Class ;
+    rdfs:label "Animal Colony" ;
+    rdfs:subClassOf NCIT:C14376 ;
+    metadata:prefixIRI "Thesaurus:C78713"^^xsd:string ;
+    NCIT:NHC0 "C78713" ;
+    NCIT:P90 "Animal Colony" ;
+    NCIT:P97 "A group of animals of the same species that are living, or being housed together." ;
+    NCIT:P106 "Population Group" ;
+    NCIT:P108 "Animal Colony" ;
+    NCIT:P207 "C0596092" ;
+    NCIT:P366 "Animal_Colony" .
+
+NCIT:C85860 a owl:Class ;
+    rdfs:label "Tenericutes" ;
+    rdfs:subClassOf NCIT:C14187 ;
+    metadata:prefixIRI "Thesaurus:C85860"^^xsd:string ;
+    NCIT:NHC0 "C85860" ;
+    NCIT:P90 "Tenericutes" ;
+    NCIT:P97 "A taxonomic phylum within kingdom Bacteria consisting of the Mollicutes, a class of intracellular parasitic bacteria without a cell wall." ;
+    NCIT:P106 "Bacterium" ;
+    NCIT:P108 "Tenericutes" ;
+    NCIT:P207 "C0026390" ;
+    NCIT:P331 "544448" .
+
+NCIT:C85903 a owl:Class ;
+    rdfs:label "Aeromonadaceae" ;
+    rdfs:subClassOf NCIT:C76196 ;
+    metadata:prefixIRI "Thesaurus:C85903"^^xsd:string ;
+    NCIT:NHC0 "C85903" ;
+    NCIT:P90 "Aeromonadaceae" ;
+    NCIT:P97 "A taxonomic family of Gram negative, soil borne bacterium in the phylum Proteobacteria that includes the genera Aeromonas and Zobellella, among others." ;
+    NCIT:P106 "Bacterium" ;
+    NCIT:P108 "Aeromonadaceae" ;
+    NCIT:P207 "C1036839" ;
+    NCIT:P331 "84642" .
+
+NCIT:C85904 a owl:Class ;
+    rdfs:label "Bartonellaceae" ;
+    rdfs:subClassOf NCIT:C76196 ;
+    metadata:prefixIRI "Thesaurus:C85904"^^xsd:string ;
+    NCIT:NHC0 "C85904" ;
+    NCIT:P90 "Bartonellaceae" ;
+    NCIT:P97 "A taxonomic family of pathogenic bacterium in the phylum Proteobacteria that includes the genus Bartonella." ;
+    NCIT:P106 "Bacterium" ;
+    NCIT:P108 "Bartonellaceae" ;
+    NCIT:P207 "C0004772" ;
+    NCIT:P331 "772" .
+
+NCIT:C85905 a owl:Class ;
+    rdfs:label "Brevibacteriaceae" ;
+    rdfs:subClassOf NCIT:C76195 ;
+    metadata:prefixIRI "Thesaurus:C85905"^^xsd:string ;
+    NCIT:NHC0 "C85905" ;
+    NCIT:P90 "Brevibacteriaceae" ;
+    NCIT:P97 "A taxonomic family of Gram positive bacterium in the phylum Actinobacteria that includes the genus Brevibacterium." ;
+    NCIT:P106 "Bacterium" ;
+    NCIT:P108 "Brevibacteriaceae" ;
+    NCIT:P207 "C1037117" ;
+    NCIT:P331 "85019" .
+
+NCIT:C85906 a owl:Class ;
+    rdfs:label "Campylobacteraceae" ;
+    rdfs:subClassOf NCIT:C76196 ;
+    metadata:prefixIRI "Thesaurus:C85906"^^xsd:string ;
+    NCIT:NHC0 "C85906" ;
+    NCIT:P90 "Campylobacteraceae" ;
+    NCIT:P97 "A taxonomic family of bacterium in the phylum Proteobacteria that includes the genera Arcobacter and Campylobacter, among others." ;
+    NCIT:P106 "Bacterium" ;
+    NCIT:P108 "Campylobacteraceae" ;
+    NCIT:P207 "C1029240" ;
+    NCIT:P331 "7229" .
+
+NCIT:C85907 a owl:Class ;
+    rdfs:label "Caulobacteraceae" ;
+    rdfs:subClassOf NCIT:C76196 ;
+    metadata:prefixIRI "Thesaurus:C85907"^^xsd:string ;
+    NCIT:NHC0 "C85907" ;
+    NCIT:P90 "Caulobacteraceae" ;
+    NCIT:P97 "A taxonomic family of aquatic, Gram negative, bacterium in the phylum Proteobacteria that includes the genera Brevundimonas and Caulobacter, among others." ;
+    NCIT:P106 "Bacterium" ;
+    NCIT:P108 "Caulobacteraceae" ;
+    NCIT:P207 "C1187508" ;
+    NCIT:P331 "76892" .
+
+NCIT:C85908 a owl:Class ;
+    rdfs:label "Paenibacillaceae" ;
+    rdfs:subClassOf NCIT:C76197 ;
+    metadata:prefixIRI "Thesaurus:C85908"^^xsd:string ;
+    NCIT:NHC0 "C85908" ;
+    NCIT:P90 "Paenibacillaceae" ;
+    NCIT:P97 "A taxonomic family of Gram positive bacterium in the phylum Firmicutes that includes the genera Brevibacillus and Paenibacillus, among others." ;
+    NCIT:P106 "Bacterium" ;
+    NCIT:P108 "Paenibacillaceae" ;
+    NCIT:P207 "C1210577" ;
+    NCIT:P331 "186822" .
+
+NCIT:C85909 a owl:Class ;
+    rdfs:label "Promicromonosporaceae" ;
+    rdfs:subClassOf NCIT:C76195 ;
+    metadata:prefixIRI "Thesaurus:C85909"^^xsd:string ;
+    NCIT:NHC0 "C85909" ;
+    NCIT:P90 "Promicromonosporaceae" ;
+    NCIT:P97 "A taxonomic family of bacterium in the phylum Actinobacteria that includes the genera Cellulosomicrobium and Promicromonospora, among others." ;
+    NCIT:P106 "Bacterium" ;
+    NCIT:P108 "Promicromonosporaceae" ;
+    NCIT:P207 "C1037115" ;
+    NCIT:P331 "85017" .
+
+NCIT:C85910 a owl:Class ;
+    rdfs:label "Thermomonosporaceae" ;
+    rdfs:subClassOf NCIT:C76195 ;
+    metadata:prefixIRI "Thesaurus:C85910"^^xsd:string ;
+    NCIT:NHC0 "C85910" ;
+    NCIT:P90 "Thermomonosporaceae" ;
+    NCIT:P97 "A taxonomic family of bacterium in the phylum Actinobacteria that includes the genera Actinomadura, Spirillospora and Thermonospora, among others." ;
+    NCIT:P106 "Bacterium" ;
+    NCIT:P108 "Thermomonosporaceae" ;
+    NCIT:P207 "C0995817" ;
+    NCIT:P331 "2012" .
+
+NCIT:C85911 a owl:Class ;
+    rdfs:label "Acetobacteraceae" ;
+    rdfs:subClassOf NCIT:C76196 ;
+    metadata:prefixIRI "Thesaurus:C85911"^^xsd:string ;
+    NCIT:NHC0 "C85911" ;
+    NCIT:P90 "Acetobacteraceae" ;
+    NCIT:P97 "A taxonomic family of bacterium in the phylum Proteobacteria that oxidize ethanol during aerobic fermentation to yield acetic acid." ;
+    NCIT:P106 "Bacterium" ;
+    NCIT:P108 "Acetobacteraceae" ;
+    NCIT:P207 "C0085461" ;
+    NCIT:P331 "433" .
+
+NCIT:C85912 a owl:Class ;
+    rdfs:label "Actinomycetaceae" ;
+    rdfs:subClassOf NCIT:C76195 ;
+    metadata:prefixIRI "Thesaurus:C85912"^^xsd:string ;
+    NCIT:NHC0 "C85912" ;
+    NCIT:P90 "Actinomycetaceae" ;
+    NCIT:P97 "A taxonomic family of filamentous or rod shaped bacterium in the phylum Actinobacteria with type genus actinomyces." ;
+    NCIT:P106 "Bacterium" ;
+    NCIT:P108 "Actinomycetaceae" ;
+    NCIT:P207 "C0001253" ;
+    NCIT:P331 "2049" .
+
+NCIT:C85913 a owl:Class ;
+    rdfs:label "Aerococcaceae" ;
+    rdfs:subClassOf NCIT:C76197 ;
+    metadata:prefixIRI "Thesaurus:C85913"^^xsd:string ;
+    NCIT:A8 NCIT:C61410,
+        NCIT:C66830,
+        NCIT:C85491 ;
+    NCIT:NHC0 "C85913" ;
+    NCIT:P90 "AEROCOCCACEAE",
+        "Aerococcaceae" ;
+    NCIT:P97 "A taxonomic family of lactic acid bacterium in the phylum Firmicutes." ;
+    NCIT:P106 "Bacterium" ;
+    NCIT:P108 "Aerococcaceae" ;
+    NCIT:P207 "C1444108" ;
+    NCIT:P322 "CDISC" ;
+    NCIT:P325 "Any bacteria that are not assigned to the species level but can be assigned to the Aerococcaceae family level." ;
+    NCIT:P331 "186827" .
+
+NCIT:C85914 a owl:Class ;
+    rdfs:label "Alcaligenaceae" ;
+    rdfs:subClassOf NCIT:C76196 ;
+    metadata:prefixIRI "Thesaurus:C85914"^^xsd:string ;
+    NCIT:A8 NCIT:C61410,
+        NCIT:C66830,
+        NCIT:C85491 ;
+    NCIT:NHC0 "C85914" ;
+    NCIT:P90 "ALCALIGENACEAE",
+        "Alcaligenaceae" ;
+    NCIT:P97 "A taxonomic family of bacterium in the phylum Proteobacteria that includes the genera Bordetella, Oligella and Sutterella." ;
+    NCIT:P106 "Bacterium" ;
+    NCIT:P108 "Alcaligenaceae" ;
+    NCIT:P207 "C1080715" ;
+    NCIT:P322 "CDISC" ;
+    NCIT:P325 "Any bacteria that are not assigned to the species level but can be assigned to the Alcaligenaceae family level." ;
+    NCIT:P331 "506" .
+
+NCIT:C85915 a owl:Class ;
+    rdfs:label "Bacillaceae" ;
+    rdfs:subClassOf NCIT:C76197 ;
+    metadata:prefixIRI "Thesaurus:C85915"^^xsd:string ;
+    NCIT:NHC0 "C85915" ;
+    NCIT:P90 "Bacillaceae" ;
+    NCIT:P97 "A taxonomic family of bacterium in the phylum Firmicutes that contains the notable genus Bacillus." ;
+    NCIT:P106 "Bacterium" ;
+    NCIT:P108 "Bacillaceae" ;
+    NCIT:P207 "C0004586" ;
+    NCIT:P331 "18681" .
+
+NCIT:C85916 a owl:Class ;
+    rdfs:label "Bacillales XI" ;
+    rdfs:subClassOf NCIT:C76197 ;
+    metadata:prefixIRI "Thesaurus:C85916"^^xsd:string ;
+    NCIT:NHC0 "C85916" ;
+    NCIT:P90 "Bacillales XI" ;
+    NCIT:P97 "A bacterial family of uncertain placement in the phylum Firmicutes and the order Bacillales that is used to classify the genus Gemella." ;
+    NCIT:P106 "Bacterium" ;
+    NCIT:P108 "Bacillales XI" ;
+    NCIT:P207 "C2828019" .
+
+NCIT:C85917 a owl:Class ;
+    rdfs:label "Bacillales XII" ;
+    rdfs:subClassOf NCIT:C76197 ;
+    metadata:prefixIRI "Thesaurus:C85917"^^xsd:string ;
+    NCIT:NHC0 "C85917" ;
+    NCIT:P90 "Bacillales XII" ;
+    NCIT:P97 "A bacterial family of uncertain placement in the phylum Firmicutes and the order Bacillales that is used to classify the genus Exiguobacterium." ;
+    NCIT:P106 "Bacterium" ;
+    NCIT:P108 "Bacillales XII" ;
+    NCIT:P207 "C2828020" .
+
+NCIT:C85918 a owl:Class ;
+    rdfs:label "Bifidobacteriaceae" ;
+    rdfs:subClassOf NCIT:C76195 ;
+    metadata:prefixIRI "Thesaurus:C85918"^^xsd:string ;
+    NCIT:NHC0 "C85918" ;
+    NCIT:P90 "Bifidobacteriaceae" ;
+    NCIT:P97 "A taxonomic family of bacterium in the phylum Actinobacteria that includes the genera Bifidobacterium, Gardnerella and Falcivibrio." ;
+    NCIT:P106 "Bacterium" ;
+    NCIT:P108 "Bifidobacteriaceae" ;
+    NCIT:P207 "C1003847" ;
+    NCIT:P331 "31953" .
+
+NCIT:C85919 a owl:Class ;
+    rdfs:label "Brucellaceae" ;
+    rdfs:subClassOf NCIT:C76196 ;
+    metadata:prefixIRI "Thesaurus:C85919"^^xsd:string ;
+    NCIT:NHC0 "C85919" ;
+    NCIT:P90 "Brucellaceae" ;
+    NCIT:P97 "A taxonomic family of rhizobial, symbiotic bacterium in the phylum Proteobacteria that are found in plant roots and perform nitrogen fixation." ;
+    NCIT:P106 "Bacterium" ;
+    NCIT:P108 "Brucellaceae" ;
+    NCIT:P207 "C0006308" ;
+    NCIT:P331 "118882" .
+
+NCIT:C85920 a owl:Class ;
+    rdfs:label "Burkholderiaceae" ;
+    rdfs:subClassOf NCIT:C76196 ;
+    metadata:prefixIRI "Thesaurus:C85920"^^xsd:string ;
+    NCIT:NHC0 "C85920" ;
+    NCIT:P90 "Burkholderiaceae" ;
+    NCIT:P97 "A taxonomic family of bacterium in the phylum Proteobacteria that may cause wilt and rot in a number of plant species." ;
+    NCIT:P106 "Bacterium" ;
+    NCIT:P108 "Burkholderiaceae" ;
+    NCIT:P207 "C1057057" ;
+    NCIT:P331 "119060" .
+
+NCIT:C85921 a owl:Class ;
+    rdfs:label "Cardiobacteriaceae" ;
+    rdfs:subClassOf NCIT:C76196 ;
+    metadata:prefixIRI "Thesaurus:C85921"^^xsd:string ;
+    NCIT:NHC0 "C85921" ;
+    NCIT:P90 "Cardiobacteriaceae" ;
+    NCIT:P97 "A taxonomic family of Gram negative, mostly aerobic bacterium in the phylum Proteobacteria that includes the genera Cardiobacterium, Dichelobacter and Suttonella." ;
+    NCIT:P106 "Bacterium" ;
+    NCIT:P108 "Cardiobacteriaceae" ;
+    NCIT:P207 "C1960583" ;
+    NCIT:P331 "868" .
+
+NCIT:C85922 a owl:Class ;
+    rdfs:label "Carnobacteriaceae" ;
+    rdfs:subClassOf NCIT:C76197 ;
+    metadata:prefixIRI "Thesaurus:C85922"^^xsd:string ;
+    NCIT:NHC0 "C85922" ;
+    NCIT:P90 "Carnobacteriaceae" ;
+    NCIT:P97 "A taxonomic family of Gram positive, lactic acid bacterium in the phylum Firmicutes." ;
+    NCIT:P106 "Bacterium" ;
+    NCIT:P108 "Carnobacteriaceae" ;
+    NCIT:P207 "C1210583" ;
+    NCIT:P331 "186828" .
+
+NCIT:C85923 a owl:Class ;
+    rdfs:label "Cellulomonadaceae" ;
+    rdfs:subClassOf NCIT:C76195 ;
+    metadata:prefixIRI "Thesaurus:C85923"^^xsd:string ;
+    NCIT:NHC0 "C85923" ;
+    NCIT:P90 "Cellulomonadaceae" ;
+    NCIT:P97 "A taxonomic family of bacterium in the phylum Actinobacteria that includes the genera Cellulomonas and Oerskovia." ;
+    NCIT:P106 "Bacterium" ;
+    NCIT:P108 "Cellulomonadaceae" ;
+    NCIT:P207 "C1037114" ;
+    NCIT:P331 "85016" .
+
+NCIT:C85924 a owl:Class ;
+    rdfs:label "Clostridiales XI" ;
+    rdfs:subClassOf NCIT:C76197 ;
+    metadata:prefixIRI "Thesaurus:C85924"^^xsd:string ;
+    NCIT:NHC0 "C85924" ;
+    NCIT:P90 "Clostridiales XI" ;
+    NCIT:P97 "A bacterial family of uncertain placement in the phylum Firmicutes and the order Clostridiales that is used to classify the genera Tissierella, Finegoldia and Anaerococcus, among others." ;
+    NCIT:P106 "Bacterium" ;
+    NCIT:P108 "Clostridiales XI" ;
+    NCIT:P207 "C2828021" .
+
+NCIT:C85925 a owl:Class ;
+    rdfs:label "Clostridiales XIII" ;
+    rdfs:subClassOf NCIT:C76197 ;
+    metadata:prefixIRI "Thesaurus:C85925"^^xsd:string ;
+    NCIT:NHC0 "C85925" ;
+    NCIT:P90 "Clostridiales XIII" ;
+    NCIT:P97 "A bacterial family of uncertain placement in the phylum Firmicutes and the order Clostridiales that is used to classify the genus Mogibacterium." ;
+    NCIT:P106 "Bacterium" ;
+    NCIT:P108 "Clostridiales XIII" ;
+    NCIT:P207 "C2828022" .
+
+NCIT:C85926 a owl:Class ;
+    rdfs:label "Comamonadaceae" ;
+    rdfs:subClassOf NCIT:C76196 ;
+    metadata:prefixIRI "Thesaurus:C85926"^^xsd:string ;
+    NCIT:NHC0 "C85926" ;
+    NCIT:P90 "Comamonadaceae" ;
+    NCIT:P97 "A taxonomic family of gram negative, aerobic bacterium in the phylum Proteobacteria that includes the genera Acidovorax, Comamonas, Delftia and Pelomonas, among others." ;
+    NCIT:P106 "Bacterium" ;
+    NCIT:P108 "Comamonadaceae" ;
+    NCIT:P207 "C1034493" ;
+    NCIT:P331 "80864" .
+
+NCIT:C85927 a owl:Class ;
+    rdfs:label "Coriobacteriaceae" ;
+    rdfs:subClassOf NCIT:C76195 ;
+    metadata:prefixIRI "Thesaurus:C85927"^^xsd:string ;
+    NCIT:NHC0 "C85927" ;
+    NCIT:P90 "Coriobacteriaceae" ;
+    NCIT:P97 "A taxonomic family of bacterium in the phylum Actinobacteria that includes the genera Atopobium, Coriobacterium, Eggerthella and Collinsella among others." ;
+    NCIT:P106 "Bacterium" ;
+    NCIT:P108 "Coriobacteriaceae" ;
+    NCIT:P207 "C1036497" ;
+    NCIT:P331 "84107" .
+
+NCIT:C85928 a owl:Class ;
+    rdfs:label "Dermabacteraceae" ;
+    rdfs:subClassOf NCIT:C76195 ;
+    metadata:prefixIRI "Thesaurus:C85928"^^xsd:string ;
+    NCIT:NHC0 "C85928" ;
+    NCIT:P90 "Dermabacteraceae" ;
+    NCIT:P97 "A taxonomic family of Gram positive bacterium with high G+C DNA content in the phylum Actinobacteria that includes the genera Brachybacterium and Dermabacter." ;
+    NCIT:P106 "Bacterium" ;
+    NCIT:P108 "Dermabacteraceae" ;
+    NCIT:P207 "C1037118" ;
+    NCIT:P331 "85020" .
+
+NCIT:C85929 a owl:Class ;
+    rdfs:label "Dermacoccaceae" ;
+    rdfs:subClassOf NCIT:C76195 ;
+    metadata:prefixIRI "Thesaurus:C85929"^^xsd:string ;
+    NCIT:NHC0 "C85929" ;
+    NCIT:P90 "Dermacoccaceae" ;
+    NCIT:P97 "A taxonomic family of bacterium in the phylum Actinobacteria that includes the genera dermacoccus and micrococcus, among others." ;
+    NCIT:P106 "Bacterium" ;
+    NCIT:P108 "Dermacoccaceae" ;
+    NCIT:P207 "C1069975" ;
+    NCIT:P331 "145357" .
+
+NCIT:C85930 a owl:Class ;
+    rdfs:label "Dermatophilaceae" ;
+    rdfs:subClassOf NCIT:C76195 ;
+    metadata:prefixIRI "Thesaurus:C85930"^^xsd:string ;
+    NCIT:NHC0 "C85930" ;
+    NCIT:P90 "Dermatophilaceae" ;
+    NCIT:P97 "A taxonomic family of mammalian pathogenic bacterium, which produce mycelial filaments or muriform thalli, in the phylum Actinobacteria that includes the genera Dermatophilus and Kineosphera, among others." ;
+    NCIT:P106 "Bacterium" ;
+    NCIT:P108 "Dermatophilaceae" ;
+    NCIT:P207 "C1037116" ;
+    NCIT:P331 "85018" .
+
+NCIT:C85931 a owl:Class ;
+    rdfs:label "Desulfovibrionaceae" ;
+    rdfs:subClassOf NCIT:C76196 ;
+    metadata:prefixIRI "Thesaurus:C85931"^^xsd:string ;
+    NCIT:NHC0 "C85931" ;
+    NCIT:P90 "Desulfovibrionaceae" ;
+    NCIT:P97 "A taxonomic family of mostly sulfate-reducing bacterium in the phylum Proteobacteria that includes the genera Bilophila, Desulfovibrio and Lawsonia, among others." ;
+    NCIT:P106 "Bacterium" ;
+    NCIT:P108 "Desulfovibrionaceae" ;
+    NCIT:P207 "C1216672" ;
+    NCIT:P331 "194924" .
+
+NCIT:C85932 a owl:Class ;
+    rdfs:label "Enterobacteriaceae" ;
+    rdfs:subClassOf NCIT:C76196 ;
+    metadata:prefixIRI "Thesaurus:C85932"^^xsd:string ;
+    NCIT:A8 NCIT:C61410,
+        NCIT:C66830,
+        NCIT:C85491 ;
+    NCIT:NHC0 "C85932" ;
+    NCIT:P90 "Enterobacteraceae",
+        "ENTEROBACTERIACEAE",
+        "Enterobacteriaceae" ;
+    NCIT:P97 "A taxonomic family of Gram-negative bacterium, which are found in water, soil or the gut, in the phylum Proteobacteria that includes the genera Aranicola, Buttiauxella, Cedecea, Cronobacter, Enterobacter and Citrobacter, among others." ;
+    NCIT:P106 "Bacterium" ;
+    NCIT:P108 "Enterobacteriaceae" ;
+    NCIT:P207 "C0014346" ;
+    NCIT:P322 "CDISC" ;
+    NCIT:P325 "Any bacteria that is not assigned to the species level but can be assigned to the Enterobacteriaceae family level." ;
+    NCIT:P331 "543" .
+
+NCIT:C85933 a owl:Class ;
+    rdfs:label "Enterococcaceae" ;
+    rdfs:subClassOf NCIT:C76197 ;
+    metadata:prefixIRI "Thesaurus:C85933"^^xsd:string ;
+    NCIT:NHC0 "C85933" ;
+    NCIT:P90 "Enterococcaceae" ;
+    NCIT:P97 "A taxonomic family of Gram positive bacterium in the phylum Firmicutes that includes the genera Enterococcus, Tetragenococcus and Vagococcus, among others." ;
+    NCIT:P106 "Bacterium" ;
+    NCIT:P108 "Enterococcaceae" ;
+    NCIT:P207 "C1035041" ;
+    NCIT:P331 "81852" .
+
+NCIT:C85934 a owl:Class ;
+    rdfs:label "Erysipelotrichaceae" ;
+    rdfs:subClassOf NCIT:C76197 ;
+    metadata:prefixIRI "Thesaurus:C85934"^^xsd:string ;
+    NCIT:NHC0 "C85934" ;
+    NCIT:P90 "Erysipelotrichaceae" ;
+    NCIT:P97 "A taxonomic family of Gram positive bacterium in the phylum Firmicutes that includes the genera Holdemania, Allobaculum, Coprobacillus, and Erysipelothrix, among others." ;
+    NCIT:P106 "Bacterium" ;
+    NCIT:P108 "Erysipelotrichaceae" ;
+    NCIT:P207 "C1062146" ;
+    NCIT:P331 "128827" .
+
+NCIT:C85935 a owl:Class ;
+    rdfs:label "Eubacteriaceae" ;
+    rdfs:subClassOf NCIT:C76197 ;
+    metadata:prefixIRI "Thesaurus:C85935"^^xsd:string ;
+    NCIT:NHC0 "C85935" ;
+    NCIT:P90 "Eubacteriaceae" ;
+    NCIT:P97 "A taxonomic family of bacterium in the phylum Firmicutes that includes the genera Acetobacterium, Eubacterium and Garciella among others." ;
+    NCIT:P106 "Bacterium" ;
+    NCIT:P108 "Eubacteriaceae" ;
+    NCIT:P207 "C1210566" ;
+    NCIT:P331 "186806" .
+
+NCIT:C85936 a owl:Class ;
+    rdfs:label "Flavobacteriaceae" ;
+    rdfs:subClassOf NCIT:C76203 ;
+    metadata:prefixIRI "Thesaurus:C85936"^^xsd:string ;
+    NCIT:NHC0 "C85936" ;
+    NCIT:P90 "Flavobacteriaceae" ;
+    NCIT:P97 "A taxonomic family of marine and soil borne bacterium in the phylum Bacteroidetes that includes the genera Capnocytophaga, Chryseobacterium, Elizabethkingia and Flavobacterium among others." ;
+    NCIT:P106 "Bacterium" ;
+    NCIT:P108 "Flavobacteriaceae" ;
+    NCIT:P207 "C1014716" ;
+    NCIT:P331 "49546" .
+
+NCIT:C85937 a owl:Class ;
+    rdfs:label "Francisellaceae" ;
+    rdfs:subClassOf NCIT:C76196 ;
+    metadata:prefixIRI "Thesaurus:C85937"^^xsd:string ;
+    NCIT:NHC0 "C85937" ;
+    NCIT:P90 "Francisellaceae" ;
+    NCIT:P97 "A taxonomic family of Gram negative, aerobic bacterium in the phylum Proteobacteria that includes the genus Francisella." ;
+    NCIT:P106 "Bacterium" ;
+    NCIT:P108 "Francisellaceae" ;
+    NCIT:P207 "C1004850" ;
+    NCIT:P331 "34064" .
+
+NCIT:C85938 a owl:Class ;
+    rdfs:label "Fusobacteriaceae" ;
+    rdfs:subClassOf NCIT:C76321 ;
+    metadata:prefixIRI "Thesaurus:C85938"^^xsd:string ;
+    NCIT:NHC0 "C85938" ;
+    NCIT:P90 "Fusobacteriaceae" ;
+    NCIT:P97 "A taxonomic family of bacterium in the phylum Fusobacteria that includes the genera Fusobacterium, Leptotrichia and Streptobacillus, among others." ;
+    NCIT:P106 "Bacterium" ;
+    NCIT:P108 "Fusobacteriaceae" ;
+    NCIT:P207 "C1222479" ;
+    NCIT:P331 "203492" .
+
+NCIT:C85939 a owl:Class ;
+    rdfs:label "Gordoniaceae" ;
+    rdfs:subClassOf NCIT:C76195 ;
+    metadata:prefixIRI "Thesaurus:C85939"^^xsd:string ;
+    NCIT:NHC0 "C85939" ;
+    NCIT:P90 "Gordoniaceae" ;
+    NCIT:P97 "A taxonomic family of bacterium in the phylum Actinobacteria that includes the genera Gordonia and Millisia, among others." ;
+    NCIT:P106 "Bacterium" ;
+    NCIT:P108 "Gordoniaceae" ;
+    NCIT:P207 "C1037123" ;
+    NCIT:P331 "85026" .
+
+NCIT:C85940 a owl:Class ;
+    rdfs:label "Helicobacteraceae" ;
+    rdfs:subClassOf NCIT:C76196 ;
+    metadata:prefixIRI "Thesaurus:C85940"^^xsd:string ;
+    NCIT:NHC0 "C85940" ;
+    NCIT:P90 "Helicobacteraceae" ;
+    NCIT:P97 "A taxonomic family of bacterium in the phylum Proteobacteria that includes the genera Helicobacter, Flexispira and Wolinella, among others." ;
+    NCIT:P106 "Bacterium" ;
+    NCIT:P108 "Helicobacteraceae" ;
+    NCIT:P207 "C1029239" ;
+    NCIT:P331 "72293" .
+
+NCIT:C85941 a owl:Class ;
+    rdfs:label "Intrasporangiaceae" ;
+    rdfs:subClassOf NCIT:C76195 ;
+    metadata:prefixIRI "Thesaurus:C85941"^^xsd:string ;
+    NCIT:NHC0 "C85941" ;
+    NCIT:P90 "Intrasporangiaceae" ;
+    NCIT:P97 "A taxonomic family of marine bacterium in the phylum Actinobacteria that includes the genera Knoellia, Ornithinimicrobium and Janibacter, among others." ;
+    NCIT:P106 "Bacterium" ;
+    NCIT:P108 "Intrasporangiaceae" ;
+    NCIT:P207 "C1037119" ;
+    NCIT:P331 "85021" .
+
+NCIT:C85942 a owl:Class ;
+    rdfs:label "Lachnospiraceae" ;
+    rdfs:subClassOf NCIT:C76197 ;
+    metadata:prefixIRI "Thesaurus:C85942"^^xsd:string ;
+    NCIT:NHC0 "C85942" ;
+    NCIT:P90 "Lachnospiraceae" ;
+    NCIT:P97 "A taxonomic family of bacterium in the phylum Firmicutes that includes the genera Johnsonella, Dorea, Oribacterium and Anaerostipes, among others." ;
+    NCIT:P106 "Bacterium" ;
+    NCIT:P108 "Lachnospiraceae" ;
+    NCIT:P207 "C1210564" ;
+    NCIT:P331 "186803" .
+
+NCIT:C85943 a owl:Class ;
+    rdfs:label "Lactobacillaceae" ;
+    rdfs:subClassOf NCIT:C76197 ;
+    metadata:prefixIRI "Thesaurus:C85943"^^xsd:string ;
+    NCIT:NHC0 "C85943" ;
+    NCIT:P90 "Lactobacillaceae" ;
+    NCIT:P97 "A taxonomic family of bacterium that ferment carbohydrates into lactic acid, in the phylum Firmicutes that includes the genera Lactobacillus and Pediococcus, among others." ;
+    NCIT:P106 "Bacterium" ;
+    NCIT:P108 "Lactobacillaceae" ;
+    NCIT:P207 "C0022937" ;
+    NCIT:P331 "33958" .
+
+NCIT:C85944 a owl:Class ;
+    rdfs:label "Methylobacteriaceae" ;
+    rdfs:subClassOf NCIT:C76196 ;
+    metadata:prefixIRI "Thesaurus:C85944"^^xsd:string ;
+    NCIT:NHC0 "C85944" ;
+    NCIT:P90 "Methylobacteriaceae" ;
+    NCIT:P97 "A taxonomic family of bacterium, which perform nitrogen fixation, in the phylum Proteobacteria that includes the genera Methylobacterium and Meganema, among others." ;
+    NCIT:P106 "Bacterium" ;
+    NCIT:P108 "Methylobacteriaceae" ;
+    NCIT:P207 "C1057045" ;
+    NCIT:P331 "119045" .
+
+NCIT:C85945 a owl:Class ;
+    rdfs:label "Microbacteriaceae" ;
+    rdfs:subClassOf NCIT:C76195 ;
+    metadata:prefixIRI "Thesaurus:C85945"^^xsd:string ;
+    NCIT:NHC0 "C85945" ;
+    NCIT:P90 "Microbacteriaceae" ;
+    NCIT:P97 "A taxonomic family of isoprenoid pigrment producing bacterium in the phylum Actinobacteria that includes the genera Agromyces, Clavibacter, Leifsonia and Microbacterium, among others." ;
+    NCIT:P106 "Bacterium" ;
+    NCIT:P108 "Microbacteriaceae" ;
+    NCIT:P207 "C1272768" ;
+    NCIT:P331 "85023" .
+
+NCIT:C85946 a owl:Class ;
+    rdfs:label "Micrococcaceae" ;
+    rdfs:subClassOf NCIT:C76195 ;
+    metadata:prefixIRI "Thesaurus:C85946"^^xsd:string ;
+    NCIT:NHC0 "C85946" ;
+    NCIT:P90 "Micrococcaceae" ;
+    NCIT:P97 "A taxonomic family of Gram positive, cocci shaped bacterium, which are found in the air and on the skin, in the phylum Actinobacteria that includes the genera Arthrobacter, Kocuria, and Micrococcus, among others." ;
+    NCIT:P106 "Bacterium" ;
+    NCIT:P108 "Micrococcaceae" ;
+    NCIT:P207 "C0025964" ;
+    NCIT:P331 "1268" .
+
+NCIT:C85947 a owl:Class ;
+    rdfs:label "Micrococcineae" ;
+    rdfs:subClassOf NCIT:C76195 ;
+    metadata:prefixIRI "Thesaurus:C85947"^^xsd:string ;
+    NCIT:NHC0 "C85947" ;
+    NCIT:P90 "Micrococcales",
+        "Micrococcineae" ;
+    NCIT:P97 "A taxonomic suborder of Gram positive, soil borne bacterium in the phylum Actinobacteria that includes the genera Tropheryma and Ruania, among others." ;
+    NCIT:P106 "Bacterium" ;
+    NCIT:P108 "Micrococcineae" ;
+    NCIT:P207 "C1037105" ;
+    NCIT:P331 "85006" .
+
+NCIT:C85948 a owl:Class ;
+    rdfs:label "Moraxellaceae" ;
+    rdfs:subClassOf NCIT:C76196 ;
+    metadata:prefixIRI "Thesaurus:C85948"^^xsd:string ;
+    NCIT:NHC0 "C85948" ;
+    NCIT:P90 "Moraxellaceae" ;
+    NCIT:P97 "A taxonomic family of bacterium in the phylum Proteobacteria that includes the genera Moraxella, Acinetobacter and Psychrobacter, among others." ;
+    NCIT:P106 "Bacterium" ;
+    NCIT:P108 "Moraxellaceae" ;
+    NCIT:P207 "C0995357" ;
+    NCIT:P331 "468" .
+
+NCIT:C85949 a owl:Class ;
+    rdfs:label "Mycoplasmataceae" ;
+    rdfs:subClassOf NCIT:C85860 ;
+    metadata:prefixIRI "Thesaurus:C85949"^^xsd:string ;
+    NCIT:NHC0 "C85949" ;
+    NCIT:P90 "Mycoplasmataceae" ;
+    NCIT:P97 "A taxonomic family of parasitic and pathogenic bacterium, which require sterols to grow, in the phylum Tenericutes that includes the genera Mycoplasma and Ureaplasma." ;
+    NCIT:P106 "Bacterium" ;
+    NCIT:P108 "Mycoplasmataceae" ;
+    NCIT:P207 "C0026943" ;
+    NCIT:P331 "2092" .
+
+NCIT:C85950 a owl:Class ;
+    rdfs:label "Neisseriaceae" ;
+    rdfs:subClassOf NCIT:C76196 ;
+    metadata:prefixIRI "Thesaurus:C85950"^^xsd:string ;
+    NCIT:NHC0 "C85950" ;
+    NCIT:P90 "Neisseriaceae" ;
+    NCIT:P97 "A taxonomic family of Gram negative, strictly aerobic bacterium in the phylum Proteobacteria that includes the genera Neisseria, Chromobacterium, Eikenella and Kingella, among others." ;
+    NCIT:P106 "Bacterium" ;
+    NCIT:P108 "Neisseriaceae" ;
+    NCIT:P207 "C0027576" ;
+    NCIT:P331 "4818" .
+
+NCIT:C85951 a owl:Class ;
+    rdfs:label "Pasteurellaceae" ;
+    rdfs:subClassOf NCIT:C76196 ;
+    metadata:prefixIRI "Thesaurus:C85951"^^xsd:string ;
+    NCIT:NHC0 "C85951" ;
+    NCIT:P90 "Pasteurellaceae" ;
+    NCIT:P97 "A taxonomic family of Gram negative, facultatively anaerobic bacterium in the phylum Proteobacteria that includes the genera Actinobacillus, Haemophilus, Mannheimia and Pasteurella, among others." ;
+    NCIT:P106 "Bacterium" ;
+    NCIT:P108 "Pasteurellaceae" ;
+    NCIT:P207 "C0030641" ;
+    NCIT:P331 "712" .
+
+NCIT:C85952 a owl:Class ;
+    rdfs:label "Peptococcaceae" ;
+    rdfs:subClassOf NCIT:C76197 ;
+    metadata:prefixIRI "Thesaurus:C85952"^^xsd:string ;
+    NCIT:NHC0 "C85952" ;
+    NCIT:P90 "Peptococcaceae" ;
+    NCIT:P97 "A taxonomic family of bacterium in the phylum Firmicutes that includes the genera Dehalobacter, Peptococcus and Thermincola, among others." ;
+    NCIT:P106 "Bacterium" ;
+    NCIT:P108 "Peptococcaceae" ;
+    NCIT:P207 "C0030964" ;
+    NCIT:P331 "186807" .
+
+NCIT:C85953 a owl:Class ;
+    rdfs:label "Peptostreptococcaceae" ;
+    rdfs:subClassOf NCIT:C76197 ;
+    metadata:prefixIRI "Thesaurus:C85953"^^xsd:string ;
+    NCIT:NHC0 "C85953" ;
+    NCIT:P90 "Peptostreptococcaceae" ;
+    NCIT:P97 "A taxonomic family of Gram positive bacterium in the phylum Firmicutes that includes the genera Filifacter and Peptostreptococcus, among others." ;
+    NCIT:P106 "Bacterium" ;
+    NCIT:P108 "Peptostreptococcaceae" ;
+    NCIT:P207 "C1210565" ;
+    NCIT:P331 "186804" .
+
+NCIT:C85954 a owl:Class ;
+    rdfs:label "Planococcaceae" ;
+    rdfs:subClassOf NCIT:C76197 ;
+    metadata:prefixIRI "Thesaurus:C85954"^^xsd:string ;
+    NCIT:NHC0 "C85954" ;
+    NCIT:P90 "Planococcaceae" ;
+    NCIT:P97 "A taxonomic family of Gram positive bacterium in the phylum Firmicutes that includes the genera Kurthia, Planococcus, and Lysinibacillus, among others." ;
+    NCIT:P106 "Bacterium" ;
+    NCIT:P108 "Planococcaceae" ;
+    NCIT:P207 "C1210573" ;
+    NCIT:P331 "186818" .
+
+NCIT:C85955 a owl:Class ;
+    rdfs:label "Porphyromonadaceae" ;
+    rdfs:subClassOf NCIT:C76203 ;
+    metadata:prefixIRI "Thesaurus:C85955"^^xsd:string ;
+    NCIT:NHC0 "C85955" ;
+    NCIT:P90 "Porphyromonadaceae" ;
+    NCIT:P97 "A taxonomic family of bacterium in the phylum Bacteroidetes that includes the genera Porphyromonas, Parabacteroides and Tannerella, among others." ;
+    NCIT:P106 "Bacterium" ;
+    NCIT:P108 "Porphyromonadaceae" ;
+    NCIT:P207 "C1080665" ;
+    NCIT:P331 "171551" .
+
+NCIT:C85956 a owl:Class ;
+    rdfs:label "Prevotellaceae" ;
+    rdfs:subClassOf NCIT:C76203 ;
+    metadata:prefixIRI "Thesaurus:C85956"^^xsd:string ;
+    NCIT:NHC0 "C85956" ;
+    NCIT:P90 "Prevotellaceae" ;
+    NCIT:P97 "A taxonomic family of bacterium in the phylum Bacteroidetes that includes the genera Hallella, Prevotella and Xylanibacter, among others." ;
+    NCIT:P106 "Bacterium" ;
+    NCIT:P108 "Prevotellaceae" ;
+    NCIT:P207 "C1080666" ;
+    NCIT:P331 "171552" .
+
+NCIT:C85957 a owl:Class ;
+    rdfs:label "Propionibacteriaceae" ;
+    rdfs:subClassOf NCIT:C76195 ;
+    metadata:prefixIRI "Thesaurus:C85957"^^xsd:string ;
+    NCIT:NHC0 "C85957" ;
+    NCIT:P90 "Propionibacteriaceae" ;
+    NCIT:P97 "A taxonomic family of Gram positive, anaerobic bacterium, which are found in dairy products and in the intestines of animals, in the phylum Actinobacteria that includes the genera Brooklawnia, Microlunatus, Propionibacterium and Ponticoccus, among others." ;
+    NCIT:P106 "Bacterium" ;
+    NCIT:P108 "Propionibacteriaceae" ;
+    NCIT:P207 "C0033475" ;
+    NCIT:P331 "31957" .
+
+NCIT:C85958 a owl:Class ;
+    rdfs:label "Pseudomonadaceae" ;
+    rdfs:subClassOf NCIT:C76196 ;
+    metadata:prefixIRI "Thesaurus:C85958"^^xsd:string ;
+    NCIT:NHC0 "C85958" ;
+    NCIT:P90 "Pseudomonadaceae" ;
+    NCIT:P97 "A taxonomic family of Gram negative, generally motile bacterium in the phylum Proteobacteria that includes the genera Pseudomonas and Rhizobacter, among others." ;
+    NCIT:P106 "Bacterium" ;
+    NCIT:P108 "Pseudomonadaceae" ;
+    NCIT:P207 "C0033807" ;
+    NCIT:P331 "135621" .
+
+NCIT:C85959 a owl:Class ;
+    rdfs:label "Rhizobiaceae" ;
+    rdfs:subClassOf NCIT:C76196 ;
+    metadata:prefixIRI "Thesaurus:C85959"^^xsd:string ;
+    NCIT:NHC0 "C85959" ;
+    NCIT:P90 "Rhizobiaceae" ;
+    NCIT:P97 "A taxonomic family of parasitic, soil borne bacterium in the phylum Proteobacteria that includes the genera Amorphomona, Agrobacterium and Rhizobium, among others." ;
+    NCIT:P106 "Bacterium" ;
+    NCIT:P108 "Rhizobiaceae" ;
+    NCIT:P207 "C0035474" ;
+    NCIT:P331 "82115" .
+
+NCIT:C85960 a owl:Class ;
+    rdfs:label "Rhodospirillaceae" ;
+    rdfs:subClassOf NCIT:C76196 ;
+    metadata:prefixIRI "Thesaurus:C85960"^^xsd:string ;
+    NCIT:NHC0 "C85960" ;
+    NCIT:P90 "Rhodospirillaceae" ;
+    NCIT:P97 "A taxonomic family of photosynthesizing bacterium, the majority of which are purple non-sulfur bacterium, in the phylum Proteobacteria that includes the genera Azospirillium, Inquilinus and Rhodospirillum, among others." ;
+    NCIT:P106 "Bacterium" ;
+    NCIT:P108 "Rhodospirillaceae" ;
+    NCIT:P207 "C0035500" ;
+    NCIT:P331 "41295" .
+
+NCIT:C85961 a owl:Class ;
+    rdfs:label "Ruminococcaceae" ;
+    rdfs:subClassOf NCIT:C76197 ;
+    metadata:prefixIRI "Thesaurus:C85961"^^xsd:string ;
+    NCIT:NHC0 "C85961" ;
+    NCIT:P90 "Ruminococcaceae" ;
+    NCIT:P97 "A taxonomic family of bacterium in the phylum Firmicutes that includes the genera Acetivibrio, Faecalibacterium and Ruminococcus, among others." ;
+    NCIT:P106 "Bacterium" ;
+    NCIT:P108 "Ruminococcaceae" ;
+    NCIT:P207 "C2584567" ;
+    NCIT:P331 "541000" .
+
+NCIT:C85962 a owl:Class ;
+    rdfs:label "Shewanellaceae" ;
+    rdfs:subClassOf NCIT:C76196 ;
+    metadata:prefixIRI "Thesaurus:C85962"^^xsd:string ;
+    NCIT:NHC0 "C85962" ;
+    NCIT:P90 "Shewanellaceae" ;
+    NCIT:P97 "A taxonomic family of bacterium in the phylum Proteobacteria that includes the genus Shewanella." ;
+    NCIT:P106 "Bacterium" ;
+    NCIT:P108 "Shewanellaceae" ;
+    NCIT:P207 "C1686190" ;
+    NCIT:P331 "267890" .
+
+NCIT:C85963 a owl:Class ;
+    rdfs:label "Sphingobacteriaceae" ;
+    rdfs:subClassOf NCIT:C76203 ;
+    metadata:prefixIRI "Thesaurus:C85963"^^xsd:string ;
+    NCIT:NHC0 "C85963" ;
+    NCIT:P90 "Sphingobacteriaceae" ;
+    NCIT:P97 "A taxonomic family of marine and soil borne bacterium in the phylum Bacteroidetes that includes the genera Nubsella, Pedobacter, Sphingobacterium and Mucilaginibacter, among others." ;
+    NCIT:P106 "Bacterium" ;
+    NCIT:P108 "Sphingobacteriaceae" ;
+    NCIT:P207 "C1036778" ;
+    NCIT:P331 "84566" .
+
+NCIT:C85964 a owl:Class ;
+    rdfs:label "Sphingomonadaceae" ;
+    rdfs:subClassOf NCIT:C76196 ;
+    metadata:prefixIRI "Thesaurus:C85964"^^xsd:string ;
+    NCIT:NHC0 "C85964" ;
+    NCIT:P90 "Sphingomonadaceae" ;
+    NCIT:P97 "A taxonomic family of Gram negative bacterium, which are found in soil, water and activated sludge, in the phylum Proteobacteria that includes the genera Sphingomonas, Zymomonas and Citromicrobium, among others." ;
+    NCIT:P106 "Bacterium" ;
+    NCIT:P108 "Sphingomonadaceae" ;
+    NCIT:P207 "C1009415" ;
+    NCIT:P331 "41297" .
+
+NCIT:C85965 a owl:Class ;
+    rdfs:label "Spirochaetaceae" ;
+    rdfs:subClassOf NCIT:C76206 ;
+    metadata:prefixIRI "Thesaurus:C85965"^^xsd:string ;
+    NCIT:NHC0 "C85965" ;
+    NCIT:P90 "Spirochaetaceae" ;
+    NCIT:P97 "A taxonomic family of marine spiral shaped bacterium in the phylum Spirochaetes that includes the genera Borrellia, Treponema and Cristispira, among others." ;
+    NCIT:P106 "Bacterium" ;
+    NCIT:P108 "Spirochaetaceae" ;
+    NCIT:P207 "C0037972" ;
+    NCIT:P331 "137" .
+
+NCIT:C85966 a owl:Class ;
+    rdfs:label "Staphylococcaceae" ;
+    rdfs:subClassOf NCIT:C76197 ;
+    metadata:prefixIRI "Thesaurus:C85966"^^xsd:string ;
+    NCIT:NHC0 "C85966" ;
+    NCIT:P90 "Staphylococcaceae" ;
+    NCIT:P97 "A taxonomic family of Gram positive, facultatively anaerobic bacterium in the phylum Firmicutes that includes the genera Macrococcus, Staphylococcus and Jeotgalicoccus, among others." ;
+    NCIT:P106 "Bacterium" ;
+    NCIT:P108 "Staphylococcaceae" ;
+    NCIT:P207 "C1040695" ;
+    NCIT:P331 "90964" .
+
+NCIT:C85967 a owl:Class ;
+    rdfs:label "Streptococcaceae" ;
+    rdfs:subClassOf NCIT:C76197 ;
+    metadata:prefixIRI "Thesaurus:C85967"^^xsd:string ;
+    NCIT:A8 NCIT:C61410,
+        NCIT:C66830,
+        NCIT:C85491 ;
+    NCIT:NHC0 "C85967" ;
+    NCIT:P90 "STREPTOCOCCACEAE",
+        "Streptococcaceae" ;
+    NCIT:P97 "A taxonomic family of Gram positive bacterium in the phylum Firmicutes that includes the genera Lactococcus and Streptococcus, among others." ;
+    NCIT:P106 "Bacterium" ;
+    NCIT:P108 "Streptococcaceae" ;
+    NCIT:P207 "C0038394" ;
+    NCIT:P322 "CDISC" ;
+    NCIT:P325 "Any bacteria that are not assigned to the species level but can be assigned to the Streptococcaceae family level." ;
+    NCIT:P331 "1300" .
+
+NCIT:C85968 a owl:Class ;
+    rdfs:label "Tsukamurellaceae" ;
+    rdfs:subClassOf NCIT:C76195 ;
+    metadata:prefixIRI "Thesaurus:C85968"^^xsd:string ;
+    NCIT:NHC0 "C85968" ;
+    NCIT:P90 "Tsukamurellaceae" ;
+    NCIT:P97 "A taxonomic family of bacterium in the phylum Actinobacteria that includes the genus Tsukamurella." ;
+    NCIT:P106 "Bacterium" ;
+    NCIT:P108 "Tsukamurellaceae" ;
+    NCIT:P207 "C1037125" ;
+    NCIT:P331 "85028" .
+
+NCIT:C85969 a owl:Class ;
+    rdfs:label "Veillonellaceae" ;
+    rdfs:subClassOf NCIT:C76197 ;
+    metadata:prefixIRI "Thesaurus:C85969"^^xsd:string ;
+    NCIT:NHC0 "C85969" ;
+    NCIT:P90 "Veillonellaceae" ;
+    NCIT:P97 "A taxonomic family of Gram negative, obligately anaerobic bacterium in the phylum Firmicutes that includes the genera Megasphaera, Misuokella, Acidaminococcus and Selenomonas, among others." ;
+    NCIT:P106 "Bacterium" ;
+    NCIT:P108 "Veillonellaceae" ;
+    NCIT:P207 "C0042447" ;
+    NCIT:P331 "31977" .
+
+NCIT:C85970 a owl:Class ;
+    rdfs:label "Vibrionaceae" ;
+    rdfs:subClassOf NCIT:C76196 ;
+    metadata:prefixIRI "Thesaurus:C85970"^^xsd:string ;
+    NCIT:NHC0 "C85970" ;
+    NCIT:P90 "Vibrionaceae" ;
+    NCIT:P97 "A taxonomic family of bacterium found in fresh or salt water, in the phylum Proteobacteria that includes the genera Catenococcus, Grimontia, Listonella and Photobacterium, among others." ;
+    NCIT:P106 "Bacterium" ;
+    NCIT:P108 "Vibrionaceae" ;
+    NCIT:P207 "C0042638" ;
+    NCIT:P331 "641" .
+
+NCIT:C85971 a owl:Class ;
+    rdfs:label "Xanthomonadaceae" ;
+    rdfs:subClassOf NCIT:C76196 ;
+    metadata:prefixIRI "Thesaurus:C85971"^^xsd:string ;
+    NCIT:NHC0 "C85971" ;
+    NCIT:P90 "Xanthomonadaceae" ;
+    NCIT:P97 "A taxonomic family of Gram negative bacterium in the phylum Proteobacteria that includes the genera Dokdonella, Aspromonas, Fulvimonas, Stenotrophomonas and Xanthomonas, among others." ;
+    NCIT:P106 "Bacterium" ;
+    NCIT:P108 "Xanthomonadaceae" ;
+    NCIT:P207 "C1003871" ;
+    NCIT:P331 "32033" .
+
+NCIT:C85978 a owl:Class ;
+    rdfs:label "Chlamydiaceae" ;
+    rdfs:subClassOf NCIT:C76270 ;
+    metadata:prefixIRI "Thesaurus:C85978"^^xsd:string ;
+    NCIT:NHC0 "C85978" ;
+    NCIT:P90 "Chlamydiaceae" ;
+    NCIT:P97 "A taxonomic family of Gram negative bacterium in the phylum Chylamydiae that includes the genera Chlamydia and Chlamydophila." ;
+    NCIT:P106 "Bacterium" ;
+    NCIT:P108 "Chlamydiaceae" ;
+    NCIT:P207 "C0008152" ;
+    NCIT:P331 "809" .
+
+NCIT:C85979 a owl:Class ;
+    rdfs:label "Legionellaceae" ;
+    rdfs:subClassOf NCIT:C76196 ;
+    metadata:prefixIRI "Thesaurus:C85979"^^xsd:string ;
+    NCIT:NHC0 "C85979" ;
+    NCIT:P90 "Legionellaceae" ;
+    NCIT:P106 "Bacterium" ;
+    NCIT:P108 "Legionellaceae" ;
+    NCIT:P207 "C0085465" ;
+    NCIT:P331 "444" .
+
+NCIT:C85981 a owl:Class ;
+    rdfs:label "Corynebacteriaceae" ;
+    rdfs:subClassOf NCIT:C76195 ;
+    metadata:prefixIRI "Thesaurus:C85981"^^xsd:string ;
+    NCIT:NHC0 "C85981" ;
+    NCIT:P90 "Corynebacteriaceae" ;
+    NCIT:P97 "A taxonomic family of bacterium in the phylum Actinobacteria that includes the genus Corynebacterium." ;
+    NCIT:P106 "Bacterium" ;
+    NCIT:P108 "Corynebacteriaceae" ;
+    NCIT:P207 "C0010147" ;
+    NCIT:P331 "1653" .
+
+NCIT:C85982 a owl:Class ;
+    rdfs:label "Mycobacteriaceae" ;
+    rdfs:subClassOf NCIT:C76195 ;
+    metadata:prefixIRI "Thesaurus:C85982"^^xsd:string ;
+    NCIT:NHC0 "C85982" ;
+    NCIT:P90 "Mycobacteriaceae" ;
+    NCIT:P97 "A taxonomic family of bacterium in the phylum Actinobacteria that includes the genus Mycobacterium, among others." ;
+    NCIT:P106 "Bacterium" ;
+    NCIT:P108 "Mycobacteriaceae" ;
+    NCIT:P207 "C0026907" ;
+    NCIT:P331 "1762" .
+
+NCIT:C85983 a owl:Class ;
+    rdfs:label "Nocardiaceae" ;
+    rdfs:subClassOf NCIT:C76195 ;
+    metadata:prefixIRI "Thesaurus:C85983"^^xsd:string ;
+    NCIT:NHC0 "C85983" ;
+    NCIT:P90 "Nocardiaceae" ;
+    NCIT:P97 "A taxonomic family of Gram positive, aerobic bacterium in the phylum Actinobacteria that includes the genera Nocardia, Rhodococcus and Smaragdicoccus, among others." ;
+    NCIT:P106 "Bacterium" ;
+    NCIT:P108 "Nocardiaceae" ;
+    NCIT:P207 "C0028243" ;
+    NCIT:P331 "85025" .
+
+NCIT:C85984 a owl:Class ;
+    rdfs:label "Streptomycetaceae" ;
+    rdfs:subClassOf NCIT:C76195 ;
+    metadata:prefixIRI "Thesaurus:C85984"^^xsd:string ;
+    NCIT:NHC0 "C85984" ;
+    NCIT:P90 "Streptomycetaceae" ;
+    NCIT:P97 "A taxonomic family of soil borne bacterium in the phylum Actinobacteria that includes the genera Kitasatospora and Streptomyces, among others." ;
+    NCIT:P106 "Bacterium" ;
+    NCIT:P108 "Streptomycetaceae" ;
+    NCIT:P207 "C0038424" ;
+    NCIT:P331 "2062" .
+
+NCIT:C85985 a owl:Class ;
+    rdfs:label "Bacteroidaceae" ;
+    rdfs:subClassOf NCIT:C76203 ;
+    metadata:prefixIRI "Thesaurus:C85985"^^xsd:string ;
+    NCIT:NHC0 "C85985" ;
+    NCIT:P90 "Bacteroidaceae" ;
+    NCIT:P97 "A taxonomic family of bacterium, in the phylum Bacteroidetes, which is usually found in the mucous membranes and alimentary tract of mammals. It includes the genera Bacteroides and Acetomicrobium, among others." ;
+    NCIT:P106 "Bacterium" ;
+    NCIT:P108 "Bacteroidaceae" ;
+    NCIT:P207 "C0004660" ;
+    NCIT:P331 "815" .
+
+NCIT:C85986 a owl:Class ;
+    rdfs:label "Clostridiaceae" ;
+    rdfs:subClassOf NCIT:C76197 ;
+    metadata:prefixIRI "Thesaurus:C85986"^^xsd:string ;
+    NCIT:NHC0 "C85986" ;
+    NCIT:P90 "Clostridiaceae" ;
+    NCIT:P97 "A taxonomic family of bacterium in the phylum Firmicutes that includes the genera Alkaliphilus, Clostridium and Lutispora, among others." ;
+    NCIT:P106 "Bacterium" ;
+    NCIT:P108 "Clostridiaceae" ;
+    NCIT:P207 "C1003853" ;
+    NCIT:P331 "31979" .
+
+NCIT:C85988 a owl:Class ;
+    rdfs:label "Leuconostocaceae" ;
+    rdfs:subClassOf NCIT:C76197 ;
+    metadata:prefixIRI "Thesaurus:C85988"^^xsd:string ;
+    NCIT:NHC0 "C85988" ;
+    NCIT:P90 "Leuconostocaceae" ;
+    NCIT:P97 "A taxonomic family of Gram positive bacterium in the phylum Firmicutes that includes the genera Fructobacillus and Leuconostoc, among others." ;
+    NCIT:P106 "Bacterium" ;
+    NCIT:P108 "Leuconostocaceae" ;
+    NCIT:P207 "C1035040" ;
+    NCIT:P331 "81850" .
+
+NCIT:C85992 a owl:Class ;
+    rdfs:label "Listeriaceae" ;
+    rdfs:subClassOf NCIT:C76197 ;
+    metadata:prefixIRI "Thesaurus:C85992"^^xsd:string ;
+    NCIT:NHC0 "C85992" ;
+    NCIT:P90 "Listeriaceae" ;
+    NCIT:P97 "A taxonomic family of Gram positive bacterium in the phylum Firmicutes that includes the genera Listeria and Brochothrix, among others." ;
+    NCIT:P106 "Bacterium" ;
+    NCIT:P108 "Listeriaceae" ;
+    NCIT:P207 "C1210575" ;
+    NCIT:P331 "186820" .
+
+NCIT:C86000 a owl:Class ;
+    rdfs:label "Leptospiraceae" ;
+    rdfs:subClassOf NCIT:C76206 ;
+    metadata:prefixIRI "Thesaurus:C86000"^^xsd:string ;
+    NCIT:NHC0 "C86000" ;
+    NCIT:P90 "Leptospiraceae" ;
+    NCIT:P97 "A taxonomic family of mostile bacterium in the phylum Spirochaetes that includes the genera Leptospira and Turneriella, among others." ;
+    NCIT:P106 "Bacterium" ;
+    NCIT:P108 "Leptospiraceae" ;
+    NCIT:P207 "C0085466" ;
+    NCIT:P331 "170" .
+
+NCIT:C86006 a owl:Class ;
+    rdfs:label "Coxiellaceae" ;
+    rdfs:subClassOf NCIT:C76196 ;
+    metadata:prefixIRI "Thesaurus:C86006"^^xsd:string ;
+    NCIT:NHC0 "C86006" ;
+    NCIT:P90 "Coxiellaceae" ;
+    NCIT:P97 "A taxonomic family of bacterium in the phylum Proteobacteria that includes the genera Coxiella and Rickettsiella, among others." ;
+    NCIT:P106 "Bacterium" ;
+    NCIT:P108 "Coxiellaceae" ;
+    NCIT:P207 "C1056978" ;
+    NCIT:P331 "118968" .
+
+NCIT:C86007 a owl:Class ;
+    rdfs:label "Rickettsiaceae" ;
+    rdfs:subClassOf NCIT:C76196 ;
+    metadata:prefixIRI "Thesaurus:C86007"^^xsd:string ;
+    NCIT:NHC0 "C86007" ;
+    NCIT:P90 "Rickettsiaceae" ;
+    NCIT:P97 "A taxonomic family of Gram negative, non acid fast bacterium in the phylum Proteobacteria that includes the genera Rickettsia and Wolbachia, among others." ;
+    NCIT:P106 "Bacterium" ;
+    NCIT:P108 "Rickettsiaceae" ;
+    NCIT:P207 "C0035591" ;
+    NCIT:P331 "775" .
+
+NCIT:C86343 a owl:Class ;
+    rdfs:label "Diptheroid Bacillus" ;
+    rdfs:subClassOf NCIT:C14329 ;
+    metadata:prefixIRI "Thesaurus:C86343"^^xsd:string ;
+    NCIT:A8 NCIT:C61410,
+        NCIT:C66830,
+        NCIT:C85491 ;
+    NCIT:NHC0 "C86343" ;
+    NCIT:P90 "DIPHTHEROID BACILLUS",
+        "Diptheroid Bacillus" ;
+    NCIT:P97 "Any of a number of rod shaped bacteria that resemble Corynebacterium diphtheriae, either in morphology or etiology." ;
+    NCIT:P106 "Bacterium" ;
+    NCIT:P108 "Diptheroid Bacillus" ;
+    NCIT:P207 "C2828051" ;
+    NCIT:P322 "CDISC" ;
+    NCIT:P325 "Any of a number of rod-shaped bacteria that resemble Corynebacterium diphtheriae, either in morphology or etiology." .
+
+NCIT:C86587 a owl:Class ;
+    rdfs:label "Algae" ;
+    rdfs:subClassOf NCIT:C14258 ;
+    metadata:prefixIRI "Thesaurus:C86587"^^xsd:string ;
+    NCIT:NHC0 "C86587" ;
+    NCIT:P90 "Algae" ;
+    NCIT:P97 "Chlorophyll-containing, mainly aquatic eukaryotic organisms lacking true stems and roots and leaves." ;
+    NCIT:P106 "Plant" ;
+    NCIT:P108 "Algae" ;
+    NCIT:P207 "C0002028" .
+
+NCIT:C86869 a owl:Class ;
+    rdfs:label "Rikenellaceae" ;
+    rdfs:subClassOf NCIT:C76203 ;
+    metadata:prefixIRI "Thesaurus:C86869"^^xsd:string ;
+    NCIT:NHC0 "C86869" ;
+    NCIT:P90 "Rikenellaceae" ;
+    NCIT:P106 "Bacterium" ;
+    NCIT:P108 "Rikenellaceae" ;
+    NCIT:P207 "C1080664" ;
+    NCIT:P331 "171550" .
+
+NCIT:C88144 a owl:Class ;
+    rdfs:label "Mosaic" ;
+    rdfs:subClassOf NCIT:C14376 ;
+    metadata:prefixIRI "Thesaurus:C88144"^^xsd:string ;
+    NCIT:NHC0 "C88144" ;
+    NCIT:P90 "Mosaic",
+        "mosaicism" ;
+    NCIT:P97 "An individual containing two or more populations of genetically different cells that arose from a single zygote." ;
+    NCIT:P106 "Classification" ;
+    NCIT:P108 "Mosaic" ;
+    NCIT:P207 "C2987512" .
+
+NCIT:C94171 a owl:Class ;
+    rdfs:label "Animal Organism Strain" ;
+    rdfs:subClassOf NCIT:C14419 ;
+    metadata:prefixIRI "Thesaurus:C94171"^^xsd:string ;
+    NCIT:A8 NCIT:C159501,
+        NCIT:C159504 ;
+    NCIT:NHC0 "C94171" ;
+    NCIT:P90 "Animal Organism Strain",
+        "Animal.strain" ;
+    NCIT:P97 "A group of presumed common ancestry with clear-cut physiological but usually not morphological distinctions." ;
+    NCIT:P106 "Organism" ;
+    NCIT:P108 "Animal Organism Strain" ;
+    NCIT:P207 "C0682518" ;
+    NCIT:P322 "BRIDG" ;
+    NCIT:P325 "A group of presumed common ancestry with clear-cut physiological but usually not morphological distinctions. EXAMPLE(S): The specific genotypic or phenotypic variant of an animal. Minnesota5 (swine strain), DXL (poultry strain), RB51 (vaccine strain of Brucella abortus)" .
+
+NCIT:C94190 a owl:Class ;
+    rdfs:label "Enveloped Virus" ;
+    rdfs:subClassOf NCIT:C14349 ;
+    metadata:prefixIRI "Thesaurus:C94190"^^xsd:string ;
+    NCIT:NHC0 "C94190" ;
+    NCIT:P90 "Enveloped Virus",
+        "enveloped virus" ;
+    NCIT:P106 "Virus" ;
+    NCIT:P108 "Enveloped Virus" ;
+    NCIT:P207 "C2986384" ;
+    NCIT:P325 "A virus that has an outer wrapping or envelope. This envelope comes from the infected cell, or host, in a process called \"budding off.\" During the budding process, newly formed virus particles become \"enveloped\" or wrapped in an outer coat that is made from a small piece of the cell's plasma membrane. The envelope may play a role in helping a virus survive and infect other cells." .
+
+NCIT:C96373 a owl:Class ;
+    rdfs:label "SEND Test System Strain" ;
+    rdfs:subClassOf NCIT:C14419 ;
+    metadata:prefixIRI "Thesaurus:C96373"^^xsd:string ;
+    NCIT:A8 NCIT:C61410,
+        NCIT:C77526,
+        NCIT:C90007,
+        NCIT:C90009 ;
+    NCIT:NHC0 "C96373" ;
+    NCIT:P90 "SEND Test System Strain",
+        "STRAIN",
+        "Strain/Substrain" ;
+    NCIT:P97 "The vendor-supplied species, strain or substrain designation for the test system under study.  It may combine the species, background strain, substrain, and associated genetic modifications as supplied by the vendor." ;
+    NCIT:P106 "Organism" ;
+    NCIT:P108 "SEND Test System Strain" ;
+    NCIT:P207 "C3272744" ;
+    NCIT:P322 "CDISC" ;
+    NCIT:P325 "The vendor-supplied species/strain/substrain designation for the test system under study. It may combine the species, background strain, substrain, and associated genetic modifications as supplied by the vendor (e.g. FISCHER 344, SPRAGUE-DAWLEY IGS, WISTAR Kyoto, BEAGLE, CYNOMOLGUS, RHESUS and CHIMPANZEE)." .
+
+NCIT:C97158 a owl:Class ;
+    rdfs:label "Genetically Modified Organism" ;
+    rdfs:subClassOf NCIT:C14376 ;
+    metadata:prefixIRI "Thesaurus:C97158"^^xsd:string ;
+    NCIT:NHC0 "C97158" ;
+    NCIT:P90 "Genetically Modified Organism",
+        "GMO" ;
+    NCIT:P97 "An organism whose genetic characteristics have been altered by any of the techniques of genetic engineering." ;
+    NCIT:P106 "Classification" ;
+    NCIT:P108 "Genetically Modified Organism" ;
+    NCIT:P207 "C0969756" .
+
+NCIT:C111564 a owl:Class ;
+    rdfs:label "Multi-Drug Resistant Organism" ;
+    rdfs:subClassOf NCIT:C14329 ;
+    metadata:prefixIRI "Thesaurus:C111564"^^xsd:string ;
+    NCIT:A8 NCIT:C116977,
+        NCIT:C142799 ;
+    NCIT:NHC0 "C111564" ;
+    NCIT:P90 "MDRO",
+        "Multi-Drug Resistant Organism",
+        "Multi-drug resistant organisms" ;
+    NCIT:P97 "A microorganism, often a bacterium, that is not susceptible to standard antimicrobial therapies." ;
+    NCIT:P106 "Organism" ;
+    NCIT:P107 "Multi-Drug Resistant Organism" ;
+    NCIT:P108 "Multi-Drug Resistant Organism" ;
+    NCIT:P207 "C3826980" ;
+    NCIT:P322 "CTRP" .
+
+NCIT:C112230 a owl:Class ;
+    rdfs:label "Arbovirus" ;
+    rdfs:subClassOf NCIT:C14349 ;
+    metadata:prefixIRI "Thesaurus:C112230"^^xsd:string ;
+    NCIT:A8 NCIT:C61410,
+        NCIT:C66830,
+        NCIT:C85491 ;
+    NCIT:NHC0 "C112230" ;
+    NCIT:P90 "ARBOVIRUS",
+        "Arbovirus",
+        "Arthropod-borne Virus" ;
+    NCIT:P97 "A non-taxonomic grouping of viruses that are transmitted through an arthropod vector and replicate in a vertebrate host. These include a variety of species from the families Bunyaviridae, Flaviviridae and Reoviridae." ;
+    NCIT:P106 "Virus" ;
+    NCIT:P108 "Arbovirus" ;
+    NCIT:P207 "C0003725" ;
+    NCIT:P322 "CDISC" ;
+    NCIT:P325 "A non-taxonomic grouping of viruses that are transmitted through an arthropod vector and replicate in a vertebrate host." .
+
+NCIT:C117456 a owl:Class ;
+    rdfs:label "Organism Substrain" ;
+    rdfs:subClassOf NCIT:C14376 ;
+    metadata:prefixIRI "Thesaurus:C117456"^^xsd:string ;
+    NCIT:NHC0 "C117456" ;
+    NCIT:P90 "Organism Substrain" ;
+    NCIT:P97 "A further sub-classification of the organism strain." ;
+    NCIT:P106 "Classification" ;
+    NCIT:P108 "Organism Substrain" ;
+    NCIT:P207 "C3890722" .
+
+NCIT:C117982 a owl:Class ;
+    rdfs:label "Domestic Animal" ;
+    rdfs:subClassOf NCIT:C14376 ;
+    metadata:prefixIRI "Thesaurus:C117982"^^xsd:string ;
+    NCIT:A8 NCIT:C61410,
+        NCIT:C77526,
+        NCIT:C77530 ;
+    NCIT:NHC0 "C117982" ;
+    NCIT:P90 "DOMESTIC",
+        "Domestic Animal" ;
+    NCIT:P97 "The name for a domesticated animal that does not have a pedigree nor belong to a specific breed." ;
+    NCIT:P106 "Classification" ;
+    NCIT:P108 "Domestic Animal" ;
+    NCIT:P207 "C0003063" ;
+    NCIT:P322 "CDISC" ;
+    NCIT:P325 "The name for a domesticated animal that does not have a pedigree nor belong to a specific breed. (NCI)" .
+
+NCIT:C118931 a owl:Class ;
+    rdfs:label "Rhodobacteraceae" ;
+    rdfs:subClassOf NCIT:C76196 ;
+    metadata:prefixIRI "Thesaurus:C118931"^^xsd:string ;
+    NCIT:NHC0 "C118931" ;
+    NCIT:P90 "Rhodobacteraceae" ;
+    NCIT:P97 "A taxonomic family of Gram negative bacterium in the phylum Proteobacteria that includes the genera Actibacterium, Agaricicola and Rhodobacter, among others." ;
+    NCIT:P106 "Bacterium" ;
+    NCIT:P108 "Rhodobacteraceae" ;
+    NCIT:P207 "C1003859" ;
+    NCIT:P331 "31989" .
+
+NCIT:C119321 a owl:Class ;
+    rdfs:label "Anaerobic Bacteria" ;
+    rdfs:subClassOf NCIT:C14329 ;
+    metadata:prefixIRI "Thesaurus:C119321"^^xsd:string ;
+    NCIT:A8 NCIT:C61410,
+        NCIT:C66830,
+        NCIT:C85491 ;
+    NCIT:NHC0 "C119321" ;
+    NCIT:P90 "Anaerobe",
+        "ANAEROBIC BACTERIA",
+        "Anaerobic Bacteria" ;
+    NCIT:P97 "Any bacteria that does not require oxygen to grow or respirate." ;
+    NCIT:P106 "Bacterium" ;
+    NCIT:P108 "Anaerobic Bacteria" ;
+    NCIT:P207 "C0004613" ;
+    NCIT:P322 "CDISC" ;
+    NCIT:P325 "Any bacterial organism that does not require oxygen to grow or respirate and cannot be assigned to a specific genus or species." .
+
+NCIT:C120539 a owl:Class ;
+    rdfs:label "Mucoromycotina" ;
+    rdfs:subClassOf NCIT:C14209 ;
+    metadata:prefixIRI "Thesaurus:C120539"^^xsd:string ;
+    NCIT:NHC0 "C120539" ;
+    NCIT:P90 "Mucoromycotina" ;
+    NCIT:P97 "A taxonomic grouping of saprotrophic fungi in the Mucoromycotina subphylum." ;
+    NCIT:P106 "Fungus" ;
+    NCIT:P108 "Mucoromycotina" ;
+    NCIT:P207 "C2283745" ;
+    NCIT:P331 "451507" .
+
+NCIT:C120707 a owl:Class ;
+    rdfs:label "Mixed Flora" ;
+    rdfs:subClassOf NCIT:C14376 ;
+    metadata:prefixIRI "Thesaurus:C120707"^^xsd:string ;
+    NCIT:A8 NCIT:C61410,
+        NCIT:C66830,
+        NCIT:C85491 ;
+    NCIT:NHC0 "C120707" ;
+    NCIT:P90 "MIXED FLORA",
+        "Mixed Flora" ;
+    NCIT:P97 "The presence of more than one fungal and/or bacterial organism in a culture." ;
+    NCIT:P106 "Classification" ;
+    NCIT:P108 "Mixed Flora" ;
+    NCIT:P207 "C2061911" ;
+    NCIT:P322 "CDISC" ;
+    NCIT:P325 "The presence of more than one fungal and/or bacterial organism in a culture. (NCI)" .
+
+NCIT:C122009 a owl:Class ;
+    rdfs:label "Dialister" ;
+    rdfs:subClassOf NCIT:C76197 ;
+    metadata:prefixIRI "Thesaurus:C122009"^^xsd:string ;
+    NCIT:NHC0 "C122009" ;
+    NCIT:P90 "Dialister" ;
+    NCIT:P97 "A genus of Gram-negative rod-shaped bacteria in the phylum Firmicutes." ;
+    NCIT:P106 "Bacterium" ;
+    NCIT:P108 "Dialister" ;
+    NCIT:P207 "C1008539" ;
+    NCIT:P331 "39948" .
+
+NCIT:C122020 a owl:Class ;
+    rdfs:label "Dolosigranulum" ;
+    rdfs:subClassOf NCIT:C76197 ;
+    metadata:prefixIRI "Thesaurus:C122020"^^xsd:string ;
+    NCIT:NHC0 "C122020" ;
+    NCIT:P90 "Dolosigranulum" ;
+    NCIT:P97 "A genus of Gram-positive, rod-shaped bacteria in the family Firmicutes." ;
+    NCIT:P106 "Bacterium" ;
+    NCIT:P108 "Dolosigranulum" ;
+    NCIT:P207 "C1002615" ;
+    NCIT:P331 "29393" .
+
+NCIT:C122024 a owl:Class ;
+    rdfs:label "Platyhelminthes" ;
+    rdfs:subClassOf NCIT:C14182 ;
+    metadata:prefixIRI "Thesaurus:C122024"^^xsd:string ;
+    NCIT:NHC0 "C122024" ;
+    NCIT:P90 "Platyhelminth",
+        "Platyhelminthes" ;
+    NCIT:P97 "The taxanomic phylum of flatworms. Flatworms have simple bilateral symmetry, are unsegmented, soft-bodied, and have no body cavity and no specialized circulatory or respiratory organs." ;
+    NCIT:P106 "Animal" ;
+    NCIT:P108 "Platyhelminthes" ;
+    NCIT:P207 "C0032211" ;
+    NCIT:P331 "6157" .
+
+NCIT:C122287 a owl:Class ;
+    rdfs:label "Dorea" ;
+    rdfs:subClassOf NCIT:C76197 ;
+    metadata:prefixIRI "Thesaurus:C122287"^^xsd:string ;
+    NCIT:A8 NCIT:C61410,
+        NCIT:C66830,
+        NCIT:C85491 ;
+    NCIT:NHC0 "C122287" ;
+    NCIT:P90 "DOREA",
+        "Dorea" ;
+    NCIT:P97 "A genus of Gram-positive, obligately anaerobic, non-spore-forming, rod-shaped bacterium in the phylum Firmicutes." ;
+    NCIT:P106 "Bacterium" ;
+    NCIT:P108 "Dorea" ;
+    NCIT:P207 "C1212549" ;
+    NCIT:P322 "CDISC" ;
+    NCIT:P325 "Any bacterial organism that can be assigned to the genus Dorea." ;
+    NCIT:P331 "189330" .
+
+NCIT:C122292 a owl:Class ;
+    rdfs:label "Ehrlichia" ;
+    rdfs:subClassOf NCIT:C76196 ;
+    metadata:prefixIRI "Thesaurus:C122292"^^xsd:string ;
+    NCIT:A8 NCIT:C61410,
+        NCIT:C66830,
+        NCIT:C85491 ;
+    NCIT:NHC0 "C122292" ;
+    NCIT:P90 "Cowdria",
+        "EHRLICHIA",
+        "Ehrlichia",
+        "Kurlovia",
+        "Nicollea" ;
+    NCIT:P97 "A genus of tick-borne bacteria in the family Anaplasmataceae. Ehrlichia are obligately intracellular pathogens and are the causative agent of ehrlichiosis." ;
+    NCIT:P106 "Bacterium" ;
+    NCIT:P108 "Ehrlichia" ;
+    NCIT:P207 "C0013722" ;
+    NCIT:P322 "CDISC" ;
+    NCIT:P325 "Any bacterial organism that is not assigned to the species level but can be assigned to the Ehrlichia genus level." ;
+    NCIT:P331 "943" .
+
+NCIT:C122310 a owl:Class ;
+    rdfs:label "Flavonifractor" ;
+    rdfs:subClassOf NCIT:C76197 ;
+    metadata:prefixIRI "Thesaurus:C122310"^^xsd:string ;
+    NCIT:A8 NCIT:C61410,
+        NCIT:C66830,
+        NCIT:C85491 ;
+    NCIT:NHC0 "C122310" ;
+    NCIT:P90 "FLAVONIFRACTOR",
+        "Flavonifractor" ;
+    NCIT:P97 "A genus of strictly anaerobic, Gram-variable, bacillus-shaped bacteria with variable motility in the family Firmicutes. Bacteria in the genus are asaccharolytic and weakly fermentative on glucose, fructose, and ribose." ;
+    NCIT:P106 "Bacterium" ;
+    NCIT:P108 "Flavonifractor" ;
+    NCIT:P207 "C2959924" ;
+    NCIT:P322 "CDISC" ;
+    NCIT:P325 "Any bacterial organism that is not assigned to the species level but can be assigned to the Flavonifractor genus level." ;
+    NCIT:P331 "946234" .
+
+NCIT:C123335 a owl:Class ;
+    rdfs:label "Microsporidia" ;
+    rdfs:subClassOf NCIT:C14209 ;
+    metadata:prefixIRI "Thesaurus:C123335"^^xsd:string ;
+    NCIT:A8 NCIT:C61410,
+        NCIT:C66830,
+        NCIT:C85491 ;
+    NCIT:NHC0 "C123335" ;
+    NCIT:P90 "Microspora",
+        "Microsporea",
+        "Microsporida",
+        "MICROSPORIDIA",
+        "Microsporidia" ;
+    NCIT:P97 "A taxonomic grouping of spore-forming, unicellular, and parasitic fungi that can be assigned to the Microsporidia phylum." ;
+    NCIT:P106 "Fungus" ;
+    NCIT:P108 "Microsporidia" ;
+    NCIT:P207 "C0917724" ;
+    NCIT:P322 "CDISC" ;
+    NCIT:P325 "Any fungal organism that can be assigned to the phylum Microsporidia." ;
+    NCIT:P331 "6029" .
+
+NCIT:C123934 a owl:Class ;
+    rdfs:label "Definitive Host" ;
+    rdfs:subClassOf NCIT:C66819 ;
+    metadata:prefixIRI "Thesaurus:C123934"^^xsd:string ;
+    NCIT:NHC0 "C123934" ;
+    NCIT:P90 "Definitive Host",
+        "Primary Host" ;
+    NCIT:P97 "The host in which a parasite spends the sexual stage of its life cycle." ;
+    NCIT:P106 "Organism" ;
+    NCIT:P108 "Definitive Host" ;
+    NCIT:P207 "C4086236" .
+
+NCIT:C123935 a owl:Class ;
+    rdfs:label "Intermediate Host" ;
+    rdfs:subClassOf NCIT:C66819 ;
+    metadata:prefixIRI "Thesaurus:C123935"^^xsd:string ;
+    NCIT:NHC0 "C123935" ;
+    NCIT:P90 "Intermediate Host" ;
+    NCIT:P97 "A host in which a parasite goes through its larval or developmental stages but does not reach sexual maturity." ;
+    NCIT:P106 "Organism" ;
+    NCIT:P108 "Intermediate Host" ;
+    NCIT:P207 "C4086523" .
+
+NCIT:C124287 a owl:Class ;
+    rdfs:label "Spirillaceae" ;
+    rdfs:subClassOf NCIT:C76196 ;
+    metadata:prefixIRI "Thesaurus:C124287"^^xsd:string ;
+    NCIT:NHC0 "C124287" ;
+    NCIT:P90 "Spirillaceae" ;
+    NCIT:P106 "Bacterium" ;
+    NCIT:P108 "Spirillaceae" ;
+    NCIT:P207 "C0037964" ;
+    NCIT:P331 "119068" .
+
+NCIT:C125642 a owl:Class ;
+    rdfs:label "Helminth" ;
+    rdfs:subClassOf NCIT:C14376 ;
+    metadata:prefixIRI "Thesaurus:C125642"^^xsd:string ;
+    NCIT:NHC0 "C125642" ;
+    NCIT:P90 "Helminth",
+        "Helminths" ;
+    NCIT:P97 "A non-taxonomic group of parasitic worms. The term may be used to describe flatworms (Platyhelminthes), namely cestodes (tapeworms) and trematodes (flukes), and roundworms (Nematoda). These are common infectious agents of humans in developing countries." ;
+    NCIT:P106 "Classification" ;
+    NCIT:P108 "Helminth" ;
+    NCIT:P207 "C0018893" .
+
+NCIT:C125957 a owl:Class ;
+    rdfs:label "Normal Flora" ;
+    rdfs:subClassOf NCIT:C14376 ;
+    metadata:prefixIRI "Thesaurus:C125957"^^xsd:string ;
+    NCIT:A8 NCIT:C61410,
+        NCIT:C66830,
+        NCIT:C85491 ;
+    NCIT:NHC0 "C125957" ;
+    NCIT:P90 "NORMAL FLORA",
+        "Normal Flora" ;
+    NCIT:P97 "Harmless or beneficial population of microorganisms or plant life that normally occur in specific areas of the body or the environment." ;
+    NCIT:P106 "Classification" ;
+    NCIT:P108 "Normal Flora" ;
+    NCIT:P207 "C0314761" ;
+    NCIT:P322 "CDISC" ;
+    NCIT:P325 "The presence of microorganisms that normally reside at an anatomical site and that under normal circumstances do not cause disease." .
+
+NCIT:C127286 a owl:Class ;
+    rdfs:label "Herbaspirillum" ;
+    rdfs:subClassOf NCIT:C76196 ;
+    metadata:prefixIRI "Thesaurus:C127286"^^xsd:string ;
+    NCIT:NHC0 "C127286" ;
+    NCIT:P90 "Herbaspirillum" ;
+    NCIT:P97 "A genus of Gram-negative, motile, spirillum-shaped bacteria in the Proteobacteria phylum and Betaproteobacteria class that colonize diverse plants. Many species within Herbaspirillum are able to fix nitrogen. Sugars are oxidized, but not fermented." ;
+    NCIT:P106 "Bacterium" ;
+    NCIT:P108 "Herbaspirillum" ;
+    NCIT:P207 "C0995448" ;
+    NCIT:P331 "963" .
+
+NCIT:C127706 a owl:Class ;
+    rdfs:label "Enteric Bacteria" ;
+    rdfs:subClassOf NCIT:C14329 ;
+    metadata:prefixIRI "Thesaurus:C127706"^^xsd:string ;
+    NCIT:A8 NCIT:C61410,
+        NCIT:C66830,
+        NCIT:C85491 ;
+    NCIT:NHC0 "C127706" ;
+    NCIT:P90 "ENTERIC BACTERIA",
+        "Enteric Bacteria" ;
+    NCIT:P97 "Any of the bacteria that normally or pathogenically reside in the intestinal tracts of animals." ;
+    NCIT:P106 "Bacterium" ;
+    NCIT:P108 "Enteric Bacteria" ;
+    NCIT:P208 "CL508741" ;
+    NCIT:P322 "CDISC" ;
+    NCIT:P325 "Any rod-shaped bacterial organism that does not require oxygen to grow or respirate, cannot be assigned to a specific genus or species, has a cell wall that stains Gram-negative, and that occurs normally or pathogenically in the intestinal tracts of animals." .
+
+NCIT:C127727 a owl:Class ;
+    rdfs:label "Lysinibacillus" ;
+    rdfs:subClassOf NCIT:C76197 ;
+    metadata:prefixIRI "Thesaurus:C127727"^^xsd:string ;
+    NCIT:A8 NCIT:C61410,
+        NCIT:C66830,
+        NCIT:C85491 ;
+    NCIT:NHC0 "C127727" ;
+    NCIT:P90 "LYSINIBACILLUS",
+        "Lysinibacillus" ;
+    NCIT:P97 "A genus of gram-positive, rod-shaped, non-motile bacteria in the phylum Firmicutes." ;
+    NCIT:P106 "Bacterium" ;
+    NCIT:P108 "Lysinibacillus" ;
+    NCIT:P207 "C1947862" ;
+    NCIT:P322 "CDISC" ;
+    NCIT:P325 "Any bacteria that is not assigned to the species level but can be assigned to the Lysinibacillus genus level." ;
+    NCIT:P331 "400634" .
+
+NCIT:C128362 a owl:Class ;
+    rdfs:label "Dimorphic Fungus" ;
+    rdfs:subClassOf NCIT:C14209 ;
+    metadata:prefixIRI "Thesaurus:C128362"^^xsd:string ;
+    NCIT:A8 NCIT:C90259,
+        NCIT:C128453 ;
+    NCIT:NHC0 "C128362" ;
+    NCIT:P90 "Dimorphic Fungus" ;
+    NCIT:P97 "A fungus that grows as either a yeast or a mold." ;
+    NCIT:P106 "Eukaryote" ;
+    NCIT:P108 "Dimorphic Fungus" ;
+    NCIT:P207 "C1562222" ;
+    NCIT:P322 "NICHD" ;
+    NCIT:P325 "A fungus that grows as either a yeast or a mold." .
+
+NCIT:C129411 a owl:Class ;
+    rdfs:label "Clostridium Cluster" ;
+    rdfs:subClassOf NCIT:C14329 ;
+    metadata:prefixIRI "Thesaurus:C129411"^^xsd:string ;
+    NCIT:A8 NCIT:C116977,
+        NCIT:C142799 ;
+    NCIT:NHC0 "C129411" ;
+    NCIT:P90 "Clostridium Cluster" ;
+    NCIT:P97 "A set of non-taxonomic groups of bacterial species in either the Clostridium genus or another related genus. The members of the groups were chosen based on comparative sequence analysis of their 16S ribosomal RNA gene sequences." ;
+    NCIT:P106 "Organism" ;
+    NCIT:P107 "Clostridium Cluster" ;
+    NCIT:P108 "Clostridium Cluster" ;
+    NCIT:P171 "7981107" ;
+    NCIT:P208 "CL512696" ;
+    NCIT:P322 "CTRP" .
+
+NCIT:C140177 a owl:Class ;
+    rdfs:label "Subviral Satellite" ;
+    rdfs:subClassOf NCIT:C14349 ;
+    metadata:prefixIRI "Thesaurus:C140177"^^xsd:string ;
+    NCIT:NHC0 "C140177" ;
+    NCIT:P90 "Satellite",
+        "Subviral Satellite" ;
+    NCIT:P97 "A subviral agent composed of nucleic acid that depends on the co-infection of a host cell with a helper virus for its replication." ;
+    NCIT:P106 "Virus" ;
+    NCIT:P108 "Subviral Satellite" ;
+    NCIT:P207 "C1623044" .
+
+NCIT:C157254 a owl:Class ;
+    rdfs:label "HPV-Low Risk" ;
+    rdfs:subClassOf NCIT:C14349 ;
+    metadata:prefixIRI "Thesaurus:C157254"^^xsd:string ;
+    NCIT:A8 NCIT:C156952,
+        NCIT:C156953,
+        NCIT:C157526 ;
+    NCIT:NHC0 "C157254" ;
+    NCIT:P90 "HPV-Low Risk",
+        "Low Risk HPV",
+        "Low Risk Human Papilloma Virus",
+        "Low Risk Human Papillomavirus",
+        "Low-Risk HPV",
+        "Low-Risk HPV Strain",
+        "Low-Risk HPV Subtype",
+        "Low-Risk Human Papilloma Virus",
+        "Low-Risk Human Papillomavirus",
+        "Low-Risk Subtype (6, 11, etc.)" ;
+    NCIT:P97 "Any of a number of strains of human papillomavirus (HPV) that cause genital warts in humans and are rarely associated with carcinogenesis." ;
+    NCIT:P106 "Virus" ;
+    NCIT:P108 "HPV-Low Risk" ;
+    NCIT:P208 "CL936873" ;
+    NCIT:P322 "CPTAC" .
+
+NCIT:C164693 a owl:Class ;
+    rdfs:label "Biologic Entity Classification Strain" ;
+    rdfs:subClassOf NCIT:C14419 ;
+    metadata:prefixIRI "Thesaurus:C164693"^^xsd:string ;
+    NCIT:A8 NCIT:C159501,
+        NCIT:C159504 ;
+    NCIT:NHC0 "C164693" ;
+    NCIT:P90 "Biologic Entity Classification Strain",
+        "BiologicEntityClassification.strain" ;
+    NCIT:P106 "Organism" ;
+    NCIT:P108 "Biologic Entity Classification Strain" ;
+    NCIT:P208 "CL977774" ;
+    NCIT:P322 "BRIDG" ;
+    NCIT:P325 "The text (and optional code) specifying a group of presumed common ancestry with clear-cut physiological but usually not morphological distinctions.  EXAMPLE(S): Minnesota5 (swine strain), DXL (poultry strain) For DICOM's Strain Code Sequence (0010,0219):  string = \"C57BL/6J\", code = \"3028467\". For DICOM's Strain Nomenclature (0010,0213):  codeSystem(OID).extension = \"MGI_2013\", codeSystem(OID).root = <OID for DICOM assigned terms for strain nomenclature>  OTHER NAME(S):  NOTE(S): The specific genotypic or phenotypic variant of an animal, microorganism, fungus, or pathogen. DICOM defines this to be a group of animals that are genetically uniform." .
+
+NCIT:C173514 a owl:Class ;
+    rdfs:label "Gram Negative Bacteria" ;
+    rdfs:subClassOf NCIT:C14329 ;
+    metadata:prefixIRI "Thesaurus:C173514"^^xsd:string ;
+    NCIT:NHC0 "C173514" ;
+    NCIT:P90 "Gram Negative Bacteria",
+        "Gram negative bacteria",
+        "Gram Negative Bacterium",
+        "Gram-Negative Bacteria",
+        "Gram-Negative Bacterium" ;
+    NCIT:P97 "Any bacteria with a thin peptidoglycan layer and an outer lipid membrane that stains pink with the Gram staining technique." ;
+    NCIT:P106 "Organism" ;
+    NCIT:P108 "Gram Negative Bacteria" ;
+    NCIT:P207 "C0018150" .
+
+NCIT:C173515 a owl:Class ;
+    rdfs:label "Gram Positive Bacteria" ;
+    rdfs:subClassOf NCIT:C14329 ;
+    metadata:prefixIRI "Thesaurus:C173515"^^xsd:string ;
+    NCIT:NHC0 "C173515" ;
+    NCIT:P90 "Gram Positive Bacteria",
+        "Gram positive bacteria",
+        "Gram Positive Bacterium",
+        "Gram-Positive Bacteria",
+        "Gram-Positive Bacterium" ;
+    NCIT:P97 "Any bacteria with a thick peptidoglycan layer and no outer lipid membrane that stains dark purple with the Gram staining technique." ;
+    NCIT:P106 "Organism" ;
+    NCIT:P108 "Gram Positive Bacteria" ;
+    NCIT:P207 "C0018154" .
+
+NCIT:C179000 a owl:Class ;
+    rdfs:label "Target Organism" ;
+    rdfs:subClassOf NCIT:C14250 ;
+    metadata:prefixIRI "Thesaurus:C179000"^^xsd:string ;
+    NCIT:A8 NCIT:C178723,
+        NCIT:C179026 ;
+    NCIT:NHC0 "C179000" ;
+    NCIT:P90 "Target Organism",
+        "Target_Organism" ;
+    NCIT:P97 "The organism of interest." ;
+    NCIT:P106 "Organism" ;
+    NCIT:P108 "Target Organism" ;
+    NCIT:P208 "CL1648476" ;
+    NCIT:P322 "SeroNet" .
+
+NCIT:C179768 a owl:Class ;
+    rdfs:label "Organism by Genotype" ;
+    rdfs:subClassOf NCIT:C14376 ;
+    metadata:prefixIRI "Thesaurus:C179768"^^xsd:string ;
+    NCIT:A8 NCIT:C61410,
+        NCIT:C66830,
+        NCIT:C179590,
+        NCIT:C179591 ;
+    NCIT:NHC0 "C179768" ;
+    NCIT:P90 "GENOTYPE",
+        "Genotype",
+        "Organism by Genotype",
+        "Organism Genotype" ;
+    NCIT:P97 "An indication of the non-taxonomic grouping of organisms based on organism genotype." ;
+    NCIT:P106 "Classification" ;
+    NCIT:P108 "Organism by Genotype" ;
+    NCIT:P208 "CL1663124" ;
+    NCIT:P322 "CDISC" ;
+    NCIT:P325 "A non-taxonomic parameter that can specify the genotype of the organism." .
+
+NCIT:C179769 a owl:Class ;
+    rdfs:label "Organism by Geographic Origin" ;
+    rdfs:subClassOf NCIT:C14376 ;
+    metadata:prefixIRI "Thesaurus:C179769"^^xsd:string ;
+    NCIT:A8 NCIT:C61410,
+        NCIT:C66830,
+        NCIT:C179590,
+        NCIT:C179591 ;
+    NCIT:NHC0 "C179769" ;
+    NCIT:P90 "Geographical Origin",
+        "GEOORIG",
+        "Organism by Geographic Origin",
+        "Organism Geographical Origin" ;
+    NCIT:P97 "An indication of the non-taxonomic grouping of organisms based on geographical location associated with where the organism was identified or isolated." ;
+    NCIT:P106 "Classification" ;
+    NCIT:P108 "Organism by Geographic Origin" ;
+    NCIT:P208 "CL1662437" ;
+    NCIT:P322 "CDISC" ;
+    NCIT:P325 "A non-taxonomic parameter that can specify the geographic location where the organism was identified, collected or came from." .
+
+NCIT:C179770 a owl:Class ;
+    rdfs:label "Organism by Group" ;
+    rdfs:subClassOf NCIT:C14376 ;
+    metadata:prefixIRI "Thesaurus:C179770"^^xsd:string ;
+    NCIT:A8 NCIT:C61410,
+        NCIT:C66830,
+        NCIT:C179590,
+        NCIT:C179591 ;
+    NCIT:NHC0 "C179770" ;
+    NCIT:P90 "GROUP",
+        "Group",
+        "Organism by Group",
+        "Organism Group" ;
+    NCIT:P97 "An indication of the non-taxonomic grouping of organisms based on organism group." ;
+    NCIT:P106 "Classification" ;
+    NCIT:P108 "Organism by Group" ;
+    NCIT:P208 "CL1663141" ;
+    NCIT:P322 "CDISC" ;
+    NCIT:P325 "A non-taxonomic parameter that can specify the group of the organism." .
+
+NCIT:C179771 a owl:Class ;
+    rdfs:label "Organism Isolate" ;
+    rdfs:subClassOf NCIT:C14376 ;
+    metadata:prefixIRI "Thesaurus:C179771"^^xsd:string ;
+    NCIT:A8 NCIT:C61410,
+        NCIT:C66830,
+        NCIT:C179590,
+        NCIT:C179591 ;
+    NCIT:NHC0 "C179771" ;
+    NCIT:P90 "ISOLATE",
+        "Isolate",
+        "Organism by Isolate",
+        "Organism Isolate" ;
+    NCIT:P97 "An indication of the non-taxonomic grouping of organisms based on organism isolate." ;
+    NCIT:P106 "Classification" ;
+    NCIT:P108 "Organism Isolate" ;
+    NCIT:P208 "CL1662338" ;
+    NCIT:P322 "CDISC" ;
+    NCIT:P325 "A non-taxonomic parameter that can specify the isolate of the organism." .
+
+NCIT:C179772 a owl:Class ;
+    rdfs:label "Organism Lineage" ;
+    rdfs:subClassOf NCIT:C14376 ;
+    metadata:prefixIRI "Thesaurus:C179772"^^xsd:string ;
+    NCIT:A8 NCIT:C61410,
+        NCIT:C66830,
+        NCIT:C179590,
+        NCIT:C179591 ;
+    NCIT:NHC0 "C179772" ;
+    NCIT:P90 "LINEAGE",
+        "Lineage",
+        "Organism Lineage" ;
+    NCIT:P97 "An indication of the taxonomic grouping of organisms based on a continuous, single line of descent within a phylogenetic tree." ;
+    NCIT:P106 "Classification" ;
+    NCIT:P108 "Organism Lineage" ;
+    NCIT:P208 "CL1662337" ;
+    NCIT:P322 "CDISC" ;
+    NCIT:P325 "A taxonomic parameter for the specification of lineage of the organism." .
+
+NCIT:C179774 a owl:Class ;
+    rdfs:label "Organism Pseudotype Viral Backbone" ;
+    rdfs:subClassOf NCIT:C14376 ;
+    metadata:prefixIRI "Thesaurus:C179774"^^xsd:string ;
+    NCIT:A8 NCIT:C61410,
+        NCIT:C66830,
+        NCIT:C179590,
+        NCIT:C179591 ;
+    NCIT:NHC0 "C179774" ;
+    NCIT:P90 "Organism by Viral Backbone Pseudotype",
+        "Organism Pseudotype Viral Backbone",
+        "PSDOBACK",
+        "Pseudotype Viral Backbone" ;
+    NCIT:P97 "The identification of the common pseudotype viral backbone used to build engineered viruses." ;
+    NCIT:P106 "Classification" ;
+    NCIT:P108 "Organism Pseudotype Viral Backbone" ;
+    NCIT:P208 "CL1662339" ;
+    NCIT:P322 "CDISC" ;
+    NCIT:P325 "A non-taxonomic parameter that can specify the pseudotype viral backbone of the engineered virus." .
+
+NCIT:C179775 a owl:Class ;
+    rdfs:label "Organism by Subtype" ;
+    rdfs:subClassOf NCIT:C14376 ;
+    metadata:prefixIRI "Thesaurus:C179775"^^xsd:string ;
+    NCIT:A8 NCIT:C61410,
+        NCIT:C66830,
+        NCIT:C179590,
+        NCIT:C179591 ;
+    NCIT:NHC0 "C179775" ;
+    NCIT:P90 "Organism by Subtype",
+        "Organism Subtype",
+        "SUBTYPE",
+        "Subtype" ;
+    NCIT:P97 "An indication of the non-taxonomic grouping of organisms based on organism subtype." ;
+    NCIT:P106 "Classification" ;
+    NCIT:P108 "Organism by Subtype" ;
+    NCIT:P208 "CL1662334" ;
+    NCIT:P322 "CDISC" ;
+    NCIT:P325 "A non-taxonomic parameter that can specify the subtype of the organism." .
+
+NCIT:C179776 a owl:Class ;
+    rdfs:label "Organism by Type" ;
+    rdfs:subClassOf NCIT:C14376 ;
+    metadata:prefixIRI "Thesaurus:C179776"^^xsd:string ;
+    NCIT:A8 NCIT:C61410,
+        NCIT:C66830,
+        NCIT:C179590,
+        NCIT:C179591 ;
+    NCIT:NHC0 "C179776" ;
+    NCIT:P90 "Organism by Type",
+        "Organism Type",
+        "TYPE",
+        "Type" ;
+    NCIT:P97 "An indication of the non-taxonomic grouping of organisms based on organism typing." ;
+    NCIT:P106 "Classification" ;
+    NCIT:P108 "Organism by Type" ;
+    NCIT:P208 "CL1663112" ;
+    NCIT:P322 "CDISC" ;
+    NCIT:P325 "A non-taxonomic parameter that can specify the type of the organism." .
+
+NCIT:C179777 a owl:Class ;
+    rdfs:label "Organism by Year Collected" ;
+    rdfs:subClassOf NCIT:C14376 ;
+    metadata:prefixIRI "Thesaurus:C179777"^^xsd:string ;
+    NCIT:A8 NCIT:C61410,
+        NCIT:C66830,
+        NCIT:C179590,
+        NCIT:C179591 ;
+    NCIT:NHC0 "C179777" ;
+    NCIT:P90 "Organism by Year Collected",
+        "Organism Year of Collection",
+        "Year of Collection",
+        "YEARCOLL" ;
+    NCIT:P97 "An indication of the non-taxonomic grouping of organisms based on the year when the organism was collected or isolated." ;
+    NCIT:P106 "Classification" ;
+    NCIT:P108 "Organism by Year Collected" ;
+    NCIT:P208 "CL1662336" ;
+    NCIT:P322 "CDISC" ;
+    NCIT:P325 "A non-taxonomic parameter that can specify the year when the organism was collected or isolated." .
+
+NCIT:C187902 a owl:Class ;
+    rdfs:label "Anaplasma" ;
+    rdfs:subClassOf NCIT:C76196 ;
+    metadata:prefixIRI "Thesaurus:C187902"^^xsd:string ;
+    NCIT:A8 NCIT:C61410,
+        NCIT:C66830,
+        NCIT:C85491 ;
+    NCIT:NHC0 "C187902" ;
+    NCIT:P90 "ANAPLASMA",
+        "Anaplasma" ;
+    NCIT:P106 "Bacterium" ;
+    NCIT:P108 "Anaplasma" ;
+    NCIT:P207 "C0002794" ;
+    NCIT:P322 "CDISC" ;
+    NCIT:P325 "Any bacteria that is not assigned to the species level but can be assigned to the Anaplasma genus level." .
+
+NCIT:C189004 a owl:Class ;
+    rdfs:label "SARS-CoV-2 Variant" ;
+    rdfs:subClassOf NCIT:C14349 ;
+    metadata:prefixIRI "Thesaurus:C189004"^^xsd:string ;
+    NCIT:A8 NCIT:C173381,
+        NCIT:C177415,
+        NCIT:C179026,
+        NCIT:C189083,
+        NCIT:C191200,
+        NCIT:C191382,
+        NCIT:C191670 ;
+    NCIT:A48 NCIT:C17998,
+        NCIT:C157106,
+        NCIT:C179573,
+        NCIT:C179575,
+        NCIT:C179576,
+        NCIT:C179577,
+        NCIT:C179579,
+        NCIT:C179580,
+        NCIT:C179585,
+        NCIT:C179586,
+        NCIT:C179596,
+        NCIT:C179598,
+        NCIT:C179599,
+        NCIT:C180913,
+        NCIT:C180977,
+        NCIT:C181075,
+        NCIT:C184327,
+        NCIT:C185726,
+        NCIT:C185727,
+        NCIT:C187217,
+        NCIT:C187218,
+        NCIT:C187219,
+        NCIT:C187220,
+        NCIT:C187221,
+        NCIT:C188869 ;
+    NCIT:NHC0 "C189004" ;
+    NCIT:P90 "SARS CoV-2 Variant",
+        "SARS CoV-2 variant",
+        "SARS-CoV-2 Variant",
+        "Virus Variant" ;
+    NCIT:P97 "A genetic variant of SARS CoV-2 as designated by the World Health Organization." ;
+    NCIT:P106 "Virus" ;
+    NCIT:P108 "SARS-CoV-2 Variant" ;
+    NCIT:P208 "CL1657142" ;
+    NCIT:P322 "ACC/AHA",
+        "SeroNet" ;
+    NCIT:P325 "Variant lineage of SARS-CoV-2" .
+
+NCIT:C201444 a owl:Class ;
+    rdfs:label "Spirochaetales" ;
+    rdfs:subClassOf NCIT:C76206 ;
+    metadata:prefixIRI "Thesaurus:C201444"^^xsd:string ;
+    NCIT:A8 NCIT:C61410,
+        NCIT:C66830,
+        NCIT:C85491 ;
+    NCIT:NHC0 "C201444" ;
+    NCIT:P90 "SPIROCHAETALES",
+        "Spirochaetales",
+        "Spirochetes" ;
+    NCIT:P97 "An order of spiral-shaped bacteria that includes the two families Spirochaetaceae and Leptospiraceae." ;
+    NCIT:P106 "Bacterium" ;
+    NCIT:P108 "Spirochaetales" ;
+    NCIT:P322 "CDISC" ;
+    NCIT:P325 "Any bacteria that is not assigned to the species level but can be assigned to the Spirochaetales order level." .
+
+### Serialized using the ttlser deterministic serializer v1.2.0
