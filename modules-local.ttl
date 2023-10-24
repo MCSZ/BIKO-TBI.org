@@ -1,0 +1,33 @@
+@prefix : <file:///ERROR/EMPTY/PREFIX/BANNED/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix PROTEGE: <http://protege.stanford.edu/plugins/owl/protege#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://raw.githubusercontent.com/MCSZ/bikotbi.io/main/ontology/BIKO/biko.ttl> a owl:Ontology ;
+    owl:imports <https://raw.githubusercontent.com/MCSZ/bikotbi.io/main/ontology/BIKO/biko_10_21_22_verA.ttl>,
+        <./slims/edam.ttl> ;
+    dc:title "NIF" ;
+    skos:definition "The Neuroscience Informatics Framework (NIF) knowledge resource including the lexicon used to index all data repositories and literature corpi indexed in NIF." ;
+    owl:versionInfo "3.1 - January 15, 2018" ;
+    dc:contributor "Anita Bandrowski (bandrow@gmail.com)",
+        "Bill Bug (William.Bug@drexelmed.edu)",
+        "Dan Gardner (dan@aplysia.med.cornell.edu)",
+        "Fahim Imam (fimam@ncmir.ucsd.edu)",
+        "Giorgio Ascoli (ascoli@gmu.edu)",
+        "Gordon Shepherd (gordon.shepherd@yale.edu)",
+        "Maryann Martone (maryann@ncmir.ucsd.edu)",
+        "Sarah Maynard (smaynard@ncmir.ucsd.edu)",
+        "Stephen Larson (slarson@ncmir.ucsd.edu)",
+        "Tom Gillespie (tgbugs@gmail.com)",
+        "Trish Whetzel (plwhetzel@gmail.com)" ;
+    dc:creator "The NIF Project Team" ;
+    dc:subject "The Neuroscience Informatics Framework Lexicon" ;
+    PROTEGE:defaultLanguage "en" .
+
+
+### Serialized using the pyontutils deterministic serializer v1.1.3

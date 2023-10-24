@@ -1,0 +1,3409 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="urn:webprotege:ontology:49e839a2-b9ff-4286-ba94-60a4e3091582"
+         xmlns="urn:webprotege:ontology:49e839a2-b9ff-4286-ba94-60a4e3091582#"
+         xmlns:oboI="http://www.geneontology.org/formats/oboInOwl#"
+         xmlns:core="http://www.w3.org/2004/02/skos/core#"
+         xmlns:onto="https://www.bikotbi.org/ontology/">
+
+<owl:Ontology rdf:about="urn:webprotege:ontology:49e839a2-b9ff-4286-ba94-60a4e3091582"/>
+
+<owl:ObjectProperty rdf:about="https://www.bikotbi.org/ontology/BIKO_000019">
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-21T06:22:24.079358Z</oboI:creation_date>
+  <rdfs:label>isMeasurementOf</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="https://www.bikotbi.org/ontology/BIKO_000020">
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-21T06:30:03.860536Z</oboI:creation_date>
+  <rdfs:label>hasInjurySite</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="https://www.bikotbi.org/ontology/BIKO_000031">
+  <rdfs:subPropertyOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000310"/>
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-11-09T13:54:26.863022Z</oboI:creation_date>
+  <rdfs:label>hasInjuryMechanism</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="https://www.bikotbi.org/ontology/BIKO_000032">
+  <rdfs:subPropertyOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000310"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-11-09T08:14:39.589893Z</oboI:creation_date>
+  <rdfs:label>hasPredominateInjuryType</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="https://www.bikotbi.org/ontology/BIKO_000037">
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-21T06:36:07.585322Z</oboI:creation_date>
+  <rdfs:label>injuryDisrupts</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="https://www.bikotbi.org/ontology/BIKO_000054">
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-11-09T13:57:03.226578Z</oboI:creation_date>
+  <rdfs:label>hasForce</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="https://www.bikotbi.org/ontology/BIKO_000146">
+  <onto:BIKO_000006 rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-19T18:18:19.176899Z</oboI:creation_date>
+  <rdfs:label>occursIn</rdfs:label>
+  <core:definition>b occurs_in c =def b is a process and c is a material entity or immaterial entity&amp; there exists a spatiotemporal region r and b occupies_spatiotemporal_region r.&amp; forall(t) if b exists_at t then c exists_at t &amp; there exist spatial regions s and s’ where &amp; b spatially_projects_onto s at t&amp; c is occupies_spatial_region s’ at t&amp; s is a proper_continuant_part_of s’ at t</core:definition>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="https://www.bikotbi.org/ontology/BIKO_000150">
+  <onto:BIKO_000006 rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-19T18:58:55.175862Z</oboI:creation_date>
+  <rdfs:label>partOf</rdfs:label>
+  <core:definition>A core relation that holds between a part and its whole</core:definition>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="https://www.bikotbi.org/ontology/BIKO_000153">
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-21T06:01:37.381714Z</oboI:creation_date>
+  <rdfs:label>characterizedBy</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="https://www.bikotbi.org/ontology/BIKO_000174">
+  <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-21T05:47:05.397748Z</oboI:creation_date>
+  <rdfs:label>causedBy</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="https://www.bikotbi.org/ontology/BIKO_000246">
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-11-07T18:28:41.248553Z</oboI:creation_date>
+  <rdfs:label>isTypeOf</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="https://www.bikotbi.org/ontology/BIKO_000306">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-11-09T13:19:19.312454Z</oboI:creation_date>
+  <rdfs:label>hasSkullFeature</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="https://www.bikotbi.org/ontology/BIKO_000308">
+  <rdfs:subPropertyOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000310"/>
+  <rdfs:domain rdf:resource="https://www.bikotbi.org/ontology/BIKO_000028"/>
+  <rdfs:range rdf:resource="https://www.bikotbi.org/ontology/BIKO_000152"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-11-09T13:23:45.319409Z</oboI:creation_date>
+  <rdfs:label>hasModelFeature</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="https://www.bikotbi.org/ontology/BIKO_000310">
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-11-09T13:28:27.359086Z</oboI:creation_date>
+  <rdfs:label>hasInjuryFeature</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="https://www.bikotbi.org/ontology/BIKO_000315">
+  <rdfs:subPropertyOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000020"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-11-09T14:15:56.111382Z</oboI:creation_date>
+  <rdfs:label>hasPrimaryInjurySite</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="https://www.bikotbi.org/ontology/BIKO_000322">
+  <rdfs:subPropertyOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000310"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-11-09T14:57:52.869421Z</oboI:creation_date>
+  <rdfs:label>InjuryVariantFeature</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="https://www.bikotbi.org/ontology/BIKO_000323">
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-11-11T13:50:26.153666Z</oboI:creation_date>
+  <rdfs:label>observedIn</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="https://www.bikotbi.org/ontology/BIKO_00400">
+  <rdfs:domain rdf:resource="https://www.bikotbi.org/ontology/BIKO_000028"/>
+  <rdfs:label>hasTBIModelDevice</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="https://www.bikotbi.org/ontology/BIKO_00403">
+  <rdfs:label>hasOrganism</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="https://www.bikotbi.org/ontology/BIKO_00412">
+  <rdfs:label>isDefinedBy</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="https://www.bikotbi.org/ontology/BIKO_00425">
+  <rdfs:subPropertyOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_00457"/>
+  <rdfs:label>causedByTBIEvent</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="https://www.bikotbi.org/ontology/BIKO_00426">
+  <rdfs:label>hasTBIModel</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="https://www.bikotbi.org/ontology/BIKO_00434">
+  <rdfs:label>hasTBIEvent</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="https://www.bikotbi.org/ontology/BIKO_00440">
+  <rdfs:label>hasEvent</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="https://www.bikotbi.org/ontology/BIKO_00457">
+  <rdfs:label>causedByEvent</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="https://www.bikotbi.org/ontology/BIKO_00460">
+  <rdfs:label>hasSkullInjury</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="https://www.bikotbi.org/ontology/BIKO_00461">
+  <rdfs:label>isAboutTBI</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="https://www.bikotbi.org/ontology/BIKO_00550">
+  <rdfs:label>isAboutFunction</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="https://www.bikotbi.org/ontology/BIKO_00574">
+  <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+  <owl:inverseOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_00574"/>
+  <rdfs:label>hasProtocol</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="https://www.bikotbi.org/ontology/BIKO_00597">
+  <rdfs:label>isAboutCDE</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="https://www.bikotbi.org/ontology/BIKO_00610">
+  <rdfs:label>hasIntegrity</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#seeAlso">
+  <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+</owl:AnnotationProperty>
+
+<owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/identifier"/>
+
+<owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#created_by"/>
+
+<owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
+
+<owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition"/>
+
+<owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#editorialNote"/>
+
+<owl:AnnotationProperty rdf:about="https://www.bikotbi.org/ontology/BIKO_000006">
+  <onto:BIKO_000006 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000119"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-09-29T18:47:19.279591Z</oboI:creation_date>
+  <rdfs:label>definition_source</rdfs:label>
+  <core:definition>Formal citation, e.g. identifier in external database to indicate / attribute source(s) for the definition. Free text indicate / attribute source(s) for the definition. EXAMPLE: Author Name, URI, MeSH Term C04, PUBMED ID, Wiki uri on 31.01.2007</core:definition>
+</owl:AnnotationProperty>
+
+<owl:AnnotationProperty rdf:about="https://www.bikotbi.org/ontology/BIKO_000008">
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-09-29T19:14:46.010957Z</oboI:creation_date>
+  <rdfs:label>SynonymTypeProperty</rdfs:label>
+</owl:AnnotationProperty>
+
+<owl:AnnotationProperty rdf:about="https://www.bikotbi.org/ontology/BIKO_000009">
+  <rdfs:subPropertyOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000008"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-09-29T19:19:49.496304Z</oboI:creation_date>
+  <rdfs:label>synonym</rdfs:label>
+</owl:AnnotationProperty>
+
+<owl:AnnotationProperty rdf:about="https://www.bikotbi.org/ontology/BIKO_000010">
+  <rdfs:subPropertyOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000008"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-09-29T19:20:31.058934Z</oboI:creation_date>
+  <rdfs:label>abbreviation</rdfs:label>
+</owl:AnnotationProperty>
+
+<owl:AnnotationProperty rdf:about="https://www.bikotbi.org/ontology/BIKO_00551">
+  <rdfs:label>hasPMID</rdfs:label>
+</owl:AnnotationProperty>
+
+<owl:AnnotationProperty rdf:about="https://www.bikotbi.org/ontology/BIKO_00552">
+  <rdfs:label>hasDOI</rdfs:label>
+</owl:AnnotationProperty>
+
+<owl:AnnotationProperty rdf:about="https://www.bikotbi.org/ontology/BIKO_00553">
+  <rdfs:label>hasTBIModelClass</rdfs:label>
+</owl:AnnotationProperty>
+
+<owl:AnnotationProperty rdf:about="https://www.bikotbi.org/ontology/BIKO_00554">
+  <rdfs:label>hasPaperTBIModel</rdfs:label>
+</owl:AnnotationProperty>
+
+<owl:AnnotationProperty rdf:about="https://www.bikotbi.org/ontology/BIKO_00555">
+  <rdfs:label>hasStrain</rdfs:label>
+</owl:AnnotationProperty>
+
+<owl:AnnotationProperty rdf:about="https://www.bikotbi.org/ontology/BIKO_00556">
+  <rdfs:label>hasSpecies</rdfs:label>
+</owl:AnnotationProperty>
+
+<owl:AnnotationProperty rdf:about="https://www.bikotbi.org/ontology/BIKO_00569">
+  <rdfs:label>hasCDE</rdfs:label>
+</owl:AnnotationProperty>
+
+<owl:AnnotationProperty rdf:about="https://www.bikotbi.org/ontology/BIKO_00570">
+  <rdfs:subPropertyOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_00569"/>
+  <rdfs:label>hasClinicalCDE</rdfs:label>
+</owl:AnnotationProperty>
+
+<owl:AnnotationProperty rdf:about="https://www.bikotbi.org/ontology/BIKO_00571">
+  <rdfs:subPropertyOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_00569"/>
+  <rdfs:label>hasPreclinicalCDE</rdfs:label>
+</owl:AnnotationProperty>
+
+<owl:AnnotationProperty rdf:about="https://www.bikotbi.org/ontology/BIKO_00572">
+  <rdfs:subPropertyOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_00571"/>
+  <rdfs:label>hasPRECISETBICDE</rdfs:label>
+</owl:AnnotationProperty>
+
+<owl:AnnotationProperty rdf:about="https://www.bikotbi.org/ontology/BIKO_00573">
+  <rdfs:subPropertyOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_00571"/>
+  <rdfs:label>hasNINDSTBICDE</rdfs:label>
+</owl:AnnotationProperty>
+
+<owl:AnnotationProperty rdf:about="https://www.bikotbi.org/ontology/BIKO_00596">
+  <rdfs:subPropertyOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_00572"/>
+  <rdfs:label>preciseCDEisAbout</rdfs:label>
+</owl:AnnotationProperty>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000001">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000004"/>
+  <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/FMA_62955"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-09-29T18:34:04.404818Z</oboI:creation_date>
+  <rdfs:label>Anatomical entity</rdfs:label>
+  <core:definition>Organismal continuant entity which is enclosed by the bona fide boundary of an organism or is an attribute of its structural organization. Examples: cell, heart, head, peritoneal cavity, apex of lung, anatomical term, sagittal plane.</core:definition>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000002">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <rdfs:seeAlso rdf:resource="http://regenbase.org/ontology#RB_0000483"/>
+  <rdfs:seeAlso rdf:resource="https://semanticscience.org/resource/SIO_000614.rdf"/>
+  <onto:BIKO_000006 rdf:resource="https://semanticscience.org/resource/SIO_000614.rdf"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-09-29T18:34:21.00422Z</oboI:creation_date>
+  <rdfs:label>Attribute</rdfs:label>
+  <core:definition>A characteristic of some entity.</core:definition>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000003">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-09-29T18:34:36.453487Z</oboI:creation_date>
+  <rdfs:label>Information content entity</rdfs:label>
+  <core:definition>An object that requires some background knowledge or procedure to correctly interpret.</core:definition>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000004">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <rdfs:isDefinedBy rdf:resource="http://semanticscience.org/resource/SIO_000004"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-09-29T18:34:54.323158Z</oboI:creation_date>
+  <rdfs:label>Material entity</rdfs:label>
+  <core:definition>A material entity is a physical entity that is spatially extended, exists as a whole at any point in time and has mass.</core:definition>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000005">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <rdfs:isDefinedBy rdf:resource="https://semanticscience.org/resource/SIO_000006.rdf"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-09-29T18:35:11.362856Z</oboI:creation_date>
+  <rdfs:label>Process</rdfs:label>
+  <core:definition>An entity that is identifiable only through the unfolding of time, has temporal parts, and unless otherwise specified/predicted, cannot be identified from any instant of time in which it exists.</core:definition>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000007">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000005"/>
+  <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/NCIT_C3671"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-09-29T18:57:39.376802Z</oboI:creation_date>
+  <rdfs:label>Injury</rdfs:label>
+  <core:definition>Damage inflicted on the body as the direct or indirect result of an external force, with or without disruption of structural continuity.</core:definition>
+  <onto:BIKO_000009>trauma</onto:BIKO_000009>
+  <onto:BIKO_000009>wound</onto:BIKO_000009>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000011">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="https://www.bikotbi.org/ontology/BIKO_000007"/>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="https://www.bikotbi.org/ontology/BIKO_000323"/>
+          <owl:someValuesFrom rdf:resource="https://www.bikotbi.org/ontology/BIKO_000086"/>
+        </owl:Restriction>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="https://www.bikotbi.org/ontology/BIKO_00457"/>
+          <owl:someValuesFrom rdf:resource="https://www.bikotbi.org/ontology/BIKO_00429"/>
+        </owl:Restriction>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000007"/>
+  <rdfs:isDefinedBy rdf:resource="http://regenbase.org/ontology#RB_0000112"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-09-29T19:22:41.968915Z</oboI:creation_date>
+  <rdfs:label>Nervous system injury</rdfs:label>
+  <core:definition>The process of causing damage to the nervous system</core:definition>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000012">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="https://www.bikotbi.org/ontology/BIKO_000144"/>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="https://www.bikotbi.org/ontology/BIKO_000153"/>
+          <owl:someValuesFrom rdf:resource="https://www.bikotbi.org/ontology/BIKO_000152"/>
+        </owl:Restriction>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000144"/>
+  <rdfs:isDefinedBy rdf:resource="http://regenbase.org/ontology#RB_0000160"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-09-29T19:25:02.010837Z</oboI:creation_date>
+  <rdfs:label>traumatic brain injury</rdfs:label>
+  <core:definition>Damage to the brain resulting in altered function caused by a blow, jolt, or penetrating wound.</core:definition>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000013">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000154"/>
+  <rdfs:isDefinedBy rdf:resource="https://doi.org/10.3389/fncel.2019.00528"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-09-29T19:26:10.463862Z</oboI:creation_date>
+  <rdfs:label>primary brain injury</rdfs:label>
+  <core:definition>The immediate impact of different mechanical insults to the brain</core:definition>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000014">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000154"/>
+  <rdfs:isDefinedBy rdf:resource="https://doi.org/10.3389/fncel.2019.00528"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-09-29T19:26:29.946782Z</oboI:creation_date>
+  <rdfs:label>secondary brain injury</rdfs:label>
+  <core:definition>The biochemical, cellular and physiological events that occur during primary injury that often progress into delayed and prolonged secondary damages.</core:definition>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000015">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000012"/>
+  <rdfs:isDefinedBy rdf:resource="https://en.wikipedia.org/wiki/Focal_and_diffuse_brain_injury#cite_note-LaPlaca07-3"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-09-29T19:29:39.404112Z</oboI:creation_date>
+  <rdfs:label>focal brain injury</rdfs:label>
+  <onto:BIKO_000006>A focal traumatic injury is characterized by damage that is concentrated in a specific or localized region of the brain. It results from direct mechanical forces (such as when the head strikes a windshield in a vehicle accident) and is usually associated with brain tissue damage visible to the naked eye.</onto:BIKO_000006>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000016">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000012"/>
+  <rdfs:isDefinedBy rdf:resource="https://doi.org/10.1016/B978-1-4160-6839-6.10133-9"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-09-29T19:30:38.006418Z</oboI:creation_date>
+  <rdfs:label>diffuse brain injury</rdfs:label>
+  <core:definition>Diffuse brain injury is characterized by damage that is wide spread rather than localized to one region of the brain. It usually depends on inertial loadings due to rapid head rotational motions of the brain, resulting from unrestricted head movement in the instant of injury.</core:definition>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000017">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000005"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="https://www.bikotbi.org/ontology/BIKO_000323"/>
+      <owl:someValuesFrom rdf:resource="https://www.bikotbi.org/ontology/BIKO_000086"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:isDefinedBy rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25499"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-09-29T19:34:02.903006Z</oboI:creation_date>
+  <rdfs:label>Injury mechanism</rdfs:label>
+  <core:definition>An injury that happens at a given place and time.</core:definition>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000022">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="https://www.bikotbi.org/ontology/BIKO_000031"/>
+          <owl:someValuesFrom rdf:resource="https://www.bikotbi.org/ontology/BIKO_000017"/>
+        </owl:Restriction>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="https://www.bikotbi.org/ontology/BIKO_00574"/>
+          <owl:someValuesFrom rdf:resource="https://www.bikotbi.org/ontology/BIKO_00612"/>
+        </owl:Restriction>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_00429"/>
+  <rdfs:isDefinedBy rdf:resource="https://orcid.org/0000-0002-2308-8813"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-09-29T19:35:52.945369Z</oboI:creation_date>
+  <rdfs:label>controlled injury event</rdfs:label>
+  <core:definition>An intentional and regulated occurrence to study the effects of a traumatic brain injury in a controlled laboratory environment.</core:definition>
+  <onto:BIKO_000009>preclinical TBI model event, preclinical traumatic brain injury model event</onto:BIKO_000009>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000023">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_00429"/>
+  <rdfs:isDefinedBy rdf:resource="https://orcid.org/0000-0002-2308-8813"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-09-29T19:36:02.331198Z</oboI:creation_date>
+  <rdfs:label>uncontrolled injury event</rdfs:label>
+  <core:definition>An accidental or unexpected injury to the brain that occurs outside of the a controlled laboratory environment (real-life situation)</core:definition>
+  <onto:BIKO_000009>clinical traumatic brain injury</onto:BIKO_000009>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000024">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="https://www.bikotbi.org/ontology/BIKO_00400"/>
+          <owl:someValuesFrom rdf:resource="https://www.bikotbi.org/ontology/BIKO_00407"/>
+        </owl:Restriction>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="https://www.bikotbi.org/ontology/BIKO_00574"/>
+          <owl:someValuesFrom rdf:resource="https://www.bikotbi.org/ontology/BIKO_00614"/>
+        </owl:Restriction>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="https://www.bikotbi.org/ontology/BIKO_00461"/>
+      <owl:someValuesFrom>
+        <owl:Class>
+          <owl:intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://www.bikotbi.org/ontology/BIKO_000012"/>
+            <owl:Restriction>
+              <owl:onProperty rdf:resource="https://www.bikotbi.org/ontology/BIKO_000032"/>
+              <owl:someValuesFrom rdf:resource="https://www.bikotbi.org/ontology/BIKO_000016"/>
+            </owl:Restriction>
+            <owl:Restriction>
+              <owl:onProperty rdf:resource="https://www.bikotbi.org/ontology/BIKO_000306"/>
+              <owl:someValuesFrom rdf:resource="https://www.bikotbi.org/ontology/BIKO_000305"/>
+            </owl:Restriction>
+          </owl:intersectionOf>
+        </owl:Class>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000028"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="https://www.bikotbi.org/ontology/BIKO_000032"/>
+      <owl:someValuesFrom rdf:resource="https://www.bikotbi.org/ontology/BIKO_000016"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="https://www.bikotbi.org/ontology/BIKO_000054"/>
+      <owl:someValuesFrom rdf:resource="https://www.bikotbi.org/ontology/BIKO_000321"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-09-29T19:36:28.24021Z</oboI:creation_date>
+  <rdfs:label>blast exposure model</rdfs:label>
+  <onto:BIKO_000009>blast injury model, Blast model</onto:BIKO_000009>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000025">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="https://www.bikotbi.org/ontology/BIKO_000306"/>
+          <owl:someValuesFrom rdf:resource="https://www.bikotbi.org/ontology/BIKO_000179"/>
+        </owl:Restriction>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="https://www.bikotbi.org/ontology/BIKO_000315"/>
+          <owl:someValuesFrom rdf:resource="https://www.bikotbi.org/ontology/BIKO_000105"/>
+        </owl:Restriction>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="https://www.bikotbi.org/ontology/BIKO_00400"/>
+          <owl:someValuesFrom rdf:resource="https://www.bikotbi.org/ontology/BIKO_000317"/>
+        </owl:Restriction>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="https://www.bikotbi.org/ontology/BIKO_00400"/>
+          <owl:someValuesFrom rdf:resource="https://www.bikotbi.org/ontology/BIKO_000317"/>
+        </owl:Restriction>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="https://www.bikotbi.org/ontology/BIKO_00574"/>
+          <owl:someValuesFrom rdf:resource="https://www.bikotbi.org/ontology/BIKO_00613"/>
+        </owl:Restriction>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000028"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="https://www.bikotbi.org/ontology/BIKO_000032"/>
+      <owl:someValuesFrom rdf:resource="https://www.bikotbi.org/ontology/BIKO_000015"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="https://www.bikotbi.org/ontology/BIKO_00461"/>
+      <owl:someValuesFrom>
+        <owl:Class>
+          <owl:intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://www.bikotbi.org/ontology/BIKO_000012"/>
+            <owl:Restriction>
+              <owl:onProperty rdf:resource="https://www.bikotbi.org/ontology/BIKO_000306"/>
+              <owl:someValuesFrom rdf:resource="https://www.bikotbi.org/ontology/BIKO_000179"/>
+            </owl:Restriction>
+          </owl:intersectionOf>
+        </owl:Class>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:isDefinedBy rdf:resource="https://doi.org/10.1038/nrn3407"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-09-29T19:36:45.57616Z</oboI:creation_date>
+  <rdfs:label>controlled cortical impact injury model</rdfs:label>
+  <core:definition>Model that uses a pneumatic or electromagnetic impact device to drive a rigid impactor onto the exposed intact dura, and mimics cortical tissue loss, acute subdural hematoma, axonal injury, concussion, blood–brain barrier (BBB) dysfunction and even coma</core:definition>
+  <onto:BIKO_000009>Controlled cortical impact model, CCI, Controlled impact model</onto:BIKO_000009>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000026">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="https://www.bikotbi.org/ontology/BIKO_00400"/>
+          <owl:someValuesFrom rdf:resource="https://www.bikotbi.org/ontology/BIKO_00405"/>
+        </owl:Restriction>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="https://www.bikotbi.org/ontology/BIKO_00574"/>
+          <owl:someValuesFrom rdf:resource="https://www.bikotbi.org/ontology/BIKO_00615"/>
+        </owl:Restriction>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000028"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="https://www.bikotbi.org/ontology/BIKO_000054"/>
+      <owl:someValuesFrom rdf:resource="https://www.bikotbi.org/ontology/BIKO_000164"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="https://www.bikotbi.org/ontology/BIKO_00461"/>
+      <owl:someValuesFrom>
+        <owl:Class>
+          <owl:intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://www.bikotbi.org/ontology/BIKO_000012"/>
+            <owl:Restriction>
+              <owl:onProperty rdf:resource="https://www.bikotbi.org/ontology/BIKO_000306"/>
+              <owl:someValuesFrom rdf:resource="https://www.bikotbi.org/ontology/BIKO_00414"/>
+            </owl:Restriction>
+          </owl:intersectionOf>
+        </owl:Class>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:isDefinedBy rdf:resource="https://doi.org/10.1038/nrn3407"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-09-29T19:37:01.609349Z</oboI:creation_date>
+  <rdfs:label>fluid percussion injury model</rdfs:label>
+  <core:definition>An insult inflicted by a pendulum striking the piston of a reservoir of fluid to generate a fluid pressure pulse to the intact dura through a craniotomy, which is made either centrally around the midline, or laterally over the parietal bone, between bregma and lambda.</core:definition>
+  <onto:BIKO_000009>Fluid percussion injury model, FPI, Fluid percussion</onto:BIKO_000009>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000027">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="https://www.bikotbi.org/ontology/BIKO_00400"/>
+          <owl:someValuesFrom rdf:resource="https://www.bikotbi.org/ontology/BIKO_00406"/>
+        </owl:Restriction>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="https://www.bikotbi.org/ontology/BIKO_00574"/>
+          <owl:someValuesFrom rdf:resource="https://www.bikotbi.org/ontology/BIKO_00616"/>
+        </owl:Restriction>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000028"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="https://www.bikotbi.org/ontology/BIKO_000054"/>
+      <owl:someValuesFrom rdf:resource="https://www.bikotbi.org/ontology/BIKO_000168"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:isDefinedBy rdf:resource="https://doi.org/10.1089/neu.2018.6127"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-09-29T19:37:25.80839Z</oboI:creation_date>
+  <rdfs:label>weight drop model</rdfs:label>
+  <core:definition>A model that consists of dropping a projectile of specified characteristics through a tube at a specified height onto the head of the animal</core:definition>
+  <onto:BIKO_000009>weight-drop model, WDI, weight drop injury</onto:BIKO_000009>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000028">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000005"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-09-30T22:48:23.39838Z</oboI:creation_date>
+  <rdfs:label>preclinical traumatic brain injury model</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000029">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="https://www.bikotbi.org/ontology/BIKO_000306"/>
+          <owl:someValuesFrom rdf:resource="https://www.bikotbi.org/ontology/BIKO_000179"/>
+        </owl:Restriction>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="https://www.bikotbi.org/ontology/BIKO_000315"/>
+          <owl:someValuesFrom rdf:resource="https://www.bikotbi.org/ontology/BIKO_000105"/>
+        </owl:Restriction>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="https://www.bikotbi.org/ontology/BIKO_00400"/>
+          <owl:someValuesFrom rdf:resource="https://www.bikotbi.org/ontology/BIKO_00405"/>
+        </owl:Restriction>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000026"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="https://www.bikotbi.org/ontology/BIKO_000032"/>
+      <owl:someValuesFrom rdf:resource="https://www.bikotbi.org/ontology/BIKO_000015"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-29T19:37:01.609349Z</oboI:creation_date>
+  <rdfs:label>lateral fluid percussion injury model</rdfs:label>
+  <onto:BIKO_000009>Lateral FPI, LFP, Lateral fluid percussion, Lateral fluid percussion injury</onto:BIKO_000009>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000030">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="https://www.bikotbi.org/ontology/BIKO_000306"/>
+          <owl:someValuesFrom rdf:resource="https://www.bikotbi.org/ontology/BIKO_000179"/>
+        </owl:Restriction>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="https://www.bikotbi.org/ontology/BIKO_000315"/>
+          <owl:someValuesFrom rdf:resource="https://www.bikotbi.org/ontology/BIKO_000105"/>
+        </owl:Restriction>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="https://www.bikotbi.org/ontology/BIKO_00400"/>
+          <owl:someValuesFrom rdf:resource="https://www.bikotbi.org/ontology/BIKO_00405"/>
+        </owl:Restriction>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000026"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="https://www.bikotbi.org/ontology/BIKO_000032"/>
+      <owl:someValuesFrom rdf:resource="https://www.bikotbi.org/ontology/BIKO_000016"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-29T19:37:01.609349Z</oboI:creation_date>
+  <rdfs:label>midline fluid percussion injury model</rdfs:label>
+  <onto:BIKO_000009>Midline FPI, MFP, Midline fluid percussion, Midline fluid percussion injury</onto:BIKO_000009>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000033">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="https://www.bikotbi.org/ontology/BIKO_000306"/>
+          <owl:someValuesFrom rdf:resource="https://www.bikotbi.org/ontology/BIKO_000179"/>
+        </owl:Restriction>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="https://www.bikotbi.org/ontology/BIKO_00400"/>
+          <owl:someValuesFrom rdf:resource="https://www.bikotbi.org/ontology/BIKO_00406"/>
+        </owl:Restriction>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000027"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="https://www.bikotbi.org/ontology/BIKO_000032"/>
+      <owl:someValuesFrom rdf:resource="https://www.bikotbi.org/ontology/BIKO_000015"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="https://www.bikotbi.org/ontology/BIKO_00461"/>
+      <owl:someValuesFrom>
+        <owl:Class>
+          <owl:intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://www.bikotbi.org/ontology/BIKO_000012"/>
+            <owl:Restriction>
+              <owl:onProperty rdf:resource="https://www.bikotbi.org/ontology/BIKO_000306"/>
+              <owl:someValuesFrom rdf:resource="https://www.bikotbi.org/ontology/BIKO_00414"/>
+            </owl:Restriction>
+          </owl:intersectionOf>
+        </owl:Class>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-05T16:06:33.253933Z</oboI:creation_date>
+  <rdfs:label>Feeney's weight drop model</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000034">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000027"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="https://www.bikotbi.org/ontology/BIKO_000032"/>
+      <owl:someValuesFrom rdf:resource="https://www.bikotbi.org/ontology/BIKO_000016"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-05T16:06:48.058915Z</oboI:creation_date>
+  <rdfs:label>Marmarou's weight drop model</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000035">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000027"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="https://www.bikotbi.org/ontology/BIKO_000032"/>
+      <owl:someValuesFrom rdf:resource="https://www.bikotbi.org/ontology/BIKO_000016"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-05T16:07:01.922959Z</oboI:creation_date>
+  <rdfs:label>Maryland's weight drop model</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000036">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="https://www.bikotbi.org/ontology/BIKO_000306"/>
+          <owl:someValuesFrom rdf:resource="https://www.bikotbi.org/ontology/BIKO_000305"/>
+        </owl:Restriction>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="https://www.bikotbi.org/ontology/BIKO_00400"/>
+          <owl:someValuesFrom rdf:resource="https://www.bikotbi.org/ontology/BIKO_00406"/>
+        </owl:Restriction>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000027"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="https://www.bikotbi.org/ontology/BIKO_000032"/>
+      <owl:someValuesFrom rdf:resource="https://www.bikotbi.org/ontology/BIKO_000015"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-05T16:07:35.193584Z</oboI:creation_date>
+  <rdfs:label>Shohami's weight drop model</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000038">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000067"/>
+  <rdfs:isDefinedBy rdf:resource="http://edamontology.org/data_0971"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-21T20:43:00.704405Z</oboI:creation_date>
+  <rdfs:label>article</rdfs:label>
+  <core:definition>A scientific text, typically a full text article from a scientific journal.</core:definition>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000039">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000155"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-28T22:26:16.304548Z</oboI:creation_date>
+  <rdfs:label>mild traumatic brain injury</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000040">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000073"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-05T16:11:25.71868Z</oboI:creation_date>
+  <rdfs:label>Injury measurement process</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000041">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000040"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-05T16:11:55.096768Z</oboI:creation_date>
+  <rdfs:label>Blood test</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000042">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000040"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-05T16:12:06.646456Z</oboI:creation_date>
+  <rdfs:label>Brain injury severity score</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000043">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000040"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-05T16:12:19.111072Z</oboI:creation_date>
+  <rdfs:label>Imaging test</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000044">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000065"/>
+  <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/IAO_0000003"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-11T22:15:31.444415Z</oboI:creation_date>
+  <rdfs:label>measurement unit label</rdfs:label>
+  <core:definition>A data item label that denotes a unit of measure.</core:definition>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000045">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000003"/>
+  <rdfs:isDefinedBy rdf:resource="https://bioportal.bioontology.org/ontologies/RB/?p=classes&amp;conceptid=http%3A%2F%2Fregenbase.org%2Fontology%23RB_0000041"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-11T22:20:19.259367Z</oboI:creation_date>
+  <rdfs:label>expression profile</rdfs:label>
+  <core:definition>The expression values of a set of genes under different conditions, e.g. following an environmental insult, following hormonal stimulation, or at a particular developmental stage.</core:definition>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000046">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000041"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-05T16:13:06.960666Z</oboI:creation_date>
+  <rdfs:label>Banyan Brain Trauma Indicator</rdfs:label>
+  <onto:BIKO_000009>BTI</onto:BIKO_000009>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000047">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000007"/>
+  <rdfs:isDefinedBy rdf:resource="https://orcid.org/0000-0002-2308-8813"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-11-09T08:29:53.265647Z</oboI:creation_date>
+  <rdfs:label>Head and Cranial Injury</rdfs:label>
+  <core:definition>Injuries related to the head and cranium that causes dysfunction of biological processes.</core:definition>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000048">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000047"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-11-09T08:32:04.210586Z</oboI:creation_date>
+  <rdfs:label>Blood brain barrier disruption</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000050">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000043"/>
+  <rdfs:isDefinedBy rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C17204"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-05T16:14:02.744174Z</oboI:creation_date>
+  <rdfs:label>Computed tomography test</rdfs:label>
+  <core:definition>A test that uses computed tomography to examine structures within the body by scanning them with X-rays and using a computer to construct a series of cross-sectional scans along a single axis.</core:definition>
+  <onto:BIKO_000009>CAT, CAT Scan, Computed Axial Tomography, Computed Tomography, Computerized Axial Tomography, CT, CT Scan</onto:BIKO_000009>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000051">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000043"/>
+  <rdfs:isDefinedBy rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C16809"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-05T16:14:14.164227Z</oboI:creation_date>
+  <rdfs:label>Magnetic resonance imaging test</rdfs:label>
+  <core:definition>A test used that uses magnetic resonance imaging to examine the radiofrequency waves and a strong magnetic field rather than x-rays to provide detailed pictures of internal organs and tissues. The technique is valuable for the diagnosis of many pathologic conditions, including cancer, heart and vascular disease, stroke, and joint and musculoskeletal disorders.</core:definition>
+  <onto:BIKO_000009>Magnetic Resonance Imaging, MRI, Magnetic Resonance Imaging Scan, MRI Scan</onto:BIKO_000009>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000052">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000001"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-19T18:42:41.371746Z</oboI:creation_date>
+  <rdfs:isDefinedBy>map to http://purl.obolibrary.org/obo/UBERON_0000955</rdfs:isDefinedBy>
+  <rdfs:label>Multicellular anatomical structure</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000053">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000047"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-11-09T08:32:27.458313Z</oboI:creation_date>
+  <rdfs:label>Brain volume loss</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000055">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000001"/>
+  <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001016"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-05T19:46:07.306332Z</oboI:creation_date>
+  <rdfs:label>Nervous system</rdfs:label>
+  <core:definition>The nervous system is an organ system containing predominantly neuron and glial cells. In bilaterally symmetrical organism, it is arranged in a network of tree-like structures connected to a central body. The main functions of the nervous system are to regulate and control body functions, and to receive sensory input, process this information, and generate behavior [CUMBO].</core:definition>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000056">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000002"/>
+  <rdfs:isDefinedBy rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C171083"/>
+  <rdfs:seeAlso rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C171083"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-05T19:47:39.519999Z</oboI:creation_date>
+  <rdfs:label>Organism attribute</rdfs:label>
+  <core:definition>A characteristic or attribute inherent or inherited to an organism</core:definition>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000057">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000056"/>
+  <rdfs:isDefinedBy rdf:resource="http://www.ebi.ac.uk/efo/EFO_0000246"/>
+  <rdfs:seeAlso rdf:resource="http://www.ebi.ac.uk/efo/EFO_0000246"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-05T19:47:53.733091Z</oboI:creation_date>
+  <rdfs:label>Age</rdfs:label>
+  <core:definition>A temporal measurement of the time period elapsed since an identifiable point in the life cycle of an organism</core:definition>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000058">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000056"/>
+  <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/NCIT_C28421"/>
+  <rdfs:seeAlso rdf:resource="http://purl.obolibrary.org/obo/NCIT_C28421"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-05T19:48:05.334508Z</oboI:creation_date>
+  <rdfs:label>Sex</rdfs:label>
+  <core:definition>The assemblage of physical properties or qualities by which male is distinguished from female; the physical difference between male and female; the distinguishing peculiarity of male or female.</core:definition>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000059">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000056"/>
+  <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/PATO_0000128"/>
+  <rdfs:seeAlso rdf:resource="http://purl.obolibrary.org/obo/PATO_0000128,"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-05T19:48:16.265414Z</oboI:creation_date>
+  <rdfs:label>Weight</rdfs:label>
+  <core:definition>A physical quality inhering in a bearer that has mass near a gravitational body.</core:definition>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000060">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000088"/>
+  <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24432"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-11-07T17:50:40.199899Z</oboI:creation_date>
+  <rdfs:label>Biological role</rdfs:label>
+  <core:definition>A role played by the molecular entity or part thereof within a biological context.</core:definition>
+  <onto:BIKO_000009>biological function</onto:BIKO_000009>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000061">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000056"/>
+  <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/NCIT_C17049"/>
+  <rdfs:seeAlso rdf:resource="http://purl.obolibrary.org/obo/NCIT_C17049"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-05T19:49:44.470168Z</oboI:creation_date>
+  <rdfs:label>Race</rdfs:label>
+  <core:definition>A geographic ancestral origin category that is assigned to a population group based mainly on physical characteristics that are thought to be distinct and inherent.</core:definition>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000062">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000056"/>
+  <rdfs:isDefinedBy rdf:resource="http://www.ebi.ac.uk/efo/EFO_0005135"/>
+  <rdfs:seeAlso rdf:resource="http://www.ebi.ac.uk/efo/EFO_0005135"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-05T19:49:57.282063Z</oboI:creation_date>
+  <rdfs:label>Strain</rdfs:label>
+  <core:definition>A population of organisms that is geneticaly different from others of the same species and possessing a set of defined characteristics.</core:definition>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000063">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000062"/>
+  <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/NCIT_C117456"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-05T19:50:12.815562Z</oboI:creation_date>
+  <rdfs:label>Substrain</rdfs:label>
+  <core:definition>A further sub-classification of the organism strain.</core:definition>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000064">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000002"/>
+  <rdfs:isDefinedBy rdf:resource="http://semanticscience.org/resource/SIO_000005"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-05T19:50:33.493029Z</oboI:creation_date>
+  <rdfs:label>Quality</rdfs:label>
+  <core:definition>An attribute that is intrinsically associated with its bearer (or its parts), but whose presence/absence and observed/measured value may vary.</core:definition>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000065">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000003"/>
+  <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/IAO_0000009"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-05T19:50:48.453426Z</oboI:creation_date>
+  <rdfs:label>data label</rdfs:label>
+  <core:definition>An information content entity that is part of some data item and is used to partially define the denotation of that data item.</core:definition>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000066">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000003"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-05T19:50:58.761226Z</oboI:creation_date>
+  <rdfs:label>data object</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000067">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000003"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-05T19:51:11.801921Z</oboI:creation_date>
+  <rdfs:label>directive information entity</rdfs:label>
+  <core:definition>An information content entity whose concretizations indicate to their bearer how to realize them in a process.</core:definition>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000068">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000147"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-05T19:52:06.489421Z</oboI:creation_date>
+  <rdfs:label>Brain</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000069">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000004"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-05T19:52:29.14814Z</oboI:creation_date>
+  <rdfs:label>Artifact object</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000072">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000069"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-05T19:53:36.85123Z</oboI:creation_date>
+  <rdfs:label>Traumatic brain injury model device</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000073">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000005"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-05T19:54:07.082044Z</oboI:creation_date>
+  <rdfs:label>Planned process</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000074">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000017"/>
+  <rdfs:subClassOf>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="https://www.bikotbi.org/ontology/BIKO_000017"/>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="https://www.bikotbi.org/ontology/BIKO_00574"/>
+          <owl:someValuesFrom rdf:resource="https://www.bikotbi.org/ontology/BIKO_00614"/>
+        </owl:Restriction>
+      </owl:intersectionOf>
+    </owl:Class>
+  </rdfs:subClassOf>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-11-09T08:37:59.952649Z</oboI:creation_date>
+  <rdfs:label>blast waves</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000075">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000073"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-05T19:54:31.162358Z</oboI:creation_date>
+  <rdfs:label>Therapy</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000076">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000075"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-05T19:54:45.775974Z</oboI:creation_date>
+  <rdfs:label>Experimental therapy</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000077">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000076"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-05T19:54:58.02484Z</oboI:creation_date>
+  <rdfs:label>Citicoline</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000078">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000076"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-05T19:55:09.896856Z</oboI:creation_date>
+  <rdfs:label>Hypothermia</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000079">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000076"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-05T19:55:24.329912Z</oboI:creation_date>
+  <rdfs:label>Progesterone</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000080">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000040"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-05T19:55:44.929341Z</oboI:creation_date>
+  <rdfs:label>Analytical method</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000081">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000080"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-05T19:55:55.272758Z</oboI:creation_date>
+  <rdfs:label>Assay</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000082">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000080"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-05T19:56:08.28947Z</oboI:creation_date>
+  <rdfs:label>Chromatography</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000083">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000081"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-05T19:56:19.982215Z</oboI:creation_date>
+  <rdfs:label>Immunoassay</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000084">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000080"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-05T19:56:31.153396Z</oboI:creation_date>
+  <rdfs:label>Microscopy</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000085">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000080"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-05T19:56:41.897633Z</oboI:creation_date>
+  <rdfs:label>Spectrometry</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000086">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000004"/>
+  <rdfs:isDefinedBy rdf:resource="http://en.wikipedia.org/wiki/Organism"/>
+  <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-05T19:57:26.608424Z</oboI:creation_date>
+  <rdfs:label>Organism</rdfs:label>
+  <core:definition>A material entity that is an individual living system, such as animal, plant, bacteria or virus, that is capable of replicating or reproducing, growth and maintenance in the right environment. An organism may be unicellular or made up, like humans, of many billions of cells divided into specialized tissues and organs. E.g Drosophila melanogaster</core:definition>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000087">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000005"/>
+  <rdfs:isDefinedBy rdf:resource="https://bioportal.bioontology.org/ontologies/RB/?p=classes&amp;conceptid=http%3A%2F%2Fregenbase.org%2Fontology%23RB_0000353"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-06T18:21:47.085481Z</oboI:creation_date>
+  <rdfs:label>Biological process</rdfs:label>
+  <core:definition>Any process specifically pertinent to the functioning of integrated living units: cells, tissues, organs, and organisms. A process is a collection of molecular events with a defined beginning and end.</core:definition>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000088">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000002"/>
+  <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/PATO_0001018"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-11T05:20:00.995215Z</oboI:creation_date>
+  <rdfs:label>Role</rdfs:label>
+  <core:definition>A role is particular behaviour which a material entity may exhibit.</core:definition>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000089">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000088"/>
+  <rdfs:isDefinedBy rdf:resource="https://orcid.org/0000-0002-2308-8813"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-11T05:20:44.965035Z</oboI:creation_date>
+  <rdfs:label>Study group</rdfs:label>
+  <core:definition>An attribute used to describe the role of an material entity, an organism, in a research study</core:definition>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000090">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000089"/>
+  <rdfs:isDefinedBy rdf:resource="https://bioportal.bioontology.org/ontologies/RB/?p=classes&amp;conceptid=http%3A%2F%2Fregenbase.org%2Fontology%23RB_0000250"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-11T05:21:01.827731Z</oboI:creation_date>
+  <rdfs:label>control group</rdfs:label>
+  <core:definition>A group separated from the rest of the experiment where the independent variable(s) being tested cannot influence the results. This isolates the independent variable's effects on the experiment and can help rule out alternate explanations of the experimental results.</core:definition>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000091">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000089"/>
+  <rdfs:isDefinedBy rdf:resource="https://bioportal.bioontology.org/ontologies/RB/?p=classes&amp;conceptid=http%3A%2F%2Fregenbase.org%2Fontology%23RB_0000304"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-11T05:24:24.029587Z</oboI:creation_date>
+  <rdfs:label>experimental group</rdfs:label>
+  <core:definition>A group of samples/individals that is exposed to (one of) the independent variable (s) being tested.</core:definition>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000092">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000090"/>
+  <rdfs:isDefinedBy rdf:resource="https://bioportal.bioontology.org/ontologies/RB/?p=classes&amp;conceptid=http%3A%2F%2Fregenbase.org%2Fontology%23RB_0000345"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-11T05:25:27.821405Z</oboI:creation_date>
+  <rdfs:label>injury control group</rdfs:label>
+  <core:definition>A control for experimental injury in which the animal is not injured.</core:definition>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000093">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000092"/>
+  <rdfs:isDefinedBy rdf:resource="https://bioportal.bioontology.org/ontologies/RB/?p=classes&amp;conceptid=http%3A%2F%2Fregenbase.org%2Fontology%23RB_0008014"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-11T05:25:44.513132Z</oboI:creation_date>
+  <rdfs:label>naive control group</rdfs:label>
+  <core:definition>A control for experimental injury in which the animal is not injured, and does not receive anaesthesia or post-operative treatments such as antibiotics, analgesics or injected fluids.</core:definition>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000094">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000092"/>
+  <rdfs:isDefinedBy rdf:resource="https://bioportal.bioontology.org/ontologies/RB/?p=classes&amp;conceptid=http%3A%2F%2Fregenbase.org%2Fontology%23RB_0000278"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-11T05:27:40.23012Z</oboI:creation_date>
+  <rdfs:label>sham surgery control group</rdfs:label>
+  <core:definition>A control for a surgical procedure in which aspects of the procedure other than the injury intended to induce the neurological effect itself are mimicked, including anaesthesia, surgical preparation (e.g., dissection, nerve exposure, burr hole) and post-operative treatments.</core:definition>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000095">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000091"/>
+  <rdfs:isDefinedBy rdf:resource="https://bioportal.bioontology.org/ontologies/RB/?p=classes&amp;conceptid=http%3A%2F%2Fregenbase.org%2Fontology%23RB_0000107"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-11T05:29:21.16139Z</oboI:creation_date>
+  <rdfs:label>negative treatment control group</rdfs:label>
+  <core:definition>A control in which a perturbagen that is known to consistently produce no response is used, or in which components of the treatment other than the active perturbagen are used (such as vehicle, vector, inactive compound, etc). This gives the investigators one or more possible baselines to compare to unknowns and can also be used to normalize data across samples as well as experiments done on different days.</core:definition>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000096">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000091"/>
+  <rdfs:isDefinedBy rdf:resource="https://bioportal.bioontology.org/ontologies/RB/?p=classes&amp;conceptid=http%3A%2F%2Fregenbase.org%2Fontology%23RB_0000194"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-11T05:30:18.954329Z</oboI:creation_date>
+  <rdfs:label>positive treatment control group</rdfs:label>
+  <core:definition>A control in which a perturbagen that is known to produce a consistent response is used. This gives the investigators confidence that the assay is performing as expected.</core:definition>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000097">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000095"/>
+  <rdfs:isDefinedBy rdf:resource="https://bioportal.bioontology.org/ontologies/RB/?p=classes&amp;conceptid=http%3A%2F%2Fregenbase.org%2Fontology%23RB_0008011"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-11T05:31:20.322234Z</oboI:creation_date>
+  <rdfs:label>inactive treatment control group</rdfs:label>
+  <core:definition>A control for experimental treatment in which an inactive form of the treatment is substituted for the active form, such as a scrambled siRNA, a plasmid/virus with inactive insert, or an inactive but related chemical compound.</core:definition>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000098">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000095"/>
+  <rdfs:isDefinedBy rdf:resource="https://bioportal.bioontology.org/ontologies/RB/?p=classes&amp;conceptid=http%3A%2F%2Fregenbase.org%2Fontology%23RB_0008010"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-11T05:32:12.433711Z</oboI:creation_date>
+  <rdfs:label>no treatment control group</rdfs:label>
+  <core:definition>A control for experimental treatment in which neither the perturbagen nor its vehicle is added.</core:definition>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000099">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000095"/>
+  <rdfs:isDefinedBy rdf:resource="https://bioportal.bioontology.org/ontologies/RB/?p=classes&amp;conceptid=http%3A%2F%2Fregenbase.org%2Fontology%23RB_0000036"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-11T05:33:02.022053Z</oboI:creation_date>
+  <rdfs:label>vehicle control group</rdfs:label>
+  <core:definition>A control for experimental treatment in which only the vehicle used to dissolve the treatment chemical is delivered at the same concentration and by the same route as in the experimental treatment.</core:definition>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000100">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000003"/>
+  <rdfs:isDefinedBy rdf:resource="http://semanticscience.org/resource/SIO_000070"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-11T05:35:39.584142Z</oboI:creation_date>
+  <rdfs:label>measurement</rdfs:label>
+  <core:definition>A quantitative description that reflects the magnitude of some attribute.</core:definition>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000103">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000040"/>
+  <rdfs:isDefinedBy rdf:resource="https://bioportal.bioontology.org/ontologies/RB/?p=classes&amp;conceptid=http%3A%2F%2Fregenbase.org%2Fontology%23RB_0008028"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-11T05:37:45.8449Z</oboI:creation_date>
+  <rdfs:label>Neuroanatomical assessment</rdfs:label>
+  <core:definition>A quantitative or qualitative assessment of a neuroanatomical property of an experimental subject.</core:definition>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000104">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000040"/>
+  <rdfs:isDefinedBy rdf:resource="https://bioportal.bioontology.org/ontologies/RB/?p=classes&amp;conceptid=http%3A%2F%2Fregenbase.org%2Fontology%23RB_0008035"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-11T05:38:02.359181Z</oboI:creation_date>
+  <rdfs:label>Physiological assessment</rdfs:label>
+  <core:definition>A quantitative assessment of a physiological property of an experimental subject.</core:definition>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000105">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000148"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-11-09T14:13:23.03551Z</oboI:creation_date>
+  <rdfs:label>Parietal cortex</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000117">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000103"/>
+  <rdfs:isDefinedBy rdf:resource="https://bioportal.bioontology.org/ontologies/RB/?p=classes&amp;conceptid=http%3A%2F%2Fregenbase.org%2Fontology%23RB_0008048"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-12T18:01:48.691286Z</oboI:creation_date>
+  <rdfs:label>Cavity size</rdfs:label>
+  <core:definition>A quantitative assessment of the size of a cavity created by a central nervous system injury</core:definition>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000118">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000103"/>
+  <rdfs:isDefinedBy rdf:resource="https://bioportal.bioontology.org/ontologies/RB/?p=classes&amp;conceptid=http%3A%2F%2Fregenbase.org%2Fontology%23RB_0008029"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-12T18:02:15.820411Z</oboI:creation_date>
+  <rdfs:label>Lesion volume</rdfs:label>
+  <core:definition>A quantitative assessment of the volume of a lesion created by a central nervous system injury.</core:definition>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000119">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000087"/>
+  <rdfs:isDefinedBy rdf:resource="https://bioportal.bioontology.org/ontologies/RB/?p=classes&amp;conceptid=http%3A%2F%2Fregenbase.org%2Fontology%23RB_0000348"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-12T18:04:43.275888Z</oboI:creation_date>
+  <rdfs:label>Activation</rdfs:label>
+  <core:definition>An increase in the frequency, rate or extent of a biological process.</core:definition>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000120">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000087"/>
+  <rdfs:isDefinedBy rdf:resource="https://bioportal.bioontology.org/ontologies/RB/?p=classes&amp;conceptid=http%3A%2F%2Fregenbase.org%2Fontology%23RB_0000324"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-12T18:05:13.997441Z</oboI:creation_date>
+  <rdfs:label>Atrophy</rdfs:label>
+  <core:definition>Wasting or decrease in size of a cell, tissue, or organ as a result of disuse, injury, or nutritional deficiency.</core:definition>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000121">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000087"/>
+  <rdfs:isDefinedBy rdf:resource="https://bioportal.bioontology.org/ontologies/RB/?p=classes&amp;conceptid=http%3A%2F%2Fregenbase.org%2Fontology%23RB_0000171"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-12T18:05:53.532129Z</oboI:creation_date>
+  <rdfs:label>Autophagy</rdfs:label>
+  <core:definition>The digestion of cellular components by the cell's own lysosomes. This can proceed by formation of intracellular membrane compartments that fuse with lysosomes or by direct import of the cell's components into lysosomes.</core:definition>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000122">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000087"/>
+  <rdfs:isDefinedBy rdf:resource="https://bioportal.bioontology.org/ontologies/RB/?p=classes&amp;conceptid=http%3A%2F%2Fregenbase.org%2Fontology%23RB_0000152"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-12T18:06:49.8081Z</oboI:creation_date>
+  <rdfs:label>Cell death</rdfs:label>
+  <core:definition>Any biological process that results in permanent cessation of all vital functions of a cell.</core:definition>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000123">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000064"/>
+  <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/PATO_0001018"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-19T19:14:27.940056Z</oboI:creation_date>
+  <rdfs:label>Physical quality</rdfs:label>
+  <core:definition>A quality of a physical entity that exists through action of continuants at the physical level of organisation in relation to other entities.</core:definition>
+  <onto:BIKO_000009>relational physical quality</onto:BIKO_000009>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000124">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000087"/>
+  <rdfs:isDefinedBy rdf:resource="https://bioportal.bioontology.org/ontologies/RB/?p=classes&amp;conceptid=http%3A%2F%2Fregenbase.org%2Fontology%23RB_0000208"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-12T18:09:46.306276Z</oboI:creation_date>
+  <rdfs:label>Cell cycle</rdfs:label>
+  <core:definition>The period between the formation of a cell by division of its mother cell and the time when the cell itself divides to form two daughter cells.</core:definition>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000125">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000122"/>
+  <rdfs:isDefinedBy rdf:resource="https://bioportal.bioontology.org/ontologies/RB/?p=classes&amp;conceptid=http%3A%2F%2Fregenbase.org%2Fontology%23RB_0000040"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-12T18:10:33.841826Z</oboI:creation_date>
+  <rdfs:label>Apoptosis</rdfs:label>
+  <core:definition>A form of programmed cell death that begins when a cell receives internal or external signals that trigger the activity of proteolytic caspases, proceeds through a series of characteristic stages typically including rounding-up of the cell, retraction of pseudopodes, reduction of cellular volume (pyknosis), chromatin condensation, nuclear fragmentation (karyorrhexis), and plasma membrane blebbing (but maintenance of its integrity until the final stages of the process), and ends with the death of the cell.</core:definition>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000126">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000122"/>
+  <rdfs:isDefinedBy rdf:resource="https://bioportal.bioontology.org/ontologies/RB/?p=classes&amp;conceptid=http%3A%2F%2Fregenbase.org%2Fontology%23RB_0000007"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-12T18:11:15.965626Z</oboI:creation_date>
+  <rdfs:label>Autophagic cell death</rdfs:label>
+  <core:definition>Cell death induced by autophagy.</core:definition>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000127">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000122"/>
+  <onto:BIKO_000006 rdf:resource="https://bioportal.bioontology.org/ontologies/RB/?p=classes&amp;conceptid=http%3A%2F%2Fregenbase.org%2Fontology%23RB_0000469"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-12T18:11:56.146626Z</oboI:creation_date>
+  <rdfs:label>Glial cell death</rdfs:label>
+  <core:definition>A biological process that results in permanent cessation of all vital functions of a glial cell.</core:definition>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000128">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000122"/>
+  <rdfs:isDefinedBy rdf:resource="https://bioportal.bioontology.org/ontologies/RB/?p=classes&amp;conceptid=http%3A%2F%2Fregenbase.org%2Fontology%23RB_0000286"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-12T18:12:40.156387Z</oboI:creation_date>
+  <rdfs:label>Necrotic cell death</rdfs:label>
+  <core:definition>Cell death induced by necrosis.</core:definition>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000129">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000122"/>
+  <rdfs:isDefinedBy rdf:resource="https://bioportal.bioontology.org/ontologies/RB/?p=classes&amp;conceptid=http%3A%2F%2Fregenbase.org%2Fontology%23RB_0000354"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-12T18:13:16.697697Z</oboI:creation_date>
+  <rdfs:label>Neuronal cell death</rdfs:label>
+  <core:definition>Any biological process that results in permanent cessation of all vital functions of a neuronal cell.</core:definition>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000130">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000087"/>
+  <rdfs:isDefinedBy rdf:resource="https://bioportal.bioontology.org/ontologies/RB/?p=classes&amp;conceptid=http%3A%2F%2Fregenbase.org%2Fontology%23RB_0000264"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-12T18:14:15.821259Z</oboI:creation_date>
+  <rdfs:label>Degeneration</rdfs:label>
+  <core:definition>The process whereby a cell, tissue, or organ changes to a less specialized or functionally less active form.</core:definition>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000131">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000130"/>
+  <rdfs:isDefinedBy rdf:resource="https://bioportal.bioontology.org/ontologies/RB/?p=classes&amp;conceptid=http%3A%2F%2Fregenbase.org%2Fontology%23RB_0000180"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-12T18:14:54.913474Z</oboI:creation_date>
+  <rdfs:label>axon degeneration</rdfs:label>
+  <core:definition>The death and subsequent loss of axons following disease, insult, or injury.</core:definition>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000132">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000130"/>
+  <rdfs:isDefinedBy rdf:resource="https://bioportal.bioontology.org/ontologies/RB/?p=classes&amp;conceptid=http%3A%2F%2Fregenbase.org%2Fontology%23RB_0000374"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-12T18:16:09.198231Z</oboI:creation_date>
+  <rdfs:label>neuron degeneration</rdfs:label>
+  <core:definition>The death and subsequent loss of neurons following disease, insult, or injury</core:definition>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000133">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000087"/>
+  <rdfs:isDefinedBy rdf:resource="https://bioportal.bioontology.org/ontologies/RB/?p=classes&amp;conceptid=http%3A%2F%2Fregenbase.org%2Fontology%23RB_0000066"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-12T18:17:03.415827Z</oboI:creation_date>
+  <rdfs:label>Functional recovery</rdfs:label>
+  <core:definition>A return to a normal state of nervous system function following injury.</core:definition>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000134">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000087"/>
+  <rdfs:isDefinedBy rdf:resource="https://bioportal.bioontology.org/ontologies/RB/?p=classes&amp;conceptid=http%3A%2F%2Fregenbase.org%2Fontology%23RB_0008042"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-12T18:17:49.037538Z</oboI:creation_date>
+  <rdfs:label>Gene expression</rdfs:label>
+  <core:definition>The conversion of genetic information in DNA to RNA, through transcription, and/or, in the case of protein coding genes, of mRNA into protein, through translation.</core:definition>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000135">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000087"/>
+  <rdfs:isDefinedBy rdf:resource="https://bioportal.bioontology.org/ontologies/RB/?p=classes&amp;conceptid=http%3A%2F%2Fregenbase.org%2Fontology%23RB_0000102"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-12T18:18:36.370143Z</oboI:creation_date>
+  <rdfs:label>Immune response</rdfs:label>
+  <core:definition>In the periphery, a state of altered reactivity in the innate and/or adaptive immune system as a result of exposure to antigen. In the central nervous system, this is almost exclusively in the innate immune system as a result of infection, and is associated mainly with resident microglia.</core:definition>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000136">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000152"/>
+  <rdfs:isDefinedBy rdf:resource="https://www.fsps.muni.cz/emuni/data/reader/book-2/08.html"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-19T19:14:35.809108Z</oboI:creation_date>
+  <rdfs:label>external force</rdfs:label>
+  <core:definition>External forces are forces resulting from the interaction between human body and its environment.</core:definition>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000137">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000087"/>
+  <rdfs:isDefinedBy rdf:resource="https://bioportal.bioontology.org/ontologies/RB/?p=classes&amp;conceptid=http%3A%2F%2Fregenbase.org%2Fontology%23RB_0000174"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-12T18:20:03.944832Z</oboI:creation_date>
+  <rdfs:label>Inflammation</rdfs:label>
+  <core:definition>A response to injury or infection involving the migration and activation of inflammatory cells, such as neutrophils, macrophages/microglia, and lymphocytes.</core:definition>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000138">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000087"/>
+  <rdfs:isDefinedBy rdf:resource="https://bioportal.bioontology.org/ontologies/RB/?p=classes&amp;conceptid=http%3A%2F%2Fregenbase.org%2Fontology%23RB_0000377"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-12T18:20:50.456961Z</oboI:creation_date>
+  <rdfs:label>mRNA translation</rdfs:label>
+  <core:definition>The process by which a particular sequence of bases in messenger RNA (mRNA) determines a sequence of amino acids in a polypeptide chain during protein and peptide biosynthesis.</core:definition>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000139">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000087"/>
+  <rdfs:isDefinedBy rdf:resource="https://bioportal.bioontology.org/ontologies/RB/?p=classes&amp;conceptid=http%3A%2F%2Fregenbase.org%2Fontology%23RB_0000142"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-12T18:21:26.204616Z</oboI:creation_date>
+  <rdfs:label>Neuroprotection</rdfs:label>
+  <core:definition>The mechanisms and strategies used to protect against neuronal injury or degeneration in the central nervous system following insult, injury, or disease.</core:definition>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000140">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000087"/>
+  <rdfs:isDefinedBy rdf:resource="https://bioportal.bioontology.org/ontologies/RB/?p=classes&amp;conceptid=http%3A%2F%2Fregenbase.org%2Fontology%23RB_0000038"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-12T18:22:13.312397Z</oboI:creation_date>
+  <rdfs:label>Phosphorylation</rdfs:label>
+  <core:definition>The addition of phosphate groups to a molecule.</core:definition>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000141">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000087"/>
+  <rdfs:isDefinedBy rdf:resource="https://bioportal.bioontology.org/ontologies/RB/?p=classes&amp;conceptid=http%3A%2F%2Fregenbase.org%2Fontology%23RB_0000251"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-12T18:23:06.713103Z</oboI:creation_date>
+  <rdfs:label>Protein synthesis</rdfs:label>
+  <core:definition>The process through which activated amino acids are polymerized to form polypeptides through association with mRNA and transfer RNAs on ribosomes.</core:definition>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000142">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="https://www.bikotbi.org/ontology/BIKO_000012"/>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="https://www.bikotbi.org/ontology/BIKO_000306"/>
+          <owl:someValuesFrom rdf:resource="https://www.bikotbi.org/ontology/BIKO_000305"/>
+        </owl:Restriction>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000012"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-12T18:39:11.363498Z</oboI:creation_date>
+  <rdfs:label>closed head injury</rdfs:label>
+  <onto:BIKO_000009>blunt head injury</onto:BIKO_000009>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000143">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="https://www.bikotbi.org/ontology/BIKO_000012"/>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="https://www.bikotbi.org/ontology/BIKO_000306"/>
+          <owl:someValuesFrom rdf:resource="https://www.bikotbi.org/ontology/BIKO_000178"/>
+        </owl:Restriction>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000012"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-12T18:39:37.460641Z</oboI:creation_date>
+  <rdfs:label>open head injury</rdfs:label>
+  <onto:BIKO_000009>penetrating brain injury</onto:BIKO_000009>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000144">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="https://www.bikotbi.org/ontology/BIKO_000011"/>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="https://www.bikotbi.org/ontology/BIKO_000146"/>
+          <owl:someValuesFrom rdf:resource="https://www.bikotbi.org/ontology/BIKO_000148"/>
+        </owl:Restriction>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000011"/>
+  <rdfs:isDefinedBy rdf:resource="https://en.wikipedia.org/wiki/Acquired_brain_injury"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-19T12:21:45.305276Z</oboI:creation_date>
+  <rdfs:label>Acquired brain injury</rdfs:label>
+  <core:definition>Brain damage caused by events after birth, rather than as part of a genetic or congenital disorder such as fetal alcohol syndrome, perinatal illness or perinatal hypoxia.[</core:definition>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000145">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000047"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="https://www.bikotbi.org/ontology/BIKO_000246"/>
+      <owl:someValuesFrom rdf:resource="https://www.bikotbi.org/ontology/BIKO_000013"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-11-07T18:18:17.296021Z</oboI:creation_date>
+  <rdfs:label>Concussion</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000147">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000052"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-19T18:46:20.907662Z</oboI:creation_date>
+  <rdfs:label>Organ</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000148">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000052"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="https://www.bikotbi.org/ontology/BIKO_000150"/>
+      <owl:someValuesFrom rdf:resource="https://www.bikotbi.org/ontology/BIKO_000068"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-19T18:49:25.337193Z</oboI:creation_date>
+  <rdfs:label>Regional part of brain</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000149">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000136"/>
+  <rdfs:isDefinedBy rdf:resource="https://www.fsps.muni.cz/emuni/data/reader/book-2/08.html"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-19T19:18:44.80596Z</oboI:creation_date>
+  <rdfs:label>contact force</rdfs:label>
+  <core:definition>Contact forces are forces that act at the point of contact between two objects.</core:definition>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000151">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000136"/>
+  <rdfs:isDefinedBy rdf:resource="https://en.wikipedia.org/wiki/Non-contact_force"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-19T19:18:53.783783Z</oboI:creation_date>
+  <rdfs:label>non-contact force</rdfs:label>
+  <core:definition>A non-contact force is a force which acts on an object without coming physically in contact with it</core:definition>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000152">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000002"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-19T20:56:47.151876Z</oboI:creation_date>
+  <rdfs:label>traumatic brain injury attribute</rdfs:label>
+  <core:definition></core:definition>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000154">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000152"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-19T20:59:10.155443Z</oboI:creation_date>
+  <rdfs:label>injury progression</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000155">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000152"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-19T20:59:40.469083Z</oboI:creation_date>
+  <rdfs:label>severity of injury</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000156">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000152"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-19T21:00:02.847928Z</oboI:creation_date>
+  <rdfs:label>distribution of structural damage</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000158">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000067"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-19T21:24:57.168284Z</oboI:creation_date>
+  <rdfs:label>algorithm</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000161">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000152"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-11-09T08:39:44.089814Z</oboI:creation_date>
+  <rdfs:label>impact parameters</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000162">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000161"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-11-09T08:41:12.853929Z</oboI:creation_date>
+  <rdfs:label>injury velocity</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000163">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000065"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-19T21:32:04.348159Z</oboI:creation_date>
+  <rdfs:label>categorical label</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000164">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000151"/>
+  <rdfs:isDefinedBy rdf:resource="https://byjus.com/physics/non-contact-force/"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-21T02:05:36.273351Z</oboI:creation_date>
+  <rdfs:label>gravitational force</rdfs:label>
+  <core:definition>The gravitation is a force of attraction between all bodies with mass.</core:definition>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000165">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000149"/>
+  <rdfs:isDefinedBy rdf:resource="https://www.bbc.co.uk/bitesize/guides/zyxv97h/revision/1"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-21T02:07:14.898428Z</oboI:creation_date>
+  <rdfs:label>reaction force</rdfs:label>
+  <core:definition>The force exerted in the opposite direction to an action force.</core:definition>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000166">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000149"/>
+  <rdfs:isDefinedBy rdf:resource="https://byjus.com/physics/force-contact-force-non-contact-force/"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-21T02:08:22.02783Z</oboI:creation_date>
+  <rdfs:label>frictional force</rdfs:label>
+  <core:definition>The force exerted by a surface against the motion of a body across its surface.</core:definition>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000167">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000149"/>
+  <rdfs:isDefinedBy rdf:resource="https://byjus.com/physics/force-contact-force-non-contact-force/"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-21T02:09:19.169039Z</oboI:creation_date>
+  <rdfs:label>applied force</rdfs:label>
+  <core:definition>The force which is applied to an object by another object.</core:definition>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000168">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000149"/>
+  <rdfs:isDefinedBy rdf:resource="https://byjus.com/physics/force-contact-force-non-contact-force/"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-21T02:09:47.67083Z</oboI:creation_date>
+  <rdfs:label>normal force</rdfs:label>
+  <core:definition>The support force exerted upon an object that is in contact with another fixed or stable object.</core:definition>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000169">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000151"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-21T02:12:15.6706Z</oboI:creation_date>
+  <rdfs:label>electrostatic force</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000170">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000149"/>
+  <rdfs:isDefinedBy rdf:resource="https://examples.yourdictionary.com/contact-force-examples-different-types-physics"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-21T02:13:21.058787Z</oboI:creation_date>
+  <rdfs:label>air resistance force</rdfs:label>
+  <core:definition>The force exerted on an object when it comes in contact with air by traveling through it.</core:definition>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000171">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000161"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-11-09T08:41:47.504691Z</oboI:creation_date>
+  <rdfs:label>injury duration</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000172">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000149"/>
+  <rdfs:isDefinedBy rdf:resource="https://www.physicsclassroom.com/Class/newtlaws/U2L2b.cfm#spring"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-21T05:04:37.259764Z</oboI:creation_date>
+  <rdfs:label>tension force</rdfs:label>
+  <core:definition>The force that is transmitted through a string, rope, cable or wire when it is pulled tight by forces acting from opposite ends.</core:definition>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000173">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000149"/>
+  <rdfs:isDefinedBy rdf:resource="https://www.physicsclassroom.com/Class/newtlaws/U2L2b.cfm#spring"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-21T05:05:27.684241Z</oboI:creation_date>
+  <rdfs:label>spring force</rdfs:label>
+  <core:definition>The force exerted by a compressed or stretched spring upon any object that is attached to it.</core:definition>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000175">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000161"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-21T05:57:16.044823Z</oboI:creation_date>
+  <rdfs:label>injury depth</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000176">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000152"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-21T06:04:45.377124Z</oboI:creation_date>
+  <rdfs:label>physical mechanisms of insult</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000178">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000180"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-11-09T13:05:16.977115Z</oboI:creation_date>
+  <rdfs:label>breach skull</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000179">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_00414"/>
+  <rdfs:isDefinedBy rdf:resource="https://en.wikipedia.org/wiki/Craniotomy"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-11-09T08:43:52.7658Z</oboI:creation_date>
+  <rdfs:label>Craniotomy</rdfs:label>
+  <core:definition>A craniotomy is a surgical operation in which a bone flap is temporarily removed from the skull to access the brain.</core:definition>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000180">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000161"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="https://www.bikotbi.org/ontology/BIKO_00610"/>
+      <owl:someValuesFrom rdf:resource="https://www.bikotbi.org/ontology/BIKO_000180"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-11-09T13:00:22.941796Z</oboI:creation_date>
+  <rdfs:label>skull disruption</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000184">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_00414"/>
+  <rdfs:isDefinedBy rdf:resource="https://www.ncbi.nlm.nih.gov/books/NBK560922/"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-11-09T08:46:31.072748Z</oboI:creation_date>
+  <rdfs:label>Craniectomy</rdfs:label>
+  <core:definition>A neurosurgical procedure in which part of the skull is removed to allow a swelling brain room to expand without being squeezed.</core:definition>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000193">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000001"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-24T09:27:03.354939Z</oboI:creation_date>
+  <rdfs:label>Organ system subdivision</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000194">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000193"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-24T09:27:26.30718Z</oboI:creation_date>
+  <rdfs:label>Subdivision of skeletal system</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000195">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000194"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-24T09:27:33.47974Z</oboI:creation_date>
+  <rdfs:label>skull</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000196">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000001"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-24T09:29:21.094713Z</oboI:creation_date>
+  <rdfs:label>Meninx</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000197">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000196"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-24T09:29:35.851648Z</oboI:creation_date>
+  <rdfs:label>Brain meninx</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000198">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000197"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-24T09:29:52.190912Z</oboI:creation_date>
+  <rdfs:label>Brain arachnoid mater</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000199">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000197"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-24T09:30:05.695686Z</oboI:creation_date>
+  <rdfs:label>Brain dura mater</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000200">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000197"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-24T09:30:20.169425Z</oboI:creation_date>
+  <rdfs:label>Brain pia mater</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000201">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000197"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-24T09:30:36.418317Z</oboI:creation_date>
+  <rdfs:label>Forebrain meninges</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000202">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000197"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-24T09:30:51.215012Z</oboI:creation_date>
+  <rdfs:label>Meninx of hindbrain</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000203">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000197"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-24T09:31:32.470651Z</oboI:creation_date>
+  <rdfs:label>Meninx of midbrain</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000204">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_00416"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-24T09:34:05.053303Z</oboI:creation_date>
+  <rdfs:label>mammalia</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000205">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000204"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-24T09:34:40.545616Z</oboI:creation_date>
+  <rdfs:label>primate</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000206">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000205"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-24T09:34:51.86939Z</oboI:creation_date>
+  <rdfs:label>chimpanzee</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000207">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000205"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-24T09:35:10.448707Z</oboI:creation_date>
+  <rdfs:label>human</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000208">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000205"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-24T09:35:25.258674Z</oboI:creation_date>
+  <rdfs:label>monkey</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000209">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000204"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-24T09:35:43.703703Z</oboI:creation_date>
+  <rdfs:label>rodentia</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000210">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000209"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-24T09:36:09.549807Z</oboI:creation_date>
+  <rdfs:label>muridae</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000211">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000210"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-24T09:36:21.066566Z</oboI:creation_date>
+  <rdfs:label>mouse</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000212">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000210"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-24T09:36:26.587001Z</oboI:creation_date>
+  <rdfs:label>rat</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000213">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000004"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-24T09:37:41.575757Z</oboI:creation_date>
+  <rdfs:label>Biological macromolecule</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000214">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_00411"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-24T09:37:51.301159Z</oboI:creation_date>
+  <rdfs:label>DNA</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000215">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_00411"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-24T09:37:56.734116Z</oboI:creation_date>
+  <rdfs:label>RNA</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000216">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000213"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-24T09:38:06.15151Z</oboI:creation_date>
+  <rdfs:label>Protein</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000217">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000213"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-24T09:38:55.890802Z</oboI:creation_date>
+  <rdfs:label>Gene</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000218">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000001"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-24T09:39:49.563971Z</oboI:creation_date>
+  <rdfs:label>Cell type</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000219">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000218"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-24T09:39:56.202344Z</oboI:creation_date>
+  <rdfs:label>Nervous system cell</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000220">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000219"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-24T09:40:44.889483Z</oboI:creation_date>
+  <rdfs:label>Glial brain cell</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000221">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000219"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-24T09:42:51.298331Z</oboI:creation_date>
+  <rdfs:label>Neuron cell</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000222">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000220"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-24T09:43:03.522009Z</oboI:creation_date>
+  <rdfs:label>Astrocyte</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000223">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000220"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-24T09:43:12.737409Z</oboI:creation_date>
+  <rdfs:label>Microglial cell</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000224">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000155"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-28T22:26:59.325123Z</oboI:creation_date>
+  <rdfs:label>moderate traumatic brain injury</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000225">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000155"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-28T22:27:13.401633Z</oboI:creation_date>
+  <rdfs:label>severe traumatic brain injury</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000226">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000088"/>
+  <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/CHEBI_51086"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-11-07T17:51:10.791238Z</oboI:creation_date>
+  <rdfs:label>Chemical role</rdfs:label>
+  <core:definition>A role played by the molecular entity or part thereof within a chemical context.</core:definition>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000227">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000088"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-11-07T17:51:26.884224Z</oboI:creation_date>
+  <rdfs:label>Drug role</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000229">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000161"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-11-01T21:18:24.127408Z</oboI:creation_date>
+  <rdfs:label>injury speed</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000230">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000087"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-11-01T21:19:38.551188Z</oboI:creation_date>
+  <rdfs:label>Excitotoxicity</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000231">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000230"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-11-01T21:19:56.611856Z</oboI:creation_date>
+  <rdfs:label>Mitochondrial dysfunction</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000232">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000088"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-11-07T17:51:45.813426Z</oboI:creation_date>
+  <rdfs:label>Software manufacture</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000233">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_00466"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="https://www.bikotbi.org/ontology/BIKO_000246"/>
+      <owl:someValuesFrom rdf:resource="https://www.bikotbi.org/ontology/BIKO_000013"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-11-07T18:20:15.175496Z</oboI:creation_date>
+  <rdfs:label>Diffuse axonal injury</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000234">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000047"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-11-07T18:20:33.291569Z</oboI:creation_date>
+  <rdfs:label>Brain edema</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000235">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_00449"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-11-07T18:20:50.756623Z</oboI:creation_date>
+  <rdfs:label>Intracranial hematoma</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000236">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000047"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-11-07T18:21:16.045652Z</oboI:creation_date>
+  <rdfs:label>Skull fracture</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000237">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000047"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="https://www.bikotbi.org/ontology/BIKO_000246"/>
+      <owl:someValuesFrom rdf:resource="https://www.bikotbi.org/ontology/BIKO_000013"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-11-07T18:21:52.781049Z</oboI:creation_date>
+  <rdfs:label>Coup-contrecoup brain injury</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000238">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000235"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-11-07T18:25:17.554166Z</oboI:creation_date>
+  <rdfs:label>Epidural hematoma</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000239">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000235"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-11-07T18:25:33.661675Z</oboI:creation_date>
+  <rdfs:label>Subdural hematoma</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000240">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000235"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-11-07T18:25:47.780698Z</oboI:creation_date>
+  <rdfs:label>Subarachnoid hemorrhage</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000241">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000235"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-11-07T18:26:04.589271Z</oboI:creation_date>
+  <rdfs:label>Intracerebral hematoma</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000242">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000235"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-11-07T18:26:23.452762Z</oboI:creation_date>
+  <rdfs:label>Intraventricular hemorrhage</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000243">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000236"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-11-07T18:26:41.96597Z</oboI:creation_date>
+  <rdfs:label>Linear skull fracture</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000244">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000236"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-11-07T18:26:52.85917Z</oboI:creation_date>
+  <rdfs:label>Depressed skull fracture</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000245">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000236"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-11-07T18:27:04.611152Z</oboI:creation_date>
+  <rdfs:label>Basilar skull fracture</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000247">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_00448"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-11-07T18:31:57.034149Z</oboI:creation_date>
+  <rdfs:label>Cortical contusion</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000251">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_00594"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="https://www.bikotbi.org/ontology/BIKO_00550"/>
+      <owl:someValuesFrom>
+        <owl:Class>
+          <owl:intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://www.bikotbi.org/ontology/BIKO_000040"/>
+            <owl:Restriction>
+              <owl:onProperty rdf:resource="https://www.bikotbi.org/ontology/BIKO_000019"/>
+              <owl:someValuesFrom rdf:resource="https://www.bikotbi.org/ontology/BIKO_00549"/>
+            </owl:Restriction>
+          </owl:intersectionOf>
+        </owl:Class>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-11-09T03:08:42.675975Z</oboI:creation_date>
+  <rdfs:label>Barnes maze test</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000252">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_00594"/>
+  <onto:BIKO_00596 rdf:resource="https://www.bikotbi.org/ontology/BIKO_00583"/>
+  <onto:BIKO_00596 rdf:resource="https://www.bikotbi.org/ontology/BIKO_00584"/>
+  <onto:BIKO_00596 rdf:resource="https://www.bikotbi.org/ontology/BIKO_00585"/>
+  <onto:BIKO_00596 rdf:resource="https://www.bikotbi.org/ontology/BIKO_00589"/>
+  <onto:BIKO_00596 rdf:resource="https://www.bikotbi.org/ontology/BIKO_00591"/>
+  <onto:BIKO_00596 rdf:resource="https://www.bikotbi.org/ontology/BIKO_00592"/>
+  <onto:BIKO_00596 rdf:resource="https://www.bikotbi.org/ontology/BIKO_00593"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-11-09T03:08:52.762185Z</oboI:creation_date>
+  <rdfs:label>Beam walk test</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000253">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_00594"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-11-09T03:09:03.338686Z</oboI:creation_date>
+  <rdfs:label>Bungalow test</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000257">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_00594"/>
+  <onto:BIKO_00596 rdf:resource="https://www.bikotbi.org/ontology/BIKO_00575"/>
+  <onto:BIKO_00596 rdf:resource="https://www.bikotbi.org/ontology/BIKO_00577"/>
+  <onto:BIKO_00596 rdf:resource="https://www.bikotbi.org/ontology/BIKO_00578"/>
+  <onto:BIKO_00596 rdf:resource="https://www.bikotbi.org/ontology/BIKO_00579"/>
+  <onto:BIKO_00596 rdf:resource="https://www.bikotbi.org/ontology/BIKO_00580"/>
+  <onto:BIKO_00596 rdf:resource="https://www.bikotbi.org/ontology/BIKO_00581"/>
+  <onto:BIKO_00596 rdf:resource="https://www.bikotbi.org/ontology/BIKO_00582"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-11-09T03:09:50.218707Z</oboI:creation_date>
+  <rdfs:label>Cylinder test</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000258">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_00594"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-11-09T03:10:00.900417Z</oboI:creation_date>
+  <rdfs:label>Elevated Plus Maze test</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000259">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_00594"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-11-09T03:10:12.75245Z</oboI:creation_date>
+  <rdfs:label>Elevated Zero Maze test</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000261">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_00594"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="https://www.bikotbi.org/ontology/BIKO_00550"/>
+      <owl:someValuesFrom>
+        <owl:Class>
+          <owl:intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://www.bikotbi.org/ontology/BIKO_000040"/>
+            <owl:Restriction>
+              <owl:onProperty rdf:resource="https://www.bikotbi.org/ontology/BIKO_000019"/>
+              <owl:someValuesFrom rdf:resource="https://www.bikotbi.org/ontology/BIKO_00549"/>
+            </owl:Restriction>
+          </owl:intersectionOf>
+        </owl:Class>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-11-09T03:10:31.556307Z</oboI:creation_date>
+  <rdfs:label>Fear conditioning test</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000262">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_00594"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-11-09T03:10:41.03Z</oboI:creation_date>
+  <rdfs:label>Forced swim test</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000263">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_00594"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-11-09T03:10:50.839239Z</oboI:creation_date>
+  <rdfs:label>Galveston orientation and amnesia Test</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000267">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_00594"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-11-09T03:11:36.087335Z</oboI:creation_date>
+  <rdfs:label>Inclined plane test</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000268">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000042"/>
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000073"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-11-09T03:11:45.076393Z</oboI:creation_date>
+  <rdfs:label>Injury severity score</rdfs:label>
+  <onto:BIKO_000009>ISS</onto:BIKO_000009>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000271">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_00594"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-11-09T03:12:37.635382Z</oboI:creation_date>
+  <rdfs:label>Limb placing test</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000272">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_00594"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-11-09T03:12:47.019442Z</oboI:creation_date>
+  <rdfs:label>Marble burying test</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000273">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_00594"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="https://www.bikotbi.org/ontology/BIKO_00550"/>
+      <owl:someValuesFrom>
+        <owl:Class>
+          <owl:intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://www.bikotbi.org/ontology/BIKO_000040"/>
+            <owl:Restriction>
+              <owl:onProperty rdf:resource="https://www.bikotbi.org/ontology/BIKO_000019"/>
+              <owl:someValuesFrom rdf:resource="https://www.bikotbi.org/ontology/BIKO_00549"/>
+            </owl:Restriction>
+          </owl:intersectionOf>
+        </owl:Class>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-11-09T03:12:58.71461Z</oboI:creation_date>
+  <rdfs:label>Morris water maze test</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000274">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000042"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-11-09T03:13:11.94614Z</oboI:creation_date>
+  <rdfs:label>Neurological severity score</rdfs:label>
+  <onto:BIKO_000009>NSS</onto:BIKO_000009>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000275">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_00594"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-11-09T03:13:23.407862Z</oboI:creation_date>
+  <rdfs:label>Neuropsychological functioning test</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000276">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_00594"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="https://www.bikotbi.org/ontology/BIKO_00550"/>
+      <owl:someValuesFrom>
+        <owl:Class>
+          <owl:intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://www.bikotbi.org/ontology/BIKO_000040"/>
+            <owl:Restriction>
+              <owl:onProperty rdf:resource="https://www.bikotbi.org/ontology/BIKO_000019"/>
+              <owl:someValuesFrom rdf:resource="https://www.bikotbi.org/ontology/BIKO_00549"/>
+            </owl:Restriction>
+          </owl:intersectionOf>
+        </owl:Class>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-11-09T03:13:34.547853Z</oboI:creation_date>
+  <rdfs:label>Novel object recognition test</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000277">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_00594"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-11-09T03:13:45.503361Z</oboI:creation_date>
+  <rdfs:label>Object retrieval test</rdfs:label>
+  <onto:BIKO_000009>reach-and-grasp test</onto:BIKO_000009>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000278">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_00594"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="https://www.bikotbi.org/ontology/BIKO_00550"/>
+      <owl:someValuesFrom>
+        <owl:Class>
+          <owl:intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://www.bikotbi.org/ontology/BIKO_000040"/>
+            <owl:Restriction>
+              <owl:onProperty rdf:resource="https://www.bikotbi.org/ontology/BIKO_000019"/>
+              <owl:someValuesFrom rdf:resource="https://www.bikotbi.org/ontology/BIKO_00546"/>
+            </owl:Restriction>
+          </owl:intersectionOf>
+        </owl:Class>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-11-09T03:14:07.020687Z</oboI:creation_date>
+  <rdfs:label>Open field Test</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000279">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_00594"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-11-09T03:14:18.597413Z</oboI:creation_date>
+  <rdfs:label>Partition test</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000280">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000262"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-11-09T03:14:29.596587Z</oboI:creation_date>
+  <rdfs:label>Porsolt’s forced swim test</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000281">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_00594"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-11-09T03:14:40.838338Z</oboI:creation_date>
+  <rdfs:label>Predatory odor test</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000282">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_00594"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="https://www.bikotbi.org/ontology/BIKO_00550"/>
+      <owl:someValuesFrom>
+        <owl:Class>
+          <owl:intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://www.bikotbi.org/ontology/BIKO_000040"/>
+            <owl:Restriction>
+              <owl:onProperty rdf:resource="https://www.bikotbi.org/ontology/BIKO_000019"/>
+              <owl:someValuesFrom rdf:resource="https://www.bikotbi.org/ontology/BIKO_00543"/>
+            </owl:Restriction>
+          </owl:intersectionOf>
+        </owl:Class>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-11-09T03:14:52.202975Z</oboI:creation_date>
+  <rdfs:label>Radial maze test</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000285">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_00594"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="https://www.bikotbi.org/ontology/BIKO_00550"/>
+      <owl:someValuesFrom>
+        <owl:Class>
+          <owl:intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://www.bikotbi.org/ontology/BIKO_000040"/>
+            <owl:Restriction>
+              <owl:onProperty rdf:resource="https://www.bikotbi.org/ontology/BIKO_000019"/>
+              <owl:someValuesFrom rdf:resource="https://www.bikotbi.org/ontology/BIKO_00546"/>
+            </owl:Restriction>
+          </owl:intersectionOf>
+        </owl:Class>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-11-09T03:15:30.665049Z</oboI:creation_date>
+  <rdfs:label>Righting reflex test</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000286">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_00594"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-11-09T03:15:40.360464Z</oboI:creation_date>
+  <rdfs:label>Rope grip test</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000287">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_00594"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-11-09T03:15:51.278499Z</oboI:creation_date>
+  <rdfs:label>Rotarod test</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000288">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_00594"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="https://www.bikotbi.org/ontology/BIKO_00550"/>
+      <owl:someValuesFrom>
+        <owl:Class>
+          <owl:intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://www.bikotbi.org/ontology/BIKO_000040"/>
+            <owl:Restriction>
+              <owl:onProperty rdf:resource="https://www.bikotbi.org/ontology/BIKO_000019"/>
+              <owl:someValuesFrom rdf:resource="https://www.bikotbi.org/ontology/BIKO_00546"/>
+            </owl:Restriction>
+          </owl:intersectionOf>
+        </owl:Class>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-11-09T03:38:13.525236Z</oboI:creation_date>
+  <rdfs:label>Rotating pole test</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000290">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_00594"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-11-09T03:38:34.812786Z</oboI:creation_date>
+  <rdfs:label>Startle response test</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000291">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_00594"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-11-09T03:38:47.64918Z</oboI:creation_date>
+  <rdfs:label>String test</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000292">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_00594"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-11-09T03:38:58.197199Z</oboI:creation_date>
+  <rdfs:label>Sucrose preference test</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000293">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_00594"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-11-09T03:39:10.32829Z</oboI:creation_date>
+  <rdfs:label>T maze test</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000294">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_00594"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-11-09T03:39:21.631331Z</oboI:creation_date>
+  <rdfs:label>Tail suspension test</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000298">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_00594"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="https://www.bikotbi.org/ontology/BIKO_00550"/>
+      <owl:someValuesFrom>
+        <owl:Class>
+          <owl:intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://www.bikotbi.org/ontology/BIKO_000040"/>
+            <owl:Restriction>
+              <owl:onProperty rdf:resource="https://www.bikotbi.org/ontology/BIKO_000019"/>
+              <owl:someValuesFrom rdf:resource="https://www.bikotbi.org/ontology/BIKO_00543"/>
+            </owl:Restriction>
+          </owl:intersectionOf>
+        </owl:Class>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="https://www.bikotbi.org/ontology/BIKO_00550"/>
+      <owl:someValuesFrom>
+        <owl:Class>
+          <owl:intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://www.bikotbi.org/ontology/BIKO_000040"/>
+            <owl:Restriction>
+              <owl:onProperty rdf:resource="https://www.bikotbi.org/ontology/BIKO_000019"/>
+              <owl:someValuesFrom rdf:resource="https://www.bikotbi.org/ontology/BIKO_00549"/>
+            </owl:Restriction>
+          </owl:intersectionOf>
+        </owl:Class>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-11-09T03:40:34.739294Z</oboI:creation_date>
+  <rdfs:label>Y maze test</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000299">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000300"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-11-09T03:41:37.262685Z</oboI:creation_date>
+  <rdfs:label>extended Glasgow Coma Scale</rdfs:label>
+  <onto:BIKO_000009>eGCS</onto:BIKO_000009>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000300">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000042"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-11-09T03:41:49.266591Z</oboI:creation_date>
+  <rdfs:label>Glasgow Coma Scale</rdfs:label>
+  <onto:BIKO_000009>GCS</onto:BIKO_000009>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000301">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000274"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-11-09T03:42:19.682399Z</oboI:creation_date>
+  <rdfs:label>modified Neurological severity score</rdfs:label>
+  <onto:BIKO_000009>mNSS</onto:BIKO_000009>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000302">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000043"/>
+  <rdfs:isDefinedBy rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C38101"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-11-09T13:07:23.034636Z</oboI:creation_date>
+  <rdfs:label>X-Ray test</rdfs:label>
+  <core:definition>A test that uses a plain radiograph to examine the emission of x-rays to form an image of the structure penetrated by the radiation.</core:definition>
+  <onto:BIKO_000009>Plain Radiograph test, Radiographic Imaging test, X-Ray</onto:BIKO_000009>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000304">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000073"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-11-09T13:12:45.504999Z</oboI:creation_date>
+  <rdfs:label>Surgery</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000305">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000180"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-11-09T13:16:39.154435Z</oboI:creation_date>
+  <rdfs:label>non breach skull</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000314">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000144"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-11-09T13:50:43.250272Z</oboI:creation_date>
+  <rdfs:label>Non-traumatic brain injury</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000316">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000148"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-11-09T14:20:54.674454Z</oboI:creation_date>
+  <rdfs:label>Sagittal suture</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000317">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000072"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-11-09T14:23:21.90732Z</oboI:creation_date>
+  <rdfs:label>Controlled cortical impact device</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000318">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000317"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-11-09T14:23:34.418363Z</oboI:creation_date>
+  <rdfs:label>Pneumatic impactor</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000319">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000317"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-11-09T14:23:47.881804Z</oboI:creation_date>
+  <rdfs:label>Electromagnetic impactor</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_000321">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000151"/>
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-11-09T14:35:27.593631Z</oboI:creation_date>
+  <rdfs:label>explosive force</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_00405">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000072"/>
+  <rdfs:label>Fluid percussion device</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_00406">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000072"/>
+  <rdfs:label>Weight drop device</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_00407">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000072"/>
+  <rdfs:label>Blast model device</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_00408">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_00407"/>
+  <rdfs:label>explosive device</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_00409">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_00407"/>
+  <rdfs:label>blast tube device</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_00410">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_00407"/>
+  <rdfs:label>shock tube device</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_00411">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000213"/>
+  <rdfs:label>Nucleic acid</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_00414">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000304"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="https://www.bikotbi.org/ontology/BIKO_000306"/>
+      <owl:someValuesFrom rdf:resource="https://www.bikotbi.org/ontology/BIKO_00437"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label>Removal of portion of skull</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_00415">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000086"/>
+  <rdfs:label>eukaryota</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_00416">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_00415"/>
+  <rdfs:label>animal</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_00417">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_00416"/>
+  <rdfs:label>vertebrata</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_00418">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_00416"/>
+  <rdfs:label>artiodactyla</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_00419">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_00418"/>
+  <rdfs:label>bovidae</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_00429">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000005"/>
+  <rdfs:label>Injury event</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_00437">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000178"/>
+  <rdfs:label>manual skull breach</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_00438">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000178"/>
+  <rdfs:label>organic injury skull breach</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_00444">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000017"/>
+  <rdfs:label>Penetration by a sharp object</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_00447">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000017"/>
+  <rdfs:label>Contact with a blunt object</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_00448">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000047"/>
+  <rdfs:label>Contussion</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_00449">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000047"/>
+  <rdfs:label>Brain hematoma</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_00452">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000047"/>
+  <rdfs:label>Intraparenchymal hematoma</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_00453">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_00449"/>
+  <rdfs:label>Epidural hematoma</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_00454">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_00449"/>
+  <rdfs:label>Subdural hematoma</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_00455">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000047"/>
+  <rdfs:label>Hypoxic ischemic injury</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_00462">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000004"/>
+  <rdfs:label>Anatomical point</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_00463">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_00462"/>
+  <rdfs:label>Bregma</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_00464">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_00462"/>
+  <rdfs:label>Lambda</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_00465">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000047"/>
+  <rdfs:label>Cortical tissue loss</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_00466">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000047"/>
+  <rdfs:label>Axonal injury</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_00467">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000047"/>
+  <rdfs:label>Hippocampal degeneration</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_00468">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000047"/>
+  <rdfs:label>Thalamic degeneration</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_00469">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000087"/>
+  <rdfs:label>Oxidative stress</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_00470">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000069"/>
+  <rdfs:label>Personal protective equipment</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_00471">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_00470"/>
+  <rdfs:label>Helmet</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_00472">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_00406"/>
+  <rdfs:label>Free-falling rod</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_00473">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_00406"/>
+  <rdfs:label>Weight device</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_00474">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_00470"/>
+  <rdfs:label>Metal disk</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_00543">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_00544"/>
+  <rdfs:label>learning and memory</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_00544">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000060"/>
+  <rdfs:label>biological function</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_00545">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_00544"/>
+  <rdfs:label>social, emotional and stress response</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_00546">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_00544"/>
+  <rdfs:label>motor function</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_00549">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_00544"/>
+  <rdfs:label>Cognition function</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_00564">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_00594"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="https://www.bikotbi.org/ontology/BIKO_00550"/>
+      <owl:someValuesFrom>
+        <owl:Class>
+          <owl:intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://www.bikotbi.org/ontology/BIKO_000040"/>
+            <owl:Restriction>
+              <owl:onProperty rdf:resource="https://www.bikotbi.org/ontology/BIKO_000019"/>
+              <owl:someValuesFrom rdf:resource="https://www.bikotbi.org/ontology/BIKO_00546"/>
+            </owl:Restriction>
+          </owl:intersectionOf>
+        </owl:Class>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label>Beam balance test</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_00565">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_00544"/>
+  <rdfs:label>Sensory function</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_00566">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_00543"/>
+  <rdfs:label>Spatial learning</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_00567">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_00543"/>
+  <rdfs:label>Reference memory</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_00568">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_00543"/>
+  <rdfs:label>Short-term memory</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_00594">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000040"/>
+  <rdfs:label>Behavioral test</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_00611">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_000067"/>
+  <rdfs:label>protocol</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_00612">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_00611"/>
+  <rdfs:label>Traumatic brain injury model protocol</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_00613">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_00612"/>
+  <rdfs:label>Controlled cortical impact model protocol</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_00614">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_00612"/>
+  <rdfs:label>Blast model protocol</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_00615">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_00612"/>
+  <rdfs:label>Fluid percussion model protocol</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="https://www.bikotbi.org/ontology/BIKO_00616">
+  <rdfs:subClassOf rdf:resource="https://www.bikotbi.org/ontology/BIKO_00612"/>
+  <rdfs:label>Weight drop model protocol</rdfs:label>
+</owl:Class>
+
+<owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/PMID_16473332"/>
+
+<owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/PMID_16814284"/>
+
+<owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/PMID_1787745"/>
+
+<owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/PMID_22575994"/>
+
+<owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/PMID_23089934"/>
+
+<owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/PMID_25148711"/>
+
+<owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/PMID_25449871"/>
+
+<owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/PMID_25771208"/>
+
+<owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/PMID_28421542"/>
+
+<owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/PMID_28675644"/>
+
+<owl:NamedIndividual rdf:about="https://www.bikotbi.org/ontology/BIKO_000049">
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-23T19:28:36.051933Z</oboI:creation_date>
+  <rdfs:label>AnimalAgeGroup</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="https://www.bikotbi.org/ontology/BIKO_000071">
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-23T19:29:27.346103Z</oboI:creation_date>
+  <rdfs:label>AnimalAgeVal</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="https://www.bikotbi.org/ontology/BIKO_000185">
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-23T19:30:36.416558Z</oboI:creation_date>
+  <rdfs:label>AnimalSexTyp</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="https://www.bikotbi.org/ontology/BIKO_000186">
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-23T19:32:01.99624Z</oboI:creation_date>
+  <rdfs:label>BirthSexAssignTyp</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="https://www.bikotbi.org/ontology/BIKO_000188">
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-23T19:33:25.480738Z</oboI:creation_date>
+  <rdfs:label>Age value</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="https://www.bikotbi.org/ontology/BIKO_000189">
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-23T19:34:38.693927Z</oboI:creation_date>
+  <rdfs:label>C00008</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="https://www.bikotbi.org/ontology/BIKO_000191">
+  <oboI:created_by>MCSZ</oboI:created_by>
+  <oboI:creation_date>2022-10-23T19:35:25.590633Z</oboI:creation_date>
+  <rdfs:label>C58676</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="https://www.bikotbi.org/ontology/BIKO_00445">
+  <rdfs:label>Focal</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="https://www.bikotbi.org/ontology/BIKO_00446">
+  <rdfs:label>Diffuse</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="https://www.bikotbi.org/ontology/BIKO_00575">
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="https://www.bikotbi.org/ontology/BIKO_00597"/>
+      <owl:someValuesFrom rdf:resource="https://www.bikotbi.org/ontology/BIKO_000257"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdfs:label>Cylinder Test -  Number of simultaneous contacts of Both forelimbs with cylinder</rdfs:label>
+  <onto:BIKO_00572></onto:BIKO_00572>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="https://www.bikotbi.org/ontology/BIKO_00577">
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="https://www.bikotbi.org/ontology/BIKO_00597"/>
+      <owl:someValuesFrom rdf:resource="https://www.bikotbi.org/ontology/BIKO_000257"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdfs:label>Cylinder Test -  Number of contacts of Impaired forelimb with cylinder</rdfs:label>
+  <onto:BIKO_00572></onto:BIKO_00572>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="https://www.bikotbi.org/ontology/BIKO_00578">
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="https://www.bikotbi.org/ontology/BIKO_00597"/>
+      <owl:someValuesFrom rdf:resource="https://www.bikotbi.org/ontology/BIKO_000257"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdfs:label>Cylinder Test - Total Time used for acquisition</rdfs:label>
+  <onto:BIKO_00572></onto:BIKO_00572>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="https://www.bikotbi.org/ontology/BIKO_00579">
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="https://www.bikotbi.org/ontology/BIKO_00597"/>
+      <owl:someValuesFrom rdf:resource="https://www.bikotbi.org/ontology/BIKO_000257"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdfs:label>Cylinder Test -  Number of total contacts counted of either limb or both with the cylinder</rdfs:label>
+  <onto:BIKO_00572></onto:BIKO_00572>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="https://www.bikotbi.org/ontology/BIKO_00580">
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="https://www.bikotbi.org/ontology/BIKO_00597"/>
+      <owl:someValuesFrom rdf:resource="https://www.bikotbi.org/ontology/BIKO_000257"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdfs:label>Cylinder Test - Scoring method</rdfs:label>
+  <onto:BIKO_00572></onto:BIKO_00572>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="https://www.bikotbi.org/ontology/BIKO_00581">
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="https://www.bikotbi.org/ontology/BIKO_00597"/>
+      <owl:someValuesFrom rdf:resource="https://www.bikotbi.org/ontology/BIKO_000257"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdfs:label>Cylinder Test - angle of camera</rdfs:label>
+  <onto:BIKO_00572></onto:BIKO_00572>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="https://www.bikotbi.org/ontology/BIKO_00582">
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="https://www.bikotbi.org/ontology/BIKO_00597"/>
+      <owl:someValuesFrom rdf:resource="https://www.bikotbi.org/ontology/BIKO_000257"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdfs:label>Cylinder Test - Indicate if animals were habituation to room prior to testing</rdfs:label>
+  <onto:BIKO_00572></onto:BIKO_00572>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="https://www.bikotbi.org/ontology/BIKO_00583">
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="https://www.bikotbi.org/ontology/BIKO_00597"/>
+      <owl:someValuesFrom rdf:resource="https://www.bikotbi.org/ontology/BIKO_000252"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdfs:label>Beam Walk (BWK) test - latency to goal box time duration</rdfs:label>
+  <onto:BIKO_00572></onto:BIKO_00572>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="https://www.bikotbi.org/ontology/BIKO_00584">
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="https://www.bikotbi.org/ontology/BIKO_00597"/>
+      <owl:someValuesFrom rdf:resource="https://www.bikotbi.org/ontology/BIKO_000252"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdfs:label>Beam Walk (BWK) test - foot slips count</rdfs:label>
+  <onto:BIKO_00572></onto:BIKO_00572>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="https://www.bikotbi.org/ontology/BIKO_00585">
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="https://www.bikotbi.org/ontology/BIKO_00597"/>
+      <owl:someValuesFrom rdf:resource="https://www.bikotbi.org/ontology/BIKO_000252"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdfs:label>Beam Walk (BWK) test - Name and position of the foot counted for slips</rdfs:label>
+  <onto:BIKO_00572></onto:BIKO_00572>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="https://www.bikotbi.org/ontology/BIKO_00589">
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="https://www.bikotbi.org/ontology/BIKO_00597"/>
+      <owl:someValuesFrom rdf:resource="https://www.bikotbi.org/ontology/BIKO_000252"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdfs:label>Beam Walk (BWK) test - Aversive stimuli</rdfs:label>
+  <onto:BIKO_00572></onto:BIKO_00572>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="https://www.bikotbi.org/ontology/BIKO_00591">
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="https://www.bikotbi.org/ontology/BIKO_00597"/>
+      <owl:someValuesFrom rdf:resource="https://www.bikotbi.org/ontology/BIKO_000252"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdfs:label>Beam Walk (BWK) test - beam shape type</rdfs:label>
+  <onto:BIKO_00572></onto:BIKO_00572>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="https://www.bikotbi.org/ontology/BIKO_00592">
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="https://www.bikotbi.org/ontology/BIKO_00597"/>
+      <owl:someValuesFrom rdf:resource="https://www.bikotbi.org/ontology/BIKO_000252"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdfs:label>Beam Walk (BWK) test - beam height value</rdfs:label>
+  <onto:BIKO_00572></onto:BIKO_00572>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="https://www.bikotbi.org/ontology/BIKO_00593">
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="https://www.bikotbi.org/ontology/BIKO_00597"/>
+      <owl:someValuesFrom rdf:resource="https://www.bikotbi.org/ontology/BIKO_000252"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdfs:label>Beam Walk (BWK) test - goal box dimension text</rdfs:label>
+  <onto:BIKO_00572></onto:BIKO_00572>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="https://www.bikotbi.org/ontology/BIKO_00598">
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="https://www.bikotbi.org/ontology/BIKO_00597"/>
+      <owl:someValuesFrom rdf:resource="https://www.bikotbi.org/ontology/BIKO_000287"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdfs:label>Rotor rod test - rod speed value at fall</rdfs:label>
+  <onto:BIKO_00572></onto:BIKO_00572>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="https://www.bikotbi.org/ontology/BIKO_00599">
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="https://www.bikotbi.org/ontology/BIKO_00597"/>
+      <owl:someValuesFrom rdf:resource="https://www.bikotbi.org/ontology/BIKO_000287"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdfs:label>Rotor rod test - latency time duration</rdfs:label>
+  <onto:BIKO_00572></onto:BIKO_00572>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="https://www.bikotbi.org/ontology/BIKO_00601">
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="https://www.bikotbi.org/ontology/BIKO_00597"/>
+      <owl:someValuesFrom rdf:resource="https://www.bikotbi.org/ontology/BIKO_000287"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdfs:label>Rotor rod test - final speed value</rdfs:label>
+  <onto:BIKO_00572></onto:BIKO_00572>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="https://www.bikotbi.org/ontology/BIKO_00602">
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="https://www.bikotbi.org/ontology/BIKO_00597"/>
+      <owl:someValuesFrom rdf:resource="https://www.bikotbi.org/ontology/BIKO_000287"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdfs:label>Rotor rod test - start speed value</rdfs:label>
+  <onto:BIKO_00572></onto:BIKO_00572>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="https://www.bikotbi.org/ontology/BIKO_00603">
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="https://www.bikotbi.org/ontology/BIKO_00597"/>
+      <owl:someValuesFrom rdf:resource="https://www.bikotbi.org/ontology/BIKO_000287"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdfs:label>Rotor rod test - rod diameter value</rdfs:label>
+  <onto:BIKO_00572></onto:BIKO_00572>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="https://www.bikotbi.org/ontology/BIKO_00604">
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="https://www.bikotbi.org/ontology/BIKO_00597"/>
+      <owl:someValuesFrom rdf:resource="https://www.bikotbi.org/ontology/BIKO_000287"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdfs:label>Rotor rod test - lane width value</rdfs:label>
+  <onto:BIKO_00572></onto:BIKO_00572>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="https://www.bikotbi.org/ontology/BIKO_00605">
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="https://www.bikotbi.org/ontology/BIKO_00597"/>
+      <owl:someValuesFrom rdf:resource="https://www.bikotbi.org/ontology/BIKO_000287"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdfs:label>Rotor rod test - fall height value</rdfs:label>
+  <onto:BIKO_00572></onto:BIKO_00572>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="https://www.bikotbi.org/ontology/BIKO_00606">
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="https://www.bikotbi.org/ontology/BIKO_00597"/>
+      <owl:someValuesFrom rdf:resource="https://www.bikotbi.org/ontology/BIKO_000287"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdfs:label>Rotor rod test - Apparatus habituation type text</rdfs:label>
+  <onto:BIKO_00572></onto:BIKO_00572>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="https://www.bikotbi.org/ontology/BIKO_00607">
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="https://www.bikotbi.org/ontology/BIKO_00597"/>
+      <owl:someValuesFrom rdf:resource="https://www.bikotbi.org/ontology/BIKO_000287"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdfs:label>Rotor rod test - apparatus habituation indicator</rdfs:label>
+  <onto:BIKO_00572></onto:BIKO_00572>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="https://www.bikotbi.org/ontology/BIKO_00608">
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="https://www.bikotbi.org/ontology/BIKO_00597"/>
+      <owl:someValuesFrom rdf:resource="https://www.bikotbi.org/ontology/BIKO_000287"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdfs:label>Rotor rod test - acceleration type</rdfs:label>
+  <onto:BIKO_00572></onto:BIKO_00572>
+</owl:NamedIndividual>
+
+<owl:AllDisjointClasses>
+  <owl:members rdf:parseType="Collection">
+    <rdf:Description rdf:about="https://www.bikotbi.org/ontology/BIKO_000002"/>
+    <rdf:Description rdf:about="https://www.bikotbi.org/ontology/BIKO_000003"/>
+    <rdf:Description rdf:about="https://www.bikotbi.org/ontology/BIKO_000004"/>
+    <rdf:Description rdf:about="https://www.bikotbi.org/ontology/BIKO_000005"/>
+  </owl:members>
+</owl:AllDisjointClasses>
+
+
+</rdf:RDF>

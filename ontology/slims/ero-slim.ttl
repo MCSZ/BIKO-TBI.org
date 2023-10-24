@@ -1,0 +1,21 @@
+@prefix : <http://purl.obolibrary.org/obo/ero.owl#> .
+@prefix metadata: <http://data.bioontology.org/metadata/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+### Classes
+
+obo:ERO_0001658 a owl:Class ;
+    rdfs:label "RNA sequencing"^^xsd:string ;
+    obo:IAO_0000115 "A nucleic acid assay that uses ribonucleic acid as input and results in a the creation of RNA sequence information artifact using a sequencer instrument."^^xsd:string ;
+    rdfs:subClassOf obo:ERO_0001286 ;
+    metadata:prefixIRI "ERO:0001658"^^xsd:string ;
+    obo:IAO_0000114 obo:IAO_0000123 ;
+    obo:IAO_0000117 "PERSON: Nicole Vasilevsky"^^xsd:string ;
+    obo:IAO_0000118 "RNA-Seq "^^xsd:string,
+        "Transcriptome sequencing"^^xsd:string ;
+    obo:IAO_0000119 "OBI"^^xsd:string .
+
+### Serialized using the ttlser deterministic serializer v1.2.0

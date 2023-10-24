@@ -1,0 +1,1012 @@
+@prefix : <http://purl.org/sig/ont/fma.owl#> .
+@prefix fma: <http://purl.org/sig/ont/fma/> .
+@prefix metadata: <http://data.bioontology.org/metadata/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+### Classes
+
+fma:fma55676 a owl:Class ;
+    rdfs:label "Segment of brain"@en ;
+    rdfs:subClassOf fma:fma256237 ;
+    fma:definition "Segment of neuraxis with one or more fixed or anchored fiat boundaries. Examples: thalamus, midbrain, pons, cerebellum, and spinal cord."^^xsd:string ;
+    fma:FMAID 55676 ;
+    fma:preferred_name "Segment of brain"^^xsd:string ;
+    fma:synonym "Neuraxis segment"^^xsd:string ;
+    metadata:prefixIRI "fma:fma55676"^^xsd:string .
+
+fma:fma61815 a owl:Class ;
+    rdfs:label "Cardinal segment of brain"@en ;
+    rdfs:subClassOf fma:fma55676 ;
+    fma:definition "Segment of brain with one or more fixed or anchored fiat boundaries. Examples: thalamus, midbrain, pons, cerebellum, and medulla oblongata."^^xsd:string ;
+    fma:FMAID 61815 ;
+    fma:preferred_name "Cardinal segment of brain"^^xsd:string ;
+    fma:synonym "Brain segment"^^xsd:string ;
+    metadata:prefixIRI "fma:fma61815"^^xsd:string .
+
+fma:fma61817 a owl:Class ;
+    rdfs:label "Cerebral hemisphere"@en ;
+    rdfs:subClassOf fma:fma61996,
+        [ a owl:Restriction ;
+            owl:onProperty fma:bounded_by ;
+            owl:someValuesFrom fma:fma86594 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:bounded_by ;
+            owl:someValuesFrom fma:fma256259 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:constitutional_part ;
+            owl:someValuesFrom fma:fma61830 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:constitutional_part ;
+            owl:someValuesFrom fma:fma78448 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:regional_part ;
+            owl:someValuesFrom fma:fma61824 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:regional_part ;
+            owl:someValuesFrom fma:fma61825 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:regional_part ;
+            owl:someValuesFrom fma:fma61826 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:regional_part ;
+            owl:someValuesFrom fma:fma67325 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:regional_part ;
+            owl:someValuesFrom fma:fma67329 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:regional_part ;
+            owl:someValuesFrom fma:fma72719 ] ;
+    fma:definition "Segment of telencephalon which has as its direct proper parts cerebral cortex and cerebral medulla."^^xsd:string ;
+    fma:FMAID 61817 ;
+    fma:non-English_equivalent "Hemispherium cerebralis"^^xsd:string,
+        "Hemispherium cerebri"^^xsd:string,
+        "Hémisphère cérébral"^^xsd:string ;
+    fma:preferred_name "Cerebral hemisphere"^^xsd:string ;
+    metadata:prefixIRI "fma:fma61817"^^xsd:string .
+
+fma:fma61992 a owl:Class ;
+    rdfs:label "Forebrain"@en ;
+    rdfs:subClassOf fma:fma61815,
+        [ a owl:Restriction ;
+            owl:onProperty fma:bounded_by ;
+            owl:someValuesFrom fma:fma86594 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:regional_part ;
+            owl:someValuesFrom fma:fma62000 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:regional_part ;
+            owl:someValuesFrom fma:fma62001 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:regional_part_of ;
+            owl:someValuesFrom fma:fma50801 ] ;
+    fma:definition "Organ component of neuraxis that has as its parts the telencephalon, diencephalon, lateral ventricles and third ventricle. Examples: There is only one forebrain."^^xsd:string ;
+    fma:FMAID 61992 ;
+    fma:Neurolex "birnlex_1509"^^xsd:string ;
+    fma:non-English_equivalent "Prosencephalon"^^xsd:string,
+        "Prosencéphale"^^xsd:string ;
+    fma:preferred_name "Forebrain"^^xsd:string ;
+    fma:RadLex_ID "RID6435"^^xsd:string ;
+    metadata:prefixIRI "fma:fma61992"^^xsd:string .
+
+fma:fma61993 a owl:Class ;
+    rdfs:label "Midbrain"@en ;
+    rdfs:subClassOf fma:fma61815,
+        [ a owl:Restriction ;
+            owl:onProperty fma:arterial_supply ;
+            owl:someValuesFrom fma:fma50570 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:attributed_part ;
+            owl:someValuesFrom [ a owl:Class ;
+                    owl:intersectionOf (
+                            [ a owl:Restriction ;
+                                owl:onProperty fma:partition ;
+                                owl:hasValue "Partition 1"^^xsd:string ]
+                            [ a owl:Restriction ;
+                                owl:onProperty fma:related_part ;
+                                owl:someValuesFrom fma:fma62393 ] ) ] ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:attributed_part ;
+            owl:someValuesFrom [ a owl:Class ;
+                    owl:intersectionOf (
+                            [ a owl:Restriction ;
+                                owl:onProperty fma:partition ;
+                                owl:hasValue "Partition 1"^^xsd:string ]
+                            [ a owl:Restriction ;
+                                owl:onProperty fma:related_part ;
+                                owl:someValuesFrom fma:fma73539 ] ) ] ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:attributed_part ;
+            owl:someValuesFrom [ a owl:Class ;
+                    owl:intersectionOf (
+                            [ a owl:Restriction ;
+                                owl:onProperty fma:partition ;
+                                owl:hasValue "Partition 1"^^xsd:string ]
+                            [ a owl:Restriction ;
+                                owl:onProperty fma:related_part ;
+                                owl:someValuesFrom fma:fma73540 ] ) ] ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:attributed_part ;
+            owl:someValuesFrom [ a owl:Class ;
+                    owl:intersectionOf (
+                            [ a owl:Restriction ;
+                                owl:onProperty fma:partition ;
+                                owl:hasValue "Partition 1"^^xsd:string ]
+                            [ a owl:Restriction ;
+                                owl:onProperty fma:related_part ;
+                                owl:someValuesFrom fma:fma83902 ] ) ] ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:attributed_part ;
+            owl:someValuesFrom [ a owl:Class ;
+                    owl:intersectionOf (
+                            [ a owl:Restriction ;
+                                owl:onProperty fma:partition ;
+                                owl:hasValue "Partition 1"^^xsd:string ]
+                            [ a owl:Restriction ;
+                                owl:onProperty fma:related_part ;
+                                owl:someValuesFrom fma:fma242160 ] ) ] ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:attributed_part ;
+            owl:someValuesFrom [ a owl:Class ;
+                    owl:intersectionOf (
+                            [ a owl:Restriction ;
+                                owl:onProperty fma:partition ;
+                                owl:hasValue "Partition 1"^^xsd:string ]
+                            [ a owl:Restriction ;
+                                owl:onProperty fma:related_part ;
+                                owl:someValuesFrom fma:fma242162 ] ) ] ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:attributed_part ;
+            owl:someValuesFrom [ a owl:Class ;
+                    owl:intersectionOf (
+                            [ a owl:Restriction ;
+                                owl:onProperty fma:partition ;
+                                owl:hasValue "Partition 2"^^xsd:string ]
+                            [ a owl:Restriction ;
+                                owl:onProperty fma:related_part ;
+                                owl:someValuesFrom fma:fma62394 ] ) ] ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:attributed_part ;
+            owl:someValuesFrom [ a owl:Class ;
+                    owl:intersectionOf (
+                            [ a owl:Restriction ;
+                                owl:onProperty fma:partition ;
+                                owl:hasValue "Partition 2"^^xsd:string ]
+                            [ a owl:Restriction ;
+                                owl:onProperty fma:related_part ;
+                                owl:someValuesFrom fma:fma83902 ] ) ] ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:bounded_by ;
+            owl:someValuesFrom fma:fma86594 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:constitutional_part ;
+            owl:someValuesFrom fma:fma62393 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:constitutional_part ;
+            owl:someValuesFrom fma:fma73539 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:constitutional_part ;
+            owl:someValuesFrom fma:fma73540 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:constitutional_part ;
+            owl:someValuesFrom fma:fma78467 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:constitutional_part ;
+            owl:someValuesFrom fma:fma83902 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:constitutional_part ;
+            owl:someValuesFrom fma:fma242160 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:constitutional_part ;
+            owl:someValuesFrom fma:fma242162 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:constitutional_part ;
+            owl:someValuesFrom fma:fma268513 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:constitutional_part ;
+            owl:someValuesFrom fma:fma268529 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:regional_part ;
+            owl:someValuesFrom fma:fma271117 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:regional_part ;
+            owl:someValuesFrom fma:fma271119 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:regional_part_of ;
+            owl:someValuesFrom fma:fma50801 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:regional_part_of ;
+            owl:someValuesFrom fma:fma79876 ] ;
+    fma:definition "Organ component of neuraxis that has as its parts the tectum, cerebral peduncle, midbrain tegmentum  and cerebral aqueduct. Examples: There is only one midbrain."^^xsd:string ;
+    fma:FMAID 61993 ;
+    fma:Neurolex "birnlex_1667"^^xsd:string ;
+    fma:non-English_equivalent "Mesencephalon"^^xsd:string,
+        "Mésencéphale"^^xsd:string ;
+    fma:preferred_name "Midbrain"^^xsd:string ;
+    fma:RadLex_ID "RID6768"^^xsd:string ;
+    metadata:prefixIRI "fma:fma61993"^^xsd:string .
+
+fma:fma61996 a owl:Class ;
+    rdfs:label "Segment of forebrain"@en ;
+    rdfs:subClassOf fma:fma55676 ;
+    fma:FMAID 61996 ;
+    fma:preferred_name "Segment of forebrain"^^xsd:string ;
+    fma:synonym "Forebrain segment"^^xsd:string ;
+    metadata:prefixIRI "fma:fma61996"^^xsd:string .
+
+fma:fma61997 a owl:Class ;
+    rdfs:label "Segment of midbrain"@en ;
+    rdfs:subClassOf fma:fma55676 ;
+    fma:FMAID 61997 ;
+    fma:preferred_name "Segment of midbrain"^^xsd:string ;
+    fma:synonym "Midbrain segment"^^xsd:string ;
+    metadata:prefixIRI "fma:fma61997"^^xsd:string .
+
+fma:fma61998 a owl:Class ;
+    rdfs:label "Segment of hindbrain"@en ;
+    rdfs:subClassOf fma:fma55676 ;
+    fma:FMAID 61998 ;
+    fma:preferred_name "Segment of hindbrain"^^xsd:string ;
+    fma:synonym "Hindbrain segment"^^xsd:string ;
+    metadata:prefixIRI "fma:fma61998"^^xsd:string .
+
+fma:fma62000 a owl:Class ;
+    rdfs:label "Telencephalon"@en ;
+    rdfs:subClassOf fma:fma61996,
+        [ a owl:Restriction ;
+            owl:onProperty fma:bounded_by ;
+            owl:someValuesFrom fma:fma86594 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:constitutional_part ;
+            owl:someValuesFrom fma:fma268509 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:constitutional_part ;
+            owl:someValuesFrom fma:fma268525 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:constitutional_part ;
+            owl:someValuesFrom fma:fma268537 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:input_from ;
+            owl:someValuesFrom fma:fma62007 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:regional_part ;
+            owl:someValuesFrom fma:fma61819 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:regional_part ;
+            owl:someValuesFrom fma:fma67292 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:regional_part_of ;
+            owl:someValuesFrom fma:fma61992 ] ;
+    fma:definition "Organ component of neuraxis that has as its parts the cerebral cortex, cerebral white matter, basal ganglia, septum and fornix, as well as subcortical gray and white matter structures.  There is only one telencephalon."^^xsd:string ;
+    fma:FMAID 62000 ;
+    fma:Neurolex "birnlex_1115"^^xsd:string ;
+    fma:non-English_equivalent "Cerebrum"^^xsd:string,
+        "Télencéphale"^^xsd:string ;
+    fma:preferred_name "Telencephalon"^^xsd:string ;
+    fma:RadLex_ID "RID6437"^^xsd:string ;
+    metadata:prefixIRI "fma:fma62000"^^xsd:string .
+
+fma:fma62001 a owl:Class ;
+    rdfs:label "Diencephalon"@en ;
+    rdfs:subClassOf fma:fma61996,
+        [ a owl:Restriction ;
+            owl:onProperty fma:bounded_by ;
+            owl:someValuesFrom fma:fma86594 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:constitutional_part ;
+            owl:someValuesFrom fma:fma78454 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:constitutional_part ;
+            owl:someValuesFrom fma:fma268511 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:constitutional_part ;
+            owl:someValuesFrom fma:fma268527 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:regional_part ;
+            owl:someValuesFrom fma:fma62008 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:regional_part ;
+            owl:someValuesFrom fma:fma62009 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:regional_part ;
+            owl:someValuesFrom fma:fma258745 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:regional_part_of ;
+            owl:someValuesFrom fma:fma61992 ] ;
+    fma:definition "Organ component of neuraxis that has as its parts the epithalamus, thalamus, hypothalamus, subthalamus. There is only one diencephalon."^^xsd:string ;
+    fma:FMAID 62001 ;
+    fma:Neurolex "birnlex_1503"^^xsd:string ;
+    fma:non-English_equivalent "Diencéphale"^^xsd:string ;
+    fma:preferred_name "Diencephalon"^^xsd:string ;
+    fma:RadLex_ID "RID6566"^^xsd:string ;
+    fma:synonym "Between brain"^^xsd:string,
+        "Interbrain"^^xsd:string,
+        "Mature diencephalon"^^xsd:string ;
+    metadata:prefixIRI "fma:fma62001"^^xsd:string .
+
+fma:fma62003 a owl:Class ;
+    rdfs:label "Metencephalon"@en ;
+    rdfs:subClassOf fma:fma61998,
+        [ a owl:Restriction ;
+            owl:onProperty fma:arterial_supply ;
+            owl:someValuesFrom fma:fma50544 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:arterial_supply ;
+            owl:someValuesFrom fma:fma50551 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:arterial_supply ;
+            owl:someValuesFrom fma:fma50560 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:arterial_supply ;
+            owl:someValuesFrom fma:fma50573 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:bounded_by ;
+            owl:someValuesFrom fma:fma86594 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:constitutional_part ;
+            owl:someValuesFrom fma:fma67943 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:constitutional_part ;
+            owl:someValuesFrom fma:fma67944 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:constitutional_part ;
+            owl:someValuesFrom fma:fma268177 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:constitutional_part ;
+            owl:someValuesFrom fma:fma268515 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:constitutional_part ;
+            owl:someValuesFrom fma:fma268531 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:regional_part_of ;
+            owl:someValuesFrom fma:fma67687 ] ;
+    fma:definition "Rostral segment of the hindbrain that has as its parts the pons and the cerebellum."^^xsd:string ;
+    fma:FMAID 62003 ;
+    fma:non-English_equivalent "Métencéphale"^^xsd:string,
+        "Pons et cerebellum"^^xsd:string ;
+    fma:preferred_name "Metencephalon"^^xsd:string ;
+    fma:RadLex_ID "RID13155"^^xsd:string ;
+    fma:synonym "Epencephalon-2"^^xsd:string ;
+    metadata:prefixIRI "fma:fma62003"^^xsd:string .
+
+fma:fma62004 a owl:Class ;
+    rdfs:label "Medulla oblongata"@en ;
+    rdfs:subClassOf fma:fma61998,
+        [ a owl:Restriction ;
+            owl:onProperty fma:arterial_supply ;
+            owl:someValuesFrom fma:fma50557 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:bounded_by ;
+            owl:someValuesFrom fma:fma86594 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:constitutional_part ;
+            owl:someValuesFrom fma:fma68465 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:constitutional_part ;
+            owl:someValuesFrom fma:fma68574 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:constitutional_part ;
+            owl:someValuesFrom fma:fma68874 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:constitutional_part ;
+            owl:someValuesFrom fma:fma72239 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:constitutional_part ;
+            owl:someValuesFrom fma:fma72240 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:constitutional_part ;
+            owl:someValuesFrom fma:fma72241 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:constitutional_part ;
+            owl:someValuesFrom fma:fma72242 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:constitutional_part ;
+            owl:someValuesFrom fma:fma72243 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:constitutional_part ;
+            owl:someValuesFrom fma:fma72595 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:constitutional_part ;
+            owl:someValuesFrom fma:fma72596 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:constitutional_part ;
+            owl:someValuesFrom fma:fma72597 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:constitutional_part ;
+            owl:someValuesFrom fma:fma72598 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:constitutional_part ;
+            owl:someValuesFrom fma:fma72599 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:constitutional_part ;
+            owl:someValuesFrom fma:fma72600 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:constitutional_part ;
+            owl:someValuesFrom fma:fma72601 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:constitutional_part ;
+            owl:someValuesFrom fma:fma72602 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:constitutional_part ;
+            owl:someValuesFrom fma:fma72603 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:constitutional_part ;
+            owl:someValuesFrom fma:fma72604 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:constitutional_part ;
+            owl:someValuesFrom fma:fma72605 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:constitutional_part ;
+            owl:someValuesFrom fma:fma72606 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:constitutional_part ;
+            owl:someValuesFrom fma:fma72607 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:constitutional_part ;
+            owl:someValuesFrom fma:fma72608 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:constitutional_part ;
+            owl:someValuesFrom fma:fma72609 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:constitutional_part ;
+            owl:someValuesFrom fma:fma72610 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:constitutional_part ;
+            owl:someValuesFrom fma:fma72611 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:constitutional_part ;
+            owl:someValuesFrom fma:fma72612 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:constitutional_part ;
+            owl:someValuesFrom fma:fma72613 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:constitutional_part ;
+            owl:someValuesFrom fma:fma72614 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:constitutional_part ;
+            owl:someValuesFrom fma:fma72615 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:constitutional_part ;
+            owl:someValuesFrom fma:fma72616 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:constitutional_part ;
+            owl:someValuesFrom fma:fma72617 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:constitutional_part ;
+            owl:someValuesFrom fma:fma72618 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:constitutional_part ;
+            owl:someValuesFrom fma:fma72619 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:constitutional_part ;
+            owl:someValuesFrom fma:fma72620 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:constitutional_part ;
+            owl:someValuesFrom fma:fma72621 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:constitutional_part ;
+            owl:someValuesFrom fma:fma72622 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:constitutional_part ;
+            owl:someValuesFrom fma:fma72623 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:constitutional_part ;
+            owl:someValuesFrom fma:fma72624 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:constitutional_part ;
+            owl:someValuesFrom fma:fma72625 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:constitutional_part ;
+            owl:someValuesFrom fma:fma72626 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:constitutional_part ;
+            owl:someValuesFrom fma:fma72627 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:constitutional_part ;
+            owl:someValuesFrom fma:fma72628 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:constitutional_part ;
+            owl:someValuesFrom fma:fma72629 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:constitutional_part ;
+            owl:someValuesFrom fma:fma72630 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:constitutional_part ;
+            owl:someValuesFrom fma:fma72631 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:constitutional_part ;
+            owl:someValuesFrom fma:fma72632 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:constitutional_part ;
+            owl:someValuesFrom fma:fma72633 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:constitutional_part ;
+            owl:someValuesFrom fma:fma72637 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:constitutional_part ;
+            owl:someValuesFrom fma:fma72638 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:constitutional_part ;
+            owl:someValuesFrom fma:fma72639 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:constitutional_part ;
+            owl:someValuesFrom fma:fma72640 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:constitutional_part ;
+            owl:someValuesFrom fma:fma72642 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:constitutional_part ;
+            owl:someValuesFrom fma:fma72643 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:constitutional_part ;
+            owl:someValuesFrom fma:fma72644 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:constitutional_part ;
+            owl:someValuesFrom fma:fma72645 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:constitutional_part ;
+            owl:someValuesFrom fma:fma72646 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:constitutional_part ;
+            owl:someValuesFrom fma:fma268481 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:constitutional_part ;
+            owl:someValuesFrom fma:fma268484 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:constitutional_part ;
+            owl:someValuesFrom fma:fma268521 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:regional_part ;
+            owl:someValuesFrom fma:fma258700 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:regional_part ;
+            owl:someValuesFrom fma:fma258704 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:regional_part ;
+            owl:someValuesFrom fma:fma258708 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:regional_part_of ;
+            owl:someValuesFrom fma:fma67687 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:regional_part_of ;
+            owl:someValuesFrom fma:fma79876 ] ;
+    fma:definition "Organ component of neuraxis that has as its parts the medullary reticular formation, inferior olivary complex and cochlear nuclear complex, among other structures. Examples: There is only one medulla oblongata."^^xsd:string ;
+    fma:FMAID 62004 ;
+    fma:non-English_equivalent "Bulbus"^^xsd:string,
+        "Myelencephalon"^^xsd:string,
+        "Myelencéphale"^^xsd:string,
+        "Myélencéphale"^^xsd:string ;
+    fma:preferred_name "Medulla oblongata"^^xsd:string ;
+    fma:RadLex_ID "RID6681"^^xsd:string ;
+    fma:synonym "Bulb"^^xsd:string,
+        "Metepencephalon"^^xsd:string ;
+    metadata:prefixIRI "fma:fma62004"^^xsd:string .
+
+fma:fma62005 a owl:Class ;
+    rdfs:label "Segment of diencephalon"@en ;
+    rdfs:subClassOf fma:fma61996 ;
+    fma:FMAID 62005 ;
+    fma:preferred_name "Segment of diencephalon"^^xsd:string ;
+    fma:synonym "Diencephalon segment"^^xsd:string ;
+    metadata:prefixIRI "fma:fma62005"^^xsd:string .
+
+fma:fma62374 a owl:Class ;
+    rdfs:label "Segment of telencephalon"@en ;
+    rdfs:subClassOf fma:fma61996 ;
+    fma:FMAID 62374 ;
+    fma:preferred_name "Segment of telencephalon"^^xsd:string ;
+    fma:synonym "Telencephalon segment"^^xsd:string ;
+    metadata:prefixIRI "fma:fma62374"^^xsd:string .
+
+fma:fma62393 a owl:Class ;
+    rdfs:label "Midbrain tegmentum"@en ;
+    rdfs:subClassOf fma:fma61997,
+        [ a owl:Restriction ;
+            owl:onProperty fma:arterial_supply ;
+            owl:someValuesFrom fma:fma50632 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:bounded_by ;
+            owl:someValuesFrom fma:fma86594 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:constitutional_part_of ;
+            owl:someValuesFrom fma:fma61993 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:receives_input_from ;
+            owl:someValuesFrom fma:fma61899 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:regional_part ;
+            owl:someValuesFrom fma:fma62406 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:regional_part ;
+            owl:someValuesFrom fma:fma62407 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:regional_part ;
+            owl:someValuesFrom fma:fma68462 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:regional_part ;
+            owl:someValuesFrom fma:fma68463 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:regional_part ;
+            owl:someValuesFrom fma:fma68464 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:regional_part ;
+            owl:someValuesFrom fma:fma72432 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:regional_part ;
+            owl:someValuesFrom fma:fma72433 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:regional_part ;
+            owl:someValuesFrom fma:fma72434 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:regional_part ;
+            owl:someValuesFrom fma:fma72435 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:regional_part ;
+            owl:someValuesFrom fma:fma72436 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:regional_part ;
+            owl:someValuesFrom fma:fma72437 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:regional_part ;
+            owl:someValuesFrom fma:fma72438 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:regional_part ;
+            owl:someValuesFrom fma:fma72439 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:regional_part ;
+            owl:someValuesFrom fma:fma72451 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:regional_part ;
+            owl:someValuesFrom fma:fma72452 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:regional_part ;
+            owl:someValuesFrom fma:fma72453 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:regional_part ;
+            owl:someValuesFrom fma:fma72454 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:regional_part ;
+            owl:someValuesFrom fma:fma72455 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:regional_part ;
+            owl:someValuesFrom fma:fma72456 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:regional_part ;
+            owl:someValuesFrom fma:fma72457 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:regional_part ;
+            owl:someValuesFrom fma:fma72458 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:regional_part ;
+            owl:someValuesFrom fma:fma72459 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:regional_part ;
+            owl:someValuesFrom fma:fma72460 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:regional_part ;
+            owl:someValuesFrom fma:fma72461 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:regional_part ;
+            owl:someValuesFrom fma:fma72462 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:regional_part ;
+            owl:someValuesFrom fma:fma72463 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:regional_part_of ;
+            owl:someValuesFrom fma:fma62394 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:sends_output_to ;
+            owl:someValuesFrom fma:fma61835 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:sends_output_to ;
+            owl:someValuesFrom fma:fma61839 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:sends_output_to ;
+            owl:someValuesFrom fma:fma61840 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:sends_output_to ;
+            owl:someValuesFrom fma:fma62907 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:sends_output_to ;
+            owl:someValuesFrom fma:fma62908 ] ;
+    fma:definition "Subdivision of the midbrain lying anterior to the tectum and posterior to the substantia nigra and cerebral peduncle."^^xsd:string ;
+    fma:FMAID 62393 ;
+    fma:non-English_equivalent "Tegmentum du mésencéphale"^^xsd:string,
+        "Tegmentum mesencephali"^^xsd:string,
+        "Tegmentum mesencephalicum"^^xsd:string ;
+    fma:preferred_name "Midbrain tegmentum"^^xsd:string ;
+    fma:RadLex_ID "RID6795"^^xsd:string ;
+    fma:synonym "Mesencephalic tegmentum"^^xsd:string,
+        "Tegmentum of midbrain"^^xsd:string ;
+    metadata:prefixIRI "fma:fma62393"^^xsd:string .
+
+fma:fma62398 a owl:Class ;
+    rdfs:label "Segment of midbrain tectum"@en ;
+    rdfs:subClassOf fma:fma61997 ;
+    fma:FMAID 62398 ;
+    fma:preferred_name "Segment of midbrain tectum"^^xsd:string ;
+    fma:synonym "Midbrain tectum segment"^^xsd:string ;
+    metadata:prefixIRI "fma:fma62398"^^xsd:string .
+
+fma:fma62399 a owl:Class ;
+    rdfs:label "Segment of midbrain tegmentum"@en ;
+    rdfs:subClassOf fma:fma61997 ;
+    fma:FMAID 62399 ;
+    fma:preferred_name "Segment of midbrain tegmentum"^^xsd:string ;
+    fma:synonym "Midbrain tegmentum segment"^^xsd:string ;
+    metadata:prefixIRI "fma:fma62399"^^xsd:string .
+
+fma:fma67687 a owl:Class ;
+    rdfs:label "Hindbrain"@en ;
+    rdfs:subClassOf fma:fma61815,
+        [ a owl:Restriction ;
+            owl:onProperty fma:bounded_by ;
+            owl:someValuesFrom fma:fma86594 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:regional_part ;
+            owl:someValuesFrom fma:fma62003 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:regional_part ;
+            owl:someValuesFrom fma:fma62004 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:regional_part_of ;
+            owl:someValuesFrom fma:fma50801 ] ;
+    fma:definition "Organ component of neuraxis that has as its parts the pons, cerebellum and medulla oblongata . Examples: There is only one hindbrain."^^xsd:string ;
+    fma:FMAID 67687 ;
+    fma:Neurolex "birnlex_942"^^xsd:string ;
+    fma:non-English_equivalent "Rhombencephalon"^^xsd:string,
+        "Rhombencéphale"^^xsd:string ;
+    fma:preferred_name "Hindbrain"^^xsd:string ;
+    fma:RadLex_ID "RID6679"^^xsd:string ;
+    metadata:prefixIRI "fma:fma67687"^^xsd:string .
+
+fma:fma71011 a owl:Class ;
+    rdfs:label "Segment of medulla oblongata"@en ;
+    rdfs:subClassOf fma:fma61998 ;
+    fma:FMAID 71011 ;
+    fma:preferred_name "Segment of medulla oblongata"^^xsd:string ;
+    fma:synonym "Medullary oblongata segment"^^xsd:string ;
+    metadata:prefixIRI "fma:fma71011"^^xsd:string .
+
+fma:fma74636 a owl:Class ;
+    rdfs:label "Neural lobe of neurohypophysis"@en ;
+    rdfs:subClassOf fma:fma55676,
+        [ a owl:Restriction ;
+            owl:onProperty fma:bounded_by ;
+            owl:someValuesFrom fma:fma86594 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:regional_part_of ;
+            owl:someValuesFrom fma:fma74628 ] ;
+    fma:FMAID 74636 ;
+    fma:non-English_equivalent "Lobus nervosus (Neurohypophysis)"^^xsd:string,
+        "Pars nervosa (hypophysis)"^^xsd:string,
+        "Pars nervosa (Neurohypophysis)"^^xsd:string,
+        "Pars nervosa neurohypophysis"^^xsd:string,
+        "Pars posterior of hypophysis"^^xsd:string ;
+    fma:preferred_name "Neural lobe of neurohypophysis"^^xsd:string ;
+    fma:synonym "Pars nervosa of hypophysis"^^xsd:string,
+        "Pars nervosa of neurohypophysis"^^xsd:string,
+        "Pars nervosa of posterior lobe of pituitary gland"^^xsd:string,
+        "Pituitary gland, posterior lobe"^^xsd:string,
+        "Posterior lobe of neurohypophysis"^^xsd:string,
+        "Posterior lobe of pituitary"^^xsd:string,
+        "Posterior lobe-3"^^xsd:string,
+        "Posterior pituitary"^^xsd:string ;
+    metadata:prefixIRI "fma:fma74636"^^xsd:string .
+
+fma:fma77700 a owl:Class ;
+    rdfs:label "Basal forebrain"@en ;
+    rdfs:subClassOf fma:fma55676,
+        [ a owl:Restriction ;
+            owl:onProperty fma:sends_output_to ;
+            owl:someValuesFrom fma:fma224852 ] ;
+    fma:FMAID 77700 ;
+    fma:non-English_equivalent "Pars basalis telencephali"^^xsd:string,
+        "Partie basale du télencéphale"^^xsd:string ;
+    fma:preferred_name "Basal forebrain"^^xsd:string ;
+    metadata:prefixIRI "fma:fma77700"^^xsd:string .
+
+fma:fma79876 a owl:Class ;
+    rdfs:label "Brainstem"@en ;
+    rdfs:subClassOf fma:fma55676,
+        [ a owl:Restriction ;
+            owl:onProperty fma:bounded_by ;
+            owl:someValuesFrom fma:fma86594 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:constitutional_part ;
+            owl:someValuesFrom fma:fma282112 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:constitutional_part_of ;
+            owl:someValuesFrom fma:fma270201 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:receives_input_from ;
+            owl:someValuesFrom fma:fma61889 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:regional_part ;
+            owl:someValuesFrom fma:fma61993 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:regional_part ;
+            owl:someValuesFrom fma:fma62004 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:regional_part ;
+            owl:someValuesFrom fma:fma67943 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:regional_part ;
+            owl:someValuesFrom fma:fma271151 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:regional_part ;
+            owl:someValuesFrom fma:fma271153 ] ;
+    fma:DK__Freesurfer_ "16"^^xsd:string ;
+    fma:FMAID 79876 ;
+    fma:non-English_equivalent "Tronc cérébral"^^xsd:string,
+        "Truncus encephali"^^xsd:string ;
+    fma:preferred_name "Brainstem"^^xsd:string ;
+    fma:RadLex_ID "RID6677"^^xsd:string ;
+    fma:synonym "Brain stem" ;
+    metadata:prefixIRI "fma:fma79876"^^xsd:string .
+
+fma:fma83902 a owl:Class ;
+    rdfs:label "Midbrain tectum"@en ;
+    rdfs:subClassOf fma:fma61997,
+        [ a owl:Restriction ;
+            owl:onProperty fma:constitutional_part_of ;
+            owl:someValuesFrom fma:fma61993 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:regional_part ;
+            owl:someValuesFrom fma:fma62402 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:regional_part ;
+            owl:someValuesFrom fma:fma73422 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:regional_part ;
+            owl:someValuesFrom fma:fma73423 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:regional_part ;
+            owl:someValuesFrom fma:fma73434 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:regional_part ;
+            owl:someValuesFrom fma:fma73435 ] ;
+    fma:FMAID 83902 ;
+    fma:preferred_name "Midbrain tectum"^^xsd:string ;
+    fma:RadLex_ID "RID6781"^^xsd:string ;
+    fma:synonym "Neuraxis tectum"^^xsd:string ;
+    metadata:prefixIRI "fma:fma83902"^^xsd:string .
+
+fma:fma271117 a owl:Class ;
+    rdfs:label "Right side of midbrain"@en ;
+    rdfs:subClassOf fma:fma61997,
+        [ a owl:Restriction ;
+            owl:onProperty fma:constitutional_part ;
+            owl:someValuesFrom fma:fma73539 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:constitutional_part ;
+            owl:someValuesFrom fma:fma242160 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:constitutional_part ;
+            owl:someValuesFrom fma:fma271121 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:constitutional_part_of ;
+            owl:someValuesFrom fma:fma271151 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:regional_part_of ;
+            owl:someValuesFrom fma:fma61993 ] ;
+    fma:FMAID 271117 ;
+    fma:preferred_name "Right side of midbrain"^^xsd:string ;
+    fma:Talairach "216"^^xsd:string,
+        "440"^^xsd:string ;
+    metadata:prefixIRI "fma:fma271117"^^xsd:string .
+
+fma:fma271119 a owl:Class ;
+    rdfs:label "Left side of midbrain"@en ;
+    rdfs:subClassOf fma:fma61997,
+        [ a owl:Restriction ;
+            owl:onProperty fma:constitutional_part ;
+            owl:someValuesFrom fma:fma73540 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:constitutional_part ;
+            owl:someValuesFrom fma:fma242162 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:constitutional_part ;
+            owl:someValuesFrom fma:fma271123 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:constitutional_part_of ;
+            owl:someValuesFrom fma:fma271153 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:regional_part_of ;
+            owl:someValuesFrom fma:fma61993 ] ;
+    fma:FMAID 271119 ;
+    fma:preferred_name "Left side of midbrain"^^xsd:string ;
+    fma:Talairach "215"^^xsd:string ;
+    metadata:prefixIRI "fma:fma271119"^^xsd:string .
+
+fma:fma271149 a owl:Class ;
+    rdfs:label "Segment of brainstem"@en ;
+    rdfs:subClassOf fma:fma55676 ;
+    fma:FMAID 271149 ;
+    fma:preferred_name "Segment of brainstem"^^xsd:string ;
+    metadata:prefixIRI "fma:fma271149"^^xsd:string .
+
+fma:fma271151 a owl:Class ;
+    rdfs:label "Right side of brainstem"@en ;
+    rdfs:subClassOf fma:fma271149,
+        [ a owl:Restriction ;
+            owl:onProperty fma:constitutional_part ;
+            owl:someValuesFrom fma:fma271117 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:constitutional_part ;
+            owl:someValuesFrom fma:fma271125 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:constitutional_part ;
+            owl:someValuesFrom fma:fma271155 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:regional_part_of ;
+            owl:someValuesFrom fma:fma79876 ] ;
+    owl:disjointWith fma:fma271153 ;
+    fma:FMAID 271151 ;
+    fma:preferred_name "Right side of brainstem"^^xsd:string ;
+    fma:Talairach "574"^^xsd:string ;
+    metadata:prefixIRI "fma:fma271151"^^xsd:string .
+
+fma:fma271153 a owl:Class ;
+    rdfs:label "Left side of brainstem"@en ;
+    rdfs:subClassOf fma:fma271149,
+        [ a owl:Restriction ;
+            owl:onProperty fma:constitutional_part ;
+            owl:someValuesFrom fma:fma271119 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:constitutional_part ;
+            owl:someValuesFrom fma:fma271127 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:constitutional_part ;
+            owl:someValuesFrom fma:fma271157 ],
+        [ a owl:Restriction ;
+            owl:onProperty fma:regional_part_of ;
+            owl:someValuesFrom fma:fma79876 ] ;
+    fma:FMAID 271153 ;
+    fma:preferred_name "Left side of brainstem"^^xsd:string ;
+    metadata:prefixIRI "fma:fma271153"^^xsd:string .
+
+fma:fma321762 a owl:Class ;
+    rdfs:label "Lateral half of brain"@en ;
+    rdfs:subClassOf fma:fma55676 ;
+    fma:FMAID 321762 ;
+    fma:preferred_name "Lateral half of brain" ;
+    metadata:prefixIRI "fma:fma321762"^^xsd:string .
+
+fma:fma321930 a owl:Class ;
+    rdfs:label "Rhinencephalon"@en ;
+    rdfs:subClassOf fma:fma61996 ;
+    fma:FMAID 321930 ;
+    fma:preferred_name "Rhinencephalon" ;
+    metadata:prefixIRI "fma:fma321930"^^xsd:string .
+
+fma:fma322211 a owl:Class ;
+    rdfs:label "Supratentorial region of brain"@en ;
+    rdfs:subClassOf fma:fma55676 ;
+    fma:FMAID 322211 ;
+    fma:preferred_name "Supratentorial region of brain"^^xsd:string ;
+    metadata:prefixIRI "fma:fma322211"^^xsd:string .
+
+fma:fma322212 a owl:Class ;
+    rdfs:label "Infratentorial region of brain"@en ;
+    rdfs:subClassOf fma:fma55676 ;
+    fma:FMAID 322212 ;
+    fma:preferred_name "Infratentorial region of brain"^^xsd:string ;
+    metadata:prefixIRI "fma:fma322212"^^xsd:string .
+
+fma:fma323282 a owl:Class ;
+    rdfs:label "Segment of rhinencephalon"@en ;
+    rdfs:subClassOf fma:fma61996 ;
+    fma:FMAID 323282 ;
+    metadata:prefixIRI "fma:fma323282"^^xsd:string .
+
+fma:fma0327741 a owl:Class ;
+    rdfs:label "Infratentorial region of brain"@en ;
+    rdfs:subClassOf fma:fma55676 ;
+    fma:FMAID 327741 ;
+    fma:preferred_name "Infratentorial region of brain"^^xsd:string ;
+    metadata:prefixIRI "fma:fma0327741"^^xsd:string .
+
+### Serialized using the ttlser deterministic serializer v1.2.0

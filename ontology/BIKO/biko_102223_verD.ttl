@@ -1,0 +1,2696 @@
+@prefix : <urn:webprotege:ontology:49e839a2-b9ff-4286-ba94-60a4e3091582#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix oboI: <http://www.geneontology.org/formats/oboInOwl#> .
+@prefix onto: <https://www.bikotbi.org/ontology/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<urn:webprotege:ontology:49e839a2-b9ff-4286-ba94-60a4e3091582> a owl:Ontology .
+
+### Object Properties
+
+onto:BIKO_000019 a owl:ObjectProperty ;
+    rdfs:label "isMeasurementOf" ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-21T06:22:24.079358Z" .
+
+onto:BIKO_000020 a owl:ObjectProperty ;
+    rdfs:label "hasInjurySite" ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-21T06:30:03.860536Z" .
+
+onto:BIKO_000031 a owl:ObjectProperty,
+        owl:TransitiveProperty ;
+    rdfs:label "hasInjuryMechanism" ;
+    rdfs:subPropertyOf onto:BIKO_000310 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-11-09T13:54:26.863022Z" .
+
+onto:BIKO_000032 a owl:ObjectProperty ;
+    rdfs:label "hasPredominateInjuryType" ;
+    rdfs:subPropertyOf onto:BIKO_000310 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-11-09T08:14:39.589893Z" .
+
+onto:BIKO_000037 a owl:ObjectProperty ;
+    rdfs:label "injuryDisrupts" ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-21T06:36:07.585322Z" .
+
+onto:BIKO_000054 a owl:ObjectProperty ;
+    rdfs:label "hasForce" ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-11-09T13:57:03.226578Z" .
+
+onto:BIKO_000146 a owl:ObjectProperty ;
+    rdfs:label "occursIn" ;
+    skos:definition "b occurs_in c =def b is a process and c is a material entity or immaterial entity& there exists a spatiotemporal region r and b occupies_spatiotemporal_region r.& forall(t) if b exists_at t then c exists_at t & there exist spatial regions s and s’ where & b spatially_projects_onto s at t& c is occupies_spatial_region s’ at t& s is a proper_continuant_part_of s’ at t" ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-19T18:18:19.176899Z" ;
+    onto:BIKO_000006 <http://purl.obolibrary.org/obo/BFO_0000066> .
+
+onto:BIKO_000150 a owl:ObjectProperty ;
+    rdfs:label "partOf" ;
+    skos:definition "A core relation that holds between a part and its whole" ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-19T18:58:55.175862Z" ;
+    onto:BIKO_000006 <http://purl.obolibrary.org/obo/BFO_0000050> .
+
+onto:BIKO_000153 a owl:ObjectProperty ;
+    rdfs:label "characterizedBy" ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-21T06:01:37.381714Z" .
+
+onto:BIKO_000174 a owl:ObjectProperty ;
+    rdfs:label "causedBy" ;
+    rdfs:subPropertyOf owl:topObjectProperty ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-21T05:47:05.397748Z" .
+
+onto:BIKO_000246 a owl:ObjectProperty ;
+    rdfs:label "isTypeOf" ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-11-07T18:28:41.248553Z" .
+
+onto:BIKO_000306 a owl:ObjectProperty,
+        owl:TransitiveProperty ;
+    rdfs:label "hasSkullFeature" ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-11-09T13:19:19.312454Z" .
+
+onto:BIKO_000308 a owl:ObjectProperty ;
+    rdfs:label "hasModelFeature" ;
+    rdfs:subPropertyOf onto:BIKO_000310 ;
+    rdfs:domain onto:BIKO_000028 ;
+    rdfs:range onto:BIKO_000152 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-11-09T13:23:45.319409Z" .
+
+onto:BIKO_000310 a owl:ObjectProperty ;
+    rdfs:label "hasInjuryFeature" ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-11-09T13:28:27.359086Z" .
+
+onto:BIKO_000315 a owl:ObjectProperty ;
+    rdfs:label "hasPrimaryInjurySite" ;
+    rdfs:subPropertyOf onto:BIKO_000020 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-11-09T14:15:56.111382Z" .
+
+onto:BIKO_000322 a owl:ObjectProperty ;
+    rdfs:label "InjuryVariantFeature" ;
+    rdfs:subPropertyOf onto:BIKO_000310 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-11-09T14:57:52.869421Z" .
+
+onto:BIKO_000323 a owl:ObjectProperty ;
+    rdfs:label "observedIn" ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-11-11T13:50:26.153666Z" .
+
+onto:BIKO_00400 a owl:ObjectProperty ;
+    rdfs:label "hasTBIModelDevice" ;
+    rdfs:domain onto:BIKO_000028 .
+
+onto:BIKO_00403 a owl:ObjectProperty ;
+    rdfs:label "hasOrganism" .
+
+onto:BIKO_00412 a owl:ObjectProperty ;
+    rdfs:label "isDefinedBy" .
+
+onto:BIKO_00425 a owl:ObjectProperty ;
+    rdfs:label "causedByTBIEvent" ;
+    rdfs:subPropertyOf onto:BIKO_00457 .
+
+onto:BIKO_00426 a owl:ObjectProperty ;
+    rdfs:label "hasTBIModel" .
+
+onto:BIKO_00434 a owl:ObjectProperty ;
+    rdfs:label "hasTBIEvent" .
+
+onto:BIKO_00440 a owl:ObjectProperty ;
+    rdfs:label "hasEvent" .
+
+onto:BIKO_00457 a owl:ObjectProperty ;
+    rdfs:label "causedByEvent" .
+
+onto:BIKO_00460 a owl:ObjectProperty ;
+    rdfs:label "hasSkullInjury" .
+
+onto:BIKO_00461 a owl:ObjectProperty ;
+    rdfs:label "isAboutTBI" .
+
+onto:BIKO_00550 a owl:ObjectProperty ;
+    rdfs:label "isAboutFunction" .
+
+onto:BIKO_00574 a owl:ObjectProperty ;
+    rdfs:label "hasProtocol" ;
+    rdfs:subPropertyOf owl:topObjectProperty ;
+    owl:inverseOf onto:BIKO_00574 .
+
+onto:BIKO_00597 a owl:ObjectProperty ;
+    rdfs:label "isAboutCDE" .
+
+onto:BIKO_00610 a owl:ObjectProperty ;
+    rdfs:label "hasIntegrity" .
+
+### Annotation Properties
+
+dc:identifier a owl:AnnotationProperty .
+
+oboI:created_by a owl:AnnotationProperty .
+
+oboI:creation_date a owl:AnnotationProperty .
+
+onto:BIKO_000006 a owl:AnnotationProperty ;
+    rdfs:label "definition_source" ;
+    skos:definition "Formal citation, e.g. identifier in external database to indicate / attribute source(s) for the definition. Free text indicate / attribute source(s) for the definition. EXAMPLE: Author Name, URI, MeSH Term C04, PUBMED ID, Wiki uri on 31.01.2007" ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-09-29T18:47:19.279591Z" ;
+    onto:BIKO_000006 <http://purl.obolibrary.org/obo/IAO_0000119> .
+
+onto:BIKO_000008 a owl:AnnotationProperty ;
+    rdfs:label "SynonymTypeProperty" ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-09-29T19:14:46.010957Z" .
+
+onto:BIKO_000009 a owl:AnnotationProperty ;
+    rdfs:label "synonym" ;
+    rdfs:subPropertyOf onto:BIKO_000008 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-09-29T19:19:49.496304Z" .
+
+onto:BIKO_000010 a owl:AnnotationProperty ;
+    rdfs:label "abbreviation" ;
+    rdfs:subPropertyOf onto:BIKO_000008 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-09-29T19:20:31.058934Z" .
+
+onto:BIKO_00551 a owl:AnnotationProperty ;
+    rdfs:label "hasPMID" .
+
+onto:BIKO_00552 a owl:AnnotationProperty ;
+    rdfs:label "hasDOI" .
+
+onto:BIKO_00553 a owl:AnnotationProperty ;
+    rdfs:label "hasTBIModelClass" .
+
+onto:BIKO_00554 a owl:AnnotationProperty ;
+    rdfs:label "hasPaperTBIModel" .
+
+onto:BIKO_00555 a owl:AnnotationProperty ;
+    rdfs:label "hasStrain" .
+
+onto:BIKO_00556 a owl:AnnotationProperty ;
+    rdfs:label "hasSpecies" .
+
+onto:BIKO_00569 a owl:AnnotationProperty ;
+    rdfs:label "hasCDE" .
+
+onto:BIKO_00570 a owl:AnnotationProperty ;
+    rdfs:label "hasClinicalCDE" ;
+    rdfs:subPropertyOf onto:BIKO_00569 .
+
+onto:BIKO_00571 a owl:AnnotationProperty ;
+    rdfs:label "hasPreclinicalCDE" ;
+    rdfs:subPropertyOf onto:BIKO_00569 .
+
+onto:BIKO_00572 a owl:AnnotationProperty ;
+    rdfs:label "hasPRECISETBICDE" ;
+    rdfs:subPropertyOf onto:BIKO_00571 .
+
+onto:BIKO_00573 a owl:AnnotationProperty ;
+    rdfs:label "hasNINDSTBICDE" ;
+    rdfs:subPropertyOf onto:BIKO_00571 .
+
+onto:BIKO_00596 a owl:AnnotationProperty ;
+    rdfs:label "preciseCDEisAbout" ;
+    rdfs:subPropertyOf onto:BIKO_00572 .
+
+rdfs:seeAlso a owl:AnnotationProperty ;
+    rdfs:subPropertyOf rdfs:seeAlso .
+
+skos:definition a owl:AnnotationProperty .
+
+skos:editorialNote a owl:AnnotationProperty .
+
+### Classes
+
+onto:BIKO_000001 a owl:Class ;
+    rdfs:label "Anatomical entity" ;
+    skos:definition "Organismal continuant entity which is enclosed by the bona fide boundary of an organism or is an attribute of its structural organization. Examples: cell, heart, head, peritoneal cavity, apex of lung, anatomical term, sagittal plane." ;
+    rdfs:subClassOf onto:BIKO_000004 ;
+    rdfs:isDefinedBy <http://purl.obolibrary.org/obo/FMA_62955> ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-09-29T18:34:04.404818Z" .
+
+onto:BIKO_000002 a owl:Class ;
+    rdfs:label "Attribute" ;
+    skos:definition "A characteristic of some entity." ;
+    rdfs:subClassOf owl:Thing ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-09-29T18:34:21.00422Z" ;
+    onto:BIKO_000006 <https://semanticscience.org/resource/SIO_000614.rdf> ;
+    rdfs:seeAlso <http://regenbase.org/ontology#RB_0000483>,
+        <https://semanticscience.org/resource/SIO_000614.rdf> .
+
+onto:BIKO_000003 a owl:Class ;
+    rdfs:label "Information content entity" ;
+    skos:definition "An object that requires some background knowledge or procedure to correctly interpret." ;
+    rdfs:subClassOf owl:Thing ;
+    rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000030> ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-09-29T18:34:36.453487Z" .
+
+onto:BIKO_000004 a owl:Class ;
+    rdfs:label "Material entity" ;
+    skos:definition "A material entity is a physical entity that is spatially extended, exists as a whole at any point in time and has mass." ;
+    rdfs:subClassOf owl:Thing ;
+    rdfs:isDefinedBy <http://semanticscience.org/resource/SIO_000004> ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-09-29T18:34:54.323158Z" .
+
+onto:BIKO_000005 a owl:Class ;
+    rdfs:label "Process" ;
+    skos:definition "An entity that is identifiable only through the unfolding of time, has temporal parts, and unless otherwise specified/predicted, cannot be identified from any instant of time in which it exists." ;
+    rdfs:subClassOf owl:Thing ;
+    rdfs:isDefinedBy <https://semanticscience.org/resource/SIO_000006.rdf> ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-09-29T18:35:11.362856Z" .
+
+onto:BIKO_000007 a owl:Class ;
+    rdfs:label "Injury" ;
+    skos:definition "Damage inflicted on the body as the direct or indirect result of an external force, with or without disruption of structural continuity." ;
+    rdfs:subClassOf onto:BIKO_000005 ;
+    rdfs:isDefinedBy <http://purl.obolibrary.org/obo/NCIT_C3671> ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-09-29T18:57:39.376802Z" ;
+    onto:BIKO_000009 "trauma",
+        "wound" .
+
+onto:BIKO_000011 a owl:Class ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf (
+                    onto:BIKO_000007
+                    [ a owl:Restriction ;
+                        owl:onProperty onto:BIKO_000323 ;
+                        owl:someValuesFrom onto:BIKO_000086 ]
+                    [ a owl:Restriction ;
+                        owl:onProperty onto:BIKO_00457 ;
+                        owl:someValuesFrom onto:BIKO_00429 ] ) ] ;
+    rdfs:label "Nervous system injury" ;
+    skos:definition "The process of causing damage to the nervous system" ;
+    rdfs:subClassOf onto:BIKO_000007 ;
+    rdfs:isDefinedBy <http://regenbase.org/ontology#RB_0000112> ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-09-29T19:22:41.968915Z" .
+
+onto:BIKO_000012 a owl:Class ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf (
+                    onto:BIKO_000144
+                    [ a owl:Restriction ;
+                        owl:onProperty onto:BIKO_000153 ;
+                        owl:someValuesFrom onto:BIKO_000152 ] ) ] ;
+    rdfs:label "traumatic brain injury" ;
+    skos:definition "Damage to the brain resulting in altered function caused by a blow, jolt, or penetrating wound." ;
+    rdfs:subClassOf onto:BIKO_000144 ;
+    rdfs:isDefinedBy <http://regenbase.org/ontology#RB_0000160> ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-09-29T19:25:02.010837Z" .
+
+onto:BIKO_000013 a owl:Class ;
+    rdfs:label "primary brain injury" ;
+    skos:definition "The immediate impact of different mechanical insults to the brain" ;
+    rdfs:subClassOf onto:BIKO_000154 ;
+    rdfs:isDefinedBy <https://doi.org/10.3389/fncel.2019.00528> ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-09-29T19:26:10.463862Z" .
+
+onto:BIKO_000014 a owl:Class ;
+    rdfs:label "secondary brain injury" ;
+    skos:definition "The biochemical, cellular and physiological events that occur during primary injury that often progress into delayed and prolonged secondary damages." ;
+    rdfs:subClassOf onto:BIKO_000154 ;
+    rdfs:isDefinedBy <https://doi.org/10.3389/fncel.2019.00528> ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-09-29T19:26:29.946782Z" .
+
+onto:BIKO_000015 a owl:Class ;
+    rdfs:label "focal brain injury" ;
+    rdfs:subClassOf onto:BIKO_000012 ;
+    rdfs:isDefinedBy <https://en.wikipedia.org/wiki/Focal_and_diffuse_brain_injury#cite_note-LaPlaca07-3> ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-09-29T19:29:39.404112Z" ;
+    onto:BIKO_000006 "A focal traumatic injury is characterized by damage that is concentrated in a specific or localized region of the brain. It results from direct mechanical forces (such as when the head strikes a windshield in a vehicle accident) and is usually associated with brain tissue damage visible to the naked eye." .
+
+onto:BIKO_000016 a owl:Class ;
+    rdfs:label "diffuse brain injury" ;
+    skos:definition "Diffuse brain injury is characterized by damage that is wide spread rather than localized to one region of the brain. It usually depends on inertial loadings due to rapid head rotational motions of the brain, resulting from unrestricted head movement in the instant of injury." ;
+    rdfs:subClassOf onto:BIKO_000012 ;
+    rdfs:isDefinedBy <https://doi.org/10.1016/B978-1-4160-6839-6.10133-9> ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-09-29T19:30:38.006418Z" .
+
+onto:BIKO_000017 a owl:Class ;
+    rdfs:label "Injury mechanism" ;
+    skos:definition "An injury that happens at a given place and time." ;
+    rdfs:subClassOf onto:BIKO_000005,
+        [ a owl:Restriction ;
+            owl:onProperty onto:BIKO_000323 ;
+            owl:someValuesFrom onto:BIKO_000086 ] ;
+    rdfs:isDefinedBy <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25499> ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-09-29T19:34:02.903006Z" .
+
+onto:BIKO_000022 a owl:Class ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf (
+                    [ a owl:Restriction ;
+                        owl:onProperty onto:BIKO_000031 ;
+                        owl:someValuesFrom onto:BIKO_000017 ]
+                    [ a owl:Restriction ;
+                        owl:onProperty onto:BIKO_00574 ;
+                        owl:someValuesFrom onto:BIKO_00612 ] ) ] ;
+    rdfs:label "controlled injury event" ;
+    skos:definition "An intentional and regulated occurrence to study the effects of a traumatic brain injury in a controlled laboratory environment." ;
+    rdfs:subClassOf onto:BIKO_00429 ;
+    rdfs:isDefinedBy <https://orcid.org/0000-0002-2308-8813> ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-09-29T19:35:52.945369Z" ;
+    onto:BIKO_000009 "preclinical TBI model event, preclinical traumatic brain injury model event" .
+
+onto:BIKO_000023 a owl:Class ;
+    rdfs:label "uncontrolled injury event" ;
+    skos:definition "An accidental or unexpected injury to the brain that occurs outside of the a controlled laboratory environment (real-life situation)" ;
+    rdfs:subClassOf onto:BIKO_00429 ;
+    rdfs:isDefinedBy <https://orcid.org/0000-0002-2308-8813> ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-09-29T19:36:02.331198Z" ;
+    onto:BIKO_000009 "clinical traumatic brain injury" .
+
+onto:BIKO_000024 a owl:Class ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf (
+                    [ a owl:Restriction ;
+                        owl:onProperty onto:BIKO_00400 ;
+                        owl:someValuesFrom onto:BIKO_00407 ]
+                    [ a owl:Restriction ;
+                        owl:onProperty onto:BIKO_00574 ;
+                        owl:someValuesFrom onto:BIKO_00614 ] ) ],
+        [ a owl:Restriction ;
+            owl:onProperty onto:BIKO_00461 ;
+            owl:someValuesFrom [ a owl:Class ;
+                    owl:intersectionOf (
+                            onto:BIKO_000012
+                            [ a owl:Restriction ;
+                                owl:onProperty onto:BIKO_000032 ;
+                                owl:someValuesFrom onto:BIKO_000016 ]
+                            [ a owl:Restriction ;
+                                owl:onProperty onto:BIKO_000306 ;
+                                owl:someValuesFrom onto:BIKO_000305 ] ) ] ] ;
+    rdfs:label "blast exposure model" ;
+    rdfs:subClassOf onto:BIKO_000028,
+        [ a owl:Restriction ;
+            owl:onProperty onto:BIKO_000032 ;
+            owl:someValuesFrom onto:BIKO_000016 ],
+        [ a owl:Restriction ;
+            owl:onProperty onto:BIKO_000054 ;
+            owl:someValuesFrom onto:BIKO_000321 ] ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-09-29T19:36:28.24021Z" ;
+    onto:BIKO_000009 "blast injury model, Blast model" .
+
+onto:BIKO_000025 a owl:Class ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf (
+                    [ a owl:Restriction ;
+                        owl:onProperty onto:BIKO_000306 ;
+                        owl:someValuesFrom onto:BIKO_000179 ]
+                    [ a owl:Restriction ;
+                        owl:onProperty onto:BIKO_000315 ;
+                        owl:someValuesFrom onto:BIKO_000105 ]
+                    [ a owl:Restriction ;
+                        owl:onProperty onto:BIKO_00400 ;
+                        owl:someValuesFrom onto:BIKO_000317 ] ) ],
+        [ a owl:Class ;
+            owl:intersectionOf (
+                    [ a owl:Restriction ;
+                        owl:onProperty onto:BIKO_00400 ;
+                        owl:someValuesFrom onto:BIKO_000317 ]
+                    [ a owl:Restriction ;
+                        owl:onProperty onto:BIKO_00574 ;
+                        owl:someValuesFrom onto:BIKO_00613 ] ) ] ;
+    rdfs:label "controlled cortical impact injury model" ;
+    skos:definition "Model that uses a pneumatic or electromagnetic impact device to drive a rigid impactor onto the exposed intact dura, and mimics cortical tissue loss, acute subdural hematoma, axonal injury, concussion, blood–brain barrier (BBB) dysfunction and even coma" ;
+    rdfs:subClassOf onto:BIKO_000028,
+        [ a owl:Restriction ;
+            owl:onProperty onto:BIKO_000032 ;
+            owl:someValuesFrom onto:BIKO_000015 ],
+        [ a owl:Restriction ;
+            owl:onProperty onto:BIKO_00461 ;
+            owl:someValuesFrom [ a owl:Class ;
+                    owl:intersectionOf (
+                            onto:BIKO_000012
+                            [ a owl:Restriction ;
+                                owl:onProperty onto:BIKO_000306 ;
+                                owl:someValuesFrom onto:BIKO_000179 ] ) ] ] ;
+    rdfs:isDefinedBy <https://doi.org/10.1038/nrn3407> ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-09-29T19:36:45.57616Z" ;
+    onto:BIKO_000009 "Controlled cortical impact model, CCI, Controlled impact model" .
+
+onto:BIKO_000026 a owl:Class ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf (
+                    [ a owl:Restriction ;
+                        owl:onProperty onto:BIKO_00400 ;
+                        owl:someValuesFrom onto:BIKO_00405 ]
+                    [ a owl:Restriction ;
+                        owl:onProperty onto:BIKO_00574 ;
+                        owl:someValuesFrom onto:BIKO_00615 ] ) ] ;
+    rdfs:label "fluid percussion injury model" ;
+    skos:definition "An insult inflicted by a pendulum striking the piston of a reservoir of fluid to generate a fluid pressure pulse to the intact dura through a craniotomy, which is made either centrally around the midline, or laterally over the parietal bone, between bregma and lambda." ;
+    rdfs:subClassOf onto:BIKO_000028,
+        [ a owl:Restriction ;
+            owl:onProperty onto:BIKO_000054 ;
+            owl:someValuesFrom onto:BIKO_000164 ],
+        [ a owl:Restriction ;
+            owl:onProperty onto:BIKO_00461 ;
+            owl:someValuesFrom [ a owl:Class ;
+                    owl:intersectionOf (
+                            onto:BIKO_000012
+                            [ a owl:Restriction ;
+                                owl:onProperty onto:BIKO_000306 ;
+                                owl:someValuesFrom onto:BIKO_00414 ] ) ] ] ;
+    rdfs:isDefinedBy <https://doi.org/10.1038/nrn3407> ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-09-29T19:37:01.609349Z" ;
+    onto:BIKO_000009 "Fluid percussion injury model, FPI, Fluid percussion" .
+
+onto:BIKO_000027 a owl:Class ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf (
+                    [ a owl:Restriction ;
+                        owl:onProperty onto:BIKO_00400 ;
+                        owl:someValuesFrom onto:BIKO_00406 ]
+                    [ a owl:Restriction ;
+                        owl:onProperty onto:BIKO_00574 ;
+                        owl:someValuesFrom onto:BIKO_00616 ] ) ] ;
+    rdfs:label "weight drop model" ;
+    skos:definition "A model that consists of dropping a projectile of specified characteristics through a tube at a specified height onto the head of the animal" ;
+    rdfs:subClassOf onto:BIKO_000028,
+        [ a owl:Restriction ;
+            owl:onProperty onto:BIKO_000054 ;
+            owl:someValuesFrom onto:BIKO_000168 ] ;
+    rdfs:isDefinedBy <https://doi.org/10.1089/neu.2018.6127> ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-09-29T19:37:25.80839Z" ;
+    onto:BIKO_000009 "weight-drop model, WDI, weight drop injury" .
+
+onto:BIKO_000028 a owl:Class ;
+    rdfs:label "preclinical traumatic brain injury model" ;
+    rdfs:subClassOf onto:BIKO_000005 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-09-30T22:48:23.39838Z" .
+
+onto:BIKO_000029 a owl:Class ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf (
+                    [ a owl:Restriction ;
+                        owl:onProperty onto:BIKO_000306 ;
+                        owl:someValuesFrom onto:BIKO_000179 ]
+                    [ a owl:Restriction ;
+                        owl:onProperty onto:BIKO_000315 ;
+                        owl:someValuesFrom onto:BIKO_000105 ]
+                    [ a owl:Restriction ;
+                        owl:onProperty onto:BIKO_00400 ;
+                        owl:someValuesFrom onto:BIKO_00405 ] ) ] ;
+    rdfs:label "lateral fluid percussion injury model" ;
+    rdfs:subClassOf onto:BIKO_000026,
+        [ a owl:Restriction ;
+            owl:onProperty onto:BIKO_000032 ;
+            owl:someValuesFrom onto:BIKO_000015 ] ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-09-29T19:37:01.609349+00:00"^^xsd:dateTime ;
+    onto:BIKO_000009 "Lateral FPI, LFP, Lateral fluid percussion, Lateral fluid percussion injury" .
+
+onto:BIKO_000030 a owl:Class ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf (
+                    [ a owl:Restriction ;
+                        owl:onProperty onto:BIKO_000306 ;
+                        owl:someValuesFrom onto:BIKO_000179 ]
+                    [ a owl:Restriction ;
+                        owl:onProperty onto:BIKO_000315 ;
+                        owl:someValuesFrom onto:BIKO_000105 ]
+                    [ a owl:Restriction ;
+                        owl:onProperty onto:BIKO_00400 ;
+                        owl:someValuesFrom onto:BIKO_00405 ] ) ] ;
+    rdfs:label "midline fluid percussion injury model" ;
+    rdfs:subClassOf onto:BIKO_000026,
+        [ a owl:Restriction ;
+            owl:onProperty onto:BIKO_000032 ;
+            owl:someValuesFrom onto:BIKO_000016 ] ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-09-29T19:37:01.609349+00:00"^^xsd:dateTime ;
+    onto:BIKO_000009 "Midline FPI, MFP, Midline fluid percussion, Midline fluid percussion injury" .
+
+onto:BIKO_000033 a owl:Class ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf (
+                    [ a owl:Restriction ;
+                        owl:onProperty onto:BIKO_000306 ;
+                        owl:someValuesFrom onto:BIKO_000179 ]
+                    [ a owl:Restriction ;
+                        owl:onProperty onto:BIKO_00400 ;
+                        owl:someValuesFrom onto:BIKO_00406 ] ) ] ;
+    rdfs:label "Feeney's weight drop model" ;
+    rdfs:subClassOf onto:BIKO_000027,
+        [ a owl:Restriction ;
+            owl:onProperty onto:BIKO_000032 ;
+            owl:someValuesFrom onto:BIKO_000015 ],
+        [ a owl:Restriction ;
+            owl:onProperty onto:BIKO_00461 ;
+            owl:someValuesFrom [ a owl:Class ;
+                    owl:intersectionOf (
+                            onto:BIKO_000012
+                            [ a owl:Restriction ;
+                                owl:onProperty onto:BIKO_000306 ;
+                                owl:someValuesFrom onto:BIKO_00414 ] ) ] ] ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-05T16:06:33.253933Z" .
+
+onto:BIKO_000034 a owl:Class ;
+    rdfs:label "Marmarou's weight drop model" ;
+    rdfs:subClassOf onto:BIKO_000027,
+        [ a owl:Restriction ;
+            owl:onProperty onto:BIKO_000032 ;
+            owl:someValuesFrom onto:BIKO_000016 ] ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-05T16:06:48.058915Z" .
+
+onto:BIKO_000035 a owl:Class ;
+    rdfs:label "Maryland's weight drop model" ;
+    rdfs:subClassOf onto:BIKO_000027,
+        [ a owl:Restriction ;
+            owl:onProperty onto:BIKO_000032 ;
+            owl:someValuesFrom onto:BIKO_000016 ] ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-05T16:07:01.922959Z" .
+
+onto:BIKO_000036 a owl:Class ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf (
+                    [ a owl:Restriction ;
+                        owl:onProperty onto:BIKO_000306 ;
+                        owl:someValuesFrom onto:BIKO_000305 ]
+                    [ a owl:Restriction ;
+                        owl:onProperty onto:BIKO_00400 ;
+                        owl:someValuesFrom onto:BIKO_00406 ] ) ] ;
+    rdfs:label "Shohami's weight drop model" ;
+    rdfs:subClassOf onto:BIKO_000027,
+        [ a owl:Restriction ;
+            owl:onProperty onto:BIKO_000032 ;
+            owl:someValuesFrom onto:BIKO_000015 ] ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-05T16:07:35.193584Z" .
+
+onto:BIKO_000038 a owl:Class ;
+    rdfs:label "article" ;
+    skos:definition "A scientific text, typically a full text article from a scientific journal." ;
+    rdfs:subClassOf onto:BIKO_000067 ;
+    rdfs:isDefinedBy <http://edamontology.org/data_0971> ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-21T20:43:00.704405Z" .
+
+onto:BIKO_000039 a owl:Class ;
+    rdfs:label "mild traumatic brain injury" ;
+    rdfs:subClassOf onto:BIKO_000155 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-28T22:26:16.304548Z" .
+
+onto:BIKO_000040 a owl:Class ;
+    rdfs:label "Injury measurement process" ;
+    rdfs:subClassOf onto:BIKO_000073 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-05T16:11:25.71868Z" .
+
+onto:BIKO_000041 a owl:Class ;
+    rdfs:label "Blood test" ;
+    rdfs:subClassOf onto:BIKO_000040 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-05T16:11:55.096768Z" .
+
+onto:BIKO_000042 a owl:Class ;
+    rdfs:label "Brain injury severity score" ;
+    rdfs:subClassOf onto:BIKO_000040 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-05T16:12:06.646456Z" .
+
+onto:BIKO_000043 a owl:Class ;
+    rdfs:label "Imaging test" ;
+    rdfs:subClassOf onto:BIKO_000040 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-05T16:12:19.111072Z" .
+
+onto:BIKO_000044 a owl:Class ;
+    rdfs:label "measurement unit label" ;
+    skos:definition "A data item label that denotes a unit of measure." ;
+    rdfs:subClassOf onto:BIKO_000065 ;
+    rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000003> ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-11T22:15:31.444415Z" .
+
+onto:BIKO_000045 a owl:Class ;
+    rdfs:label "expression profile" ;
+    skos:definition "The expression values of a set of genes under different conditions, e.g. following an environmental insult, following hormonal stimulation, or at a particular developmental stage." ;
+    rdfs:subClassOf onto:BIKO_000003 ;
+    rdfs:isDefinedBy <https://bioportal.bioontology.org/ontologies/RB/?p=classes&conceptid=http%3A%2F%2Fregenbase.org%2Fontology%23RB_0000041> ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-11T22:20:19.259367Z" .
+
+onto:BIKO_000046 a owl:Class ;
+    rdfs:label "Banyan Brain Trauma Indicator" ;
+    rdfs:subClassOf onto:BIKO_000041 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-05T16:13:06.960666Z" ;
+    onto:BIKO_000009 "BTI" .
+
+onto:BIKO_000047 a owl:Class ;
+    rdfs:label "Head and Cranial Injury" ;
+    skos:definition "Injuries related to the head and cranium that causes dysfunction of biological processes." ;
+    rdfs:subClassOf onto:BIKO_000007 ;
+    rdfs:isDefinedBy <https://orcid.org/0000-0002-2308-8813> ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-11-09T08:29:53.265647Z" .
+
+onto:BIKO_000048 a owl:Class ;
+    rdfs:label "Blood brain barrier disruption" ;
+    rdfs:subClassOf onto:BIKO_000047 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-11-09T08:32:04.210586Z" .
+
+onto:BIKO_000050 a owl:Class ;
+    rdfs:label "Computed tomography test" ;
+    skos:definition "A test that uses computed tomography to examine structures within the body by scanning them with X-rays and using a computer to construct a series of cross-sectional scans along a single axis." ;
+    rdfs:subClassOf onto:BIKO_000043 ;
+    rdfs:isDefinedBy <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C17204> ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-05T16:14:02.744174Z" ;
+    onto:BIKO_000009 "CAT, CAT Scan, Computed Axial Tomography, Computed Tomography, Computerized Axial Tomography, CT, CT Scan" .
+
+onto:BIKO_000051 a owl:Class ;
+    rdfs:label "Magnetic resonance imaging test" ;
+    skos:definition "A test used that uses magnetic resonance imaging to examine the radiofrequency waves and a strong magnetic field rather than x-rays to provide detailed pictures of internal organs and tissues. The technique is valuable for the diagnosis of many pathologic conditions, including cancer, heart and vascular disease, stroke, and joint and musculoskeletal disorders." ;
+    rdfs:subClassOf onto:BIKO_000043 ;
+    rdfs:isDefinedBy <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C16809> ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-05T16:14:14.164227Z" ;
+    onto:BIKO_000009 "Magnetic Resonance Imaging, MRI, Magnetic Resonance Imaging Scan, MRI Scan" .
+
+onto:BIKO_000052 a owl:Class ;
+    rdfs:label "Multicellular anatomical structure" ;
+    rdfs:subClassOf onto:BIKO_000001 ;
+    rdfs:isDefinedBy "map to http://purl.obolibrary.org/obo/UBERON_0000955" ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-19T18:42:41.371746Z" .
+
+onto:BIKO_000053 a owl:Class ;
+    rdfs:label "Brain volume loss" ;
+    rdfs:subClassOf onto:BIKO_000047 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-11-09T08:32:27.458313Z" .
+
+onto:BIKO_000055 a owl:Class ;
+    rdfs:label "Nervous system" ;
+    skos:definition "The nervous system is an organ system containing predominantly neuron and glial cells. In bilaterally symmetrical organism, it is arranged in a network of tree-like structures connected to a central body. The main functions of the nervous system are to regulate and control body functions, and to receive sensory input, process this information, and generate behavior [CUMBO]." ;
+    rdfs:subClassOf onto:BIKO_000001 ;
+    rdfs:isDefinedBy <http://purl.obolibrary.org/obo/UBERON_0001016> ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-05T19:46:07.306332Z" .
+
+onto:BIKO_000056 a owl:Class ;
+    rdfs:label "Organism attribute" ;
+    skos:definition "A characteristic or attribute inherent or inherited to an organism" ;
+    rdfs:subClassOf onto:BIKO_000002 ;
+    rdfs:isDefinedBy <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C171083> ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-05T19:47:39.519999Z" ;
+    rdfs:seeAlso <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C171083> .
+
+onto:BIKO_000057 a owl:Class ;
+    rdfs:label "Age" ;
+    skos:definition "A temporal measurement of the time period elapsed since an identifiable point in the life cycle of an organism" ;
+    rdfs:subClassOf onto:BIKO_000056 ;
+    rdfs:isDefinedBy <http://www.ebi.ac.uk/efo/EFO_0000246> ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-05T19:47:53.733091Z" ;
+    rdfs:seeAlso <http://www.ebi.ac.uk/efo/EFO_0000246> .
+
+onto:BIKO_000058 a owl:Class ;
+    rdfs:label "Sex" ;
+    skos:definition "The assemblage of physical properties or qualities by which male is distinguished from female; the physical difference between male and female; the distinguishing peculiarity of male or female." ;
+    rdfs:subClassOf onto:BIKO_000056 ;
+    rdfs:isDefinedBy <http://purl.obolibrary.org/obo/NCIT_C28421> ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-05T19:48:05.334508Z" ;
+    rdfs:seeAlso <http://purl.obolibrary.org/obo/NCIT_C28421> .
+
+onto:BIKO_000059 a owl:Class ;
+    rdfs:label "Weight" ;
+    skos:definition "A physical quality inhering in a bearer that has mass near a gravitational body." ;
+    rdfs:subClassOf onto:BIKO_000056 ;
+    rdfs:isDefinedBy <http://purl.obolibrary.org/obo/PATO_0000128> ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-05T19:48:16.265414Z" ;
+    rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0000128,> .
+
+onto:BIKO_000060 a owl:Class ;
+    rdfs:label "Biological role" ;
+    skos:definition "A role played by the molecular entity or part thereof within a biological context." ;
+    rdfs:subClassOf onto:BIKO_000088 ;
+    rdfs:isDefinedBy <http://purl.obolibrary.org/obo/CHEBI_24432> ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-11-07T17:50:40.199899Z" ;
+    onto:BIKO_000009 "biological function" .
+
+onto:BIKO_000061 a owl:Class ;
+    rdfs:label "Race" ;
+    skos:definition "A geographic ancestral origin category that is assigned to a population group based mainly on physical characteristics that are thought to be distinct and inherent." ;
+    rdfs:subClassOf onto:BIKO_000056 ;
+    rdfs:isDefinedBy <http://purl.obolibrary.org/obo/NCIT_C17049> ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-05T19:49:44.470168Z" ;
+    rdfs:seeAlso <http://purl.obolibrary.org/obo/NCIT_C17049> .
+
+onto:BIKO_000062 a owl:Class ;
+    rdfs:label "Strain" ;
+    skos:definition "A population of organisms that is geneticaly different from others of the same species and possessing a set of defined characteristics." ;
+    rdfs:subClassOf onto:BIKO_000056 ;
+    rdfs:isDefinedBy <http://www.ebi.ac.uk/efo/EFO_0005135> ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-05T19:49:57.282063Z" ;
+    rdfs:seeAlso <http://www.ebi.ac.uk/efo/EFO_0005135> .
+
+onto:BIKO_000063 a owl:Class ;
+    rdfs:label "Substrain" ;
+    skos:definition "A further sub-classification of the organism strain." ;
+    rdfs:subClassOf onto:BIKO_000062 ;
+    rdfs:isDefinedBy <http://purl.obolibrary.org/obo/NCIT_C117456> ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-05T19:50:12.815562Z" .
+
+onto:BIKO_000064 a owl:Class ;
+    rdfs:label "Quality" ;
+    skos:definition "An attribute that is intrinsically associated with its bearer (or its parts), but whose presence/absence and observed/measured value may vary." ;
+    rdfs:subClassOf onto:BIKO_000002 ;
+    rdfs:isDefinedBy <http://semanticscience.org/resource/SIO_000005> ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-05T19:50:33.493029Z" .
+
+onto:BIKO_000065 a owl:Class ;
+    rdfs:label "data label" ;
+    skos:definition "An information content entity that is part of some data item and is used to partially define the denotation of that data item." ;
+    rdfs:subClassOf onto:BIKO_000003 ;
+    rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000009> ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-05T19:50:48.453426Z" .
+
+onto:BIKO_000066 a owl:Class ;
+    rdfs:label "data object" ;
+    rdfs:subClassOf onto:BIKO_000003 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-05T19:50:58.761226Z" .
+
+onto:BIKO_000067 a owl:Class ;
+    rdfs:label "directive information entity" ;
+    skos:definition "An information content entity whose concretizations indicate to their bearer how to realize them in a process." ;
+    rdfs:subClassOf onto:BIKO_000003 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-05T19:51:11.801921Z" .
+
+onto:BIKO_000068 a owl:Class ;
+    rdfs:label "Brain" ;
+    rdfs:subClassOf onto:BIKO_000147 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-05T19:52:06.489421Z" .
+
+onto:BIKO_000069 a owl:Class ;
+    rdfs:label "Artifact object" ;
+    rdfs:subClassOf onto:BIKO_000004 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-05T19:52:29.14814Z" .
+
+onto:BIKO_000072 a owl:Class ;
+    rdfs:label "Traumatic brain injury model device" ;
+    rdfs:subClassOf onto:BIKO_000069 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-05T19:53:36.85123Z" .
+
+onto:BIKO_000073 a owl:Class ;
+    rdfs:label "Planned process" ;
+    rdfs:subClassOf onto:BIKO_000005 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-05T19:54:07.082044Z" .
+
+onto:BIKO_000074 a owl:Class ;
+    rdfs:label "blast waves" ;
+    rdfs:subClassOf onto:BIKO_000017,
+        [ a owl:Class ;
+            owl:intersectionOf (
+                    onto:BIKO_000017
+                    [ a owl:Restriction ;
+                        owl:onProperty onto:BIKO_00574 ;
+                        owl:someValuesFrom onto:BIKO_00614 ] ) ] ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-11-09T08:37:59.952649Z" .
+
+onto:BIKO_000075 a owl:Class ;
+    rdfs:label "Therapy" ;
+    rdfs:subClassOf onto:BIKO_000073 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-05T19:54:31.162358Z" .
+
+onto:BIKO_000076 a owl:Class ;
+    rdfs:label "Experimental therapy" ;
+    rdfs:subClassOf onto:BIKO_000075 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-05T19:54:45.775974Z" .
+
+onto:BIKO_000077 a owl:Class ;
+    rdfs:label "Citicoline" ;
+    rdfs:subClassOf onto:BIKO_000076 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-05T19:54:58.02484Z" .
+
+onto:BIKO_000078 a owl:Class ;
+    rdfs:label "Hypothermia" ;
+    rdfs:subClassOf onto:BIKO_000076 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-05T19:55:09.896856Z" .
+
+onto:BIKO_000079 a owl:Class ;
+    rdfs:label "Progesterone" ;
+    rdfs:subClassOf onto:BIKO_000076 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-05T19:55:24.329912Z" .
+
+onto:BIKO_000080 a owl:Class ;
+    rdfs:label "Analytical method" ;
+    rdfs:subClassOf onto:BIKO_000040 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-05T19:55:44.929341Z" .
+
+onto:BIKO_000081 a owl:Class ;
+    rdfs:label "Assay" ;
+    rdfs:subClassOf onto:BIKO_000080 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-05T19:55:55.272758Z" .
+
+onto:BIKO_000082 a owl:Class ;
+    rdfs:label "Chromatography" ;
+    rdfs:subClassOf onto:BIKO_000080 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-05T19:56:08.28947Z" .
+
+onto:BIKO_000083 a owl:Class ;
+    rdfs:label "Immunoassay" ;
+    rdfs:subClassOf onto:BIKO_000081 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-05T19:56:19.982215Z" .
+
+onto:BIKO_000084 a owl:Class ;
+    rdfs:label "Microscopy" ;
+    rdfs:subClassOf onto:BIKO_000080 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-05T19:56:31.153396Z" .
+
+onto:BIKO_000085 a owl:Class ;
+    rdfs:label "Spectrometry" ;
+    rdfs:subClassOf onto:BIKO_000080 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-05T19:56:41.897633Z" .
+
+onto:BIKO_000086 a owl:Class ;
+    rdfs:label "Organism" ;
+    skos:definition "A material entity that is an individual living system, such as animal, plant, bacteria or virus, that is capable of replicating or reproducing, growth and maintenance in the right environment. An organism may be unicellular or made up, like humans, of many billions of cells divided into specialized tissues and organs. E.g Drosophila melanogaster" ;
+    rdfs:subClassOf onto:BIKO_000004 ;
+    rdfs:isDefinedBy <http://en.wikipedia.org/wiki/Organism>,
+        <http://purl.obolibrary.org/obo/OBI_0100026> ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-05T19:57:26.608424Z" .
+
+onto:BIKO_000087 a owl:Class ;
+    rdfs:label "Biological process" ;
+    skos:definition "Any process specifically pertinent to the functioning of integrated living units: cells, tissues, organs, and organisms. A process is a collection of molecular events with a defined beginning and end." ;
+    rdfs:subClassOf onto:BIKO_000005 ;
+    rdfs:isDefinedBy <https://bioportal.bioontology.org/ontologies/RB/?p=classes&conceptid=http%3A%2F%2Fregenbase.org%2Fontology%23RB_0000353> ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-06T18:21:47.085481Z" .
+
+onto:BIKO_000088 a owl:Class ;
+    rdfs:label "Role" ;
+    skos:definition "A role is particular behaviour which a material entity may exhibit." ;
+    rdfs:subClassOf onto:BIKO_000002 ;
+    rdfs:isDefinedBy <http://purl.obolibrary.org/obo/PATO_0001018> ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-11T05:20:00.995215Z" .
+
+onto:BIKO_000089 a owl:Class ;
+    rdfs:label "Study group" ;
+    skos:definition "An attribute used to describe the role of an material entity, an organism, in a research study" ;
+    rdfs:subClassOf onto:BIKO_000088 ;
+    rdfs:isDefinedBy <https://orcid.org/0000-0002-2308-8813> ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-11T05:20:44.965035Z" .
+
+onto:BIKO_000090 a owl:Class ;
+    rdfs:label "control group" ;
+    skos:definition "A group separated from the rest of the experiment where the independent variable(s) being tested cannot influence the results. This isolates the independent variable's effects on the experiment and can help rule out alternate explanations of the experimental results." ;
+    rdfs:subClassOf onto:BIKO_000089 ;
+    rdfs:isDefinedBy <https://bioportal.bioontology.org/ontologies/RB/?p=classes&conceptid=http%3A%2F%2Fregenbase.org%2Fontology%23RB_0000250> ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-11T05:21:01.827731Z" .
+
+onto:BIKO_000091 a owl:Class ;
+    rdfs:label "experimental group" ;
+    skos:definition "A group of samples/individals that is exposed to (one of) the independent variable (s) being tested." ;
+    rdfs:subClassOf onto:BIKO_000089 ;
+    rdfs:isDefinedBy <https://bioportal.bioontology.org/ontologies/RB/?p=classes&conceptid=http%3A%2F%2Fregenbase.org%2Fontology%23RB_0000304> ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-11T05:24:24.029587Z" .
+
+onto:BIKO_000092 a owl:Class ;
+    rdfs:label "injury control group" ;
+    skos:definition "A control for experimental injury in which the animal is not injured." ;
+    rdfs:subClassOf onto:BIKO_000090 ;
+    rdfs:isDefinedBy <https://bioportal.bioontology.org/ontologies/RB/?p=classes&conceptid=http%3A%2F%2Fregenbase.org%2Fontology%23RB_0000345> ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-11T05:25:27.821405Z" .
+
+onto:BIKO_000093 a owl:Class ;
+    rdfs:label "naive control group" ;
+    skos:definition "A control for experimental injury in which the animal is not injured, and does not receive anaesthesia or post-operative treatments such as antibiotics, analgesics or injected fluids." ;
+    rdfs:subClassOf onto:BIKO_000092 ;
+    rdfs:isDefinedBy <https://bioportal.bioontology.org/ontologies/RB/?p=classes&conceptid=http%3A%2F%2Fregenbase.org%2Fontology%23RB_0008014> ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-11T05:25:44.513132Z" .
+
+onto:BIKO_000094 a owl:Class ;
+    rdfs:label "sham surgery control group" ;
+    skos:definition "A control for a surgical procedure in which aspects of the procedure other than the injury intended to induce the neurological effect itself are mimicked, including anaesthesia, surgical preparation (e.g., dissection, nerve exposure, burr hole) and post-operative treatments." ;
+    rdfs:subClassOf onto:BIKO_000092 ;
+    rdfs:isDefinedBy <https://bioportal.bioontology.org/ontologies/RB/?p=classes&conceptid=http%3A%2F%2Fregenbase.org%2Fontology%23RB_0000278> ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-11T05:27:40.23012Z" .
+
+onto:BIKO_000095 a owl:Class ;
+    rdfs:label "negative treatment control group" ;
+    skos:definition "A control in which a perturbagen that is known to consistently produce no response is used, or in which components of the treatment other than the active perturbagen are used (such as vehicle, vector, inactive compound, etc). This gives the investigators one or more possible baselines to compare to unknowns and can also be used to normalize data across samples as well as experiments done on different days." ;
+    rdfs:subClassOf onto:BIKO_000091 ;
+    rdfs:isDefinedBy <https://bioportal.bioontology.org/ontologies/RB/?p=classes&conceptid=http%3A%2F%2Fregenbase.org%2Fontology%23RB_0000107> ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-11T05:29:21.16139Z" .
+
+onto:BIKO_000096 a owl:Class ;
+    rdfs:label "positive treatment control group" ;
+    skos:definition "A control in which a perturbagen that is known to produce a consistent response is used. This gives the investigators confidence that the assay is performing as expected." ;
+    rdfs:subClassOf onto:BIKO_000091 ;
+    rdfs:isDefinedBy <https://bioportal.bioontology.org/ontologies/RB/?p=classes&conceptid=http%3A%2F%2Fregenbase.org%2Fontology%23RB_0000194> ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-11T05:30:18.954329Z" .
+
+onto:BIKO_000097 a owl:Class ;
+    rdfs:label "inactive treatment control group" ;
+    skos:definition "A control for experimental treatment in which an inactive form of the treatment is substituted for the active form, such as a scrambled siRNA, a plasmid/virus with inactive insert, or an inactive but related chemical compound." ;
+    rdfs:subClassOf onto:BIKO_000095 ;
+    rdfs:isDefinedBy <https://bioportal.bioontology.org/ontologies/RB/?p=classes&conceptid=http%3A%2F%2Fregenbase.org%2Fontology%23RB_0008011> ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-11T05:31:20.322234Z" .
+
+onto:BIKO_000098 a owl:Class ;
+    rdfs:label "no treatment control group" ;
+    skos:definition "A control for experimental treatment in which neither the perturbagen nor its vehicle is added." ;
+    rdfs:subClassOf onto:BIKO_000095 ;
+    rdfs:isDefinedBy <https://bioportal.bioontology.org/ontologies/RB/?p=classes&conceptid=http%3A%2F%2Fregenbase.org%2Fontology%23RB_0008010> ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-11T05:32:12.433711Z" .
+
+onto:BIKO_000099 a owl:Class ;
+    rdfs:label "vehicle control group" ;
+    skos:definition "A control for experimental treatment in which only the vehicle used to dissolve the treatment chemical is delivered at the same concentration and by the same route as in the experimental treatment." ;
+    rdfs:subClassOf onto:BIKO_000095 ;
+    rdfs:isDefinedBy <https://bioportal.bioontology.org/ontologies/RB/?p=classes&conceptid=http%3A%2F%2Fregenbase.org%2Fontology%23RB_0000036> ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-11T05:33:02.022053Z" .
+
+onto:BIKO_000100 a owl:Class ;
+    rdfs:label "measurement" ;
+    skos:definition "A quantitative description that reflects the magnitude of some attribute." ;
+    rdfs:subClassOf onto:BIKO_000003 ;
+    rdfs:isDefinedBy <http://semanticscience.org/resource/SIO_000070> ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-11T05:35:39.584142Z" .
+
+onto:BIKO_000103 a owl:Class ;
+    rdfs:label "Neuroanatomical assessment" ;
+    skos:definition "A quantitative or qualitative assessment of a neuroanatomical property of an experimental subject." ;
+    rdfs:subClassOf onto:BIKO_000040 ;
+    rdfs:isDefinedBy <https://bioportal.bioontology.org/ontologies/RB/?p=classes&conceptid=http%3A%2F%2Fregenbase.org%2Fontology%23RB_0008028> ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-11T05:37:45.8449Z" .
+
+onto:BIKO_000104 a owl:Class ;
+    rdfs:label "Physiological assessment" ;
+    skos:definition "A quantitative assessment of a physiological property of an experimental subject." ;
+    rdfs:subClassOf onto:BIKO_000040 ;
+    rdfs:isDefinedBy <https://bioportal.bioontology.org/ontologies/RB/?p=classes&conceptid=http%3A%2F%2Fregenbase.org%2Fontology%23RB_0008035> ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-11T05:38:02.359181Z" .
+
+onto:BIKO_000105 a owl:Class ;
+    rdfs:label "Parietal cortex" ;
+    rdfs:subClassOf onto:BIKO_000148 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-11-09T14:13:23.03551Z" .
+
+onto:BIKO_000117 a owl:Class ;
+    rdfs:label "Cavity size" ;
+    skos:definition "A quantitative assessment of the size of a cavity created by a central nervous system injury" ;
+    rdfs:subClassOf onto:BIKO_000103 ;
+    rdfs:isDefinedBy <https://bioportal.bioontology.org/ontologies/RB/?p=classes&conceptid=http%3A%2F%2Fregenbase.org%2Fontology%23RB_0008048> ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-12T18:01:48.691286Z" .
+
+onto:BIKO_000118 a owl:Class ;
+    rdfs:label "Lesion volume" ;
+    skos:definition "A quantitative assessment of the volume of a lesion created by a central nervous system injury." ;
+    rdfs:subClassOf onto:BIKO_000103 ;
+    rdfs:isDefinedBy <https://bioportal.bioontology.org/ontologies/RB/?p=classes&conceptid=http%3A%2F%2Fregenbase.org%2Fontology%23RB_0008029> ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-12T18:02:15.820411Z" .
+
+onto:BIKO_000119 a owl:Class ;
+    rdfs:label "Activation" ;
+    skos:definition "An increase in the frequency, rate or extent of a biological process." ;
+    rdfs:subClassOf onto:BIKO_000087 ;
+    rdfs:isDefinedBy <https://bioportal.bioontology.org/ontologies/RB/?p=classes&conceptid=http%3A%2F%2Fregenbase.org%2Fontology%23RB_0000348> ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-12T18:04:43.275888Z" .
+
+onto:BIKO_000120 a owl:Class ;
+    rdfs:label "Atrophy" ;
+    skos:definition "Wasting or decrease in size of a cell, tissue, or organ as a result of disuse, injury, or nutritional deficiency." ;
+    rdfs:subClassOf onto:BIKO_000087 ;
+    rdfs:isDefinedBy <https://bioportal.bioontology.org/ontologies/RB/?p=classes&conceptid=http%3A%2F%2Fregenbase.org%2Fontology%23RB_0000324> ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-12T18:05:13.997441Z" .
+
+onto:BIKO_000121 a owl:Class ;
+    rdfs:label "Autophagy" ;
+    skos:definition "The digestion of cellular components by the cell's own lysosomes. This can proceed by formation of intracellular membrane compartments that fuse with lysosomes or by direct import of the cell's components into lysosomes." ;
+    rdfs:subClassOf onto:BIKO_000087 ;
+    rdfs:isDefinedBy <https://bioportal.bioontology.org/ontologies/RB/?p=classes&conceptid=http%3A%2F%2Fregenbase.org%2Fontology%23RB_0000171> ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-12T18:05:53.532129Z" .
+
+onto:BIKO_000122 a owl:Class ;
+    rdfs:label "Cell death" ;
+    skos:definition "Any biological process that results in permanent cessation of all vital functions of a cell." ;
+    rdfs:subClassOf onto:BIKO_000087 ;
+    rdfs:isDefinedBy <https://bioportal.bioontology.org/ontologies/RB/?p=classes&conceptid=http%3A%2F%2Fregenbase.org%2Fontology%23RB_0000152> ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-12T18:06:49.8081Z" .
+
+onto:BIKO_000123 a owl:Class ;
+    rdfs:label "Physical quality" ;
+    skos:definition "A quality of a physical entity that exists through action of continuants at the physical level of organisation in relation to other entities." ;
+    rdfs:subClassOf onto:BIKO_000064 ;
+    rdfs:isDefinedBy <http://purl.obolibrary.org/obo/PATO_0001018> ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-19T19:14:27.940056Z" ;
+    onto:BIKO_000009 "relational physical quality" .
+
+onto:BIKO_000124 a owl:Class ;
+    rdfs:label "Cell cycle" ;
+    skos:definition "The period between the formation of a cell by division of its mother cell and the time when the cell itself divides to form two daughter cells." ;
+    rdfs:subClassOf onto:BIKO_000087 ;
+    rdfs:isDefinedBy <https://bioportal.bioontology.org/ontologies/RB/?p=classes&conceptid=http%3A%2F%2Fregenbase.org%2Fontology%23RB_0000208> ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-12T18:09:46.306276Z" .
+
+onto:BIKO_000125 a owl:Class ;
+    rdfs:label "Apoptosis" ;
+    skos:definition "A form of programmed cell death that begins when a cell receives internal or external signals that trigger the activity of proteolytic caspases, proceeds through a series of characteristic stages typically including rounding-up of the cell, retraction of pseudopodes, reduction of cellular volume (pyknosis), chromatin condensation, nuclear fragmentation (karyorrhexis), and plasma membrane blebbing (but maintenance of its integrity until the final stages of the process), and ends with the death of the cell." ;
+    rdfs:subClassOf onto:BIKO_000122 ;
+    rdfs:isDefinedBy <https://bioportal.bioontology.org/ontologies/RB/?p=classes&conceptid=http%3A%2F%2Fregenbase.org%2Fontology%23RB_0000040> ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-12T18:10:33.841826Z" .
+
+onto:BIKO_000126 a owl:Class ;
+    rdfs:label "Autophagic cell death" ;
+    skos:definition "Cell death induced by autophagy." ;
+    rdfs:subClassOf onto:BIKO_000122 ;
+    rdfs:isDefinedBy <https://bioportal.bioontology.org/ontologies/RB/?p=classes&conceptid=http%3A%2F%2Fregenbase.org%2Fontology%23RB_0000007> ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-12T18:11:15.965626Z" .
+
+onto:BIKO_000127 a owl:Class ;
+    rdfs:label "Glial cell death" ;
+    skos:definition "A biological process that results in permanent cessation of all vital functions of a glial cell." ;
+    rdfs:subClassOf onto:BIKO_000122 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-12T18:11:56.146626Z" ;
+    onto:BIKO_000006 <https://bioportal.bioontology.org/ontologies/RB/?p=classes&conceptid=http%3A%2F%2Fregenbase.org%2Fontology%23RB_0000469> .
+
+onto:BIKO_000128 a owl:Class ;
+    rdfs:label "Necrotic cell death" ;
+    skos:definition "Cell death induced by necrosis." ;
+    rdfs:subClassOf onto:BIKO_000122 ;
+    rdfs:isDefinedBy <https://bioportal.bioontology.org/ontologies/RB/?p=classes&conceptid=http%3A%2F%2Fregenbase.org%2Fontology%23RB_0000286> ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-12T18:12:40.156387Z" .
+
+onto:BIKO_000129 a owl:Class ;
+    rdfs:label "Neuronal cell death" ;
+    skos:definition "Any biological process that results in permanent cessation of all vital functions of a neuronal cell." ;
+    rdfs:subClassOf onto:BIKO_000122 ;
+    rdfs:isDefinedBy <https://bioportal.bioontology.org/ontologies/RB/?p=classes&conceptid=http%3A%2F%2Fregenbase.org%2Fontology%23RB_0000354> ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-12T18:13:16.697697Z" .
+
+onto:BIKO_000130 a owl:Class ;
+    rdfs:label "Degeneration" ;
+    skos:definition "The process whereby a cell, tissue, or organ changes to a less specialized or functionally less active form." ;
+    rdfs:subClassOf onto:BIKO_000087 ;
+    rdfs:isDefinedBy <https://bioportal.bioontology.org/ontologies/RB/?p=classes&conceptid=http%3A%2F%2Fregenbase.org%2Fontology%23RB_0000264> ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-12T18:14:15.821259Z" .
+
+onto:BIKO_000131 a owl:Class ;
+    rdfs:label "axon degeneration" ;
+    skos:definition "The death and subsequent loss of axons following disease, insult, or injury." ;
+    rdfs:subClassOf onto:BIKO_000130 ;
+    rdfs:isDefinedBy <https://bioportal.bioontology.org/ontologies/RB/?p=classes&conceptid=http%3A%2F%2Fregenbase.org%2Fontology%23RB_0000180> ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-12T18:14:54.913474Z" .
+
+onto:BIKO_000132 a owl:Class ;
+    rdfs:label "neuron degeneration" ;
+    skos:definition "The death and subsequent loss of neurons following disease, insult, or injury" ;
+    rdfs:subClassOf onto:BIKO_000130 ;
+    rdfs:isDefinedBy <https://bioportal.bioontology.org/ontologies/RB/?p=classes&conceptid=http%3A%2F%2Fregenbase.org%2Fontology%23RB_0000374> ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-12T18:16:09.198231Z" .
+
+onto:BIKO_000133 a owl:Class ;
+    rdfs:label "Functional recovery" ;
+    skos:definition "A return to a normal state of nervous system function following injury." ;
+    rdfs:subClassOf onto:BIKO_000087 ;
+    rdfs:isDefinedBy <https://bioportal.bioontology.org/ontologies/RB/?p=classes&conceptid=http%3A%2F%2Fregenbase.org%2Fontology%23RB_0000066> ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-12T18:17:03.415827Z" .
+
+onto:BIKO_000134 a owl:Class ;
+    rdfs:label "Gene expression" ;
+    skos:definition "The conversion of genetic information in DNA to RNA, through transcription, and/or, in the case of protein coding genes, of mRNA into protein, through translation." ;
+    rdfs:subClassOf onto:BIKO_000087 ;
+    rdfs:isDefinedBy <https://bioportal.bioontology.org/ontologies/RB/?p=classes&conceptid=http%3A%2F%2Fregenbase.org%2Fontology%23RB_0008042> ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-12T18:17:49.037538Z" .
+
+onto:BIKO_000135 a owl:Class ;
+    rdfs:label "Immune response" ;
+    skos:definition "In the periphery, a state of altered reactivity in the innate and/or adaptive immune system as a result of exposure to antigen. In the central nervous system, this is almost exclusively in the innate immune system as a result of infection, and is associated mainly with resident microglia." ;
+    rdfs:subClassOf onto:BIKO_000087 ;
+    rdfs:isDefinedBy <https://bioportal.bioontology.org/ontologies/RB/?p=classes&conceptid=http%3A%2F%2Fregenbase.org%2Fontology%23RB_0000102> ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-12T18:18:36.370143Z" .
+
+onto:BIKO_000136 a owl:Class ;
+    rdfs:label "external force" ;
+    skos:definition "External forces are forces resulting from the interaction between human body and its environment." ;
+    rdfs:subClassOf onto:BIKO_000152 ;
+    rdfs:isDefinedBy <https://www.fsps.muni.cz/emuni/data/reader/book-2/08.html> ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-19T19:14:35.809108Z" .
+
+onto:BIKO_000137 a owl:Class ;
+    rdfs:label "Inflammation" ;
+    skos:definition "A response to injury or infection involving the migration and activation of inflammatory cells, such as neutrophils, macrophages/microglia, and lymphocytes." ;
+    rdfs:subClassOf onto:BIKO_000087 ;
+    rdfs:isDefinedBy <https://bioportal.bioontology.org/ontologies/RB/?p=classes&conceptid=http%3A%2F%2Fregenbase.org%2Fontology%23RB_0000174> ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-12T18:20:03.944832Z" .
+
+onto:BIKO_000138 a owl:Class ;
+    rdfs:label "mRNA translation" ;
+    skos:definition "The process by which a particular sequence of bases in messenger RNA (mRNA) determines a sequence of amino acids in a polypeptide chain during protein and peptide biosynthesis." ;
+    rdfs:subClassOf onto:BIKO_000087 ;
+    rdfs:isDefinedBy <https://bioportal.bioontology.org/ontologies/RB/?p=classes&conceptid=http%3A%2F%2Fregenbase.org%2Fontology%23RB_0000377> ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-12T18:20:50.456961Z" .
+
+onto:BIKO_000139 a owl:Class ;
+    rdfs:label "Neuroprotection" ;
+    skos:definition "The mechanisms and strategies used to protect against neuronal injury or degeneration in the central nervous system following insult, injury, or disease." ;
+    rdfs:subClassOf onto:BIKO_000087 ;
+    rdfs:isDefinedBy <https://bioportal.bioontology.org/ontologies/RB/?p=classes&conceptid=http%3A%2F%2Fregenbase.org%2Fontology%23RB_0000142> ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-12T18:21:26.204616Z" .
+
+onto:BIKO_000140 a owl:Class ;
+    rdfs:label "Phosphorylation" ;
+    skos:definition "The addition of phosphate groups to a molecule." ;
+    rdfs:subClassOf onto:BIKO_000087 ;
+    rdfs:isDefinedBy <https://bioportal.bioontology.org/ontologies/RB/?p=classes&conceptid=http%3A%2F%2Fregenbase.org%2Fontology%23RB_0000038> ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-12T18:22:13.312397Z" .
+
+onto:BIKO_000141 a owl:Class ;
+    rdfs:label "Protein synthesis" ;
+    skos:definition "The process through which activated amino acids are polymerized to form polypeptides through association with mRNA and transfer RNAs on ribosomes." ;
+    rdfs:subClassOf onto:BIKO_000087 ;
+    rdfs:isDefinedBy <https://bioportal.bioontology.org/ontologies/RB/?p=classes&conceptid=http%3A%2F%2Fregenbase.org%2Fontology%23RB_0000251> ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-12T18:23:06.713103Z" .
+
+onto:BIKO_000142 a owl:Class ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf (
+                    onto:BIKO_000012
+                    [ a owl:Restriction ;
+                        owl:onProperty onto:BIKO_000306 ;
+                        owl:someValuesFrom onto:BIKO_000305 ] ) ] ;
+    rdfs:label "closed head injury" ;
+    rdfs:subClassOf onto:BIKO_000012 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-12T18:39:11.363498Z" ;
+    onto:BIKO_000009 "blunt head injury" .
+
+onto:BIKO_000143 a owl:Class ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf (
+                    onto:BIKO_000012
+                    [ a owl:Restriction ;
+                        owl:onProperty onto:BIKO_000306 ;
+                        owl:someValuesFrom onto:BIKO_000178 ] ) ] ;
+    rdfs:label "open head injury" ;
+    rdfs:subClassOf onto:BIKO_000012 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-12T18:39:37.460641Z" ;
+    onto:BIKO_000009 "penetrating brain injury" .
+
+onto:BIKO_000144 a owl:Class ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf (
+                    onto:BIKO_000011
+                    [ a owl:Restriction ;
+                        owl:onProperty onto:BIKO_000146 ;
+                        owl:someValuesFrom onto:BIKO_000148 ] ) ] ;
+    rdfs:label "Acquired brain injury" ;
+    skos:definition "Brain damage caused by events after birth, rather than as part of a genetic or congenital disorder such as fetal alcohol syndrome, perinatal illness or perinatal hypoxia.[" ;
+    rdfs:subClassOf onto:BIKO_000011 ;
+    rdfs:isDefinedBy <https://en.wikipedia.org/wiki/Acquired_brain_injury> ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-19T12:21:45.305276Z" .
+
+onto:BIKO_000145 a owl:Class ;
+    rdfs:label "Concussion" ;
+    rdfs:subClassOf onto:BIKO_000047,
+        [ a owl:Restriction ;
+            owl:onProperty onto:BIKO_000246 ;
+            owl:someValuesFrom onto:BIKO_000013 ] ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-11-07T18:18:17.296021Z" .
+
+onto:BIKO_000147 a owl:Class ;
+    rdfs:label "Organ" ;
+    rdfs:subClassOf onto:BIKO_000052 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-19T18:46:20.907662Z" .
+
+onto:BIKO_000148 a owl:Class ;
+    rdfs:label "Regional part of brain" ;
+    rdfs:subClassOf onto:BIKO_000052,
+        [ a owl:Restriction ;
+            owl:onProperty onto:BIKO_000150 ;
+            owl:someValuesFrom onto:BIKO_000068 ] ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-19T18:49:25.337193Z" .
+
+onto:BIKO_000149 a owl:Class ;
+    rdfs:label "contact force" ;
+    skos:definition "Contact forces are forces that act at the point of contact between two objects." ;
+    rdfs:subClassOf onto:BIKO_000136 ;
+    rdfs:isDefinedBy <https://www.fsps.muni.cz/emuni/data/reader/book-2/08.html> ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-19T19:18:44.80596Z" .
+
+onto:BIKO_000151 a owl:Class ;
+    rdfs:label "non-contact force" ;
+    skos:definition "A non-contact force is a force which acts on an object without coming physically in contact with it" ;
+    rdfs:subClassOf onto:BIKO_000136 ;
+    rdfs:isDefinedBy <https://en.wikipedia.org/wiki/Non-contact_force> ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-19T19:18:53.783783Z" .
+
+onto:BIKO_000152 a owl:Class ;
+    rdfs:label "traumatic brain injury attribute" ;
+    skos:definition "" ;
+    rdfs:subClassOf onto:BIKO_000002 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-19T20:56:47.151876Z" .
+
+onto:BIKO_000154 a owl:Class ;
+    rdfs:label "injury progression" ;
+    rdfs:subClassOf onto:BIKO_000152 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-19T20:59:10.155443Z" .
+
+onto:BIKO_000155 a owl:Class ;
+    rdfs:label "severity of injury" ;
+    rdfs:subClassOf onto:BIKO_000152 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-19T20:59:40.469083Z" .
+
+onto:BIKO_000156 a owl:Class ;
+    rdfs:label "distribution of structural damage" ;
+    rdfs:subClassOf onto:BIKO_000152 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-19T21:00:02.847928Z" .
+
+onto:BIKO_000158 a owl:Class ;
+    rdfs:label "algorithm" ;
+    rdfs:subClassOf onto:BIKO_000067 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-19T21:24:57.168284Z" .
+
+onto:BIKO_000161 a owl:Class ;
+    rdfs:label "impact parameters" ;
+    rdfs:subClassOf onto:BIKO_000152 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-11-09T08:39:44.089814Z" .
+
+onto:BIKO_000162 a owl:Class ;
+    rdfs:label "injury velocity" ;
+    rdfs:subClassOf onto:BIKO_000161 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-11-09T08:41:12.853929Z" .
+
+onto:BIKO_000163 a owl:Class ;
+    rdfs:label "categorical label" ;
+    rdfs:subClassOf onto:BIKO_000065 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-19T21:32:04.348159Z" .
+
+onto:BIKO_000164 a owl:Class ;
+    rdfs:label "gravitational force" ;
+    skos:definition "The gravitation is a force of attraction between all bodies with mass." ;
+    rdfs:subClassOf onto:BIKO_000151 ;
+    rdfs:isDefinedBy <https://byjus.com/physics/non-contact-force/> ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-21T02:05:36.273351Z" .
+
+onto:BIKO_000165 a owl:Class ;
+    rdfs:label "reaction force" ;
+    skos:definition "The force exerted in the opposite direction to an action force." ;
+    rdfs:subClassOf onto:BIKO_000149 ;
+    rdfs:isDefinedBy <https://www.bbc.co.uk/bitesize/guides/zyxv97h/revision/1> ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-21T02:07:14.898428Z" .
+
+onto:BIKO_000166 a owl:Class ;
+    rdfs:label "frictional force" ;
+    skos:definition "The force exerted by a surface against the motion of a body across its surface." ;
+    rdfs:subClassOf onto:BIKO_000149 ;
+    rdfs:isDefinedBy <https://byjus.com/physics/force-contact-force-non-contact-force/> ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-21T02:08:22.02783Z" .
+
+onto:BIKO_000167 a owl:Class ;
+    rdfs:label "applied force" ;
+    skos:definition "The force which is applied to an object by another object." ;
+    rdfs:subClassOf onto:BIKO_000149 ;
+    rdfs:isDefinedBy <https://byjus.com/physics/force-contact-force-non-contact-force/> ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-21T02:09:19.169039Z" .
+
+onto:BIKO_000168 a owl:Class ;
+    rdfs:label "normal force" ;
+    skos:definition "The support force exerted upon an object that is in contact with another fixed or stable object." ;
+    rdfs:subClassOf onto:BIKO_000149 ;
+    rdfs:isDefinedBy <https://byjus.com/physics/force-contact-force-non-contact-force/> ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-21T02:09:47.67083Z" .
+
+onto:BIKO_000169 a owl:Class ;
+    rdfs:label "electrostatic force" ;
+    rdfs:subClassOf onto:BIKO_000151 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-21T02:12:15.6706Z" .
+
+onto:BIKO_000170 a owl:Class ;
+    rdfs:label "air resistance force" ;
+    skos:definition "The force exerted on an object when it comes in contact with air by traveling through it." ;
+    rdfs:subClassOf onto:BIKO_000149 ;
+    rdfs:isDefinedBy <https://examples.yourdictionary.com/contact-force-examples-different-types-physics> ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-21T02:13:21.058787Z" .
+
+onto:BIKO_000171 a owl:Class ;
+    rdfs:label "injury duration" ;
+    rdfs:subClassOf onto:BIKO_000161 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-11-09T08:41:47.504691Z" .
+
+onto:BIKO_000172 a owl:Class ;
+    rdfs:label "tension force" ;
+    skos:definition "The force that is transmitted through a string, rope, cable or wire when it is pulled tight by forces acting from opposite ends." ;
+    rdfs:subClassOf onto:BIKO_000149 ;
+    rdfs:isDefinedBy <https://www.physicsclassroom.com/Class/newtlaws/U2L2b.cfm#spring> ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-21T05:04:37.259764Z" .
+
+onto:BIKO_000173 a owl:Class ;
+    rdfs:label "spring force" ;
+    skos:definition "The force exerted by a compressed or stretched spring upon any object that is attached to it." ;
+    rdfs:subClassOf onto:BIKO_000149 ;
+    rdfs:isDefinedBy <https://www.physicsclassroom.com/Class/newtlaws/U2L2b.cfm#spring> ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-21T05:05:27.684241Z" .
+
+onto:BIKO_000175 a owl:Class ;
+    rdfs:label "injury depth" ;
+    rdfs:subClassOf onto:BIKO_000161 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-21T05:57:16.044823Z" .
+
+onto:BIKO_000176 a owl:Class ;
+    rdfs:label "physical mechanisms of insult" ;
+    rdfs:subClassOf onto:BIKO_000152 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-21T06:04:45.377124Z" .
+
+onto:BIKO_000178 a owl:Class ;
+    rdfs:label "breach skull" ;
+    rdfs:subClassOf onto:BIKO_000180 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-11-09T13:05:16.977115Z" .
+
+onto:BIKO_000179 a owl:Class ;
+    rdfs:label "Craniotomy" ;
+    skos:definition "A craniotomy is a surgical operation in which a bone flap is temporarily removed from the skull to access the brain." ;
+    rdfs:subClassOf onto:BIKO_00414 ;
+    rdfs:isDefinedBy <https://en.wikipedia.org/wiki/Craniotomy> ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-11-09T08:43:52.7658Z" .
+
+onto:BIKO_000180 a owl:Class ;
+    rdfs:label "skull disruption" ;
+    rdfs:subClassOf onto:BIKO_000161,
+        [ a owl:Restriction ;
+            owl:onProperty onto:BIKO_00610 ;
+            owl:someValuesFrom onto:BIKO_000180 ] ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-11-09T13:00:22.941796Z" .
+
+onto:BIKO_000184 a owl:Class ;
+    rdfs:label "Craniectomy" ;
+    skos:definition "A neurosurgical procedure in which part of the skull is removed to allow a swelling brain room to expand without being squeezed." ;
+    rdfs:subClassOf onto:BIKO_00414 ;
+    rdfs:isDefinedBy <https://www.ncbi.nlm.nih.gov/books/NBK560922/> ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-11-09T08:46:31.072748Z" .
+
+onto:BIKO_000193 a owl:Class ;
+    rdfs:label "Organ system subdivision" ;
+    rdfs:subClassOf onto:BIKO_000001 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-24T09:27:03.354939Z" .
+
+onto:BIKO_000194 a owl:Class ;
+    rdfs:label "Subdivision of skeletal system" ;
+    rdfs:subClassOf onto:BIKO_000193 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-24T09:27:26.30718Z" .
+
+onto:BIKO_000195 a owl:Class ;
+    rdfs:label "skull" ;
+    rdfs:subClassOf onto:BIKO_000194 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-24T09:27:33.47974Z" .
+
+onto:BIKO_000196 a owl:Class ;
+    rdfs:label "Meninx" ;
+    rdfs:subClassOf onto:BIKO_000001 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-24T09:29:21.094713Z" .
+
+onto:BIKO_000197 a owl:Class ;
+    rdfs:label "Brain meninx" ;
+    rdfs:subClassOf onto:BIKO_000196 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-24T09:29:35.851648Z" .
+
+onto:BIKO_000198 a owl:Class ;
+    rdfs:label "Brain arachnoid mater" ;
+    rdfs:subClassOf onto:BIKO_000197 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-24T09:29:52.190912Z" .
+
+onto:BIKO_000199 a owl:Class ;
+    rdfs:label "Brain dura mater" ;
+    rdfs:subClassOf onto:BIKO_000197 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-24T09:30:05.695686Z" .
+
+onto:BIKO_000200 a owl:Class ;
+    rdfs:label "Brain pia mater" ;
+    rdfs:subClassOf onto:BIKO_000197 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-24T09:30:20.169425Z" .
+
+onto:BIKO_000201 a owl:Class ;
+    rdfs:label "Forebrain meninges" ;
+    rdfs:subClassOf onto:BIKO_000197 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-24T09:30:36.418317Z" .
+
+onto:BIKO_000202 a owl:Class ;
+    rdfs:label "Meninx of hindbrain" ;
+    rdfs:subClassOf onto:BIKO_000197 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-24T09:30:51.215012Z" .
+
+onto:BIKO_000203 a owl:Class ;
+    rdfs:label "Meninx of midbrain" ;
+    rdfs:subClassOf onto:BIKO_000197 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-24T09:31:32.470651Z" .
+
+onto:BIKO_000204 a owl:Class ;
+    rdfs:label "mammalia" ;
+    rdfs:subClassOf onto:BIKO_00416 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-24T09:34:05.053303Z" .
+
+onto:BIKO_000205 a owl:Class ;
+    rdfs:label "primate" ;
+    rdfs:subClassOf onto:BIKO_000204 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-24T09:34:40.545616Z" .
+
+onto:BIKO_000206 a owl:Class ;
+    rdfs:label "chimpanzee" ;
+    rdfs:subClassOf onto:BIKO_000205 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-24T09:34:51.86939Z" .
+
+onto:BIKO_000207 a owl:Class ;
+    rdfs:label "human" ;
+    rdfs:subClassOf onto:BIKO_000205 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-24T09:35:10.448707Z" .
+
+onto:BIKO_000208 a owl:Class ;
+    rdfs:label "monkey" ;
+    rdfs:subClassOf onto:BIKO_000205 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-24T09:35:25.258674Z" .
+
+onto:BIKO_000209 a owl:Class ;
+    rdfs:label "rodentia" ;
+    rdfs:subClassOf onto:BIKO_000204 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-24T09:35:43.703703Z" .
+
+onto:BIKO_000210 a owl:Class ;
+    rdfs:label "muridae" ;
+    rdfs:subClassOf onto:BIKO_000209 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-24T09:36:09.549807Z" .
+
+onto:BIKO_000211 a owl:Class ;
+    rdfs:label "mouse" ;
+    rdfs:subClassOf onto:BIKO_000210 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-24T09:36:21.066566Z" .
+
+onto:BIKO_000212 a owl:Class ;
+    rdfs:label "rat" ;
+    rdfs:subClassOf onto:BIKO_000210 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-24T09:36:26.587001Z" .
+
+onto:BIKO_000213 a owl:Class ;
+    rdfs:label "Biological macromolecule" ;
+    rdfs:subClassOf onto:BIKO_000004 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-24T09:37:41.575757Z" .
+
+onto:BIKO_000214 a owl:Class ;
+    rdfs:label "DNA" ;
+    rdfs:subClassOf onto:BIKO_00411 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-24T09:37:51.301159Z" .
+
+onto:BIKO_000215 a owl:Class ;
+    rdfs:label "RNA" ;
+    rdfs:subClassOf onto:BIKO_00411 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-24T09:37:56.734116Z" .
+
+onto:BIKO_000216 a owl:Class ;
+    rdfs:label "Protein" ;
+    rdfs:subClassOf onto:BIKO_000213 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-24T09:38:06.15151Z" .
+
+onto:BIKO_000217 a owl:Class ;
+    rdfs:label "Gene" ;
+    rdfs:subClassOf onto:BIKO_000213 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-24T09:38:55.890802Z" .
+
+onto:BIKO_000218 a owl:Class ;
+    rdfs:label "Cell type" ;
+    rdfs:subClassOf onto:BIKO_000001 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-24T09:39:49.563971Z" .
+
+onto:BIKO_000219 a owl:Class ;
+    rdfs:label "Nervous system cell" ;
+    rdfs:subClassOf onto:BIKO_000218 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-24T09:39:56.202344Z" .
+
+onto:BIKO_000220 a owl:Class ;
+    rdfs:label "Glial brain cell" ;
+    rdfs:subClassOf onto:BIKO_000219 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-24T09:40:44.889483Z" .
+
+onto:BIKO_000221 a owl:Class ;
+    rdfs:label "Neuron cell" ;
+    rdfs:subClassOf onto:BIKO_000219 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-24T09:42:51.298331Z" .
+
+onto:BIKO_000222 a owl:Class ;
+    rdfs:label "Astrocyte" ;
+    rdfs:subClassOf onto:BIKO_000220 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-24T09:43:03.522009Z" .
+
+onto:BIKO_000223 a owl:Class ;
+    rdfs:label "Microglial cell" ;
+    rdfs:subClassOf onto:BIKO_000220 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-24T09:43:12.737409Z" .
+
+onto:BIKO_000224 a owl:Class ;
+    rdfs:label "moderate traumatic brain injury" ;
+    rdfs:subClassOf onto:BIKO_000155 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-28T22:26:59.325123Z" .
+
+onto:BIKO_000225 a owl:Class ;
+    rdfs:label "severe traumatic brain injury" ;
+    rdfs:subClassOf onto:BIKO_000155 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-28T22:27:13.401633Z" .
+
+onto:BIKO_000226 a owl:Class ;
+    rdfs:label "Chemical role" ;
+    skos:definition "A role played by the molecular entity or part thereof within a chemical context." ;
+    rdfs:subClassOf onto:BIKO_000088 ;
+    rdfs:isDefinedBy <http://purl.obolibrary.org/obo/CHEBI_51086> ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-11-07T17:51:10.791238Z" .
+
+onto:BIKO_000227 a owl:Class ;
+    rdfs:label "Drug role" ;
+    rdfs:subClassOf onto:BIKO_000088 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-11-07T17:51:26.884224Z" .
+
+onto:BIKO_000229 a owl:Class ;
+    rdfs:label "injury speed" ;
+    rdfs:subClassOf onto:BIKO_000161 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-11-01T21:18:24.127408Z" .
+
+onto:BIKO_000230 a owl:Class ;
+    rdfs:label "Excitotoxicity" ;
+    rdfs:subClassOf onto:BIKO_000087 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-11-01T21:19:38.551188Z" .
+
+onto:BIKO_000231 a owl:Class ;
+    rdfs:label "Mitochondrial dysfunction" ;
+    rdfs:subClassOf onto:BIKO_000230 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-11-01T21:19:56.611856Z" .
+
+onto:BIKO_000232 a owl:Class ;
+    rdfs:label "Software manufacture" ;
+    rdfs:subClassOf onto:BIKO_000088 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-11-07T17:51:45.813426Z" .
+
+onto:BIKO_000233 a owl:Class ;
+    rdfs:label "Diffuse axonal injury" ;
+    rdfs:subClassOf onto:BIKO_00466,
+        [ a owl:Restriction ;
+            owl:onProperty onto:BIKO_000246 ;
+            owl:someValuesFrom onto:BIKO_000013 ] ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-11-07T18:20:15.175496Z" .
+
+onto:BIKO_000234 a owl:Class ;
+    rdfs:label "Brain edema" ;
+    rdfs:subClassOf onto:BIKO_000047 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-11-07T18:20:33.291569Z" .
+
+onto:BIKO_000235 a owl:Class ;
+    rdfs:label "Intracranial hematoma" ;
+    rdfs:subClassOf onto:BIKO_00449 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-11-07T18:20:50.756623Z" .
+
+onto:BIKO_000236 a owl:Class ;
+    rdfs:label "Skull fracture" ;
+    rdfs:subClassOf onto:BIKO_000047 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-11-07T18:21:16.045652Z" .
+
+onto:BIKO_000237 a owl:Class ;
+    rdfs:label "Coup-contrecoup brain injury" ;
+    rdfs:subClassOf onto:BIKO_000047,
+        [ a owl:Restriction ;
+            owl:onProperty onto:BIKO_000246 ;
+            owl:someValuesFrom onto:BIKO_000013 ] ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-11-07T18:21:52.781049Z" .
+
+onto:BIKO_000238 a owl:Class ;
+    rdfs:label "Epidural hematoma" ;
+    rdfs:subClassOf onto:BIKO_000235 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-11-07T18:25:17.554166Z" .
+
+onto:BIKO_000239 a owl:Class ;
+    rdfs:label "Subdural hematoma" ;
+    rdfs:subClassOf onto:BIKO_000235 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-11-07T18:25:33.661675Z" .
+
+onto:BIKO_000240 a owl:Class ;
+    rdfs:label "Subarachnoid hemorrhage" ;
+    rdfs:subClassOf onto:BIKO_000235 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-11-07T18:25:47.780698Z" .
+
+onto:BIKO_000241 a owl:Class ;
+    rdfs:label "Intracerebral hematoma" ;
+    rdfs:subClassOf onto:BIKO_000235 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-11-07T18:26:04.589271Z" .
+
+onto:BIKO_000242 a owl:Class ;
+    rdfs:label "Intraventricular hemorrhage" ;
+    rdfs:subClassOf onto:BIKO_000235 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-11-07T18:26:23.452762Z" .
+
+onto:BIKO_000243 a owl:Class ;
+    rdfs:label "Linear skull fracture" ;
+    rdfs:subClassOf onto:BIKO_000236 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-11-07T18:26:41.96597Z" .
+
+onto:BIKO_000244 a owl:Class ;
+    rdfs:label "Depressed skull fracture" ;
+    rdfs:subClassOf onto:BIKO_000236 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-11-07T18:26:52.85917Z" .
+
+onto:BIKO_000245 a owl:Class ;
+    rdfs:label "Basilar skull fracture" ;
+    rdfs:subClassOf onto:BIKO_000236 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-11-07T18:27:04.611152Z" .
+
+onto:BIKO_000247 a owl:Class ;
+    rdfs:label "Cortical contusion" ;
+    rdfs:subClassOf onto:BIKO_00448 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-11-07T18:31:57.034149Z" .
+
+onto:BIKO_000251 a owl:Class ;
+    rdfs:label "Barnes maze test" ;
+    rdfs:subClassOf onto:BIKO_00594,
+        [ a owl:Restriction ;
+            owl:onProperty onto:BIKO_00550 ;
+            owl:someValuesFrom [ a owl:Class ;
+                    owl:intersectionOf (
+                            onto:BIKO_000040
+                            [ a owl:Restriction ;
+                                owl:onProperty onto:BIKO_000019 ;
+                                owl:someValuesFrom onto:BIKO_00549 ] ) ] ] ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-11-09T03:08:42.675975Z" .
+
+onto:BIKO_000252 a owl:Class ;
+    rdfs:label "Beam walk test" ;
+    rdfs:subClassOf onto:BIKO_00594 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-11-09T03:08:52.762185Z" ;
+    onto:BIKO_00596 onto:BIKO_00583,
+        onto:BIKO_00584,
+        onto:BIKO_00585,
+        onto:BIKO_00589,
+        onto:BIKO_00591,
+        onto:BIKO_00592,
+        onto:BIKO_00593 .
+
+onto:BIKO_000253 a owl:Class ;
+    rdfs:label "Bungalow test" ;
+    rdfs:subClassOf onto:BIKO_00594 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-11-09T03:09:03.338686Z" .
+
+onto:BIKO_000257 a owl:Class ;
+    rdfs:label "Cylinder test" ;
+    rdfs:subClassOf onto:BIKO_00594 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-11-09T03:09:50.218707Z" ;
+    onto:BIKO_00596 onto:BIKO_00575,
+        onto:BIKO_00577,
+        onto:BIKO_00578,
+        onto:BIKO_00579,
+        onto:BIKO_00580,
+        onto:BIKO_00581,
+        onto:BIKO_00582 .
+
+onto:BIKO_000258 a owl:Class ;
+    rdfs:label "Elevated Plus Maze test" ;
+    rdfs:subClassOf onto:BIKO_00594 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-11-09T03:10:00.900417Z" .
+
+onto:BIKO_000259 a owl:Class ;
+    rdfs:label "Elevated Zero Maze test" ;
+    rdfs:subClassOf onto:BIKO_00594 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-11-09T03:10:12.75245Z" .
+
+onto:BIKO_000261 a owl:Class ;
+    rdfs:label "Fear conditioning test" ;
+    rdfs:subClassOf onto:BIKO_00594,
+        [ a owl:Restriction ;
+            owl:onProperty onto:BIKO_00550 ;
+            owl:someValuesFrom [ a owl:Class ;
+                    owl:intersectionOf (
+                            onto:BIKO_000040
+                            [ a owl:Restriction ;
+                                owl:onProperty onto:BIKO_000019 ;
+                                owl:someValuesFrom onto:BIKO_00549 ] ) ] ] ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-11-09T03:10:31.556307Z" .
+
+onto:BIKO_000262 a owl:Class ;
+    rdfs:label "Forced swim test" ;
+    rdfs:subClassOf onto:BIKO_00594 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-11-09T03:10:41.03Z" .
+
+onto:BIKO_000263 a owl:Class ;
+    rdfs:label "Galveston orientation and amnesia Test" ;
+    rdfs:subClassOf onto:BIKO_00594 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-11-09T03:10:50.839239Z" .
+
+onto:BIKO_000267 a owl:Class ;
+    rdfs:label "Inclined plane test" ;
+    rdfs:subClassOf onto:BIKO_00594 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-11-09T03:11:36.087335Z" .
+
+onto:BIKO_000268 a owl:Class ;
+    rdfs:label "Injury severity score" ;
+    rdfs:subClassOf onto:BIKO_000042,
+        onto:BIKO_000073 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-11-09T03:11:45.076393Z" ;
+    onto:BIKO_000009 "ISS" .
+
+onto:BIKO_000271 a owl:Class ;
+    rdfs:label "Limb placing test" ;
+    rdfs:subClassOf onto:BIKO_00594 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-11-09T03:12:37.635382Z" .
+
+onto:BIKO_000272 a owl:Class ;
+    rdfs:label "Marble burying test" ;
+    rdfs:subClassOf onto:BIKO_00594 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-11-09T03:12:47.019442Z" .
+
+onto:BIKO_000273 a owl:Class ;
+    rdfs:label "Morris water maze test" ;
+    rdfs:subClassOf onto:BIKO_00594,
+        [ a owl:Restriction ;
+            owl:onProperty onto:BIKO_00550 ;
+            owl:someValuesFrom [ a owl:Class ;
+                    owl:intersectionOf (
+                            onto:BIKO_000040
+                            [ a owl:Restriction ;
+                                owl:onProperty onto:BIKO_000019 ;
+                                owl:someValuesFrom onto:BIKO_00549 ] ) ] ] ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-11-09T03:12:58.71461Z" .
+
+onto:BIKO_000274 a owl:Class ;
+    rdfs:label "Neurological severity score" ;
+    rdfs:subClassOf onto:BIKO_000042 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-11-09T03:13:11.94614Z" ;
+    onto:BIKO_000009 "NSS" .
+
+onto:BIKO_000275 a owl:Class ;
+    rdfs:label "Neuropsychological functioning test" ;
+    rdfs:subClassOf onto:BIKO_00594 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-11-09T03:13:23.407862Z" .
+
+onto:BIKO_000276 a owl:Class ;
+    rdfs:label "Novel object recognition test" ;
+    rdfs:subClassOf onto:BIKO_00594,
+        [ a owl:Restriction ;
+            owl:onProperty onto:BIKO_00550 ;
+            owl:someValuesFrom [ a owl:Class ;
+                    owl:intersectionOf (
+                            onto:BIKO_000040
+                            [ a owl:Restriction ;
+                                owl:onProperty onto:BIKO_000019 ;
+                                owl:someValuesFrom onto:BIKO_00549 ] ) ] ] ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-11-09T03:13:34.547853Z" .
+
+onto:BIKO_000277 a owl:Class ;
+    rdfs:label "Object retrieval test" ;
+    rdfs:subClassOf onto:BIKO_00594 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-11-09T03:13:45.503361Z" ;
+    onto:BIKO_000009 "reach-and-grasp test" .
+
+onto:BIKO_000278 a owl:Class ;
+    rdfs:label "Open field Test" ;
+    rdfs:subClassOf onto:BIKO_00594,
+        [ a owl:Restriction ;
+            owl:onProperty onto:BIKO_00550 ;
+            owl:someValuesFrom [ a owl:Class ;
+                    owl:intersectionOf (
+                            onto:BIKO_000040
+                            [ a owl:Restriction ;
+                                owl:onProperty onto:BIKO_000019 ;
+                                owl:someValuesFrom onto:BIKO_00546 ] ) ] ] ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-11-09T03:14:07.020687Z" .
+
+onto:BIKO_000279 a owl:Class ;
+    rdfs:label "Partition test" ;
+    rdfs:subClassOf onto:BIKO_00594 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-11-09T03:14:18.597413Z" .
+
+onto:BIKO_000280 a owl:Class ;
+    rdfs:label "Porsolt’s forced swim test" ;
+    rdfs:subClassOf onto:BIKO_000262 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-11-09T03:14:29.596587Z" .
+
+onto:BIKO_000281 a owl:Class ;
+    rdfs:label "Predatory odor test" ;
+    rdfs:subClassOf onto:BIKO_00594 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-11-09T03:14:40.838338Z" .
+
+onto:BIKO_000282 a owl:Class ;
+    rdfs:label "Radial maze test" ;
+    rdfs:subClassOf onto:BIKO_00594,
+        [ a owl:Restriction ;
+            owl:onProperty onto:BIKO_00550 ;
+            owl:someValuesFrom [ a owl:Class ;
+                    owl:intersectionOf (
+                            onto:BIKO_000040
+                            [ a owl:Restriction ;
+                                owl:onProperty onto:BIKO_000019 ;
+                                owl:someValuesFrom onto:BIKO_00543 ] ) ] ] ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-11-09T03:14:52.202975Z" .
+
+onto:BIKO_000285 a owl:Class ;
+    rdfs:label "Righting reflex test" ;
+    rdfs:subClassOf onto:BIKO_00594,
+        [ a owl:Restriction ;
+            owl:onProperty onto:BIKO_00550 ;
+            owl:someValuesFrom [ a owl:Class ;
+                    owl:intersectionOf (
+                            onto:BIKO_000040
+                            [ a owl:Restriction ;
+                                owl:onProperty onto:BIKO_000019 ;
+                                owl:someValuesFrom onto:BIKO_00546 ] ) ] ] ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-11-09T03:15:30.665049Z" .
+
+onto:BIKO_000286 a owl:Class ;
+    rdfs:label "Rope grip test" ;
+    rdfs:subClassOf onto:BIKO_00594 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-11-09T03:15:40.360464Z" .
+
+onto:BIKO_000287 a owl:Class ;
+    rdfs:label "Rotarod test" ;
+    rdfs:subClassOf onto:BIKO_00594 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-11-09T03:15:51.278499Z" .
+
+onto:BIKO_000288 a owl:Class ;
+    rdfs:label "Rotating pole test" ;
+    rdfs:subClassOf onto:BIKO_00594,
+        [ a owl:Restriction ;
+            owl:onProperty onto:BIKO_00550 ;
+            owl:someValuesFrom [ a owl:Class ;
+                    owl:intersectionOf (
+                            onto:BIKO_000040
+                            [ a owl:Restriction ;
+                                owl:onProperty onto:BIKO_000019 ;
+                                owl:someValuesFrom onto:BIKO_00546 ] ) ] ] ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-11-09T03:38:13.525236Z" .
+
+onto:BIKO_000290 a owl:Class ;
+    rdfs:label "Startle response test" ;
+    rdfs:subClassOf onto:BIKO_00594 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-11-09T03:38:34.812786Z" .
+
+onto:BIKO_000291 a owl:Class ;
+    rdfs:label "String test" ;
+    rdfs:subClassOf onto:BIKO_00594 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-11-09T03:38:47.64918Z" .
+
+onto:BIKO_000292 a owl:Class ;
+    rdfs:label "Sucrose preference test" ;
+    rdfs:subClassOf onto:BIKO_00594 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-11-09T03:38:58.197199Z" .
+
+onto:BIKO_000293 a owl:Class ;
+    rdfs:label "T maze test" ;
+    rdfs:subClassOf onto:BIKO_00594 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-11-09T03:39:10.32829Z" .
+
+onto:BIKO_000294 a owl:Class ;
+    rdfs:label "Tail suspension test" ;
+    rdfs:subClassOf onto:BIKO_00594 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-11-09T03:39:21.631331Z" .
+
+onto:BIKO_000298 a owl:Class ;
+    rdfs:label "Y maze test" ;
+    rdfs:subClassOf onto:BIKO_00594,
+        [ a owl:Restriction ;
+            owl:onProperty onto:BIKO_00550 ;
+            owl:someValuesFrom [ a owl:Class ;
+                    owl:intersectionOf (
+                            onto:BIKO_000040
+                            [ a owl:Restriction ;
+                                owl:onProperty onto:BIKO_000019 ;
+                                owl:someValuesFrom onto:BIKO_00543 ] ) ] ],
+        [ a owl:Restriction ;
+            owl:onProperty onto:BIKO_00550 ;
+            owl:someValuesFrom [ a owl:Class ;
+                    owl:intersectionOf (
+                            onto:BIKO_000040
+                            [ a owl:Restriction ;
+                                owl:onProperty onto:BIKO_000019 ;
+                                owl:someValuesFrom onto:BIKO_00549 ] ) ] ] ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-11-09T03:40:34.739294Z" .
+
+onto:BIKO_000299 a owl:Class ;
+    rdfs:label "extended Glasgow Coma Scale" ;
+    rdfs:subClassOf onto:BIKO_000300 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-11-09T03:41:37.262685Z" ;
+    onto:BIKO_000009 "eGCS" .
+
+onto:BIKO_000300 a owl:Class ;
+    rdfs:label "Glasgow Coma Scale" ;
+    rdfs:subClassOf onto:BIKO_000042 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-11-09T03:41:49.266591Z" ;
+    onto:BIKO_000009 "GCS" .
+
+onto:BIKO_000301 a owl:Class ;
+    rdfs:label "modified Neurological severity score" ;
+    rdfs:subClassOf onto:BIKO_000274 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-11-09T03:42:19.682399Z" ;
+    onto:BIKO_000009 "mNSS" .
+
+onto:BIKO_000302 a owl:Class ;
+    rdfs:label "X-Ray test" ;
+    skos:definition "A test that uses a plain radiograph to examine the emission of x-rays to form an image of the structure penetrated by the radiation." ;
+    rdfs:subClassOf onto:BIKO_000043 ;
+    rdfs:isDefinedBy <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C38101> ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-11-09T13:07:23.034636Z" ;
+    onto:BIKO_000009 "Plain Radiograph test, Radiographic Imaging test, X-Ray" .
+
+onto:BIKO_000304 a owl:Class ;
+    rdfs:label "Surgery" ;
+    rdfs:subClassOf onto:BIKO_000073 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-11-09T13:12:45.504999Z" .
+
+onto:BIKO_000305 a owl:Class ;
+    rdfs:label "non breach skull" ;
+    rdfs:subClassOf onto:BIKO_000180 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-11-09T13:16:39.154435Z" .
+
+onto:BIKO_000314 a owl:Class ;
+    rdfs:label "Non-traumatic brain injury" ;
+    rdfs:subClassOf onto:BIKO_000144 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-11-09T13:50:43.250272Z" .
+
+onto:BIKO_000316 a owl:Class ;
+    rdfs:label "Sagittal suture" ;
+    rdfs:subClassOf onto:BIKO_000148 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-11-09T14:20:54.674454Z" .
+
+onto:BIKO_000317 a owl:Class ;
+    rdfs:label "Controlled cortical impact device" ;
+    rdfs:subClassOf onto:BIKO_000072 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-11-09T14:23:21.90732Z" .
+
+onto:BIKO_000318 a owl:Class ;
+    rdfs:label "Pneumatic impactor" ;
+    rdfs:subClassOf onto:BIKO_000317 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-11-09T14:23:34.418363Z" .
+
+onto:BIKO_000319 a owl:Class ;
+    rdfs:label "Electromagnetic impactor" ;
+    rdfs:subClassOf onto:BIKO_000317 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-11-09T14:23:47.881804Z" .
+
+onto:BIKO_000321 a owl:Class ;
+    rdfs:label "explosive force" ;
+    rdfs:subClassOf onto:BIKO_000151 ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-11-09T14:35:27.593631Z" .
+
+onto:BIKO_00405 a owl:Class ;
+    rdfs:label "Fluid percussion device" ;
+    rdfs:subClassOf onto:BIKO_000072 .
+
+onto:BIKO_00406 a owl:Class ;
+    rdfs:label "Weight drop device" ;
+    rdfs:subClassOf onto:BIKO_000072 .
+
+onto:BIKO_00407 a owl:Class ;
+    rdfs:label "Blast model device" ;
+    rdfs:subClassOf onto:BIKO_000072 .
+
+onto:BIKO_00408 a owl:Class ;
+    rdfs:label "explosive device" ;
+    rdfs:subClassOf onto:BIKO_00407 .
+
+onto:BIKO_00409 a owl:Class ;
+    rdfs:label "blast tube device" ;
+    rdfs:subClassOf onto:BIKO_00407 .
+
+onto:BIKO_00410 a owl:Class ;
+    rdfs:label "shock tube device" ;
+    rdfs:subClassOf onto:BIKO_00407 .
+
+onto:BIKO_00411 a owl:Class ;
+    rdfs:label "Nucleic acid" ;
+    rdfs:subClassOf onto:BIKO_000213 .
+
+onto:BIKO_00414 a owl:Class ;
+    rdfs:label "Removal of portion of skull" ;
+    rdfs:subClassOf onto:BIKO_000304,
+        [ a owl:Restriction ;
+            owl:onProperty onto:BIKO_000306 ;
+            owl:someValuesFrom onto:BIKO_00437 ] .
+
+onto:BIKO_00415 a owl:Class ;
+    rdfs:label "eukaryota" ;
+    rdfs:subClassOf onto:BIKO_000086 .
+
+onto:BIKO_00416 a owl:Class ;
+    rdfs:label "animal" ;
+    rdfs:subClassOf onto:BIKO_00415 .
+
+onto:BIKO_00417 a owl:Class ;
+    rdfs:label "vertebrata" ;
+    rdfs:subClassOf onto:BIKO_00416 .
+
+onto:BIKO_00418 a owl:Class ;
+    rdfs:label "artiodactyla" ;
+    rdfs:subClassOf onto:BIKO_00416 .
+
+onto:BIKO_00419 a owl:Class ;
+    rdfs:label "bovidae" ;
+    rdfs:subClassOf onto:BIKO_00418 .
+
+onto:BIKO_00429 a owl:Class ;
+    rdfs:label "Injury event" ;
+    rdfs:subClassOf onto:BIKO_000005 .
+
+onto:BIKO_00437 a owl:Class ;
+    rdfs:label "manual skull breach" ;
+    rdfs:subClassOf onto:BIKO_000178 .
+
+onto:BIKO_00438 a owl:Class ;
+    rdfs:label "organic injury skull breach" ;
+    rdfs:subClassOf onto:BIKO_000178 .
+
+onto:BIKO_00444 a owl:Class ;
+    rdfs:label "Penetration by a sharp object" ;
+    rdfs:subClassOf onto:BIKO_000017 .
+
+onto:BIKO_00447 a owl:Class ;
+    rdfs:label "Contact with a blunt object" ;
+    rdfs:subClassOf onto:BIKO_000017 .
+
+onto:BIKO_00448 a owl:Class ;
+    rdfs:label "Contussion" ;
+    rdfs:subClassOf onto:BIKO_000047 .
+
+onto:BIKO_00449 a owl:Class ;
+    rdfs:label "Brain hematoma" ;
+    rdfs:subClassOf onto:BIKO_000047 .
+
+onto:BIKO_00452 a owl:Class ;
+    rdfs:label "Intraparenchymal hematoma" ;
+    rdfs:subClassOf onto:BIKO_000047 .
+
+onto:BIKO_00453 a owl:Class ;
+    rdfs:label "Epidural hematoma" ;
+    rdfs:subClassOf onto:BIKO_00449 .
+
+onto:BIKO_00454 a owl:Class ;
+    rdfs:label "Subdural hematoma" ;
+    rdfs:subClassOf onto:BIKO_00449 .
+
+onto:BIKO_00455 a owl:Class ;
+    rdfs:label "Hypoxic ischemic injury" ;
+    rdfs:subClassOf onto:BIKO_000047 .
+
+onto:BIKO_00462 a owl:Class ;
+    rdfs:label "Anatomical point" ;
+    rdfs:subClassOf onto:BIKO_000004 .
+
+onto:BIKO_00463 a owl:Class ;
+    rdfs:label "Bregma" ;
+    rdfs:subClassOf onto:BIKO_00462 .
+
+onto:BIKO_00464 a owl:Class ;
+    rdfs:label "Lambda" ;
+    rdfs:subClassOf onto:BIKO_00462 .
+
+onto:BIKO_00465 a owl:Class ;
+    rdfs:label "Cortical tissue loss" ;
+    rdfs:subClassOf onto:BIKO_000047 .
+
+onto:BIKO_00466 a owl:Class ;
+    rdfs:label "Axonal injury" ;
+    rdfs:subClassOf onto:BIKO_000047 .
+
+onto:BIKO_00467 a owl:Class ;
+    rdfs:label "Hippocampal degeneration" ;
+    rdfs:subClassOf onto:BIKO_000047 .
+
+onto:BIKO_00468 a owl:Class ;
+    rdfs:label "Thalamic degeneration" ;
+    rdfs:subClassOf onto:BIKO_000047 .
+
+onto:BIKO_00469 a owl:Class ;
+    rdfs:label "Oxidative stress" ;
+    rdfs:subClassOf onto:BIKO_000087 .
+
+onto:BIKO_00470 a owl:Class ;
+    rdfs:label "Personal protective equipment" ;
+    rdfs:subClassOf onto:BIKO_000069 .
+
+onto:BIKO_00471 a owl:Class ;
+    rdfs:label "Helmet" ;
+    rdfs:subClassOf onto:BIKO_00470 .
+
+onto:BIKO_00472 a owl:Class ;
+    rdfs:label "Free-falling rod" ;
+    rdfs:subClassOf onto:BIKO_00406 .
+
+onto:BIKO_00473 a owl:Class ;
+    rdfs:label "Weight device" ;
+    rdfs:subClassOf onto:BIKO_00406 .
+
+onto:BIKO_00474 a owl:Class ;
+    rdfs:label "Metal disk" ;
+    rdfs:subClassOf onto:BIKO_00470 .
+
+onto:BIKO_00543 a owl:Class ;
+    rdfs:label "learning and memory" ;
+    rdfs:subClassOf onto:BIKO_00544 .
+
+onto:BIKO_00544 a owl:Class ;
+    rdfs:label "biological function" ;
+    rdfs:subClassOf onto:BIKO_000060 .
+
+onto:BIKO_00545 a owl:Class ;
+    rdfs:label "social, emotional and stress response" ;
+    rdfs:subClassOf onto:BIKO_00544 .
+
+onto:BIKO_00546 a owl:Class ;
+    rdfs:label "motor function" ;
+    rdfs:subClassOf onto:BIKO_00544 .
+
+onto:BIKO_00549 a owl:Class ;
+    rdfs:label "Cognition function" ;
+    rdfs:subClassOf onto:BIKO_00544 .
+
+onto:BIKO_00564 a owl:Class ;
+    rdfs:label "Beam balance test" ;
+    rdfs:subClassOf onto:BIKO_00594,
+        [ a owl:Restriction ;
+            owl:onProperty onto:BIKO_00550 ;
+            owl:someValuesFrom [ a owl:Class ;
+                    owl:intersectionOf (
+                            onto:BIKO_000040
+                            [ a owl:Restriction ;
+                                owl:onProperty onto:BIKO_000019 ;
+                                owl:someValuesFrom onto:BIKO_00546 ] ) ] ] .
+
+onto:BIKO_00565 a owl:Class ;
+    rdfs:label "Sensory function" ;
+    rdfs:subClassOf onto:BIKO_00544 .
+
+onto:BIKO_00566 a owl:Class ;
+    rdfs:label "Spatial learning" ;
+    rdfs:subClassOf onto:BIKO_00543 .
+
+onto:BIKO_00567 a owl:Class ;
+    rdfs:label "Reference memory" ;
+    rdfs:subClassOf onto:BIKO_00543 .
+
+onto:BIKO_00568 a owl:Class ;
+    rdfs:label "Short-term memory" ;
+    rdfs:subClassOf onto:BIKO_00543 .
+
+onto:BIKO_00594 a owl:Class ;
+    rdfs:label "Behavioral test" ;
+    rdfs:subClassOf onto:BIKO_000040 .
+
+onto:BIKO_00611 a owl:Class ;
+    rdfs:label "protocol" ;
+    rdfs:subClassOf onto:BIKO_000067 .
+
+onto:BIKO_00612 a owl:Class ;
+    rdfs:label "Traumatic brain injury model protocol" ;
+    rdfs:subClassOf onto:BIKO_00611 .
+
+onto:BIKO_00613 a owl:Class ;
+    rdfs:label "Controlled cortical impact model protocol" ;
+    rdfs:subClassOf onto:BIKO_00612 .
+
+onto:BIKO_00614 a owl:Class ;
+    rdfs:label "Blast model protocol" ;
+    rdfs:subClassOf onto:BIKO_00612 .
+
+onto:BIKO_00615 a owl:Class ;
+    rdfs:label "Fluid percussion model protocol" ;
+    rdfs:subClassOf onto:BIKO_00612 .
+
+onto:BIKO_00616 a owl:Class ;
+    rdfs:label "Weight drop model protocol" ;
+    rdfs:subClassOf onto:BIKO_00612 .
+
+### Individuals
+
+<http://purl.obolibrary.org/obo/PMID_1787745> a owl:NamedIndividual .
+
+<http://purl.obolibrary.org/obo/PMID_16473332> a owl:NamedIndividual .
+
+<http://purl.obolibrary.org/obo/PMID_16814284> a owl:NamedIndividual .
+
+<http://purl.obolibrary.org/obo/PMID_22575994> a owl:NamedIndividual .
+
+<http://purl.obolibrary.org/obo/PMID_23089934> a owl:NamedIndividual .
+
+<http://purl.obolibrary.org/obo/PMID_25148711> a owl:NamedIndividual .
+
+<http://purl.obolibrary.org/obo/PMID_25449871> a owl:NamedIndividual .
+
+<http://purl.obolibrary.org/obo/PMID_25771208> a owl:NamedIndividual .
+
+<http://purl.obolibrary.org/obo/PMID_28421542> a owl:NamedIndividual .
+
+<http://purl.obolibrary.org/obo/PMID_28675644> a owl:NamedIndividual .
+
+onto:BIKO_000049 a owl:NamedIndividual ;
+    rdfs:label "AnimalAgeGroup" ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-23T19:28:36.051933Z" .
+
+onto:BIKO_000071 a owl:NamedIndividual ;
+    rdfs:label "AnimalAgeVal" ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-23T19:29:27.346103Z" .
+
+onto:BIKO_000185 a owl:NamedIndividual ;
+    rdfs:label "AnimalSexTyp" ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-23T19:30:36.416558Z" .
+
+onto:BIKO_000186 a owl:NamedIndividual ;
+    rdfs:label "BirthSexAssignTyp" ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-23T19:32:01.99624Z" .
+
+onto:BIKO_000188 a owl:NamedIndividual ;
+    rdfs:label "Age value" ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-23T19:33:25.480738Z" .
+
+onto:BIKO_000189 a owl:NamedIndividual ;
+    rdfs:label "C00008" ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-23T19:34:38.693927Z" .
+
+onto:BIKO_000191 a owl:NamedIndividual ;
+    rdfs:label "C58676" ;
+    oboI:created_by "MCSZ" ;
+    oboI:creation_date "2022-10-23T19:35:25.590633Z" .
+
+onto:BIKO_00445 a owl:NamedIndividual ;
+    rdfs:label "Focal" .
+
+onto:BIKO_00446 a owl:NamedIndividual ;
+    rdfs:label "Diffuse" .
+
+onto:BIKO_00575 a owl:NamedIndividual,
+        [ a owl:Restriction ;
+            owl:onProperty onto:BIKO_00597 ;
+            owl:someValuesFrom onto:BIKO_000257 ] ;
+    rdfs:label "Cylinder Test -  Number of simultaneous contacts of Both forelimbs with cylinder" ;
+    onto:BIKO_00572 "" .
+
+onto:BIKO_00577 a owl:NamedIndividual,
+        [ a owl:Restriction ;
+            owl:onProperty onto:BIKO_00597 ;
+            owl:someValuesFrom onto:BIKO_000257 ] ;
+    rdfs:label "Cylinder Test -  Number of contacts of Impaired forelimb with cylinder" ;
+    onto:BIKO_00572 "" .
+
+onto:BIKO_00578 a owl:NamedIndividual,
+        [ a owl:Restriction ;
+            owl:onProperty onto:BIKO_00597 ;
+            owl:someValuesFrom onto:BIKO_000257 ] ;
+    rdfs:label "Cylinder Test - Total Time used for acquisition" ;
+    onto:BIKO_00572 "" .
+
+onto:BIKO_00579 a owl:NamedIndividual,
+        [ a owl:Restriction ;
+            owl:onProperty onto:BIKO_00597 ;
+            owl:someValuesFrom onto:BIKO_000257 ] ;
+    rdfs:label "Cylinder Test -  Number of total contacts counted of either limb or both with the cylinder" ;
+    onto:BIKO_00572 "" .
+
+onto:BIKO_00580 a owl:NamedIndividual,
+        [ a owl:Restriction ;
+            owl:onProperty onto:BIKO_00597 ;
+            owl:someValuesFrom onto:BIKO_000257 ] ;
+    rdfs:label "Cylinder Test - Scoring method" ;
+    onto:BIKO_00572 "" .
+
+onto:BIKO_00581 a owl:NamedIndividual,
+        [ a owl:Restriction ;
+            owl:onProperty onto:BIKO_00597 ;
+            owl:someValuesFrom onto:BIKO_000257 ] ;
+    rdfs:label "Cylinder Test - angle of camera" ;
+    onto:BIKO_00572 "" .
+
+onto:BIKO_00582 a owl:NamedIndividual,
+        [ a owl:Restriction ;
+            owl:onProperty onto:BIKO_00597 ;
+            owl:someValuesFrom onto:BIKO_000257 ] ;
+    rdfs:label "Cylinder Test - Indicate if animals were habituation to room prior to testing" ;
+    onto:BIKO_00572 "" .
+
+onto:BIKO_00583 a owl:NamedIndividual,
+        [ a owl:Restriction ;
+            owl:onProperty onto:BIKO_00597 ;
+            owl:someValuesFrom onto:BIKO_000252 ] ;
+    rdfs:label "Beam Walk (BWK) test - latency to goal box time duration" ;
+    onto:BIKO_00572 "" .
+
+onto:BIKO_00584 a owl:NamedIndividual,
+        [ a owl:Restriction ;
+            owl:onProperty onto:BIKO_00597 ;
+            owl:someValuesFrom onto:BIKO_000252 ] ;
+    rdfs:label "Beam Walk (BWK) test - foot slips count" ;
+    onto:BIKO_00572 "" .
+
+onto:BIKO_00585 a owl:NamedIndividual,
+        [ a owl:Restriction ;
+            owl:onProperty onto:BIKO_00597 ;
+            owl:someValuesFrom onto:BIKO_000252 ] ;
+    rdfs:label "Beam Walk (BWK) test - Name and position of the foot counted for slips" ;
+    onto:BIKO_00572 "" .
+
+onto:BIKO_00589 a owl:NamedIndividual,
+        [ a owl:Restriction ;
+            owl:onProperty onto:BIKO_00597 ;
+            owl:someValuesFrom onto:BIKO_000252 ] ;
+    rdfs:label "Beam Walk (BWK) test - Aversive stimuli" ;
+    onto:BIKO_00572 "" .
+
+onto:BIKO_00591 a owl:NamedIndividual,
+        [ a owl:Restriction ;
+            owl:onProperty onto:BIKO_00597 ;
+            owl:someValuesFrom onto:BIKO_000252 ] ;
+    rdfs:label "Beam Walk (BWK) test - beam shape type" ;
+    onto:BIKO_00572 "" .
+
+onto:BIKO_00592 a owl:NamedIndividual,
+        [ a owl:Restriction ;
+            owl:onProperty onto:BIKO_00597 ;
+            owl:someValuesFrom onto:BIKO_000252 ] ;
+    rdfs:label "Beam Walk (BWK) test - beam height value" ;
+    onto:BIKO_00572 "" .
+
+onto:BIKO_00593 a owl:NamedIndividual,
+        [ a owl:Restriction ;
+            owl:onProperty onto:BIKO_00597 ;
+            owl:someValuesFrom onto:BIKO_000252 ] ;
+    rdfs:label "Beam Walk (BWK) test - goal box dimension text" ;
+    onto:BIKO_00572 "" .
+
+onto:BIKO_00598 a owl:NamedIndividual,
+        [ a owl:Restriction ;
+            owl:onProperty onto:BIKO_00597 ;
+            owl:someValuesFrom onto:BIKO_000287 ] ;
+    rdfs:label "Rotor rod test - rod speed value at fall" ;
+    onto:BIKO_00572 "" .
+
+onto:BIKO_00599 a owl:NamedIndividual,
+        [ a owl:Restriction ;
+            owl:onProperty onto:BIKO_00597 ;
+            owl:someValuesFrom onto:BIKO_000287 ] ;
+    rdfs:label "Rotor rod test - latency time duration" ;
+    onto:BIKO_00572 "" .
+
+onto:BIKO_00601 a owl:NamedIndividual,
+        [ a owl:Restriction ;
+            owl:onProperty onto:BIKO_00597 ;
+            owl:someValuesFrom onto:BIKO_000287 ] ;
+    rdfs:label "Rotor rod test - final speed value" ;
+    onto:BIKO_00572 "" .
+
+onto:BIKO_00602 a owl:NamedIndividual,
+        [ a owl:Restriction ;
+            owl:onProperty onto:BIKO_00597 ;
+            owl:someValuesFrom onto:BIKO_000287 ] ;
+    rdfs:label "Rotor rod test - start speed value" ;
+    onto:BIKO_00572 "" .
+
+onto:BIKO_00603 a owl:NamedIndividual,
+        [ a owl:Restriction ;
+            owl:onProperty onto:BIKO_00597 ;
+            owl:someValuesFrom onto:BIKO_000287 ] ;
+    rdfs:label "Rotor rod test - rod diameter value" ;
+    onto:BIKO_00572 "" .
+
+onto:BIKO_00604 a owl:NamedIndividual,
+        [ a owl:Restriction ;
+            owl:onProperty onto:BIKO_00597 ;
+            owl:someValuesFrom onto:BIKO_000287 ] ;
+    rdfs:label "Rotor rod test - lane width value" ;
+    onto:BIKO_00572 "" .
+
+onto:BIKO_00605 a owl:NamedIndividual,
+        [ a owl:Restriction ;
+            owl:onProperty onto:BIKO_00597 ;
+            owl:someValuesFrom onto:BIKO_000287 ] ;
+    rdfs:label "Rotor rod test - fall height value" ;
+    onto:BIKO_00572 "" .
+
+onto:BIKO_00606 a owl:NamedIndividual,
+        [ a owl:Restriction ;
+            owl:onProperty onto:BIKO_00597 ;
+            owl:someValuesFrom onto:BIKO_000287 ] ;
+    rdfs:label "Rotor rod test - Apparatus habituation type text" ;
+    onto:BIKO_00572 "" .
+
+onto:BIKO_00607 a owl:NamedIndividual,
+        [ a owl:Restriction ;
+            owl:onProperty onto:BIKO_00597 ;
+            owl:someValuesFrom onto:BIKO_000287 ] ;
+    rdfs:label "Rotor rod test - apparatus habituation indicator" ;
+    onto:BIKO_00572 "" .
+
+onto:BIKO_00608 a owl:NamedIndividual,
+        [ a owl:Restriction ;
+            owl:onProperty onto:BIKO_00597 ;
+            owl:someValuesFrom onto:BIKO_000287 ] ;
+    rdfs:label "Rotor rod test - acceleration type" ;
+    onto:BIKO_00572 "" .
+
+### Axioms
+
+[] a owl:AllDisjointClasses ;
+    owl:members (
+            onto:BIKO_000002
+            onto:BIKO_000003
+            onto:BIKO_000004
+            onto:BIKO_000005 ) .
+
+### Serialized using the ttlser deterministic serializer v1.2.0
