@@ -15,13 +15,16 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
 
-    // Display metadata for a selected paper
+    // Display metadata paper
     const displayMetadata = (paper) => {
         resultList.innerHTML = `
-            <li><strong>URI:</strong> ${paper.uri}</li>
-            ${Object.entries(paper.metadata)
-                .map(([key, value]) => `<li><strong>${key}:</strong> ${value}</li>`)
-                .join('')}
+            <h3>Metadata for Selected Paper</h3>
+            <ul>
+                <li><strong>URI:</strong> ${paper.uri}</li>
+                ${Object.entries(paper.metadata)
+                    .map(([key, value]) => `<li><strong>${key}:</strong> ${value}</li>`)
+                    .join('')}
+            </ul>
         `;
     };
 
@@ -41,12 +44,17 @@ document.addEventListener('DOMContentLoaded', () => {
                 });
 
                 // Display results
-                resultList.innerHTML = filtered
-                    .map(
-                        paper =>
-                            `<li>${paper.metadata['http://www.w3.org/2000/01/rdf-schema#label'] || paper.uri}</li>`
-                    )
-                    .join('');
+                resultList.innerHTML = `
+                    <h3>Search Results</h3>
+                    <ul>
+                        ${filtered
+                            .map(
+                                paper =>
+                                    `<li>${paper.metadata['http://www.w3.org/2000/01/rdf-schema#label'] || paper.uri}</li>`
+                            )
+                            .join('')}
+                    </ul>
+                `;
             });
     });
 });
