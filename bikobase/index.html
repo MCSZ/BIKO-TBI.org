@@ -8,27 +8,44 @@
 </head>
 <body>
     <header>
-        <h1>BIKObase: Research Papers</h1>
-        <p>Explore papers and associated properties.</p>
+        <h1>BIKObase</h1>
+        <p>A comprehensive database of research papers and associated metadata.</p>
     </header>
+
     <main>
+        <!-- Section for listing papers -->
         <section id="papers">
             <h2>Research Papers</h2>
-            <ul id="paper-list"></ul>
+            <div id="paper-container" class="content-box">
+                <ul id="paper-list"></ul>
+            </div>
         </section>
+
+        <!-- Section for querying similar papers -->
         <section id="query">
-            <h2>Find Similar Papers</h2>
-            <form id="query-form">
-                <label for="property">Property:</label>
-                <input type="text" id="property" name="property" placeholder="Enter a property (e.g., species)">
-                <button type="submit">Search</button>
-            </form>
+            <h2>Find Papers by Properties</h2>
+            <div class="content-box">
+                <form id="query-form">
+                    <label for="property">Property:</label>
+                    <input type="text" id="property" name="property" placeholder="Enter property (e.g., species)">
+                    <button type="submit">Search</button>
+                </form>
+            </div>
         </section>
+
+        <!-- Section for displaying results -->
         <section id="results">
-            <h2>Results</h2>
-            <ul id="result-list"></ul>
+            <h2>Search Results</h2>
+            <div id="result-container" class="content-box">
+                <ul id="result-list"></ul>
+            </div>
         </section>
     </main>
+
+    <footer>
+        <p> </p>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
