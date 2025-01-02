@@ -1,27 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TBI Knowledge Graph</title>
-  <link rel="stylesheet" href="cytoscape-style.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.21.0/cytoscape.min.js"></script>
-  <script src="script.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIKObase</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>TBI Knowledge Graph</h1>
-  <div id="cy" style="width: 100%; height: 500px; border: 1px solid #ccc;"></div>
-  <h2>Paper Metadata</h2>
-  <table id="metadata-table" border="1">
-    <thead>
-      <tr>
-        <th>ID</th>
-        <th>Title</th>
-        <th>Author(s)</th>
-        <th>Year</th>
-      </tr>
-    </thead>
-    <tbody></tbody>
-  </table>
+    <header>
+        <h1 class="title">BIKObase - Brain Injury Knowledge Ontology Knowledgebase</h1>
+        <p class="description">A comprehensive resource for exploring paper metadata about traumatic brain injury.</p>
+    </header>
+
+    <main>
+        <section class="search-section">
+            <input type="text" id="search-bar" placeholder="Search by terms or PMID">
+            <button id="search-button">Search</button>
+            <span id="help-icon" title="Search for terms or papers via PMID">?</span>
+        </section>
+
+        <section class="cards-section">
+            <div class="card">
+                <h2>About the Knowledgebase</h2>
+                <p>Learn more about the development of this resource.</p>
+                <a href="about.html" class="card-link">Learn More</a>
+            </div>
+            <div class="card">
+                <h2>Explore Resources</h2>
+                <p>Find tools and resources for TBI research.</p>
+                <a href="resources.html" class="card-link">Explore</a>
+            </div>
+            <div class="card">
+                <h2>Contact Us</h2>
+                <p>Reach out for more information or support.</p>
+                <a href="contact.html" class="card-link">Contact</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 BIKObase. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('search-button').onclick = function () {
+            const searchQuery = document.getElementById('search-bar').value.trim();
+            if (searchQuery) {
+                window.location.href = `search.html?q=${encodeURIComponent(searchQuery)}`;
+            }
+        };
+    </script>
 </body>
 </html>
